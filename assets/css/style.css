@@ -1,0 +1,62 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Set global size for easy rem calculation and add some reset style */
+
+* {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* Hero image section*/
+
+.hero-img {
+  height: 100vh;
+  background: url(../images/hero-img.jpg) no-repeat center center scroll;
+  background-size: cover;
+}
+.right-gradient{
+    height:100vh;
+    width:75vw;
+    position: absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(to right, #111, transparent)
+}
+.heading {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  border-left: white 2px solid;
+  padding:0 0 3em 4em;
+  display: flex;
+  flex-direction: column;
+}
+.heading h1 {
+  font-size: 6vw;
+  color: white;
+}
+.heading p {
+    margin-top: 2em;
+  color: white;
+  font-size: 1.2vw;
+}
+.heading a{
+    font-size: 1.5vw;
+    border: white 2px solid;
+   text-decoration: none;
+   margin-top:2em;
+   width: 10em;
+   text-align:center;
+   color:white;
+   border-radius: 2em;
+  
+}
+.heading a:hover{
+    color:yellow;
+}
