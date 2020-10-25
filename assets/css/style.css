@@ -20,43 +20,88 @@ body {
   background: url(../images/hero-img.jpg) no-repeat center center scroll;
   background-size: cover;
 }
-.right-gradient{
-    height:100vh;
-    width:75vw;
-    position: absolute;
-    top:0;
-    left:0;
-    background: linear-gradient(to right, #111, transparent)
+.right-gradient {
+  height: 100vh;
+  width: 75vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #111, transparent);
 }
 .heading {
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 5%;
   border-left: white 2px solid;
-  padding:0 0 3em 4em;
+  padding: 0 0 3em 4em;
   display: flex;
   flex-direction: column;
 }
 .heading h1 {
-  font-size: 6vw;
+  font-size: 10vw;
   color: white;
 }
 .heading p {
-    margin-top: 2em;
+  margin-top: 4em;
   color: white;
-  font-size: 1.2vw;
+  font-size: 3vw;
 }
-.heading a{
+.heading a {
+  font-size: 3vw;
+  border: white 2px solid;
+  text-decoration: none;
+  margin-top: 4em;
+  width: 10em;
+  text-align: center;
+  color: white;
+  border-radius: 2em;
+}
+.heading a:hover {
+  color: yellow;
+}
+.social-media {
+  position: absolute;
+  right: 2.5%;
+  top: 60%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.social-media-links i {
+  font-size: 1.5em;
+  color: white;
+  margin-top: 3em;
+  transition:all .5s ease;
+
+ 
+}
+.social-media-links i:hover{
+    transition: all .5s ease;
+    color:grey;
+}
+
+/* Media Querys*/
+@media (min-width: 576px) {
+    .heading{
+         left: 10%;
+    }
+  .heading h1 {
+    font-size: 6vw;
+  }
+  .heading p {
+    margin-top: 2em;
+    color: white;
+    font-size: 1.2vw;
+  }
+  .heading a {
     font-size: 1.5vw;
-    border: white 2px solid;
-   text-decoration: none;
-   margin-top:2em;
-   width: 10em;
-   text-align:center;
-   color:white;
-   border-radius: 2em;
-  
-}
-.heading a:hover{
-    color:yellow;
+  }
+  .social-media{
+      top:55%;
+  }
+  .social-media-links i {
+    font-size: 2.5em;
+    margin-top: 3em;
+  }
 }
