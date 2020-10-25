@@ -12,11 +12,101 @@
 body {
   font-family: "Mulish", sans-serif;
 }
+/* Navigation section Inspired by Code and Create tutorial on youtube*/
+.logo a {
+  position: fixed;
+  top: 3em;
+  left: 3em;
+  color: #fafafb;
+  font-size: 3vw;
+  z-index: 500;
+  text-decoration: none;
+}
+.hamburger {
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #fafafb;
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  border: none;
+  border-radius: 50%;
+  z-index: 500;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 3em;
+  height: 0.2em;
+  background-color: #181822;
+  margin: 0.2em 0;
+  transform-origin: right;
+  transition: all 0.75s;
+}
+.change .line1 {
+  transform: rotate(-40deg) translateY(-5px);
+}
 
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(40deg) translateY(5px);
+}
+.nav-background {
+  background-color: #fafafb;
+  width: 4.5em;
+  height: 4.5em;
+  position: fixed;
+  top: 2.2em;
+  right: 2.2em;
+  z-index: 200;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.change .nav-background {
+  transform: scale(150);
+}
+.navigation-list {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 300;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
+.change .navigation-list {
+  opacity: 1;
+  visibility: visible;
+}
+.navigation-item {
+  margin: 1vh 0;
+}
+.navigation-link {
+  font-weight: 600;
+  font-size: 5vw;
+  letter-spacing: 0.4em;
+  text-decoration: none;
+  color: #181822;
+}
 /* Hero image section*/
 
 .hero-img {
   height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: url(../images/hero-img.jpg) no-repeat center center scroll;
   background-size: cover;
 }
@@ -32,28 +122,28 @@ body {
   position: absolute;
   top: 30%;
   left: 5%;
-  border-left: white 2px solid;
+  border-left: #fafafb 2px solid;
   padding: 0 0 3em 4em;
   display: flex;
   flex-direction: column;
 }
 .heading h1 {
   font-size: 10vw;
-  color: white;
+  color: #fafafb;
 }
 .heading p {
   margin-top: 4em;
-  color: white;
+  color: #fafafb;
   font-size: 3vw;
 }
 .heading a {
   font-size: 3vw;
-  border: white 2px solid;
+  border: #fafafb 2px solid;
   text-decoration: none;
   margin-top: 4em;
   width: 10em;
   text-align: center;
-  color: white;
+  color: #fafafb;
   border-radius: 2em;
 }
 .heading a:hover {
@@ -70,38 +160,63 @@ body {
 
 .social-media-links i {
   font-size: 1.5em;
-  color: white;
+  color: #fafafb;
   margin-top: 3em;
-  transition:all .5s ease;
-
- 
+  transition: color 0.5s ease;
 }
-.social-media-links i:hover{
-    transition: all .5s ease;
-    color:grey;
+.social-media-links i:hover {
+  
+  color: grey;
 }
 
 /* Media Querys*/
 @media (min-width: 576px) {
-    .heading{
-         left: 10%;
-    }
+  .logo a {
+    top: 3em;
+    left: 3em;
+    font-size: 1.75vw;
+  }
+  .nav-background {
+    top: 3.2em;
+    right: 3.2em;
+  }
+  .hamburger {
+    width: 5.5em;
+    height: 5.5em;
+    top: 3em;
+    right: 3em;
+  }
+  .navigation-link{
+      font-size: 4vw;
+  }
+  .heading {
+    left: 10%;
+  }
   .heading h1 {
     font-size: 6vw;
   }
   .heading p {
     margin-top: 2em;
-    color: white;
     font-size: 1.2vw;
   }
   .heading a {
     font-size: 1.5vw;
   }
-  .social-media{
-      top:55%;
+  .social-media {
+    top: 55%;
   }
   .social-media-links i {
     font-size: 2.5em;
     margin-top: 3em;
+  }
+}
+@media (min-width: 820px) {
+  .logo a {
+    top: 2em;
+    left: 3em;
+    font-size: 1vw;
+  }
+  .navigation-link{
+      font-size: 3vw;
   }
 }
