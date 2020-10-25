@@ -98,7 +98,12 @@ body {
   letter-spacing: 0.4em;
   text-decoration: none;
   color: #181822;
+  transition: all 0.3s ease-in-out;
 }
+.navigation-link:hover {
+  color: grey;
+}
+
 /* Hero image section*/
 
 .hero-img {
@@ -138,16 +143,20 @@ body {
 }
 .heading a {
   font-size: 3vw;
+  font-weight:600;
   border: #fafafb 2px solid;
   text-decoration: none;
   margin-top: 4em;
   width: 10em;
   text-align: center;
-  color: #fafafb;
+  background-color: #fafafb;
+  color: #181822;
+
   border-radius: 2em;
+  transition: all 0.3s ease-in-out;
 }
 .heading a:hover {
-  color: yellow;
+  background-color: grey;
 }
 .social-media {
   position: absolute;
@@ -165,7 +174,6 @@ body {
   transition: color 0.5s ease;
 }
 .social-media-links i:hover {
-  
   color: grey;
 }
 
@@ -186,8 +194,8 @@ body {
     top: 3em;
     right: 3em;
   }
-  .navigation-link{
-      font-size: 4vw;
+  .navigation-link {
+    font-size: 4vw;
   }
   .heading {
     left: 10%;
@@ -216,7 +224,7 @@ body {
     left: 3em;
     font-size: 1vw;
   }
-  .navigation-link{
-      font-size: 3vw;
+  .navigation-link {
+    font-size: 2.5vw;
   }
 }
