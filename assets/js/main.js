@@ -16,7 +16,7 @@ link.forEach((item) => {
 
 /* Code to fade elements in upon scrolling */
 
-const animatuionOnScroll = () => {
+const animationOnScroll = () => {
   let animationElement = document.querySelectorAll(".animation-element");
   animationElement.forEach((element) => {
     let position = element.getBoundingClientRect().top;
