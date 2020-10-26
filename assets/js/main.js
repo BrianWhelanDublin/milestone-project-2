@@ -20,7 +20,7 @@ const animationOnScroll = () => {
   let animationElement = document.querySelectorAll(".animation-element");
   animationElement.forEach((element) => {
     let position = element.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight / 1.5;
+    let screenPosition = window.innerHeight / 1.4;
 
     if (position < screenPosition) {
       element.classList.add("animation-active");
