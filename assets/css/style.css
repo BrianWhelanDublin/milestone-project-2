@@ -5,13 +5,12 @@
 .animation-element {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 3s ease;
+  transition: all 3s ease-in-out;
 }
 .animation-active {
-    opacity:1;
-    transform:translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
 }
-
 
 /* Set global size for easy rem calculation and add some reset style */
 
@@ -23,6 +22,8 @@
 
 body {
   font-family: "Mulish", sans-serif;
+  background-color: #181822;
+  color: #fafafb;
 }
 /* Navigation section Inspired by Code and Create tutorial on youtube*/
 
@@ -200,7 +201,6 @@ header {
 
 .about-col {
   height: 40vh;
-  background-color: #181822;
 }
 .about-img {
   max-height: 100%;
@@ -237,6 +237,25 @@ header {
   font-weight: 300;
   padding: 2em;
 }
+
+/* Destination Section */
+.destination-heading-section{
+    height:35vh;
+}
+#destinations {
+  height: 100vh;
+}
+.destination-heading h1 {
+  font-weight: 800;
+  font-size: 6vw;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.cities-row,
+.beaches-row {
+  height: 50vh;
+}
+
 
 /* Media Querys*/
 
