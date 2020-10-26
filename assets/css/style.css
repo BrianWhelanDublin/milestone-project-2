@@ -212,7 +212,7 @@ header {
   bottom: 0;
   margin: auto;
 }
-.about-row:before {
+.bottom-gradient {
   content: "";
   height: 15vh;
   width: 100vw;
@@ -306,6 +306,18 @@ header {
     font-size: 5vw;
   }
   .about-text p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation:landscape){
+    .social-media-links i {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .about-col {
+    height: 100vh;
+  }
+   .navigation-link {
     font-size: 2vw;
   }
 }
