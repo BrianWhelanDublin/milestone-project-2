@@ -13,8 +13,9 @@ body {
   font-family: "Mulish", sans-serif;
 }
 /* Navigation section Inspired by Code and Create tutorial on youtube*/
-header{
-    height:100vh;
+
+header {
+  height: 100vh;
 }
 .logo a {
   position: fixed;
@@ -74,7 +75,7 @@ header{
   transition: all 1s ease;
 }
 .change .nav-background {
-    background-color: #fafafb;
+  background-color: #fafafb;
   transform: scale(150);
 }
 .navigation-list {
@@ -89,7 +90,7 @@ header{
   z-index: 300;
   opacity: 0;
   visibility: hidden;
-  transition: all .75s ease;
+  transition: all 0.75s ease;
 }
 .change .navigation-list {
   opacity: 1;
@@ -141,6 +142,7 @@ header{
 .heading h1 {
   font-size: 10vw;
   color: #fafafb;
+  font-weight: 800;
 }
 .heading p {
   margin-top: 4em;
@@ -165,8 +167,8 @@ header{
 }
 .social-media {
   position: absolute;
-  right: 2.5%;
-  top: 60%;
+  right: 15%;
+  top: 50%;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -184,15 +186,48 @@ header{
 
 /* About Section */
 
-.about-col{
-    height: 50vh;
+.about-col {
+  height: 40vh;
+  background-color: #181822;
 }
-.about-img{
-    max-height: 100%;
-    max-width: 100%;
+.about-img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.about-row:before {
+  content: "";
+  height: 15vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #181822, transparent);
+}
+.about-text {
+  color: #fafafb;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:left;
+}
+.about-text h1 {
+  font-size: 10vw;
+  font-weight: 800;
+}
+.about-text p {
+  font-size: 3.5vw;
+  font-weight: 300;
+  padding: 2em;
 }
 
 /* Media Querys*/
+
 @media (min-width: 576px) {
   .logo a {
     top: 3em;
@@ -227,12 +262,21 @@ header{
   }
   .social-media {
     top: 25%;
+    right:10%;
   }
   .social-media-links i {
     font-size: 2.75em;
     margin-top: 2em;
-    
   }
+  .about-col {
+    height: 50vh;
+  }
+  .about-text h1 {
+  font-size: 5vw;
+}
+.about-text p {
+  font-size: 2vw;
+}
 }
 @media (min-width: 820px) {
   .logo a {
@@ -243,7 +287,24 @@ header{
   .navigation-link {
     font-size: 2.5vw;
   }
-    .about-col{
+  .about-col {
     height: 100vh;
-}
+  }
+  .social-media {
+    right:7.5%;
+  }
+  .social-media-links i {
+    font-size: 3em;
+    margin-top: 3em;
+  }
+  .about-col {
+    height: 100vh;
+  }
+  .about-text h1 {
+    font-size: 5vw;
+  }
+  .about-text p {
+    font-size: 1vw;
+    padding: 2em 3em 0 1em;
+  }
 }
