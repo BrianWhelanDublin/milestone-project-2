@@ -11,6 +11,10 @@
   opacity: 1;
   transform: translateY(0px);
 }
+/* Fix for overlay issue */
+ body, html, .app {
+    height: 100%;
+  }
 
 /* Set global size for easy rem calculation and add some reset style */
 
@@ -127,7 +131,7 @@ header {
 /* Hero image section*/
 
 .hero-img {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -277,9 +281,6 @@ header {
   }
   .navigation-link {
     font-size: 4vw;
-  }
-  .hero-img {
-  height: 100vh;
   }
   .heading {
     left: 10%;
