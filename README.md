@@ -17,12 +17,12 @@
    - As a new user I would like to sign up to a newsletter.
 
  - Repeat  Visitor
-  - As a repeat visitor I would like to see if there are any offers.
-  - As a repeat user I would like to see my saved trips.
+   - As a repeat visitor I would like to see if there are any offers.
+   - As a repeat user I would like to see my saved trips.
   
  - All users
-  - As a site user I would like to book a package.
-  - As a site user I would like to be able to contact the company.
-  - As a site user I would like to be able to see the companies social media.
+   - As a site user I would like to book a package.
+   - As a site user I would like to be able to contact the company.
+   - As a site user I would like to be able to see the companies social media.
 
 
