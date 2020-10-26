@@ -28,7 +28,7 @@ body {
 /* Navigation section Inspired by Code and Create tutorial on youtube*/
 
 header {
-  height: 100vh;
+  height: 85vh;
 }
 .logo a {
   position: fixed;
@@ -92,7 +92,7 @@ header {
   transform: scale(150);
 }
 .navigation-list {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: fixed;
   display: flex;
@@ -127,7 +127,7 @@ header {
 /* Hero image section*/
 
 .hero-img {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -136,12 +136,21 @@ header {
   background-size: cover;
 }
 .right-gradient {
-  height: 100vh;
+  height: 85vh;
   width: 75vw;
   position: absolute;
   top: 0;
   left: 0;
   background: linear-gradient(to right, #111, transparent);
+}
+.bottom-gradient {
+  content: "";
+  height: 85vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #181822, transparent 25%);
 }
 .heading {
   position: absolute;
@@ -181,7 +190,7 @@ header {
 .social-media {
   position: absolute;
   right: 15%;
-  top: 50%;
+  top: 45%;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -212,15 +221,6 @@ header {
   bottom: 0;
   margin: auto;
 }
-.bottom-gradient {
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to top, #181822, transparent 20%);
-}
 .about-text {
   color: #fafafb;
   position: absolute;
@@ -239,8 +239,8 @@ header {
 }
 
 /* Destination Section */
-.destination-heading-section{
-    height:35vh;
+.destination-heading-section {
+  height: 35vh;
 }
 #destinations {
   height: 100vh;
@@ -256,10 +256,15 @@ header {
   height: 50vh;
 }
 
-
 /* Media Querys*/
 
 @media (min-width: 576px) {
+  header,
+  .hero-img,
+  .right-gradient,
+  .bottom-gradient {
+    height: 100vh;
+  }
   .logo a {
     top: 3em;
     left: 3em;
@@ -309,15 +314,15 @@ header {
     font-size: 2vw;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation:landscape){
-    .social-media-links i {
+@media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
+  .social-media-links i {
     font-size: 2em;
     margin-top: 1.5em;
   }
   .about-col {
     height: 100vh;
   }
-   .navigation-link {
+  .navigation-link {
     font-size: 2vw;
   }
 }
