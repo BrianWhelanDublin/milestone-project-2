@@ -1,6 +1,18 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
 
+/* Css for animating elements in*/
+.animation-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 3s ease;
+}
+.animation-active {
+    opacity:1;
+    transform:translateY(0px);
+}
+
+
 /* Set global size for easy rem calculation and add some reset style */
 
 * {
@@ -214,7 +226,7 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  text-align:left;
+  text-align: left;
 }
 .about-text h1 {
   font-size: 10vw;
@@ -262,7 +274,7 @@ header {
   }
   .social-media {
     top: 25%;
-    right:10%;
+    right: 10%;
   }
   .social-media-links i {
     font-size: 2.75em;
@@ -272,11 +284,11 @@ header {
     height: 50vh;
   }
   .about-text h1 {
-  font-size: 5vw;
-}
-.about-text p {
-  font-size: 2vw;
-}
+    font-size: 5vw;
+  }
+  .about-text p {
+    font-size: 2vw;
+  }
 }
 @media (min-width: 820px) {
   .logo a {
@@ -291,7 +303,7 @@ header {
     height: 100vh;
   }
   .social-media {
-    right:7.5%;
+    right: 7.5%;
   }
   .social-media-links i {
     font-size: 3em;
