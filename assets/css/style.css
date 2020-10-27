@@ -222,7 +222,6 @@ header {
   margin: auto;
 }
 .about-text {
-  color: #fafafb;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -240,20 +239,32 @@ header {
 
 /* Destination Section */
 .destination-heading-section {
-  height: 35vh;
+  height: 25vh;
 }
 #destinations {
   height: 100vh;
 }
 .destination-heading h1 {
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 9vw;
   text-align: center;
   padding: 0.5em 0;
 }
-.cities-row,
-.beaches-row {
+.city-destinations-title,
+.beach-destinations-title{
+  height: 25vh;
+}
+.city-destinations-slider,
+.beach-destinations-slider{
   height: 50vh;
+}
+.city-destinations-title h1,
+.beach-destinations-title h1 {
+ font-weight: 800;
+  font-size: 9vw;
+  text-align: center;
+  padding: 0.5em 0;
+  
 }
 
 /* Media Querys*/
@@ -313,6 +324,16 @@ header {
   .about-text p {
     font-size: 2vw;
   }
+  
+  .city-destinations-title,
+.beach-destinations-title{
+    height: 50vh;
+  }
+   .city-destinations-title h1,
+.beach-destinations-title h1,
+.destination-heading h1 {
+font-size:4vw;
+}
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
   .social-media-links i {
