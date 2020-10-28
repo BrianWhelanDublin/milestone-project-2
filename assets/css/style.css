@@ -143,7 +143,7 @@ header {
   left: 0;
   background: linear-gradient(to right, #111, transparent);
 }
-.bottom-gradient {
+.hero-img::before {
   content: "";
   height: 85vh;
   width: 100vw;
@@ -317,7 +317,46 @@ header {
   color: #181822;
   transition: all 0.3s ease-in-out;
 }
-
+/* Reviews section*/
+.reviews-row {
+  height: 100vh;
+}
+.reviews-image {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/reviews-img.jpg) no-repeat center center scroll;
+  background-size: cover;
+  z-index: 100;
+}
+.reviews-image::before,
+.reviews-image::after {
+  content: "";
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  z-index: 300;
+}
+.reviews-image::before {
+  bottom: 0;
+  background: linear-gradient(to top, #181822, transparent 75%);
+}
+.reviews-image::after {
+  top: 0;
+  background: linear-gradient(to bottom, #181822, transparent 75%);
+}
+.reviews-heading{
+    width: 100%;
+    position: absolute;
+  top: 5%;
+  text-align: center;
+  z-index: 500;
+font-size: 10vw;
+  font-weight: 800;
+}
 
 /* Media Querys*/
 
@@ -346,6 +385,9 @@ header {
   .navigation-link {
     font-size: 4vw;
   }
+  .hero-img::before {
+    height: 100vh;
+  }
   .heading {
     left: 10%;
   }
@@ -369,7 +411,8 @@ header {
   .about-col {
     height: 50vh;
   }
-  .about-text h1 {
+  .about-text h1,
+  .reviews-heading {
     font-size: 5vw;
   }
   .about-text p {
@@ -387,7 +430,6 @@ header {
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
-    
   .social-media-links i {
     font-size: 1.8rem;
     margin-top: 5rem;
@@ -399,12 +441,12 @@ header {
     font-size: 2vw;
   }
   .city-destinations-slider,
-.beach-destinations-slider{
-    height:100vh;
-}
-  .card{
-      height:32rem;
-      width:21rem;
+  .beach-destinations-slider {
+    height: 100vh;
+  }
+  .card {
+    height: 32rem;
+    width: 21rem;
   }
 }
 @media (min-width: 820px) {
@@ -416,14 +458,15 @@ header {
   .navigation-link {
     font-size: 2.5vw;
   }
-   .heading h1 {
-    font-size: 6vw;
+  .heading h1 {
+    font-size: 5vw;
   }
   .heading p {
-    font-size: 2vw;
+    font-size: 1.75vw;
+    font-weight: 300;
   }
-  .heading a{
-      width:50rem;
+  .heading a {
+    width: 50rem;
   }
   .about-col {
     height: 100vh;
@@ -438,7 +481,8 @@ header {
   .about-col {
     height: 100vh;
   }
-  .about-text h1 {
+  .about-text h1,
+  .reviews-heading {
     font-size: 5vw;
   }
   .about-text p {
