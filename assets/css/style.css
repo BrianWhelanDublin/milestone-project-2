@@ -238,6 +238,7 @@ header {
 }
 
 /* Destination Section */
+
 .destination-heading-section {
   height: 25vh;
 }
@@ -251,20 +252,70 @@ header {
   padding: 0.5em 0;
 }
 .city-destinations-title,
-.beach-destinations-title{
+.beach-destinations-title {
   height: 25vh;
 }
 .city-destinations-slider,
-.beach-destinations-slider{
+.beach-destinations-slider {
   height: 50vh;
 }
 .city-destinations-title h1,
 .beach-destinations-title h1 {
- font-weight: 800;
+  font-weight: 800;
   font-size: 9vw;
   text-align: center;
   padding: 0.5em 0;
-  
+}
+.card {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  border: solid 2px white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 300;
+  text-transform: uppercase;
+}
+.card-content:hover {
+  transform: translateY(-50px) scale(1.1);
+}
+.card-title {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #181822, transparent 40%);
+  z-index: 200;
+}
+.card-btn {
+  font-size: 1vw;
+  font-weight: 600;
+  border: #fafafb 2px solid;
+  text-decoration: none;
+  width: 10em;
+  text-align: center;
+  background-color: #fafafb;
+  color: #181822;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Media Querys*/
@@ -324,16 +375,16 @@ header {
   .about-text p {
     font-size: 2vw;
   }
-  
+
   .city-destinations-title,
-.beach-destinations-title{
+  .beach-destinations-title {
     height: 50vh;
   }
-   .city-destinations-title h1,
-.beach-destinations-title h1,
-.destination-heading h1 {
-font-size:4vw;
-}
+  .city-destinations-title h1,
+  .beach-destinations-title h1,
+  .destination-heading h1 {
+    font-size: 4vw;
+  }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
   .social-media-links i {
