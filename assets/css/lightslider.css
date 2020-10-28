@@ -194,14 +194,14 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('controls.png');
+    background-image: url("controls.png");
     cursor: pointer;
     position: absolute;
     z-index: 99;
     margin-top: -16px;
     opacity: 0.5;
-    -webkit-transition: opacity 0.35s linear 0s;
-    transition: opacity 0.35s linear 0s;
+    -webkit-transition: opacity 0.5s linear 0s;
+    transition: opacity 0.5s linear 0s;
 }
 
 .lSAction>a:hover {
@@ -215,7 +215,7 @@
 
 .lSAction>.lSNext {
     background-position: -32px 0;
-    right: 10px;
+    right: 30px;
 }
 
 .lSAction>a.disabled {
