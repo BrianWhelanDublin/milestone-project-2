@@ -350,7 +350,7 @@ header {
 }
 .reviews-heading {
   width: 100%;
-  margin:0 -15px;
+  margin: 0 -15px;
   position: absolute;
   top: 5%;
   text-align: center;
@@ -358,7 +358,73 @@ header {
   font-size: 10vw;
   font-weight: 800;
 }
-
+.reviews-container {
+  background-color: #fafafb;
+  opacity: 0.8;
+  height: 60vh;
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #181822;
+  z-index: 500;
+  color: #181822;
+}
+.reviewers-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left:3rem;
+}
+.reviewer {
+  display: flex;
+  padding: 3.5rem 0;
+}
+.reviewer-image {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.reviewer img {
+  width: 100%;
+  height: auto;
+}
+.reviewer h2 {
+  padding-left:2rem;
+}
+.reviews {
+  width: 65%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+.reviews h2{
+    font-size: 2vw;
+}
+.reviews i,
+.reviews p{
+    padding-top:2rem;
+    font-size: 1.25vw;
+}
+.hidden {
+  display: none;
+}
+.active{
+   box-shadow: 10px 10px 5px #181822;
+   
+}
 /* Media Querys*/
 
 @media (min-width: 576px) {
