@@ -382,11 +382,15 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left:3rem;
+  margin-left:4rem;
 }
 .reviewer {
   display: flex;
   padding: 3.5rem 0;
+  transition:all 1s ease-in-out;
+}
+.reviewer:hover{
+    transform: scale(1.1);
 }
 .reviewer-image {
   position: relative;
