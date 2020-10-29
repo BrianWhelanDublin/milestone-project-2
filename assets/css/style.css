@@ -32,24 +32,21 @@ header {
 }
 .logo a {
   position: fixed;
-  top: 3rem;
-  left: 3rem;
+  top: 2rem;
+  left:3rem;
   color: #fafafb;
-  font-size: 3vw;
+  font-size: 3.5vw;
   z-index: 500;
   text-decoration: none;
 }
 .hamburger {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background-color: transparent;
   position: fixed;
   top: 2rem;
   right: 2rem;
-  border: none;
-  border-radius: 50%;
   z-index: 500;
-  outline: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,24 +64,20 @@ header {
   transform: rotate(-40deg) translateY(-5px);
   background-color: #181822;
 }
-
 .change .line2 {
   opacity: 0;
 }
-
 .change .line3 {
   transform: rotate(40deg) translateY(5px);
   background-color: #181822;
 }
 .nav-background {
-  background-color: transparent;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 6rem;
+  height: 6rem;
   position: fixed;
   top: 2.2rem;
   right: 2.2rem;
   z-index: 200;
-  border-radius: 50%;
   transition: all 1s ease;
 }
 .change .nav-background {
@@ -99,7 +92,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  list-style: none;
   z-index: 300;
   opacity: 0;
   visibility: hidden;
@@ -114,7 +106,7 @@ header {
 }
 .navigation-link {
   font-weight: 600;
-  font-size: 5vw;
+  font-size: 4vw;
   letter-spacing: 0.4rem;
   text-decoration: none;
   color: #181822;
@@ -137,16 +129,16 @@ header {
 }
 .right-gradient {
   height: 85vh;
-  width: 75vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #111, transparent);
+  background: linear-gradient(to right, #111, transparent 25%);
 }
 .hero-img::before {
   content: "";
   height: 85vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -435,49 +427,29 @@ header {
   header,
   .hero-img,
   .right-gradient,
-  .bottom-gradient {
+  .bottom-gradient,
+  .hero-img::before  {
     height: 100vh;
   }
   .logo a {
-    top: 4rem;
-    left: 3.5rem;
-    font-size: 2vw;
-  }
-  .nav-background {
-    top: 3.2rem;
-    right: 3.2rem;
-  }
-  .hamburger {
-    width: 5.5rm;
-    height: 5.5rem;
-    top: 3rem;
-    right: 3rem;
-  }
-  .navigation-link {
-    font-size: 4vw;
-  }
-  .hero-img::before {
-    height: 100vh;
+    font-size: 3vw;
   }
   .heading {
     left: 10%;
   }
   .heading h1 {
-    font-size: 8vw;
-  }
-  .heading p {
-    font-size: 3vw;
+    font-size: 9vw;
   }
   .heading a {
-    font-size: 1.5vw;
+      width:12rem;
+    font-size: 2vw;
   }
   .social-media {
-    top: 30%;
+    top: 45%;
     right: 10%;
   }
   .social-media-links i {
-    font-size: 2.5rem;
-    margin-top: 4rem;
+      font-size:3rem;
   }
   .about-col {
     height: 50vh;
@@ -526,9 +498,7 @@ header {
 }
 @media (min-width: 820px) {
   .logo a {
-    top: 3rem;
-    left: 3rem;
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
   .navigation-link {
     font-size: 2.5vw;
@@ -547,6 +517,7 @@ header {
     height: 100vh;
   }
   .social-media {
+      top:30%;
     right: 7.5%;
   }
   .social-media-links i {
