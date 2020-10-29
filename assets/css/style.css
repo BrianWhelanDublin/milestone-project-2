@@ -354,9 +354,10 @@ header {
   position: absolute;
   top: 5%;
   text-align: center;
-  z-index: 500;
-  font-size: 10vw;
+  z-index: 100;
+  font-size: 8vw;
   font-weight: 800;
+  padding: 0 1rem;
 }
 .reviews-container {
   background-color: #fafafb;
@@ -371,31 +372,31 @@ header {
   margin: auto;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #181822;
-  z-index: 500;
+  z-index: 100;
   color: #181822;
 }
 .reviewers-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 100%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left:4rem;
+  top: 2rem;
+  margin-left: 4rem;
 }
 .reviewer {
   display: flex;
-  padding: 3.5rem 0;
-  transition:all 1s ease-in-out;
+  padding: 1.5rem 0;
+  transition: all 1s ease-in-out;
+  width:60vw;
 }
-.reviewer:hover{
-    transform: scale(1.1);
+.reviewer:hover {
+  transform: scale(1.1);
 }
 .reviewer-image {
   position: relative;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -404,30 +405,29 @@ header {
   height: auto;
 }
 .reviewer h2 {
-  padding-left:2rem;
+  padding-left: 1rem;
 }
 .reviews {
-  width: 65%;
+  width: 100%;
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  
+  height:auto;
+  bottom: 10%;
+  text-align: center;
+
 }
-.reviews h2{
-    font-size: 2vw;
+.reviews h2 {
+  font-size: 5vw;
 }
 .reviews i,
-.reviews p{
-    padding-top:2rem;
-    font-size: 1.25vw;
+.reviews p {
+  padding-top: 2rem;
+  font-size: 2.5vw;
 }
 .hidden {
   display: none;
 }
-.active{
-   box-shadow: 10px 10px 5px #181822;
-   
+.active {
+  box-shadow: 10px 10px 5px #181822;
 }
 /* Media Querys*/
 
@@ -499,6 +499,7 @@ header {
   .destination-heading h1 {
     font-size: 4vw;
   }
+ 
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
   .social-media-links i {
@@ -565,5 +566,8 @@ header {
   }
   #destinations {
     height: 125vh;
+  }
+   .reviews-heading{
+      font-size:10vw;
   }
 }
