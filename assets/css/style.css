@@ -1,17 +1,6 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
 
-/* Css for animating elements in*/
-.animation-element {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 2s ease-in-out;
-}
-.animation-active {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 /* Set global size for easy rem calculation and add some reset style */
 
 * {
@@ -25,17 +14,27 @@ body {
   background-color: #181822;
   color: #fafafb;
 }
+.row {
+  height: 100%;
+}
+/* Css for animating elements in*/
+.animation-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease-in-out;
+}
+.animation-active {
+  opacity: 1;
+  transform: translateY(0px);
+}
 /* Navigation section Inspired by Code and Create tutorial on youtube*/
 
-header {
-  height: 85vh;
-}
 .logo a {
   position: fixed;
   top: 2rem;
   left: 3rem;
   color: #fafafb;
-  font-size: 3.5vw;
+  font-size: 2vh;
   z-index: 500;
   text-decoration: none;
 }
@@ -117,9 +116,11 @@ header {
 }
 
 /* Hero image section*/
-
-.hero-img {
+.hero-container {
   height: 85vh;
+}
+.hero-img {
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -129,11 +130,11 @@ header {
 }
 .right-gradient {
   height: 85vh;
-  width: 100%;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #111, transparent 25%);
+  background: linear-gradient(to right, #111, transparent);
 }
 .hero-img::before {
   content: "";
@@ -149,7 +150,7 @@ header {
   top: 30%;
   left: 5%;
   border-left: #fafafb 2px solid;
-  padding: 0 0 3rem 4rem;
+  padding-left: 7.5%;
   display: flex;
   flex-direction: column;
 }
@@ -159,7 +160,7 @@ header {
   font-weight: 800;
 }
 .heading p {
-  margin-top: 4rem;
+  margin-top: 3%;
   color: #fafafb;
   font-size: 3vw;
 }
@@ -168,7 +169,7 @@ header {
   font-weight: 600;
   border: #fafafb 2px solid;
   text-decoration: none;
-  margin-top: 4rem;
+  margin-top: 7.5%;
   width: 10rem;
   text-align: center;
   background-color: #fafafb;
@@ -178,7 +179,7 @@ header {
 }
 .heading a:hover {
   background-color: grey;
-}
+} /*
 .social-media {
   position: absolute;
   right: 15%;
@@ -189,14 +190,14 @@ header {
 }
 
 .social-media-links i {
-  font-size: 2rem;
+  font-size: 3.5vw;
   color: #fafafb;
-  margin-top: 5rem;
+  margin-top: 5vh;
   transition: color 0.5s ease;
 }
 .social-media-links i:hover {
   color: grey;
-}
+}*/
 
 /* About Section */
 
@@ -224,32 +225,32 @@ header {
   font-weight: 800;
 }
 .about-text p {
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 300;
-  padding: 2rem;
+  padding: 4%;
 }
 
 /* Destination Section */
-
-.destination-heading-section {
-  height: 25vh;
-}
 #destinations {
-  height: 175vh;
+  height: 100vh;
+}
+.destination-heading-section {
+  height: 15vh;
 }
 .destination-heading h1 {
   font-weight: 800;
-  font-size: 9vw;
+  font-size: 10vw;
   text-align: center;
   padding: 0.5rem 0;
+  border-bottom:solid 2px #fafafb;
 }
 .city-destinations-title,
 .beach-destinations-title {
-  height: 25vh;
+  height: 15vh;
 }
 .city-destinations-slider,
 .beach-destinations-slider {
-  height: 50vh;
+  height: 25rem;
 }
 .city-destinations-title h1,
 .beach-destinations-title h1 {
@@ -259,8 +260,8 @@ header {
   padding: 0.5rem 0;
 }
 .card {
-  height: 36rem;
-  width: 25rem;
+  height: 22rem;
+  width: 16rem;
   position: relative;
   border: solid 2px white;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
@@ -272,7 +273,7 @@ header {
 }
 .card-content {
   position: absolute;
-  bottom: 20px;
+  bottom: 3rem;
   transition: all 0.5s ease-in-out;
   text-align: center;
   left: 0;
@@ -286,7 +287,7 @@ header {
 }
 .card-title {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 .gradient {
@@ -299,7 +300,7 @@ header {
   z-index: 200;
 }
 .card-btn {
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 600;
   border: #fafafb 2px solid;
   text-decoration: none;
@@ -374,15 +375,15 @@ header {
   width: 100%;
   position: absolute;
   bottom: 2rem;
-  margin-left: 4rem;
+  margin-left: 4.5rem;
 }
 .reviewer {
   display: flex;
   padding: 2rem 0;
   transition: all 1s ease-in-out;
   width: 60vw;
-  height:8vh;
-  border-radius:2rem;
+  height: 8vh;
+  border-radius: 2rem;
 }
 .reviewer:hover {
   transform: scale(1.1);
@@ -425,11 +426,10 @@ header {
 }
 /* Media Querys*/
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   header,
   .hero-img,
   .right-gradient,
-  .bottom-gradient,
   .hero-img::before {
     height: 100vh;
   }
@@ -437,7 +437,7 @@ header {
     font-size: 3vw;
   }
   .heading {
-    left: 10%;
+    left: 7.5%;
   }
   .heading h1 {
     font-size: 9vw;
@@ -446,13 +446,14 @@ header {
     width: 12rem;
     font-size: 2vw;
   }
+  /*
   .social-media {
     top: 45%;
     right: 10%;
   }
   .social-media-links i {
-    font-size: 3rem;
-  }
+    font-size: 4vw;
+  }*/
   .about-col {
     height: 50vh;
   }
@@ -475,11 +476,32 @@ header {
   .destination-heading h1 {
     font-size: 4vw;
   }
+  .reviewer h2 {
+    font-size: 3vw;
+  }
+  .reviewer-image {
+    height: 5rem;
+    width: 5rem;
+  }
+  .reviews h2 {
+    font-size: 5vw;
+  }
+  .reviews i,
+  .reviews p {
+    padding: 3rem 1rem 0rem 1rem;
+    font-size: 3.5vw;
+  }
 }
-@media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
-  .social-media-links i {
+@media only screen and (min-width: 600px) and (max-width: 1000px) and (orientation: landscape) {
+  /*.social-media-links i {
     font-size: 1.8rem;
     margin-top: 5rem;
+  }*/
+  .heading h1 {
+    font-size: 6vw;
+  }
+  .heading p {
+    font-size: 2vw;
   }
   .about-col {
     height: 100vh;
@@ -498,6 +520,43 @@ header {
     height: 32rem;
     width: 21rem;
   }
+  .reviewers-list {
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    margin-left: 1rem;
+  }
+  .reviewer {
+    padding: 3rem 0;
+
+    width: 100%;
+    height: 20vh;
+    margin-left: 2vw;
+  }
+
+  .reviewer-image {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .reviewer h2 {
+    padding-left: 1rem;
+    font-size: 2vw;
+  }
+  .reviews {
+    width: 60%;
+    position: absolute;
+    right: 0;
+  }
+  .reviews h2 {
+    font-size: 3vw;
+  }
+  .reviews i,
+  .reviews p {
+    padding: 3rem 1rem 0rem 1rem;
+    font-size: 2vw;
+  }
 }
 @media (min-width: 820px) {
   .logo a {
@@ -507,14 +566,14 @@ header {
     font-size: 2.5vw;
   }
   .heading h1 {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .heading p {
-    font-size: 1.75vw;
-    font-weight: 300;
+    font-size: 1.5vw;
   }
   .heading a {
-    width: 50rem;
+    width: 40rem;
+    font-size: 1.5vw;
   }
   .about-col {
     height: 100vh;
@@ -540,6 +599,29 @@ header {
   }
 
   .reviews-heading {
-    font-size: 10vw;
+    font-size: 5.5vw;
+  }
+  .reviews h2 {
+    font-size: 3vw;
+  }
+  .reviews i,
+  .reviews p {
+    padding: 3rem 1rem 0rem 1rem;
+    font-size: 2vw;
+  }
+  .reviewer {
+    padding: 2rem 0;
+
+    height: 6.5rem;
+    margin-left: 2vw;
+  }
+  .reviewer-image {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .reviewer h2 {
+    padding-left: 1rem;
+    font-size: 1vw;
   }
 }
