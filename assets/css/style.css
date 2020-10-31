@@ -694,10 +694,7 @@ body {
     height: 5rem;
     width: 5rem;
   }
-  .reviewer {
-    padding: 5% 0;
-    margin-left: 1%;
-  }
+ 
 }
 @media (min-width: 1200px) {
   .heading h1 {
