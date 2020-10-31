@@ -498,7 +498,7 @@ body {
     margin-left: 2.5%;
   }
   .reviewer {
-    padding: 15% 0;
+    padding: 3rem 0;
     margin-left: 1%;
   }
 
@@ -732,18 +732,18 @@ body {
 }
 @media (min-width: 1450px) {
     #destinations {
-  height: 135rem;
+  height: 130rem;
 }
 .destination-heading-section {
-  height: 25rem;
+  height: 30rem;
 }
 .cities-row,
 .beaches-row {
-  height: 55rem;
+  height: 50rem;
 }
 .card {
-  height: 34rem;
-  width: 23rem;
+  height: 36rem;
+  width: 24rem;
 }
   .reviews-container {
     height: 70%;
@@ -760,8 +760,5 @@ body {
   .reviewer h2 {
     padding-left: 1rem;
     font-size: 0.75vw;
-  }
-  #destinations {
-    height: 110rem;
   }
 }

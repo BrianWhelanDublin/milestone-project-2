@@ -98,18 +98,16 @@ $(document).ready(function () {
   getDestinationElement(cityDestinations, "cities-slider");
   $("#cities-slider").lightSlider({
     autoWidth: true,
-    item: 3,
     loop: true,
-    slideMove: 3,
+    slideMargin: 30,
     easing: "cubic-bezier(0.25, 0, 0.25, 1)",
     speed: 600,
   });
   getDestinationElement(beachDestinations, "beach-slider");
   $("#beach-slider").lightSlider({
     autoWidth: true,
-    item: 3,
     loop: true,
-    slideMove: 3,
+    slideMargin: 30,
     easing: "cubic-bezier(0.25, 0, 0.25, 1)",
     speed: 600,
   });
