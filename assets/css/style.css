@@ -317,7 +317,7 @@ body {
 /* Reviews section*/
 
 .reviews-row {
-  height: 80rem;
+  height: 85rem;
 }
 .reviews-image {
   height: 100%;
@@ -360,7 +360,7 @@ body {
 .reviews-container {
   background-color: #fafafb;
   opacity: 0.8;
-  height: 55rem;
+  height: 60rem;
   width: 80%;
   position: absolute;
   top: 0;
@@ -375,20 +375,20 @@ body {
 }
 .reviewers-list {
   list-style: none;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 40%;
-    position: absolute;
-    bottom: 2.5%;
-    margin-left: 10%;
-    }
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  bottom: 2.5%;
+  margin-left: 10%;
+}
 .reviewer {
   display: flex;
   padding: 4% 0;
   transition: all 1s ease-in-out;
   width: 100%;
-  
+
   border-radius: 2rem;
 }
 .reviewer:hover {
@@ -407,7 +407,7 @@ body {
 }
 .reviewer h2 {
   padding-left: 1rem;
-  font-size: 3vw;
+  font-size: 3.25vw;
 }
 .reviews {
   width: 100%;
@@ -422,7 +422,7 @@ body {
 .reviews i,
 .reviews p {
   padding: 2rem 1rem 0rem 1rem;
-  font-size: 3.5vw;
+  font-size: 3.75vw;
 }
 .hidden {
   display: none;
@@ -479,8 +479,8 @@ body {
   .about-text p {
     font-size: 2.5vw;
   }
-  #destinations{
-      height:90rem;
+  #destinations {
+    height: 90rem;
   }
 
   .city-destinations-title h1,
@@ -488,20 +488,44 @@ body {
   .destination-heading h1 {
     font-size: 4vw;
   }
-  .reviewer h2 {
-    font-size: 3vw;
+  .reviews-row {
+    height: 55rem;
   }
+  .reviews-container {
+    height: 35rem;
+  }
+  .reviewers-list {
+    width: 30%;
+
+    top: 25%;
+    margin-left: 2.5%;
+  }
+  .reviewer {
+    padding: 10% 0;
+    margin-left: 1%;
+  }
+
   .reviewer-image {
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .reviewer h2 {
+    font-size: 1.75vw;
+  }
+  .reviews {
+    width: 60%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .reviews h2 {
-    font-size: 5vw;
+    font-size: 3vw;
   }
   .reviews i,
   .reviews p {
     padding: 3rem 1rem 0rem 1rem;
-    font-size: 3.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
@@ -523,7 +547,9 @@ body {
   }
   .navigation-link {
     font-size: 2vw;
-  } /*
+  }
+
+  /*
   #destinations {
     height: 250vh;
   }
@@ -534,7 +560,8 @@ body {
   .card {
     height: 32rem;
     width: 21rem;
-  }*//*
+  }*/
+  /*
   .reviews-row {
     height: 40rem;
   }
@@ -585,47 +612,7 @@ body {
   }
   .heading h1 {
     font-size: 8vw;
-  } 
-  .reviews-row {
-    height: 40rem;
-  }
-  .reviews-container {
-    height: 60%;
-  }
-  .reviewers-list {
-    width: 30%;
-    top: 5%;
-    left: 0;
-    margin-left: 1rem;
-  }
-  .reviewer {
-    padding: 3rem 0;
-
-    width: 100%;
-    height: 20%;
-    margin-left: 2vw;
-  }
-
-  .reviewer-image {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .reviewer h2 {
-    font-size: 1.75vw;
-  }
-  .reviews {
-    width: 60%;
-    right: 0;
-  }
-  .reviews h2 {
-    font-size: 3vw;
-  }
-  .reviews i,
-  .reviews p {
-    padding: 3rem 1rem 0rem 1rem;
-    font-size: 2vw;
-  }/*
+  } /*
   .heading p {
     font-size: 1.5vw;
   }*/
@@ -646,6 +633,8 @@ body {
     font-size: 1.75vw;
   }
 
+}
+/*
   .reviews-heading {
     font-size: 5.5vw;
   }
@@ -672,11 +661,25 @@ body {
     padding-left: 1rem;
     font-size: 1vw;
   }
-}
+  */
+
 @media (min-width: 992px) {
   .heading a {
     width: 40rem;
     font-size: 2vw;
+  }
+     .reviews-row {
+    height: 90rem;
+  }
+  .reviews-container {
+    height: 60%;
+  }  .reviewer-image {
+    height: 5rem;
+    width: 5rem;
+  }
+  .reviewer {
+    padding: 5% 0;
+    margin-left: 1%;
   }
 }
 @media (min-width: 1200px) {
@@ -686,10 +689,11 @@ body {
   .heading p {
     font-size: 1.5vw;
   }
-  .heading a{
-      width: 30rem;
-      font-size: 1.25vw;
+  .heading a {
+    width: 30rem;
+    font-size: 1.25vw;
   }
+   
   .about-col {
     height: 50vh;
   }
@@ -699,5 +703,29 @@ body {
   }
   .about-text p {
     font-size: 1vw;
+  }
+    .reviewer-image {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+@media (min-width: 1450px){
+     .reviews-container {
+    height: 70%;
+  }
+ 
+  .reviews h2 {
+    font-size: 2.5vw;
+  }
+  .reviews i,
+  .reviews p {
+
+    font-size: 1.5vw;
+  }
+
+
+  .reviewer h2 {
+    padding-left: 1rem;
+    font-size: .75vw;
   }
 }
