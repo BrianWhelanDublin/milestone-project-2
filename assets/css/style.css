@@ -34,7 +34,7 @@ body {
   top: 2rem;
   left: 3rem;
   color: #fafafb;
-  font-size: 2vh;
+  font-size: 4vw;
   z-index: 500;
   text-decoration: none;
 }
@@ -43,7 +43,7 @@ body {
   height: 5.5rem;
   background-color: transparent;
   position: fixed;
-  top: 4%;
+  top: 2%;
   right: 4%;
   z-index: 500;
   display: flex;
@@ -116,8 +116,9 @@ body {
 }
 
 /* Hero image section*/
-.hero-container {
-  height: 85vh;
+.hero-container,
+.right-gradient {
+  height: 69rem;
 }
 .hero-img {
   height: 100%;
@@ -129,7 +130,6 @@ body {
   background-size: cover;
 }
 .right-gradient {
-  height: 85vh;
   width: 50%;
   position: absolute;
   top: 0;
@@ -138,7 +138,7 @@ body {
 }
 .hero-img::before {
   content: "";
-  height: 85vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -170,7 +170,7 @@ body {
   border: #fafafb 2px solid;
   text-decoration: none;
   margin-top: 7.5%;
-  width: 10rem;
+  width: 16rem;
   text-align: center;
   background-color: #fafafb;
   color: #181822;
@@ -202,11 +202,11 @@ body {
 /* About Section */
 
 .about-col {
-  height: 40vh;
+  height: 40rem;
 }
 .about-img {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 90%;
+  max-width: 90%;
   position: absolute;
   top: 0;
   left: 0;
@@ -315,7 +315,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 /* Reviews section*/
-#reviews,
+
 .reviews-row {
   height: 80rem;
 }
@@ -353,14 +353,14 @@ body {
   top: 3%;
   text-align: center;
   z-index: 100;
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 800;
   padding: 0 1rem;
 }
 .reviews-container {
   background-color: #fafafb;
   opacity: 0.8;
-  height: 70%;
+  height: 55rem;
   width: 80%;
   position: absolute;
   top: 0;
@@ -375,19 +375,20 @@ body {
 }
 .reviewers-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: absolute;
-  bottom: 2rem;
-  margin-left: 4.5rem;
-}
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    bottom: 2.5%;
+    margin-left: 10%;
+    }
 .reviewer {
   display: flex;
-  padding: 2rem 0;
+  padding: 4% 0;
   transition: all 1s ease-in-out;
-  width: 60%;
-  height: 8%;
+  width: 100%;
+  
   border-radius: 2rem;
 }
 .reviewer:hover {
@@ -406,7 +407,7 @@ body {
 }
 .reviewer h2 {
   padding-left: 1rem;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 .reviews {
   width: 100%;
@@ -416,12 +417,12 @@ body {
   text-align: center;
 }
 .reviews h2 {
-  font-size: 7vw;
+  font-size: 5.5vw;
 }
 .reviews i,
 .reviews p {
   padding: 2rem 1rem 0rem 1rem;
-  font-size: 5vw;
+  font-size: 3.5vw;
 }
 .hidden {
   display: none;
@@ -431,7 +432,7 @@ body {
 }
 /* Media Querys*/
 
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   header,
   .hero-img,
   .right-gradient,
@@ -448,8 +449,13 @@ body {
     font-size: 9vw;
   }
   .heading a {
-    width: 12rem;
-    font-size: 2vw;
+    font-size: 2.5vw;
+  }
+  .heading p {
+    font-size: 2.5vw;
+  }
+  .about-col {
+    height: 40vh;
   }
   /*
   .social-media {
@@ -459,17 +465,24 @@ body {
   .social-media-links i {
     font-size: 4vw;
   }*/
+  /*
   .about-col {
-    height: 50vh;
-  }
+    height: ;
+  }*/
   .about-text h1,
   .reviews-heading {
     font-size: 5vw;
   }
-  .about-text p {
-    font-size: 2vw;
+  .about-text h1 {
+    margin-left: 3%;
   }
- 
+  .about-text p {
+    font-size: 2.5vw;
+  }
+  #destinations{
+      height:90rem;
+  }
+
   .city-destinations-title h1,
   .beach-destinations-title h1,
   .destination-heading h1 {
@@ -491,23 +504,26 @@ body {
     font-size: 3.5vw;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
   /*.social-media-links i {
     font-size: 1.8rem;
     margin-top: 5rem;
   }*/
+  .heading {
+    top: 15%;
+  }
   .heading h1 {
     font-size: 6vw;
   }
   .heading p {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .about-col {
     height: 100vh;
   }
   .navigation-link {
     font-size: 2vw;
-  }
+  } /*
   #destinations {
     height: 250vh;
   }
@@ -518,10 +534,15 @@ body {
   .card {
     height: 32rem;
     width: 21rem;
+  }*//*
+  .reviews-row {
+    height: 40rem;
+  }
+  .reviews-container {
+    height: 60%;
   }
   .reviewers-list {
     width: 30%;
-    position: absolute;
     top: 5%;
     left: 0;
     margin-left: 1rem;
@@ -530,7 +551,7 @@ body {
     padding: 3rem 0;
 
     width: 100%;
-    height: 20vh;
+    height: 20%;
     margin-left: 2vw;
   }
 
@@ -540,12 +561,10 @@ body {
   }
 
   .reviewer h2 {
-    padding-left: 1rem;
-    font-size: 2vw;
+    font-size: 1.75vw;
   }
   .reviews {
     width: 60%;
-    position: absolute;
     right: 0;
   }
   .reviews h2 {
@@ -555,9 +574,9 @@ body {
   .reviews p {
     padding: 3rem 1rem 0rem 1rem;
     font-size: 2vw;
-  }
+  }*/
 }
-@media (min-width: 820px) {
+@media (min-width: 768px) {
   .logo a {
     font-size: 1.5vw;
   }
@@ -566,17 +585,55 @@ body {
   }
   .heading h1 {
     font-size: 8vw;
+  } 
+  .reviews-row {
+    height: 40rem;
   }
+  .reviews-container {
+    height: 60%;
+  }
+  .reviewers-list {
+    width: 30%;
+    top: 5%;
+    left: 0;
+    margin-left: 1rem;
+  }
+  .reviewer {
+    padding: 3rem 0;
+
+    width: 100%;
+    height: 20%;
+    margin-left: 2vw;
+  }
+
+  .reviewer-image {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .reviewer h2 {
+    font-size: 1.75vw;
+  }
+  .reviews {
+    width: 60%;
+    right: 0;
+  }
+  .reviews h2 {
+    font-size: 3vw;
+  }
+  .reviews i,
+  .reviews p {
+    padding: 3rem 1rem 0rem 1rem;
+    font-size: 2vw;
+  }/*
   .heading p {
     font-size: 1.5vw;
-  }
+  }*/
+  /*
   .heading a {
     width: 40rem;
-    font-size: 1.5vw;
-  }
-  .about-col {
-    height: 100vh;
-  }
+    font-size: 2vw;
+  }/
   .social-media {
     top: 30%;
     right: 7.5%;
@@ -584,17 +641,9 @@ body {
   .social-media-links i {
     font-size: 2.5rem;
     margin-top: 10rem;
-  }
-  .about-col {
-    height: 100vh;
-  }
-  .about-text h1,
-  .reviews-heading {
-    font-size: 5vw;
-  }
+  }*/
   .about-text p {
-    font-size: 1vw;
-    padding: 2rem 3rem 0 1rem;
+    font-size: 1.75vw;
   }
 
   .reviews-heading {
@@ -621,6 +670,34 @@ body {
 
   .reviewer h2 {
     padding-left: 1rem;
+    font-size: 1vw;
+  }
+}
+@media (min-width: 992px) {
+  .heading a {
+    width: 40rem;
+    font-size: 2vw;
+  }
+}
+@media (min-width: 1200px) {
+  .heading h1 {
+    font-size: 5.5vw;
+  }
+  .heading p {
+    font-size: 1.5vw;
+  }
+  .heading a{
+      width: 30rem;
+      font-size: 1.25vw;
+  }
+  .about-col {
+    height: 50vh;
+  }
+  .about-text h1,
+  .reviews-heading {
+    font-size: 3vw;
+  }
+  .about-text p {
     font-size: 1vw;
   }
 }
