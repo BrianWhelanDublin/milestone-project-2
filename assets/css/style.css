@@ -232,7 +232,7 @@ body {
 
 /* Destination Section */
 #destinations {
-  height: 100rem;
+  height: 95rem;
 }
 .destination-heading-section {
   height: 10rem;
@@ -241,12 +241,12 @@ body {
   font-weight: 800;
   font-size: 10.5vw;
   text-align: center;
-  padding: 0.5rem 0;
+  padding-top: 5%;
   border-bottom: solid 2px #fafafb;
 }
 .cities-row,
 .beaches-row {
-  height: 40rem;
+  height: 45rem;
 }
 .city-destinations-title,
 .beach-destinations-title {
@@ -479,9 +479,6 @@ body {
   .about-text p {
     font-size: 2.5vw;
   }
-  #destinations {
-    height: 90rem;
-  }
 
   .city-destinations-title h1,
   .beach-destinations-title h1,
@@ -603,7 +600,7 @@ body {
     font-size: 2vw;
   }*/
 }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .logo a {
     font-size: 1.5vw;
   }
@@ -632,7 +629,6 @@ body {
   .about-text p {
     font-size: 1.75vw;
   }
-
 }
 /*
   .reviews-heading {
@@ -662,18 +658,43 @@ body {
     font-size: 1vw;
   }
   */
+#destinations {
+  height: 95rem;
+}
+.destination-heading-section {
+  height: 15rem;
+}
+.cities-row,
+.beaches-row {
+  height: 40rem;
+}
+.card {
+  height: 28rem;
+  width: 20rem;
+}
 
 @media (min-width: 992px) {
   .heading a {
     width: 40rem;
     font-size: 2vw;
   }
-     .reviews-row {
+  #destinations {
+    height: 100rem;
+  }
+  .destination-heading-section {
+    height: 20rem;
+  }
+
+  .reviews-row {
     height: 90rem;
   }
   .reviews-container {
     height: 60%;
-  }  .reviewer-image {
+  }
+  .reviewers-list {
+    top: 25%;
+  }
+  .reviewer-image {
     height: 5rem;
     width: 5rem;
   }
@@ -693,7 +714,7 @@ body {
     width: 30rem;
     font-size: 1.25vw;
   }
-   
+
   .about-col {
     height: 50vh;
   }
@@ -704,28 +725,43 @@ body {
   .about-text p {
     font-size: 1vw;
   }
-    .reviewer-image {
+  .reviewer-image {
     height: 7rem;
     width: 7rem;
   }
 }
-@media (min-width: 1450px){
-     .reviews-container {
+@media (min-width: 1450px) {
+    #destinations {
+  height: 135rem;
+}
+.destination-heading-section {
+  height: 25rem;
+}
+.cities-row,
+.beaches-row {
+  height: 55rem;
+}
+.card {
+  height: 34rem;
+  width: 23rem;
+}
+  .reviews-container {
     height: 70%;
   }
- 
+
   .reviews h2 {
     font-size: 2.5vw;
   }
   .reviews i,
   .reviews p {
-
     font-size: 1.5vw;
   }
 
-
   .reviewer h2 {
     padding-left: 1rem;
-    font-size: .75vw;
+    font-size: 0.75vw;
+  }
+  #destinations {
+    height: 110rem;
   }
 }
