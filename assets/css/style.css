@@ -43,8 +43,8 @@ body {
   height: 5.5rem;
   background-color: transparent;
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 4%;
+  right: 4%;
   z-index: 500;
   display: flex;
   flex-direction: column;
@@ -143,7 +143,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, #181822, transparent 25%);
+  background: linear-gradient(to top, #181822, transparent 35%);
 }
 .heading {
   position: absolute;
@@ -155,17 +155,17 @@ body {
   flex-direction: column;
 }
 .heading h1 {
-  font-size: 10vw;
+  font-size: 10.5vw;
   color: #fafafb;
   font-weight: 800;
 }
 .heading p {
   margin-top: 3%;
   color: #fafafb;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .heading a {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 600;
   border: #fafafb 2px solid;
   text-decoration: none;
@@ -221,36 +221,40 @@ body {
   text-align: left;
 }
 .about-text h1 {
-  font-size: 10vw;
+  font-size: 10.5vw;
   font-weight: 800;
 }
 .about-text p {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 300;
   padding: 4%;
 }
 
 /* Destination Section */
 #destinations {
-  height: 100vh;
+  height: 100rem;
 }
 .destination-heading-section {
-  height: 15vh;
+  height: 10rem;
 }
 .destination-heading h1 {
   font-weight: 800;
-  font-size: 10vw;
+  font-size: 10.5vw;
   text-align: center;
   padding: 0.5rem 0;
-  border-bottom:solid 2px #fafafb;
+  border-bottom: solid 2px #fafafb;
+}
+.cities-row,
+.beaches-row {
+  height: 40rem;
 }
 .city-destinations-title,
 .beach-destinations-title {
-  height: 15vh;
+  height: 10rem;
 }
 .city-destinations-slider,
 .beach-destinations-slider {
-  height: 25rem;
+  height: 35rem;
 }
 .city-destinations-title h1,
 .beach-destinations-title h1 {
@@ -260,8 +264,8 @@ body {
   padding: 0.5rem 0;
 }
 .card {
-  height: 22rem;
-  width: 16rem;
+  height: 25rem;
+  width: 18rem;
   position: relative;
   border: solid 2px white;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
@@ -287,7 +291,7 @@ body {
 }
 .card-title {
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 .gradient {
@@ -311,11 +315,12 @@ body {
   transition: all 0.3s ease-in-out;
 }
 /* Reviews section*/
+#reviews,
 .reviews-row {
-  height: 100vh;
+  height: 80rem;
 }
 .reviews-image {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -327,8 +332,8 @@ body {
 .reviews-image::before,
 .reviews-image::after {
   content: "";
-  height: 50vh;
-  width: 100vw;
+  height: 50%;
+  width: 100%;
   position: absolute;
   left: 0;
   z-index: 300;
@@ -355,8 +360,8 @@ body {
 .reviews-container {
   background-color: #fafafb;
   opacity: 0.8;
-  height: 70vh;
-  width: 80vw;
+  height: 70%;
+  width: 80%;
   position: absolute;
   top: 0;
   right: 0;
@@ -381,8 +386,8 @@ body {
   display: flex;
   padding: 2rem 0;
   transition: all 1s ease-in-out;
-  width: 60vw;
-  height: 8vh;
+  width: 60%;
+  height: 8%;
   border-radius: 2rem;
 }
 .reviewer:hover {
@@ -464,13 +469,7 @@ body {
   .about-text p {
     font-size: 2vw;
   }
-  #destinations {
-    height: 125vh;
-  }
-  .city-destinations-title,
-  .beach-destinations-title {
-    height: 50vh;
-  }
+ 
   .city-destinations-title h1,
   .beach-destinations-title h1,
   .destination-heading h1 {
