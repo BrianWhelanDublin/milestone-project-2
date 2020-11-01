@@ -77,7 +77,7 @@ const renderDestination = (destination, sliderName) => {
       <img src="${destination.image}" alt="" class="card-img">
         <div class="card-content">
           <h2 class="card-title">${destination.name}</h2>
-          <button class="card-btn">Find Out More</button>
+          <a href="#" class="card-btn">Find Out More</a>
         </div>
       <div class="gradient"></div>
     </li>

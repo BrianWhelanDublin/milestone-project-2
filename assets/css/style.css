@@ -1,14 +1,13 @@
 /* Google Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
 
 /* Set global size for easy rem calculation and add some reset style */
-
 * {
   font-size: 10px;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Mulish", sans-serif;
   background-color: #181822;
@@ -33,6 +32,9 @@ body {
   font-weight: 700;
   text-align: center;
 }
+.reviews-heading {
+  font-size: 9vw;
+}
 .hero-text,
 .about-text {
   font-size: 4vw;
@@ -55,9 +57,7 @@ body {
   background-color: grey;
   transform: scale(1.2);
 }
-
 /* Css for animating elements in*/
-
 .animation-element {
   opacity: 0;
   transform: translateY(50px);
@@ -68,7 +68,6 @@ body {
   transform: translateY(0px);
 }
 /* Navigation section Inspired by Code and Create tutorial on youtube*/
-
 .logo a {
   position: fixed;
   top: 4%;
@@ -153,7 +152,6 @@ body {
 .navigation-link:hover {
   color: grey;
 }
-
 /* Hero image section*/
 .hero-container,
 .right-gradient {
@@ -193,7 +191,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.heading p {
+.hero-text {
   margin-top: 3%;
   padding-right: 5%;
 }
@@ -202,9 +200,7 @@ body {
   font-weight: 600;
   width: 22rem;
 }
-
 /* About Section */
-
 .about-col {
   height: 40rem;
 }
@@ -226,31 +222,25 @@ body {
   padding: 0 2%;
 }
 .about-text {
-  padding-bottom: 10%;
+  padding-top: 10%;
 }
-
 /* Destination Section */
 #destinations {
-  height: 95rem;
+  height: 100rem;
 }
 .destination-heading-section {
-  height: 10rem;
+  height: 20rem;
 }
-.destination-heading h1 {
-  padding: 2.5% 0;
+.destination-heading {
+  padding: 3% 0;
   border-bottom: solid 2px #fafafb;
-}
-.cities-row,
-.beaches-row {
-  height: 45rem;
 }
 .destinations-subtitle {
   height: 10rem;
 }
 .destinations-slider {
-  height: 35rem;
+  height: 30rem;
 }
-
 .destination-card {
   height: 25rem;
   width: 18rem;
@@ -279,7 +269,7 @@ body {
 }
 .card-title {
   color: white;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 .gradient {
@@ -303,7 +293,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 /* Reviews section*/
-
 .reviews-row {
   height: 90rem;
 }
@@ -345,7 +334,7 @@ body {
 .reviews-container {
   background-color: #fafafb;
   opacity: 0.8;
-  height: 55rem;
+  height: 60rem;
   width: 80%;
   position: absolute;
   top: 0;
@@ -410,7 +399,6 @@ body {
   box-shadow: 10px 10px 5px #181822;
 }
 /* Media Querys*/
-
 @media (min-width: 576px) {
   header,
   .hero-img,
@@ -421,11 +409,8 @@ body {
   .heading {
     left: 7.5%;
   }
-  .text {
-    font-size: 2.5vw;
-  }
   .about-text {
-    font-size: 3vw;
+    font-size: 2.3vw;
   }
   .hero-link-btn {
     font-size: 2vw;
@@ -434,11 +419,11 @@ body {
   .about-col {
     height: 50vh;
   }
-  .section-heading {
-    font-size: 5vw;
-  }
   .subsection-heading {
-    font-size: 4vw;
+    font-size: 6vw;
+  }
+  .reviews-heading {
+    font-size: 5vw;
   }
   .reviews-row {
     height: 55rem;
@@ -473,6 +458,7 @@ body {
     font-size: 2vw;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
   .heading {
     top: 15%;
@@ -487,8 +473,8 @@ body {
     font-size: 1.5vw;
     width: 20rem;
   }
-  .text {
-    font-size: 1.5vw;
+  .about-text {
+    font-size: 2vw;
   }
   .about-col {
     height: 100vh;
@@ -497,30 +483,26 @@ body {
     font-size: 2vw;
   }
 }
-@media (min-width: 720px) {
-  /*.navigation-link {
-    font-size: 2.5vw;
-  }*/
-
-  /*
-  .about-text  {
-    font-size: 1.75vw;
-  }*/
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 6vw;
+  }
   #destinations {
-    height: 95rem;
+    height: 80rem;
   }
   .destination-heading-section {
-    height: 15rem;
+    height: 20rem;
   }
   .destination-row {
-    height: 40rem;
+    height: 30rem;
   }
-  .card {
-    height: 28rem;
-    width: 20rem;
+  .destinations-subtitle {
+    height: 30rem;
+  }
+  .subsection-heading {
+    font-size: 5vw;
   }
 }
-
 @media (min-width: 992px) {
   .main-title {
     font-size: 8vw;
@@ -539,9 +521,8 @@ body {
     font-size: 2vw;
     width: 27.5rem;
   }
-
-  .destination-heading-section {
-    height: 20rem;
+  .about-text {
+    font-size: 1.75vw;
   }
   .reviews-row {
     height: 90rem;
@@ -564,16 +545,11 @@ body {
   .hero-text {
     font-size: 2vw;
   }
-
   .about-col {
     height: 50vh;
   }
-  .section-heading,
-  .reviews-heading {
+  .section-heading {
     font-size: 3vw;
-  }
-  .about-text {
-    font-size: 1vw;
   }
   .reviewer-image {
     height: 7rem;
@@ -585,23 +561,32 @@ body {
     font-size: 1.5vw;
     width: 35rem;
   }
+  .about-text {
+    font-size: 1.5vw;
+  }
   #destinations {
     height: 130rem;
   }
   .destination-heading-section {
     height: 30rem;
   }
-  .cities-row,
-  .beaches-row {
+  .destination-row {
     height: 50rem;
   }
-  .card {
-    height: 36rem;
-    width: 24rem;
+  .destinations-subtitle,
+  .destinations-slider {
+    height: 50rem;
   }
-  .reviews-container {
-    height: 70%;
+  .destination-card {
+    height: 42rem;
+    width: 28rem;
   }
+  .subsection-heading {
+    font-size: 4vw;
+  }
+ .reviews-heading{
+     font-size: 5vw;
+ }
   .reviews h2 {
     font-size: 2.5vw;
   }
