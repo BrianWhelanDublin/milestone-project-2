@@ -17,6 +17,28 @@ body {
 .row {
   height: 100%;
 }
+/* Font sizes and weights*/
+.main-title {
+  font-size: 10.4vw;
+  font-weight: 800;
+}
+.section-heading {
+  font-size: 10vw;
+}
+.subsection-heading {
+  font-size: 9vw;
+}
+.section-heading,
+.subsection-heading {
+  font-weight: 700;
+  text-align: center;
+}
+.text,
+.about-text {
+  font-size: 4vw;
+  font-weight: 400;
+
+}
 /* Css for animating elements in*/
 .animation-element {
   opacity: 0;
@@ -154,13 +176,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-.heading h1 {
-  font-size: 10.5vw;
-  font-weight: 800;
-}
 .heading p {
   margin-top: 3%;
-  font-size: 3.5vw;
 }
 .heading a {
   font-size: 3.5vw;
@@ -193,19 +210,15 @@ body {
   bottom: 0;
   margin: auto;
 }
-.about-text {
+.about-text-container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  padding:0 2%;
+  padding: 0 2%;
 }
-.about-text h1 {
-  font-size: 10.5vw;
-  font-weight: 800;
-}
-.about-text p {
-  font-size: 4vw;
+.about-text{
+  padding-bottom: 10%;
 }
 
 /* Destination Section */
@@ -216,38 +229,27 @@ body {
   height: 10rem;
 }
 .destination-heading h1 {
-  font-weight: 800;
-  font-size: 10.5vw;
-  text-align: center;
-  padding-top: 5%;
+  padding: 2.5% 0;
   border-bottom: solid 2px #fafafb;
 }
 .cities-row,
 .beaches-row {
   height: 45rem;
 }
-.city-destinations-title,
-.beach-destinations-title {
+.destinations-subtitle {
   height: 10rem;
 }
-.city-destinations-slider,
-.beach-destinations-slider {
+.destinations-slider {
   height: 35rem;
 }
-.city-destinations-title h1,
-.beach-destinations-title h1 {
-  font-weight: 800;
-  font-size: 9vw;
-  text-align: center;
-  padding: 0.5rem 0;
-}
+
 .destination-card {
   height: 25rem;
   width: 18rem;
   position: relative;
   border: solid 2px white;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
 }
 .card-img {
   height: 100%;
@@ -295,7 +297,7 @@ body {
 /* Reviews section*/
 
 .reviews-row {
-  height: 85rem;
+  height: 90rem;
 }
 .reviews-image {
   height: 100%;
@@ -331,13 +333,11 @@ body {
   top: 3%;
   text-align: center;
   z-index: 100;
-  font-size: 7vw;
-  font-weight: 800;
 }
 .reviews-container {
   background-color: #fafafb;
   opacity: 0.8;
-  height: 60rem;
+  height: 55rem;
   width: 80%;
   position: absolute;
   top: 0;
@@ -357,11 +357,12 @@ body {
   position: absolute;
   bottom: 2.5%;
   margin-left: 10%;
+ 
 }
 .reviewer {
   display: flex;
   padding: 1.7rem 0;
-  transition: all 1s ease-in-out;
+  transition: all .2s ease-in-out;
   border-radius: 2rem;
 }
 .reviewer:hover {
@@ -416,25 +417,22 @@ body {
   .heading {
     left: 7.5%;
   }
-  .heading h1 {
+  .main-title {
     font-size: 9vw;
   }
-  .heading a,
-  .heading p,
-  .about-text p   {
+ .text {
     font-size: 2.5vw;
+  }
+  .about-text{
+      font-size: 3vw;
   }
   .about-col {
     height: 50vh;
   }
-  .about-text h1,
-  .reviews-heading {
+  .section-heading{
     font-size: 5vw;
   }
-
-  .city-destinations-title h1,
-  .beach-destinations-title h1,
-  .destination-heading h1 {
+  .subsection-heading {
     font-size: 4vw;
   }
   .reviews-row {
@@ -452,7 +450,7 @@ body {
     padding: 2.3rem 0;
     margin-left: 2%;
   }
-.reviewer h2 {
+  .reviewer h2 {
     font-size: 1.75vw;
   }
   .reviews {
@@ -474,10 +472,10 @@ body {
   .heading {
     top: 15%;
   }
-  .heading h1 {
+  .main-title {
     font-size: 6vw;
   }
-  .heading p {
+  .text{
     font-size: 1.5vw;
   }
   .about-col {
@@ -494,20 +492,19 @@ body {
   .navigation-link {
     font-size: 2.5vw;
   }
-  .heading h1 {
+  .main-title {
     font-size: 8vw;
-  }
-  .about-text p {
+  }/*
+  .about-text  {
     font-size: 1.75vw;
-  }
+  }*/
   #destinations {
     height: 95rem;
   }
   .destination-heading-section {
     height: 15rem;
   }
-  .cities-row,
-  .beaches-row {
+  .destination-row{
     height: 40rem;
   }
   .card {
@@ -521,7 +518,7 @@ body {
     width: 40rem;
     font-size: 2vw;
   }
- 
+
   .destination-heading-section {
     height: 20rem;
   }
@@ -540,10 +537,10 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .heading h1 {
+  .main-title {
     font-size: 5.5vw;
   }
-  .heading p {
+  .text {
     font-size: 1.5vw;
   }
   .heading a {
@@ -554,11 +551,11 @@ body {
   .about-col {
     height: 50vh;
   }
-  .about-text h1,
+  .section-heading,
   .reviews-heading {
     font-size: 3vw;
   }
-  .about-text p {
+  .about-text {
     font-size: 1vw;
   }
   .reviewer-image {
