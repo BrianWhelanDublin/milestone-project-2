@@ -73,7 +73,7 @@ let beachDestinations = [
 
 const renderDestination = (destination, sliderName) => {
   const markup = `
-    <li class="card">
+    <li class="destination-card">
       <img src="${destination.image}" alt="" class="card-img">
         <div class="card-content">
           <h2 class="card-title">${destination.name}</h2>
