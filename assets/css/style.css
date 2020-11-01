@@ -19,7 +19,7 @@ body {
 }
 /* Font sizes and weights*/
 .main-title {
-  font-size: 10.4vw;
+  font-size: 11vw;
   font-weight: 800;
 }
 .section-heading {
@@ -33,13 +33,31 @@ body {
   font-weight: 700;
   text-align: center;
 }
-.text,
+.hero-text,
 .about-text {
   font-size: 4vw;
   font-weight: 400;
-
 }
+/* Common Elements*/
+.link-btn {
+  border: #fafafb 2px solid;
+  text-decoration: none;
+  margin-top: 7.5%;
+  text-align: center;
+  background-color: #fafafb;
+  color: #181822;
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.link-btn:hover {
+  color: #fafafb;
+  text-decoration: none;
+  background-color: grey;
+  transform: scale(1.2);
+}
+
 /* Css for animating elements in*/
+
 .animation-element {
   opacity: 0;
   transform: translateY(50px);
@@ -53,12 +71,11 @@ body {
 
 .logo a {
   position: fixed;
-  top: 2rem;
-  left: 3rem;
+  top: 4%;
+  left: 5%;
   color: #fafafb;
-  font-size: 4vw;
+  font-size: 3.5vw;
   z-index: 500;
-  text-decoration: none;
 }
 .hamburger {
   width: 5.5rem;
@@ -107,7 +124,7 @@ body {
 }
 .navigation-list {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -163,7 +180,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: linear-gradient(to top, #181822, transparent 35%);
 }
@@ -178,23 +195,14 @@ body {
 }
 .heading p {
   margin-top: 3%;
+  padding-right: 5%;
 }
-.heading a {
-  font-size: 3.5vw;
+.hero-link-btn {
+  font-size: 4vw;
   font-weight: 600;
-  border: #fafafb 2px solid;
-  text-decoration: none;
-  margin-top: 7.5%;
-  width: 16rem;
-  text-align: center;
-  background-color: #fafafb;
-  color: #181822;
-  border-radius: 2rem;
-  transition: all 0.3s ease-in-out;
+  width: 22rem;
 }
-.heading a:hover {
-  background-color: grey;
-}
+
 /* About Section */
 
 .about-col {
@@ -217,7 +225,7 @@ body {
   text-align: center;
   padding: 0 2%;
 }
-.about-text{
+.about-text {
   padding-bottom: 10%;
 }
 
@@ -357,12 +365,11 @@ body {
   position: absolute;
   bottom: 2.5%;
   margin-left: 10%;
- 
 }
 .reviewer {
   display: flex;
   padding: 1.7rem 0;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-radius: 2rem;
 }
 .reviewer:hover {
@@ -411,25 +418,23 @@ body {
   .hero-img::before {
     height: 100vh;
   }
-  .logo a {
-    font-size: 3vw;
-  }
   .heading {
     left: 7.5%;
   }
-  .main-title {
-    font-size: 9vw;
-  }
- .text {
+  .text {
     font-size: 2.5vw;
   }
-  .about-text{
-      font-size: 3vw;
+  .about-text {
+    font-size: 3vw;
+  }
+  .hero-link-btn {
+    font-size: 2vw;
+    width: 25rem;
   }
   .about-col {
     height: 50vh;
   }
-  .section-heading{
+  .section-heading {
     font-size: 5vw;
   }
   .subsection-heading {
@@ -473,9 +478,16 @@ body {
     top: 15%;
   }
   .main-title {
-    font-size: 6vw;
+    font-size: 8vw;
   }
-  .text{
+  .hero-text {
+    font-size: 1.5vw;
+  }
+  .hero-link-btn {
+    font-size: 1.5vw;
+    width: 20rem;
+  }
+  .text {
     font-size: 1.5vw;
   }
   .about-col {
@@ -486,15 +498,11 @@ body {
   }
 }
 @media (min-width: 720px) {
-  .logo a {
-    font-size: 1.5vw;
-  }
-  .navigation-link {
+  /*.navigation-link {
     font-size: 2.5vw;
-  }
-  .main-title {
-    font-size: 8vw;
-  }/*
+  }*/
+
+  /*
   .about-text  {
     font-size: 1.75vw;
   }*/
@@ -504,7 +512,7 @@ body {
   .destination-heading-section {
     height: 15rem;
   }
-  .destination-row{
+  .destination-row {
     height: 40rem;
   }
   .card {
@@ -514,9 +522,22 @@ body {
 }
 
 @media (min-width: 992px) {
-  .heading a {
-    width: 40rem;
+  .main-title {
+    font-size: 8vw;
+  }
+  .hero-text {
+    font-size: 3vw;
+  }
+  .hero-link-btn {
+    font-size: 3vw;
+    width: 27.5rem;
+  }
+  .logo a {
     font-size: 2vw;
+  }
+  .hero-link-btn {
+    font-size: 2vw;
+    width: 27.5rem;
   }
 
   .destination-heading-section {
@@ -538,14 +559,10 @@ body {
 }
 @media (min-width: 1200px) {
   .main-title {
-    font-size: 5.5vw;
+    font-size: 7vw;
   }
-  .text {
-    font-size: 1.5vw;
-  }
-  .heading a {
-    width: 30rem;
-    font-size: 1.25vw;
+  .hero-text {
+    font-size: 2vw;
   }
 
   .about-col {
@@ -564,6 +581,10 @@ body {
   }
 }
 @media (min-width: 1450px) {
+  .hero-link-btn {
+    font-size: 1.5vw;
+    width: 35rem;
+  }
   #destinations {
     height: 130rem;
   }
