@@ -42,19 +42,16 @@
                   <a href="#about" class="navigation-link">2. About</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="#" class="navigation-link">3. City Destinations</a>
+                  <a href="#destinations" class="navigation-link">3. Destinations</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="#" class="navigation-link">4. Beach Destinations</a>
+                  <a href="#reviews" class="navigation-link">5. Reviews</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="#" class="navigation-link">5. Reviews</a>
+                  <a href="#packages" class="navigation-link">6. Packages</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="#" class="navigation-link">6. Packages</a>
-                </li>
-                <li class="navigation-item">
-                  <a href="#" class="navigation-link">7. Signup</a>
+                  <a href="#signup" class="navigation-link">7. Signup</a>
                 </li>
                 <li class="navigation-item">
                   <a href="#" class="navigation-link">8. Contact</a>
@@ -70,7 +67,7 @@
         <div class="container-fluid hero-container">
           <div class="row">
             <div class="col-12">
-              <div class="hero-img"></div>
+              <div class="hero-img background-image"></div>
               <div class="right-gradient"></div>
               <div class="heading">
                 <h1 class="main-title">Great Escapes</h1>
@@ -190,7 +187,7 @@
         <div class="container-fluid">
           <div class="row reviews-row">
             <div class="col-12">
-              <div class="reviews-image"></div>
+              <div class="reviews-background-image background-image"></div>
               <h1 class="reviews-heading animation-element">
                 What Our Customers are Saying
               </h1>
@@ -386,21 +383,31 @@
         <div class="container-fluid">
           <div class="row signup-row">
             <div class="col-12">
-              <div class="signup-container">
+              <div class="signup-background-image background-image"></div>
+              <div class="signup-container"> </div>
                 <!-- <img src="assets/images/signup.jpg" alt="image of travel items" class="signup-img">-->
-                <h1 class="section-heading signup-heading">Sign up for our Montly Newsletter</h1>
-                <form>
-                  <input
-                    type="text"
-                    name="email"
-                    id="emailaddress"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                  <button type="submit" class="booking-form-btn btn btn-outline-dark">Sign Up</button>
-                </form>
-              </div>
+                <div class="signup-text-container">
+                  <h1 class="section-heading signup-heading">
+                    Sign up for our Montly Newsletter
+                  </h1>
+                  <form >
+                    <input
+                      type="text"
+                      name="email"
+                      id="signup-email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      class="booking-form-btn signup-btn btn-outline-dark"
+                    >
+                      Sign Up
+                    </button>
+                  </form>
+                </div>
+             
             </div>
           </div>
         </div>
@@ -424,6 +431,6 @@
       defer
     ></script>
     <script type="text/javascript" src="assets/js/main.js" defer></script>
-    <script></script>
+    <script> </script>
   </body>
 </html>
