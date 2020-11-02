@@ -40,7 +40,8 @@ body {
   font-size: 4vw;
   font-weight: 400;
 }
-/* Common Elements*/
+/* Common Elements link buttons and cards */
+
 .link-btn {
   border: #fafafb 2px solid;
   text-decoration: none;
@@ -56,6 +57,61 @@ body {
   text-decoration: none;
   background-color: grey;
   transform: scale(1.2);
+}
+.destination-card,
+.package-card {
+  height: 25rem;
+  width: 18rem;
+  position: relative;
+  box-shadow: 1rem 1rem .5rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.card-content {
+  position: absolute;
+  bottom: 3rem;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  text-transform: uppercase;
+}
+.card-content:hover {
+  transform: translateY(-50px) scale(1.1);
+}
+.card-title {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: .2rem .2rem .1rem #181822;
+}
+.card-content p{ 
+    font-size: 1.4rem;
+    text-shadow: .2rem .2rem .1rem #181822;
+}
+.gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 200;
+}
+.card-btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: #fafafb 2px solid;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fafafb;
+  color: #181822;
+  transition: all 0.3s ease-in-out;
 }
 /* Css for animating elements in*/
 .animation-element {
@@ -240,57 +296,6 @@ body {
 }
 .destinations-slider {
   height: 30rem;
-}
-.destination-card {
-  height: 25rem;
-  width: 18rem;
-  position: relative;
-  border: solid 2px white;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
-}
-.card-img {
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-}
-.card-content {
-  position: absolute;
-  bottom: 3rem;
-  transition: all 0.5s ease-in-out;
-  text-align: center;
-  left: 0;
-  right: 0;
-  z-index: 300;
-  text-transform: uppercase;
-}
-.card-content:hover {
-  transform: translateY(-50px) scale(1.1);
-}
-.card-title {
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-}
-.gradient {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to top, #181822, transparent 40%);
-  z-index: 200;
-}
-.card-btn {
-  font-size: 1rem;
-  font-weight: 600;
-  border: #fafafb 2px solid;
-  text-decoration: none;
-  width: 10rem;
-  text-align: center;
-  background-color: #fafafb;
-  color: #181822;
-  transition: all 0.3s ease-in-out;
 }
 /* Reviews section*/
 .reviews-row {
@@ -577,9 +582,19 @@ body {
   .destinations-slider {
     height: 50rem;
   }
-  .destination-card {
-    height: 42rem;
-    width: 28rem;
+  .destination-card,
+  .package-card {
+    height: 40rem;
+    width: 29rem;
+  }
+  .card-title {
+  font-size: 4.75rem;
+  }
+  .card-content p{ 
+    font-size: 2rem;
+}
+  .card-btn {
+  font-size: 1.75rem;
   }
   .subsection-heading {
     font-size: 4vw;
