@@ -115,45 +115,45 @@ $(document).ready(function () {
 
 /* Code to change reviews when you click on a reviewers details */
 
-let reviewers = document.querySelectorAll(".reviewer");
-let review = document.querySelectorAll(".review");
+let customerList = document.querySelectorAll(".reviewer");
+let reviewList = document.querySelectorAll(".review");
 
 // Removes the reviews from view
 const clearReviews = () => {
-  review.forEach((el) => {
-    el.classList.add("hidden");
+  reviewList.forEach((review) => {
+    review.classList.add("hidden");
   });
 };
 // removes the actice class from the reviewers details
 const removeActiveClass = () => {
-  reviewers.forEach((el) => {
-    el.classList.remove("active");
+  customerList.forEach((customer) => {
+    customer.classList.remove("active");
   });
 };
 /* adds an event listener to each reviewer and then shows the review when its clicked and changes the active class */
-reviewers.forEach((e) => {
-  e.addEventListener("click", () => {
+customerList.forEach((customer) => {
+  customer.addEventListener("click", () => {
     clearReviews();
     removeActiveClass();
-    review.forEach((el) => {
+    reviewList.forEach((review) => {
       if (
-        e.classList.contains("reviewer-1") &&
-        el.classList.contains("review-1")
+        customer.classList.contains("reviewer-1") &&
+        review.classList.contains("review-1")
       ) {
-        el.classList.remove("hidden");
-        e.classList.add("active");
+        review.classList.remove("hidden");
+        customer.classList.add("active");
       } else if (
-        e.classList.contains("reviewer-2") &&
-        el.classList.contains("review-2")
+        customer.classList.contains("reviewer-2") &&
+        review.classList.contains("review-2")
       ) {
-        el.classList.remove("hidden");
-        e.classList.add("active");
+        review.classList.remove("hidden");
+        customer.classList.add("active");
       } else if (
-        e.classList.contains("reviewer-3") &&
-        el.classList.contains("review-3")
+        customer.classList.contains("reviewer-3") &&
+        review.classList.contains("review-3")
       ) {
-        el.classList.remove("hidden");
-        e.classList.add("active");
+        review.classList.remove("hidden");
+        customer.classList.add("active");
       }
     });
   });
