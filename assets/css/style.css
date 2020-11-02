@@ -63,7 +63,7 @@ body {
   height: 25rem;
   width: 18rem;
   position: relative;
-  box-shadow: 1rem 1rem .5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 .card-img {
   height: 100%;
@@ -73,25 +73,21 @@ body {
 .card-content {
   position: absolute;
   bottom: 3rem;
-  transition: all 0.5s ease-in-out;
   text-align: center;
   left: 0;
   right: 0;
   z-index: 300;
   text-transform: uppercase;
 }
-.card-content:hover {
-  transform: translateY(-50px) scale(1.1);
-}
 .card-title {
   font-size: 3rem;
   padding-bottom: 1.5rem;
   text-align: center;
-  text-shadow: .2rem .2rem .1rem #181822;
+  text-shadow: 0.2rem 0.2rem 0.1rem #181822;
 }
-.card-content p{ 
-    font-size: 1.4rem;
-    text-shadow: .2rem .2rem .1rem #181822;
+.card-content p {
+  font-size: 1.4rem;
+  text-shadow: 0.2rem 0.2rem 0.1rem #181822;
 }
 .gradient {
   position: absolute;
@@ -403,6 +399,29 @@ body {
 .active {
   box-shadow: 10px 10px 5px #181822;
 }
+/* Packages Section*/
+.packages-title {
+  height: 15rem;
+  border-bottom: solid 2px #fafafb;
+}
+.packages-col {
+  height: 30rem;
+}
+.package-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.packages-title h1 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* Media Querys*/
 @media (min-width: 576px) {
   header,
@@ -544,6 +563,9 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .navigation-link {
+    font-size: 3vw;
+  }
   .main-title {
     font-size: 7vw;
   }
@@ -588,20 +610,20 @@ body {
     width: 29rem;
   }
   .card-title {
-  font-size: 4.75rem;
+    font-size: 4.75rem;
   }
-  .card-content p{ 
+  .card-content p {
     font-size: 2rem;
-}
+  }
   .card-btn {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
   }
   .subsection-heading {
     font-size: 4vw;
   }
- .reviews-heading{
-     font-size: 5vw;
- }
+  .reviews-heading {
+    font-size: 5vw;
+  }
   .reviews h2 {
     font-size: 2.5vw;
   }
@@ -612,5 +634,11 @@ body {
   .reviewer h2 {
     padding-left: 1rem;
     font-size: 0.75vw;
+  }
+  .packages-title {
+    height: 30rem;
+  }
+  .packages-col {
+    height: 50rem;
   }
 }
