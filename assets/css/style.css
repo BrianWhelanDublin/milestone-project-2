@@ -297,7 +297,7 @@ body {
 .reviews-row {
   height: 90rem;
 }
-.reviews-image {
+.reviews-background-image {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -307,8 +307,8 @@ body {
   background-size: cover;
   z-index: 100;
 }
-.reviews-image::before,
-.reviews-image::after {
+.reviews-background-image::before,
+.reviews-background-image::after {
   content: "";
   height: 50%;
   width: 100%;
@@ -316,11 +316,11 @@ body {
   left: 0;
   z-index: 300;
 }
-.reviews-image::before {
+.reviews-background-image::before {
   bottom: 0;
   background: linear-gradient(to top, #181822, transparent 75%);
 }
-.reviews-image::after {
+.reviews-background-image::after {
   top: 0;
   background: linear-gradient(to bottom, #181822, transparent 75%);
 }
@@ -343,7 +343,7 @@ body {
   left: 0;
   bottom: 0;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 10px 10px 5px #181822;
   z-index: 100;
   color: #181822;
@@ -403,6 +403,7 @@ body {
 .packages-title {
   height: 15rem;
   border-bottom: solid 2px #fafafb;
+
 }
 .packages-col {
   height: 30rem;
@@ -416,11 +417,30 @@ body {
   margin: auto;
 }
 .packages-title h1 {
-  width: 100%;
-  text-align: center;
+  padding: 5% 0;
+}
+/* Packages Section*/
+.signup-row {
+  height: 80vh;
+}
+.signup-container {
+   background: url(../images/signup3.jpg) no-repeat center center scroll;
+  background-size: cover;
+  opacity: 0.6;
+  border-radius: 1rem;
+  height: 75%;
+  width: 80%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+   box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.signup-img{
+    height:20rem;
+    width:15rem;
 }
 /* Media Querys*/
 @media (min-width: 576px) {
