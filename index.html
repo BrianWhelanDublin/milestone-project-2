@@ -437,7 +437,8 @@
             <div class="col-md-6">
               <div class="contact-form-container center">
                 <h1>Contact Form</h1>
-                <form class="contact-form" onsubmit="return sendMail(this);" mathod="POST">
+
+                <form onsubmit="return sendMail(this);" method="POST" class="contact-form" >
                   <label for="name">Name</label>
                   <input
                     type="text"
@@ -459,6 +460,7 @@
                   />
                   <label for="message">Message</label>
                   <textarea
+                  name="message"
                     class="message-contact contact-input"
                     id="contact-message"
                     rows="3"
@@ -467,7 +469,6 @@
                   ></textarea>
                   <button
                     type="submit"
-                    id="contact-submit"
                     class="link contact-btn"
                   >
                     Book Now
