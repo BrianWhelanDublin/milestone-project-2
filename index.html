@@ -16,8 +16,20 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
+    <!--Lighslider css-->
     <link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />
+    <!--stylesheet css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--Email.js-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_sQZBqJUBHtlJBN9jnQ1l6");
+      })();
+    </script>
   </head>
 
   <body>
@@ -396,7 +408,13 @@
                     placeholder="Email"
                     required
                   />
-                  <button type="submit" id="signup-submit" class="link signup-btn">Sign Up</button>
+                  <button
+                    type="submit"
+                    id="signup-submit"
+                    class="link signup-btn"
+                  >
+                    Sign Up
+                  </button>
                 </form>
               </div>
             </div>
@@ -419,7 +437,7 @@
             <div class="col-md-6">
               <div class="contact-form-container center">
                 <h1>Contact Form</h1>
-                <form class="contact-form">
+                <form class="contact-form" onsubmit="return sendMail(this);" mathod="POST">
                   <label for="name">Name</label>
                   <input
                     type="text"
@@ -444,11 +462,16 @@
                     class="message-contact contact-input"
                     id="contact-message"
                     rows="3"
-                     placeholder="Message"
+                    placeholder="Message"
                     required
                   ></textarea>
-                  <button type="submit" id="contact-submit" class="link contact-btn">Book
-                                    Now</button>
+                  <button
+                    type="submit"
+                    id="contact-submit"
+                    class="link contact-btn"
+                  >
+                    Book Now
+                  </button>
                 </form>
               </div>
             </div>
@@ -477,6 +500,6 @@
     ></script>
     <script type="text/javascript" src="assets/js/email.js" defer></script>
     <script type="text/javascript" src="assets/js/main.js" defer></script>
-    <script> </script>
+    <script></script>
   </body>
 </html>
