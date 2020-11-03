@@ -62,13 +62,15 @@ body {
   color: #181822;
 }
 .destination-link,
-.signup-btn {
+.signup-btn,
+.contact-btn {
   font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: 800;
 }
 .destination-link:hover,
-.signup-btn:hover {
+.signup-btn:hover,
+.contact-btn:hover {
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
@@ -447,8 +449,35 @@ body {
   border-color: #181822;
 }
 /* -----------------------------Contact Section -----------------------------*/
-.contact-row{
-    height:40rem;
+.contact-row {
+  height: 80rem;
+}
+.contact-details {
+  position: absolute;
+  text-align: center;
+  height: 60%;
+}
+.contact-details h2,
+.contact-form-container h1 {
+  font-size: 7vw;
+  padding-bottom: 5%;
+}
+.contact-details p,
+.contact-form {
+  font-size: 4.5vw;
+}
+.contact-form-container {
+  position: absolute;
+  text-align: center;
+  height: 70%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-input {
+  width: 80%;
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
@@ -552,10 +581,22 @@ body {
     width: 60%;
   }
   .signup-row {
-  height: 40rem;
-}
-.signup-container {
-  height: 35rem;
+    height: 40rem;
+  }
+  .signup-container {
+    height: 35rem;
+  }
+  .contact-row {
+    height: 50rem;
+  }
+  .contact-details h2,
+  .contact-form-container h1 {
+    font-size: 4.5vw;
+  }
+  .contact-details p,
+  .contact-form {
+    font-size: 2.5vw;
+  }
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
@@ -654,7 +695,9 @@ body {
     font-size: 2.5vw;
   }
   .reviews i,
-  .reviews p {
+  .reviews p,
+  .contact-details p,
+  .contact-form {
     font-size: 1.5vw;
   }
   .reviewer h2 {
@@ -664,7 +707,21 @@ body {
   .packages-title {
     height: 30rem;
   }
+  .signup-row {
+    height: 75rem;
+  }
+  .signup-text-container {
+  padding-top: 30rem;
+}
+}
   .packages-col {
     height: 55rem;
+  }
+  .contact-row {
+    height: 40rem;
+  }
+  .contact-details h2,
+  .contact-form-container h1 {
+    font-size: 3vw;
   }
 }
