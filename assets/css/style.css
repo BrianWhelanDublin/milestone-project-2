@@ -16,8 +16,7 @@ body {
 .row {
   height: 100%;
 }
-/* Centering classes*/
-
+/*-------------------- Centering class -----------------*/
 .center {
   top: 0;
   right: 0;
@@ -25,7 +24,7 @@ body {
   left: 0;
   margin: auto;
 }
-/* Font sizes and weights*/
+/* ------------------ Font sizes and weights------------------*/
 .main-title {
   font-size: 11vw;
   font-weight: 800;
@@ -46,24 +45,35 @@ body {
   font-size: 4vw;
   font-weight: 400;
 }
-/* ----  Common Elements link buttons and cards ----- */
-
-.link-btn {
+/* ------------------------ Common Elements link and destination cards ----- */
+/*---- Links ----*/
+.link {
   border: #fafafb 2px solid;
   text-decoration: none;
-  margin-top: 7.5%;
   text-align: center;
   background-color: #fafafb;
   color: #181822;
-  border-radius: 3rem;
+  border-radius: 1rem;
   transition: all 0.3s ease-in-out;
 }
-.link-btn:hover {
-  color: #fafafb;
+.hero-link:hover{
   text-decoration: none;
-  background-color: grey;
   transform: scale(1.2);
+   color: #181822;
 }
+.destination-link,
+.signup-btn {
+  font-size: 1.5rem;
+  padding:.5rem;
+  font-weight: 800;
+}
+.destination-link:hover,
+.signup-btn:hover{
+  background-color: #181822;
+  color:#fafafb;
+  text-decoration: none;
+}
+/*---- Cards ----*/
 .destination-card,
 .package-card {
   height: 25rem;
@@ -78,7 +88,7 @@ body {
 }
 .card-content {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2.5rem;
   text-align: center;
   left: 0;
   right: 0;
@@ -87,7 +97,7 @@ body {
 }
 .card-title {
   font-size: 3rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3.75rem;
   text-align: center;
   text-shadow: 0.2rem 0.2rem 0.1rem #181822;
 }
@@ -105,18 +115,7 @@ body {
   opacity: 0.4;
   z-index: 200;
 }
-.card-btn,
-.signup-btn {
-  font-size: 1.5rem;
-  font-weight: 600;
-  border: #fafafb 2px solid;
-  text-decoration: none;
-  text-align: center;
-  background-color: #fafafb;
-  color: #181822;
-  transition: all 0.3s ease-in-out;
-}
-/* -------- Background images css ----------  */
+/* ------------------------------- Background images css -------------------  */
 .background-image {
   position: absolute;
   top: 0;
@@ -139,7 +138,7 @@ body {
   background: linear-gradient(to bottom, #181822, transparent 75%);
 }
 
-/* Css for animating elements in*/
+/*---------------------------------- Css for animating elements in------------*/
 .animation-element {
   opacity: 0;
   transform: translateY(50px);
@@ -149,7 +148,7 @@ body {
   opacity: 1;
   transform: translateY(0px);
 }
-/* Navigation section Inspired by Code and Create tutorial on youtube*/
+/* ------Navigation section Inspired by Code and Create tutorial on youtube---*/
 .logo a {
   position: fixed;
   top: 4%;
@@ -234,7 +233,7 @@ body {
 .navigation-link:hover {
   color: grey;
 }
-/* Hero image section*/
+/*----------------------------- Hero image section------------------*/
 .hero-container,
 .right-gradient {
   height: 69rem;
@@ -252,7 +251,6 @@ body {
   left: 0;
   background: linear-gradient(to right, #111, transparent);
 }
-
 .heading {
   position: absolute;
   top: 30%;
@@ -263,15 +261,14 @@ body {
   flex-direction: column;
 }
 .hero-text {
-  margin-top: 3%;
-  padding-right: 5%;
+  padding: 5% 0;
 }
-.hero-link-btn {
+.hero-link{
   font-size: 4vw;
   font-weight: 600;
   width: 22rem;
 }
-/* About Section */
+/* --------------------------About Section---------------------*/
 .about-col {
   height: 40rem;
 }
@@ -288,7 +285,7 @@ body {
 .about-text {
   padding-top: 2.5%;
 }
-/* Destination Section */
+/* ----------------------Destination Section------------------- */
 #destinations {
   height: 100rem;
 }
@@ -324,7 +321,7 @@ body {
   z-index: 100;
   font-size: 9vw;
 }
-/* Conatiners for reviews and signup images css   */
+/*--- Conatiners for reviews and signup images css --*/
 
 .reviews-container,
 .signup-container {
@@ -391,7 +388,7 @@ body {
 .active {
   box-shadow: 10px 10px 5px #181822;
 }
-/* Packages Section*/
+/* -------------------------------Packages Section---------------------*/
 .packages-title {
   height: 15rem;
   border-bottom: solid 2px #fafafb;
@@ -431,20 +428,20 @@ body {
   padding-top: 5rem;
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 #signup-email {
   width: 60%;
   height: 4rem;
   border: solid 2px;
-  border-color:rgba(223,225,229,0);
+  border-color: rgba(223, 225, 229, 0);
   border-radius: 1rem;
 }
 #signup-email:hover {
   border-color: #181822;
 }
 
-/* Media Querys*/
+/* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
   .hero-img,
@@ -458,7 +455,7 @@ align-items: center;
   .about-text {
     font-size: 2.3vw;
   }
-  .hero-link-btn {
+  .hero-link {
     font-size: 2vw;
     width: 25rem;
   }
@@ -501,7 +498,7 @@ align-items: center;
     font-size: 2vw;
   }
 }
-
+/* ----------------------------for phone portrait mode-----------------------*/
 @media only screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
   .heading {
     top: 15%;
@@ -512,7 +509,7 @@ align-items: center;
   .hero-text {
     font-size: 1.5vw;
   }
-  .hero-link-btn {
+  .hero-link {
     font-size: 1.5vw;
     width: 20rem;
   }
@@ -526,6 +523,7 @@ align-items: center;
     font-size: 2vw;
   }
 }
+/* -------------------------bootstrap col-md breakpoint-----------------------*/
 @media (min-width: 768px) {
   .section-heading {
     font-size: 5vw;
@@ -546,6 +544,7 @@ align-items: center;
     font-size: 5vw;
   }
 }
+/* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
   .main-title {
     font-size: 6.5vw;
@@ -556,7 +555,7 @@ align-items: center;
   .logo a {
     font-size: 2vw;
   }
-  .hero-link-btn {
+  .hero-link {
     font-size: 1.75vw;
     width: 27.5rem;
   }
@@ -577,6 +576,7 @@ align-items: center;
     width: 5rem;
   }
 }
+
 @media (min-width: 1200px) {
   header,
   .hero-img,
@@ -601,8 +601,15 @@ align-items: center;
     width: 7rem;
   }
 }
+/* ------------------larger desktops and laptop screens-----------------------*/
 @media (min-width: 1450px) {
-  .hero-link-btn {
+     header,
+  .hero-img,
+  .right-gradient,
+  .hero-img::before {
+    height: 95rem;
+  }
+  .hero-link {
     font-size: 1.5vw;
     width: 35rem;
   }
