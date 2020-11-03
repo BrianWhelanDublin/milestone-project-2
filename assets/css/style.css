@@ -16,6 +16,15 @@ body {
 .row {
   height: 100%;
 }
+/* Centering classes*/
+
+.center {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 /* Font sizes and weights*/
 .main-title {
   font-size: 11vw;
@@ -31,9 +40,6 @@ body {
 .subsection-heading {
   font-weight: 700;
   text-align: center;
-}
-.reviews-heading {
-  font-size: 9vw;
 }
 .hero-text,
 .about-text {
@@ -273,21 +279,14 @@ body {
   max-height: 90%;
   max-width: 90%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 .about-text-container {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
-  padding: 0 2%;
+  padding: 2% 4%;
 }
 .about-text {
-  padding-top: 10%;
+  padding-top: 2.5%;
 }
 /* Destination Section */
 #destinations {
@@ -306,7 +305,7 @@ body {
 .destinations-slider {
   height: 30rem;
 }
-/* Reviews section*/
+/* ------------------------------------Reviews section------------------------*/
 .reviews-row {
   height: 90rem;
 }
@@ -323,6 +322,7 @@ body {
   top: 3%;
   text-align: center;
   z-index: 100;
+  font-size: 9vw;
 }
 /* Conatiners for reviews and signup images css   */
 
@@ -330,11 +330,6 @@ body {
 .signup-container {
   background-color: #fafafb;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
   border-radius: 1rem;
   box-shadow: 10px 10px 5px #181822;
   z-index: 100;
@@ -406,18 +401,18 @@ body {
 }
 .package-card {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
 }
 .packages-title h1 {
   padding: 5% 0;
 }
-/* Packages Section*/
+/* -------------------------------Signup Section -----------------------------*/
 .signup-row {
-  height: 80vh;
+  height: 50rem;
+}
+.signup-container {
+  height: 40rem;
+  width: 75%;
+  opacity: 0.8;
 }
 .signup-background-image {
   height: 100%;
@@ -425,31 +420,28 @@ body {
   background: url(../images/signup2.jpg) no-repeat center center scroll;
   background-size: cover;
 }
-.signup-container {
-  height: 60%;
-  width: 75%;
-  opacity: 0.5;
-}
 .signup-text-container {
-  height: 50%;
-  width: 60%;
   color: #181822;
   position: absolute;
   z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  padding-top:5%;
+  width: 70%;
+  padding-top: 10rem;
 }
-.signup-heading{
-    padding:3% 0 5% 0;
-
+.signup-form {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+align-items: center;
 }
 #signup-email {
-  width: 100%;
+  width: 60%;
   height: 4rem;
+  border: solid 2px;
+  border-color:rgba(223,225,229,0);
+  border-radius: 1rem;
+}
+#signup-email:hover {
+  border-color: #181822;
 }
 
 /* Media Querys*/
@@ -586,7 +578,7 @@ body {
   }
 }
 @media (min-width: 1200px) {
-      header,
+  header,
   .hero-img,
   .right-gradient,
   .hero-img::before {
