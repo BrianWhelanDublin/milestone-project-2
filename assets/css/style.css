@@ -76,10 +76,16 @@ body {
 /*---- Cards ----*/
 .destination-card,
 .package-card {
-  height: 25rem;
-  width: 18rem;
   position: relative;
   box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.destination-card {
+  height: 25rem;
+  width: 18rem;
+}
+.package-card {
+  height: 28rem;
+  width: 21rem;
 }
 .card-img {
   height: 100%;
@@ -394,7 +400,7 @@ body {
   border-bottom: solid 2px #fafafb;
 }
 .packages-col {
-  height: 30rem;
+  height: 45rem;
 }
 .package-card {
   position: absolute;
@@ -425,13 +431,13 @@ body {
   padding-top: 10rem;
 }
 .signup-form {
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #signup-email {
-  width: 60%;
+  width: 80%;
   height: 4rem;
   border: solid 2px;
   border-color: rgba(223, 225, 229, 0);
@@ -440,7 +446,10 @@ body {
 #signup-email:hover {
   border-color: #181822;
 }
-
+/* -----------------------------Contact Section -----------------------------*/
+.contact-row{
+    height:40rem;
+}
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
@@ -539,6 +548,14 @@ body {
   .destinations-subtitle {
     height: 30rem;
   }
+  #signup-email {
+    width: 60%;
+  }
+  .signup-row {
+  height: 40rem;
+}
+.signup-container {
+  height: 35rem;
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
