@@ -56,21 +56,21 @@ body {
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
 }
-.hero-link:hover{
+.hero-link:hover {
   text-decoration: none;
   transform: scale(1.2);
-   color: #181822;
+  color: #181822;
 }
 .destination-link,
 .signup-btn {
   font-size: 1.5rem;
-  padding:.5rem;
+  padding: 0.5rem;
   font-weight: 800;
 }
 .destination-link:hover,
-.signup-btn:hover{
+.signup-btn:hover {
   background-color: #181822;
-  color:#fafafb;
+  color: #fafafb;
   text-decoration: none;
 }
 /*---- Cards ----*/
@@ -263,7 +263,7 @@ body {
 .hero-text {
   padding: 5% 0;
 }
-.hero-link{
+.hero-link {
   font-size: 4vw;
   font-weight: 600;
   width: 22rem;
@@ -525,7 +525,8 @@ body {
 }
 /* -------------------------bootstrap col-md breakpoint-----------------------*/
 @media (min-width: 768px) {
-  .section-heading {
+  .section-heading,
+  .subsection-heading {
     font-size: 5vw;
   }
   #destinations {
@@ -534,14 +535,9 @@ body {
   .destination-heading-section {
     height: 20rem;
   }
-  .destination-row {
-    height: 30rem;
-  }
+  .destination-row,
   .destinations-subtitle {
     height: 30rem;
-  }
-  .subsection-heading {
-    font-size: 5vw;
   }
 }
 /* -------------------------ipad and tablets-----------------------*/
@@ -549,16 +545,11 @@ body {
   .main-title {
     font-size: 6.5vw;
   }
-  .hero-text {
-    font-size: 2vw;
-  }
+  .hero-text,
   .logo a {
     font-size: 2vw;
   }
-  .hero-link {
-    font-size: 1.75vw;
-    width: 27.5rem;
-  }
+  .hero-link,
   .about-text {
     font-size: 1.75vw;
   }
@@ -584,7 +575,8 @@ body {
   .hero-img::before {
     height: 75rem;
   }
-  .navigation-link {
+  .navigation-link,
+  .section-heading {
     font-size: 3vw;
   }
   .main-title {
@@ -593,9 +585,7 @@ body {
   .hero-text {
     font-size: 2vw;
   }
-  .section-heading {
-    font-size: 3vw;
-  }
+
   .reviewer-image {
     height: 7rem;
     width: 7rem;
@@ -603,16 +593,13 @@ body {
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
 @media (min-width: 1450px) {
-     header,
+  header,
   .hero-img,
   .right-gradient,
   .hero-img::before {
     height: 95rem;
   }
-  .hero-link {
-    font-size: 1.5vw;
-    width: 35rem;
-  }
+  .hero-link,
   .about-text {
     font-size: 1.5vw;
   }
@@ -622,9 +609,7 @@ body {
   .destination-heading-section {
     height: 30rem;
   }
-  .destination-row {
-    height: 50rem;
-  }
+  .destination-row,
   .destinations-subtitle,
   .destinations-slider {
     height: 50rem;
@@ -637,12 +622,10 @@ body {
   .card-title {
     font-size: 4.75rem;
   }
+  .card-btn,
+  .signup-btn,
   .card-content p {
     font-size: 2rem;
-  }
-  .card-btn,
-  .signup-btn {
-    font-size: 1.75rem;
   }
   .subsection-heading {
     font-size: 4vw;
