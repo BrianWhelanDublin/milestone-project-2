@@ -83,39 +83,13 @@
               <div class="heading">
                 <h1 class="main-title">Great Escapes</h1>
                 <p class="hero-text">
-                  Experience one of excillerating top city breaks,<br />
-                  or escape and relax on whitesand beaches<br />
+                  Experience one of excillerating top city breaks,
+                  <br />
+                  or escape and relax on whitesand beaches <br />
                   on one of our tropical getaways.
                 </p>
                 <a href="#about" class="link hero-link">Find Out More</a>
               </div>
-              <!--
-        <ul class="social-media">
-          <li class="social-media-links">
-            <a href="https://www.instagram.com/" target="_blank"
-              ><i class="lab la-instagram" aria-hidden="true"></i>
-              <span class="sr-only">Instagram Link.</span></a
-            >
-          </li>
-          <li class="social-media-links">
-            <a href="https://www.facebook.com/" target="_blank"
-              ><i class="lab la-facebook-square" aria-hidden="true"></i>
-              <span class="sr-only">Facebook Link.</span></a
-            >
-          </li>
-          <li class="social-media-links">
-            <a href="https://www.twitter.com/" target="_blank"
-              ><i class="lab la-twitter-square" aria-hidden="true"></i>
-              <span class="sr-only">Twitter Link.</span></a
-            >
-          </li>
-          <li class="social-media-links">
-            <a href="https://www.tripadvisor.ie/" target="_blank"
-              ><i class="lab la-tripadvisor" aria-hidden="true"></i
-              ><span class="sr-only">Tripadvisor Link.</span></a
-            >
-          </li>
-        </ul>-->
             </div>
           </div>
         </div>
@@ -428,7 +402,7 @@
           <div class="row contact-row">
             <div class="col-md-6">
               <div class="contact-details center">
-                <h2>Contact us</h2>
+                <h2 class="contact-heading">Contact us</h2>
                 <p>Email: g-travel@email.com</p>
                 <p>Customer service: 01/5555555</p>
                 <p>Bookings : 01/222222</p>
@@ -436,41 +410,44 @@
             </div>
             <div class="col-md-6">
               <div class="contact-form-container center">
-                <h1>Contact Form</h1>
+                <h1 class="contact-heading">Contact Form</h1>
 
-                <form onsubmit="return sendMail(this);" method="POST" class="contact-form" >
-                  <label for="name">Name</label>
+                <form
+                  onsubmit="return sendMail(this);"
+                  method="POST"
+                  class="contact-form"
+                >
+                  <label for="contact-name" class="contact-label">Name</label>
                   <input
                     type="text"
                     name="name"
                     id="contact-name"
-                    class="name-contact contact-input"
+                    class="contact-input"
                     placeholder="First Name"
                     required
                   />
 
-                  <label for="email">Email</label>
+                  <label for="contact-email" class="contact-label">Email</label>
                   <input
                     type="text"
                     name="email"
+                    class="contact-input"
                     id="contact-email"
-                    class="email-contact contact-input"
                     placeholder="Email"
                     required
                   />
-                  <label for="message">Message</label>
+                  <label for="contact-message" class="contact-label"
+                    >Message</label
+                  >
                   <textarea
-                  name="message"
-                    class="message-contact contact-input"
+                    name="message"
                     id="contact-message"
+                    class="contact-input"
                     rows="3"
                     placeholder="Message"
                     required
                   ></textarea>
-                  <button
-                    type="submit"
-                    class="link contact-btn"
-                  >
+                  <button type="submit" class="link contact-btn">
                     Book Now
                   </button>
                 </form>
@@ -482,6 +459,40 @@
       <!-- end of contact section-->
     </main>
     <!-- footer section-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <ul class="social-media">
+              <li class="social-media-links">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="lab la-instagram" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram Link.</span></a
+                >
+              </li>
+              <li class="social-media-links">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="lab la-facebook-square" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook Link.</span></a
+                >
+              </li>
+              <li class="social-media-links">
+                <a href="https://www.twitter.com/" target="_blank">
+                  <i class="lab la-twitter-square" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter Link.</span></a
+                >
+              </li>
+              <li class="social-media-links">
+                <a href="https://www.tripadvisor.ie/" target="_blank">
+                  <i class="lab la-tripadvisor" aria-hidden="true"></i>
+                  <span class="sr-only">Tripadvisor Link.</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
