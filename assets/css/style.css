@@ -30,7 +30,7 @@ body {
   font-weight: 800;
 }
 .section-heading {
-  font-size: 10vw;
+  font-size: 9vw;
 }
 .subsection-heading {
   font-size: 9vw;
@@ -402,7 +402,6 @@ body {
 /* -------------------------------Packages Section---------------------*/
 .packages-title {
   height: 15rem;
-  border-bottom: solid 2px #fafafb;
 }
 .packages-col {
   height: 45rem;
