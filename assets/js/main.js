@@ -33,21 +33,66 @@ window.addEventListener("scroll", animationOnScroll);
 /* Destinations */
 
 let cityDestinations = [
-  { id: "c0", name: "berlin", image: "assets/images/cities/berlin.jpg" },
-  { id: "c1", name: "dubai", image: "assets/images/cities/dubai.jpg" },
-  { id: "c2", name: "kyoto", image: "assets/images/cities/kyoto.jpg" },
-  { id: "c3", name: "london", image: "assets/images/cities/london.jpg" },
-  { id: "c4", name: "madrid", image: "assets/images/cities/madrid.jpg" },
-  { id: "c5", name: "new york", image: "assets/images/cities/new-york.jpg" },
-  { id: "c6", name: "paris", image: "assets/images/cities/paris.jpg" },
+  {
+    id: "c0",
+    name: "dubai",
+    image: "assets/images/cities/dubai.jpg",
+    bgImage: "assets/images/cities/dubai-bg.jpg",
+  },
+  {
+    id: "c1",
+    name: "kyoto",
+    image: "assets/images/cities/kyoto.jpg",
+    bgImage: "assets/images/cities/kyoto-bg.jpg",
+  },
+  {
+    id: "c2",
+    name: "london",
+    image: "assets/images/cities/london.jpg",
+    bgImage: "assets/images/cities/london-bg.jpg",
+  },
+  {
+    id: "c3",
+    name: "madrid",
+    image: "assets/images/cities/madrid.jpg",
+    bgImage: "assets/images/cities/madrid-bg.jpg",
+  },
+  {
+    id: "c4",
+    name: "new york",
+    image: "assets/images/cities/new-york.jpg",
+    bgImage: "assets/images/cities/new-york-bg.jpg",
+  },
+  {
+    id: "c5",
+    name: "paris",
+    image: "assets/images/cities/paris.jpg",
+    bgImage: "assets/images/cities/paris-bg.jpg",
+  },
+  {
+    id: "c6",
+    name: "prague",
+    image: "assets/images/cities/prague.jpg",
+    bgImage: "assets/images/cities/prague-bg.jpg",
+  },
   {
     id: "c7",
-    name: "san francisco",
-    image: "assets/images/cities/san-francisco.jpg",
+    name: "rome",
+    image: "assets/images/cities/rome.jpg",
+    bgImage: "assets/images/cities/rome-bg.jpg",
   },
-  { id: "c8", name: "shanghai", image: "assets//images/cities/shanghai.jpg" },
-  { id: "c10", name: "singapore", image: "assets/images/cities/singapore.jpg" },
-  { id: "c11", name: "tokyo", image: "assets/images/cities/tokyo.jpg" },
+  {
+    id: "c8",
+    name: "singapore",
+    image: "assets/images/cities/singapore.jpg",
+    bgImage: "assets/images/cities/singapore-bg.jpg",
+  },
+  {
+    id: "c9",
+    name: "tokyo",
+    image: "assets/images/cities/tokyo.jpg",
+    bgImage: "assets/images/cities/tokyo-bg.jpg",
+  }
 ];
 let beachDestinations = [
   {
@@ -63,53 +108,53 @@ let beachDestinations = [
     bgImage: "assets/images/beaches/bali-bg.jpg",
   },
   {
-    id: "b3",
+    id: "b2",
     name: "capri",
     image: "assets/images/beaches/capri.jpg",
     bgImage: "assets/images/beaches/capri-bg.jpg",
   },
   {
-    id: "b4",
+    id: "b3",
     name: "fiji",
     image: "assets/images/beaches/fiji.jpg",
     bgImage: "assets/images/beaches/fiji-bg.jpg",
   },
   {
-    id: "b5",
-    name: "koh-phi-phi",
+    id: "b4",
+    name: "koh phi phi",
     image: "assets/images/beaches/koh-phi-phi.jpg",
     bgImage: "assets/images/beaches/koh-phi-phi-bg.jpg",
   },
   {
-    id: "b6",
+    id: "b5",
     name: "maldives",
     image: "assets/images/beaches/maldives.jpg",
     bgImage: "assets/images/beaches/maldives-bg.jpg",
   },
   {
-    id: "b7",
+    id: "b6",
     name: "seychelles",
     image: "assets/images/beaches/seychelles.jpg",
     bgImage: "assets/images/beaches/seychelles-bg.jpg",
   },
   {
-    id: "b8",
+    id: "b7",
     name: "philippines",
     image: "assets/images/beaches/philippines.jpg",
     bgImage: "assets/images/beaches/philippines-bg.jpg",
   },
   {
-    id: "b9",
+    id: "b8",
     name: "tulum",
     image: "assets/images/beaches/tulum.jpg",
     bgImage: "assets/images/beaches/tulum-bg.jpg",
   },
   {
-    id: "b10",
+    id: "b9",
     name: "santorini",
     image: "assets/images/beaches/santorini.jpg",
     bgImage: "assets/images/beaches/santorini-bg.jpg",
-  }
+  },
 ];
 
 /* Renders li elements from destinations array's */
