@@ -50,23 +50,66 @@ let cityDestinations = [
   { id: "c11", name: "tokyo", image: "assets/images/cities/tokyo.jpg" },
 ];
 let beachDestinations = [
-  { id: "b0", name: "bali", image: "assets/images/beaches/bali.jpg" },
-  { id: "b1", name: "barbados", image: "assets/images/beaches/barbados.jpg" },
-  { id: "b2", name: "cannes", image: "assets/images/beaches/cannes.jpg" },
-  { id: "b3", name: "capri", image: "assets/images/beaches/capri.jpg" },
+  {
+    id: "b0",
+    name: "antigua",
+    image: "assets/images/beaches/antigua.jpg",
+    bgImage: "assets/images/beaches/antigua-bg.jpg",
+  },
+  {
+    id: "b1",
+    name: "bali",
+    image: "assets/images/beaches/bali.jpg",
+    bgImage: "assets/images/beaches/bali-bg.jpg",
+  },
+  {
+    id: "b3",
+    name: "capri",
+    image: "assets/images/beaches/capri.jpg",
+    bgImage: "assets/images/beaches/capri-bg.jpg",
+  },
   {
     id: "b4",
-    name: "cinqu terre",
-    image: "assets/images/beaches/cinque-terre.jpg",
+    name: "fiji",
+    image: "assets/images/beaches/fiji.jpg",
+    bgImage: "assets/images/beaches/fiji-bg.jpg",
   },
   {
     id: "b5",
-    name: "koh phi phi",
+    name: "koh-phi-phi",
     image: "assets/images/beaches/koh-phi-phi.jpg",
+    bgImage: "assets/images/beaches/koh-phi-phi-bg.jpg",
   },
-  { id: "b6", name: "maldives", image: "assets/images/beaches/maldives.jpg" },
-  { id: "b7", name: "mauritius", image: "assets/images/beaches/mauritius.jpg" },
-  { id: "b8", name: "santorini", image: "assets/images/beaches/santorini.jpg" },
+  {
+    id: "b6",
+    name: "maldives",
+    image: "assets/images/beaches/maldives.jpg",
+    bgImage: "assets/images/beaches/maldives-bg.jpg",
+  },
+  {
+    id: "b7",
+    name: "seychelles",
+    image: "assets/images/beaches/seychelles.jpg",
+    bgImage: "assets/images/beaches/seychelles-bg.jpg",
+  },
+  {
+    id: "b8",
+    name: "philippines",
+    image: "assets/images/beaches/philippines.jpg",
+    bgImage: "assets/images/beaches/philippines-bg.jpg",
+  },
+  {
+    id: "b9",
+    name: "tulum",
+    image: "assets/images/beaches/tulum.jpg",
+    bgImage: "assets/images/beaches/tulum-bg.jpg",
+  },
+  {
+    id: "b10",
+    name: "santorini",
+    image: "assets/images/beaches/santorini.jpg",
+    bgImage: "assets/images/beaches/santorini-bg.jpg",
+  }
 ];
 
 /* Renders li elements from destinations array's */
