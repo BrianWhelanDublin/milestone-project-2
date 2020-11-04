@@ -1,3 +1,6 @@
+/*--code from css tricks to fix bug of transitions happining on page load using javaScript to remove the preload class from the body after the page has loaded*/
+window.onload = () => document.body.classList.remove("preload")
+
 /* Code to open and close the navigation menu*/
 
 let menu = document.querySelector(".hamburger");

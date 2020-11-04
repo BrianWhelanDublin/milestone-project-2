@@ -8,10 +8,17 @@
   margin: 0;
   padding: 0;
 }
-body {
+body  {
   font-family: "Mulish", sans-serif;
   background-color: #181822;
   color: #fafafb;
+}
+/*--Preload class code from css tricks to fix bug of transitions happining on page load*/
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 .row {
   height: 100%;
