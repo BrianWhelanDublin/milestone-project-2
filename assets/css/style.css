@@ -236,10 +236,13 @@ body {
   letter-spacing: 0.4rem;
   text-decoration: none;
   color: #181822;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .navigation-link:hover {
-  color: grey;
+  background-color: #181822;
+  color: #fafafb;
+  padding: .2rem .5rem;
+  border-radius:.5rem;
 }
 /*----------------------------- Hero image section------------------*/
 .hero-container,
@@ -448,6 +451,9 @@ body {
 #signup-email:hover {
   border-color: #181822;
 }
+.signup-btn {
+  margin-top: 1rem;
+}
 /* -----------------------------Contact Section -----------------------------*/
 .contact-row {
   height: 80rem;
@@ -457,15 +463,16 @@ body {
   text-align: center;
   height: 60%;
 }
-.contact-details h2,
-.contact-form-container h1 {
+.contact-heading {
   font-size: 7vw;
   padding-bottom: 5%;
 }
 .contact-details p,
-.contact-form {
+.contact-input {
   font-size: 4.5vw;
+  margin: 2rem 0;
 }
+
 .contact-form-container {
   position: absolute;
   text-align: center;
@@ -475,9 +482,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
-.contact-input {
-  width: 80%;
+/* -----------------------------Footer Section -----------------------------*/
+.footer-row {
+  height: 30rem;
+}
+.social-media {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  list-style: none;
+  height: 10rem;
+  width: 100%;
+  margin: 0 -15px;
+}
+.social-media li {
+  display: inline-block;
+  margin: 5%;
+}
+.social-media-links i {
+  font-size: 10vw;
+  color: #fafafb;
+  transition: all .5s ease-in-out;
+}
+.social-media-links i:hover {
+  background-color: #fafafb;
+  color: #181822;
+  padding: 0.2remx;
+  border-radius: 0.5rem;
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
@@ -589,13 +622,22 @@ body {
   .contact-row {
     height: 50rem;
   }
-  .contact-details h2,
-  .contact-form-container h1 {
-    font-size: 4.5vw;
+  .contact-heading {
+    font-size: 5vw;
   }
-  .contact-details p,
-  .contact-form {
-    font-size: 2.5vw;
+  .contact-details p {
+    font-size: 3.25vw;
+  }
+  .contact-input {
+    font-size: 3vw;
+    margin: 1.5rem 0;
+  }
+  .social-media {
+    bottom: 10%;
+    height: 10rem;
+  }
+  .social-media-links i {
+    font-size: 6vw;
   }
 }
 /* -------------------------ipad and tablets-----------------------*/
@@ -624,6 +666,16 @@ body {
     height: 5rem;
     width: 5rem;
   }
+  .contact-input {
+    font-size: 2.5vw;
+    margin: 1rem 0;
+  }
+   .social-media {
+    bottom: 15%;
+  }
+  .social-media-links i {
+    font-size: 5vw;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -647,6 +699,15 @@ body {
   .reviewer-image {
     height: 7rem;
     width: 7rem;
+  }
+  .contact-input {
+    font-size: 2vw;
+  }
+     .social-media {
+    bottom: 20%;
+  }
+  .social-media-links i {
+    font-size: 4vw;
   }
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
@@ -711,17 +772,25 @@ body {
     height: 75rem;
   }
   .signup-text-container {
-  padding-top: 30rem;
-}
-}
+    padding-top: 30rem;
+  }
   .packages-col {
     height: 55rem;
   }
   .contact-row {
     height: 40rem;
   }
-  .contact-details h2,
-  .contact-form-container h1 {
-    font-size: 3vw;
+  .contact-heading {
+    font-size: 2vw;
+  }
+  .contact-input,
+  .contact-details p {
+    font-size: 1.25vw;
+  }  
+   .social-media {
+    bottom: 20%;
+  }
+  .social-media-links i {
+    font-size: 2.5vw;
   }
 }
