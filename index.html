@@ -31,7 +31,7 @@
       })();
     </script>
   </head>
-<!--Preload class code from css tricks to fix bug of transitions happining on page load-->
+  <!--Preload class code from stack overflow to fix bug of transitions happining on page load-->
   <body class="preload">
     <header id="home">
       <!--Navigation Section  Inspired by Code and Create tutorial on youtube-->
@@ -417,7 +417,6 @@
                   method="POST"
                   class="contact-form"
                 >
-              
                   <input
                     type="text"
                     name="name"
@@ -435,7 +434,7 @@
                     placeholder="Email"
                     required
                   />
-                
+
                   <textarea
                     name="message"
                     id="contact-message"
@@ -448,6 +447,47 @@
                     Book Now
                   </button>
                 </form>
+                <div
+                  class="modal fade"
+                  id="myModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="myModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Thank You for contacting us.
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span class="modalx" aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Thank You for contacting us. We will reply shortly to answer your query.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary modalclose"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -460,21 +500,33 @@
       <div class="container-fluid">
         <div class="row footer-row">
           <div class="col-12">
-            <ul class="social-media ">
-              <li >
-                <a class="social-media-links" href="https://www.instagram.com/" target="_blank">
+            <ul class="social-media">
+              <li>
+                <a
+                  class="social-media-links"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
                   <i class="lab la-instagram" aria-hidden="true"></i>
                   <span class="sr-only">Instagram Link.</span></a
                 >
               </li>
               <li>
-                <a class="social-media-links" href="https://www.facebook.com/" target="_blank">
+                <a
+                  class="social-media-links"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
                   <i class="lab la-facebook-square" aria-hidden="true"></i>
                   <span class="sr-only">Facebook Link.</span></a
                 >
               </li>
-              <li >
-                <a class="social-media-links" href="https://www.twitter.com/" target="_blank">
+              <li>
+                <a
+                  class="social-media-links"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                >
                   <i class="lab la-twitter-square" aria-hidden="true"></i>
                   <span class="sr-only">Twitter Link.</span></a
                 >

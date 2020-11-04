@@ -6,7 +6,9 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            alert("SUCCESS", response);
+            console.log("SUCCESS", response);
+            $('#myModal').modal({show:true})
+            contactForm.reset()
         },
         function(error) {
             console.log("FAILED", error);

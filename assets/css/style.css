@@ -8,12 +8,12 @@
   margin: 0;
   padding: 0;
 }
-body  {
+body {
   font-family: "Mulish", sans-serif;
   background-color: #181822;
   color: #fafafb;
 }
-/*--Preload class code from css tricks to fix bug of transitions happining on page load*/
+/*--Preload class code from stack overflow to fix bug of transitions happening on page load*/
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -24,6 +24,7 @@ body  {
   height: 100%;
 }
 /*-------------------- Centering class -----------------*/
+/*Code from stack overflow on how to center divs more details in readme file*/
 .center {
   top: 0;
   right: 0;
@@ -154,6 +155,8 @@ body  {
 }
 
 /*---------------------------------- Css for animating elements in------------*/
+/*--Code was inspired by Dev Ed youtube tutorial --*/
+
 .animation-element {
   opacity: 0;
   transform: translateY(50px);
@@ -248,8 +251,8 @@ body  {
 .navigation-link:hover {
   background-color: #181822;
   color: #fafafb;
-  padding: .2rem .5rem;
-  border-radius:.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
 }
 /*----------------------------- Hero image section------------------*/
 .hero-container,
@@ -510,13 +513,28 @@ body  {
 .social-media-links i {
   font-size: 10vw;
   color: #fafafb;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .social-media-links i:hover {
   background-color: #fafafb;
   color: #181822;
   padding: 0.2remx;
   border-radius: 0.5rem;
+}
+/* -----------------------------Bootstrap modal-----------------------------*/
+#myModal {
+  color: #181822;
+}
+.modal-content {
+  height: 30rem;
+}
+.modal-title,
+.modalx{
+  font-size: 5vw;
+}
+.modal-body,
+.modalclose {
+  font-size: 4vw;
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
@@ -599,6 +617,14 @@ body  {
   .navigation-link {
     font-size: 2vw;
   }
+  .modal-title,
+.modalx{
+  font-size: 4vw;
+}
+.modal-body ,
+.modalclose{
+  font-size: 3vw;
+}
 }
 /* -------------------------bootstrap col-md breakpoint-----------------------*/
 @media (min-width: 768px) {
@@ -645,6 +671,14 @@ body  {
   .social-media-links i {
     font-size: 6vw;
   }
+  .modal-title,
+  .modalx {
+    font-size: 4vw;
+  }
+  .modal-body,
+  .modalclose {
+    font-size: 3vw;
+  }
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
@@ -676,11 +710,22 @@ body  {
     font-size: 2.5vw;
     margin: 1rem 0;
   }
-   .social-media {
+  .social-media {
     bottom: 15%;
   }
   .social-media-links i {
     font-size: 5vw;
+  }
+  .modal-content {
+    height: 35rem;
+  }
+  .modal-title,
+  .modalx {
+    font-size: 3vw;
+  }
+  .modal-body,
+  .modalclose {
+    font-size: 2vw;
   }
 }
 
@@ -709,7 +754,7 @@ body  {
   .contact-input {
     font-size: 2vw;
   }
-     .social-media {
+  .social-media {
     bottom: 20%;
   }
   .social-media-links i {
@@ -786,14 +831,18 @@ body  {
   .contact-row {
     height: 40rem;
   }
-  .contact-heading {
+  .contact-heading,
+  .modal-title,
+  .modalx{
     font-size: 2vw;
   }
   .contact-input,
-  .contact-details p {
+  .contact-details p,
+  .modal-body,
+  .modalclose {
     font-size: 1.25vw;
-  }  
-   .social-media {
+  }
+  .social-media {
     bottom: 20%;
   }
   .social-media-links i {
