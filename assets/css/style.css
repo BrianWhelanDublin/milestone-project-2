@@ -38,19 +38,19 @@ body {
   font-weight: 800;
 }
 .section-heading {
-  font-size: 9vw;
+  font-size: 5rem;
 }
-.subsection-heading {
-  font-size: 9vw;
+.sub-heading {
+  font-size: 4rem;
 }
 .section-heading,
-.subsection-heading {
+.sub-heading {
   font-weight: 700;
   text-align: center;
 }
 .hero-text,
 .about-text {
-  font-size: 4vw;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 /* ------------------------ Common Elements link and destination cards ----- */
@@ -136,6 +136,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
 }
 .background-image::before,
 .background-image::after {
@@ -260,8 +262,6 @@ body {
   height: 69rem;
 }
 .hero-img {
-  height: 100%;
-  width: 100%;
   background: url(../images/hero-img.jpg) no-repeat center center scroll;
   background-size: cover;
 }
@@ -291,7 +291,7 @@ body {
 }
 /* --------------------------About Section---------------------*/
 .about-col {
-  height: 40rem;
+  height: 45rem;
 }
 .about-img {
   max-height: 90%;
@@ -301,16 +301,18 @@ body {
 .about-text-container {
   position: absolute;
   text-align: center;
+  margin-top: 5rem;
   padding: 2% 4%;
 }
 .about-text {
   padding-top: 2.5%;
 }
 /* ----------------------Destination Section------------------- */
+/*
 #destinations {
   height: 100rem;
-}
-.destination-heading-section {
+}*/
+.destination-heading-row{
   height: 20rem;
 }
 .destination-heading {
@@ -318,30 +320,31 @@ body {
   border-bottom: solid 2px #fafafb;
 }
 .destinations-subtitle {
-  height: 10rem;
+  height: 12.5rem;
 }
 .destinations-slider {
-  height: 30rem;
+  height: 32.5rem;
+}
+/*-- selector taking from dev tools*/
+.lSSlideOuter{
+    margin-top:3rem;
 }
 /* ------------------------------------Reviews section------------------------*/
+ .review-heading-row{
+     height:15rem;
+ }
 .reviews-row {
-  height: 90rem;
+  height: 70rem;
 }
 .reviews-background-image {
-  height: 100%;
-  width: 100%;
   background: url(../images/reviews-img.jpg) no-repeat center center scroll;
   background-size: cover;
 }
-.reviews-heading {
-  width: 100%;
-  margin: 0 -15px;
-  position: absolute;
-  top: 3%;
-  text-align: center;
-  z-index: 100;
-  font-size: 9vw;
+.reviews-heading{
+    margin-top:5rem;
+    border-bottom:solid 2px #fafafb;
 }
+
 /*--- Conatiners for reviews and signup images css --*/
 
 .reviews-container,
@@ -387,7 +390,7 @@ body {
 }
 .reviewer h2 {
   padding-left: 1rem;
-  font-size: 3.25vw;
+  font-size: 1.5rem;
 }
 .reviews {
   width: 100%;
@@ -396,12 +399,12 @@ body {
   text-align: center;
 }
 .reviews h2 {
-  font-size: 5.5vw;
+  font-size: 3rem;
 }
 .reviews i,
 .reviews p {
   padding: 2rem 1rem 0rem 1rem;
-  font-size: 3.75vw;
+  font-size: 2rem;
 }
 .hidden {
   display: none;
@@ -414,13 +417,14 @@ body {
   height: 15rem;
 }
 .packages-col {
-  height: 45rem;
+  height: 42rem;
 }
 .package-card {
   position: absolute;
 }
 .packages-title h1 {
   padding: 5% 0;
+  border-bottom: solid 0.2rem #fafafb;
 }
 /* -------------------------------Signup Section -----------------------------*/
 .signup-row {
@@ -432,8 +436,6 @@ body {
   opacity: 0.8;
 }
 .signup-background-image {
-  height: 100%;
-  width: 100%;
   background: url(../images/signup2.jpg) no-repeat center center scroll;
   background-size: cover;
 }
@@ -465,41 +467,40 @@ body {
 }
 /* -----------------------------Contact Section -----------------------------*/
 .contact-row {
-  height: 80rem;
+  height: 60rem;
 }
 .contact-details {
   position: absolute;
   text-align: center;
-  height: 60%;
+  margin-top: 3rem;
 }
 .contact-heading {
-  font-size: 7vw;
-  padding-bottom: 5%;
+  font-size: 3rem;
+  padding-bottom: 0.2rem;
 }
 .contact-details p,
 .contact-input {
-  font-size: 4.5vw;
-  margin: 2rem 0;
+  font-size: 1.75rem;
+  margin: 0.75rem 0;
 }
 
 .contact-form-container {
+  margin-top: 3rem;
   position: absolute;
   text-align: center;
-  height: 70%;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 /* -----------------------------Footer Section -----------------------------*/
 .footer-row {
-  height: 30rem;
+  height: 20rem;
 }
 .social-media {
   position: absolute;
-  bottom: 5%;
+  bottom: 3rem;
   text-align: center;
   list-style: none;
   height: 10rem;
@@ -511,14 +512,14 @@ body {
   margin: 5%;
 }
 .social-media-links i {
-  font-size: 10vw;
+  font-size: 3rem;
   color: #fafafb;
   transition: all 0.5s ease-in-out;
 }
 .social-media-links i:hover {
   background-color: #fafafb;
   color: #181822;
-  padding: 0.2remx;
+  padding: 0.2rem;
   border-radius: 0.5rem;
 }
 /* -----------------------------Bootstrap modal-----------------------------*/
@@ -526,15 +527,13 @@ body {
   color: #181822;
 }
 .modal-content {
-  height: 30rem;
+  height: 25rem;
 }
-.modal-title,
-.modalx{
-  font-size: 5vw;
+.modal-title {
+  font-size: 2.5rem;
 }
-.modal-body,
-.modalclose {
-  font-size: 4vw;
+.modal-text {
+  font-size: 1.75rem;
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
@@ -547,16 +546,14 @@ body {
   .heading {
     left: 7.5%;
   }
+  /*
   .about-text {
     font-size: 2.3vw;
-  }
+  }*/
   .hero-link {
     font-size: 2vw;
     width: 25rem;
-  }
-  .subsection-heading {
-    font-size: 6vw;
-  }
+  } /*
   .reviews-heading {
     font-size: 5vw;
   }
@@ -591,7 +588,7 @@ body {
   .reviews p {
     padding: 3rem 1rem 0rem 1rem;
     font-size: 2vw;
-  }
+  }*/
 }
 /* ----------------------------for phone portrait mode-----------------------*/
 @media only screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
@@ -601,37 +598,29 @@ body {
   .main-title {
     font-size: 8vw;
   }
+  /*
   .hero-text {
     font-size: 1.5vw;
-  }
+  }*/
   .hero-link {
     font-size: 1.5vw;
     width: 20rem;
-  }
+  }/*
   .about-text {
     font-size: 2vw;
   }
   .about-col {
     height: 100vh;
-  }
+  }*/
   .navigation-link {
     font-size: 2vw;
   }
-  .modal-title,
-.modalx{
-  font-size: 4vw;
-}
-.modal-body ,
-.modalclose{
-  font-size: 3vw;
-}
 }
 /* -------------------------bootstrap col-md breakpoint-----------------------*/
 @media (min-width: 768px) {
-  .section-heading,
   .subsection-heading {
     font-size: 5vw;
-  }
+  }/*
   #destinations {
     height: 80rem;
   }
@@ -641,7 +630,43 @@ body {
   .destination-row,
   .destinations-subtitle {
     height: 30rem;
+  }*/
+.destinations-subtitle {
+  height: 32.5rem;
+}
+.destinations-subheading{
+  margin-top:10rem;
+}/*
+.destinations-slider {
+  height: 32.5rem;
+}*/
+  .reviews-row {
+    height: 45rem;
   }
+  .reviews-container {
+    height: 35rem;
+  }
+  .reviewers-list {
+    width: 30%;
+    top: 10%;
+    margin-left: 2.5%;
+  }
+  .reviewer {
+    padding: 2.3rem 0;
+    margin-left: 2%;
+  }
+
+  .reviews {
+    width: 60%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .reviews h2 {
+    font-size: 3vw;
+  }
+
+  /*
   #signup-email {
     width: 60%;
   }
@@ -650,41 +675,16 @@ body {
   }
   .signup-container {
     height: 35rem;
-  }
+  }*/
   .contact-row {
-    height: 50rem;
-  }
-  .contact-heading {
-    font-size: 5vw;
-  }
-  .contact-details p {
-    font-size: 3.25vw;
-  }
-  .contact-input {
-    font-size: 3vw;
-    margin: 1.5rem 0;
-  }
-  .social-media {
-    bottom: 10%;
-    height: 10rem;
-  }
-  .social-media-links i {
-    font-size: 6vw;
-  }
-  .modal-title,
-  .modalx {
-    font-size: 4vw;
-  }
-  .modal-body,
-  .modalclose {
-    font-size: 3vw;
+    height: 30rem;
   }
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
   .main-title {
     font-size: 6.5vw;
-  }
+  }/*
   .hero-text,
   .logo a {
     font-size: 2vw;
@@ -692,7 +692,8 @@ body {
   .hero-link,
   .about-text {
     font-size: 1.75vw;
-  }
+  }*/
+   /*
   .reviews-row {
     height: 90rem;
   }
@@ -705,28 +706,7 @@ body {
   .reviewer-image {
     height: 5rem;
     width: 5rem;
-  }
-  .contact-input {
-    font-size: 2.5vw;
-    margin: 1rem 0;
-  }
-  .social-media {
-    bottom: 15%;
-  }
-  .social-media-links i {
-    font-size: 5vw;
-  }
-  .modal-content {
-    height: 35rem;
-  }
-  .modal-title,
-  .modalx {
-    font-size: 3vw;
-  }
-  .modal-body,
-  .modalclose {
-    font-size: 2vw;
-  }
+  }*/
 }
 
 @media (min-width: 1200px) {
@@ -736,30 +716,21 @@ body {
   .hero-img::before {
     height: 75rem;
   }
-  .navigation-link,
-  .section-heading {
+  .navigation-link {
     font-size: 3vw;
   }
   .main-title {
     font-size: 7vw;
   }
+  /*
   .hero-text {
     font-size: 2vw;
-  }
-
+  }*/
+  /*
   .reviewer-image {
     height: 7rem;
     width: 7rem;
-  }
-  .contact-input {
-    font-size: 2vw;
-  }
-  .social-media {
-    bottom: 20%;
-  }
-  .social-media-links i {
-    font-size: 4vw;
-  }
+  }*/
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
 @media (min-width: 1450px) {
@@ -769,83 +740,79 @@ body {
   .hero-img::before {
     height: 95rem;
   }
+  /*
   .hero-link,
   .about-text {
     font-size: 1.5vw;
-  }
-  #destinations {
-    height: 130rem;
-  }
+  }*/
+  /*
   .destination-heading-section {
     height: 30rem;
-  }
-  .destination-row,
+  }*/
+ 
   .destinations-subtitle,
   .destinations-slider {
-    height: 50rem;
+    height: 45rem;
   }
   .destination-card,
   .package-card {
-    height: 40rem;
-    width: 29rem;
+    height: 32rem;
+    width: 25rem;
   }
   .card-title {
-    font-size: 4.75rem;
+    font-size: 4rem;
   }
   .card-btn,
   .signup-btn,
   .card-content p {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
-  .subsection-heading {
-    font-size: 4vw;
+  .sub-heading {
+    font-size: 5.5rem;
   }
-  .reviews-heading {
-    font-size: 5vw;
+  .section-heading {
+    font-size: 7rem;
   }
-  .reviews h2 {
-    font-size: 2.5vw;
+  .reviews-row {
+    height: 60rem;
   }
-  .reviews i,
-  .reviews p,
-  .contact-details p,
-  .contact-form {
-    font-size: 1.5vw;
+  .reviews-container {
+    height: 40rem;
   }
-  .reviewer h2 {
-    padding-left: 1rem;
-    font-size: 0.75vw;
-  }
+  /*
   .packages-title {
     height: 30rem;
-  }
+  } 
+  
   .signup-row {
     height: 75rem;
   }
   .signup-text-container {
     padding-top: 30rem;
-  }
+  }*/
   .packages-col {
-    height: 55rem;
+    height: 70rem;
   }
   .contact-row {
     height: 40rem;
   }
-  .contact-heading,
-  .modal-title,
-  .modalx{
-    font-size: 2vw;
+  .contact-details,
+  .contact-form-container {
+    margin-top: 5rem;
   }
-  .contact-input,
+  .contact-heading {
+    font-size: 3.5rem;
+    padding-bottom: 0.5rem;
+  }
   .contact-details p,
-  .modal-body,
-  .modalclose {
-    font-size: 1.25vw;
+  .contact-input {
+    font-size: 2rem;
+    margin: 1rem 0;
   }
   .social-media {
-    bottom: 20%;
+    bottom: 10rem;
   }
   .social-media-links i {
-    font-size: 2.5vw;
+    font-size: 5rem;
   }
 }

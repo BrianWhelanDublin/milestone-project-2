@@ -127,9 +127,8 @@
       <!--end of About us section-->
       <!--Destination heading section-->
       <section id="destinations">
-        <div class="destination-heading-section">
-          <div class="container-fluid">
-            <div class="row">
+       <div class="container-fluid">
+            <div class="row destination-heading-row">
               <div class="col animation-element">
                 <h1 class="section-heading destination-heading">
                   Our Destinations
@@ -137,14 +136,13 @@
               </div>
             </div>
           </div>
-        </div>
         <!--Destination slider section-->
         <div class="container-fluid">
           <div class="row destination-row">
             <div
               class="col-12 col-md-4 destinations-subtitle animation-element"
             >
-              <h1 class="subsection-heading">City Destinations</h1>
+              <h1 class="sub-heading destinations-subheading">City Destinations</h1>
             </div>
             <div class="col-12 col-md-8 destinations-slider animation-element">
               <ul id="cities-slider" class="cs-hidden"></ul>
@@ -156,7 +154,7 @@
             <div
               class="col-12 col-md-4 destinations-subtitle animation-element"
             >
-              <h1 class="subsection-heading">Beach Destinations</h1>
+              <h1 class="sub-heading destinations-subheading">Beach Destinations</h1>
             </div>
             <div class="col-12 col-md-8 destinations-slider animation-element">
               <ul id="beach-slider" class="cs-hidden"></ul>
@@ -167,13 +165,19 @@
       <!--End of destinations section-->
       <!--Customer reviews section-->
       <section id="reviews">
+       <div class="container-fluid">
+            <div class="row review-heading-row">
+              <div class="col animation-element">
+                <h1 class="reviews-heading section-heading animation-element">
+                Our Reviews
+              </h1>
+              </div>
+            </div>
+          </div>
         <div class="container-fluid">
           <div class="row reviews-row">
             <div class="col-12">
               <div class="reviews-background-image background-image"></div>
-              <h1 class="reviews-heading animation-element">
-                What Our Customers are Saying
-              </h1>
               <div class="reviews-container center animation-element">
                 <div class="reviewers">
                   <ul class="reviewers-list animation-element">
@@ -370,7 +374,7 @@
               <div class="signup-container center"></div>
               <!-- <img src="assets/images/signup.jpg" alt="image of travel items" class="signup-img">-->
               <div class="signup-text-container center">
-                <h1 class="section-heading signup-heading">
+                <h1 class="sub-heading signup-heading">
                   Sign up for our Montly Newsletter
                 </h1>
                 <form class="signup-form">
@@ -400,7 +404,7 @@
       <section id="contact">
         <div class="container-fluid">
           <div class="row contact-row">
-            <div class="col-md-6">
+            <div class="col-md-6 contact-col">
               <div class="contact-details center">
                 <h2 class="contact-heading">Contact us</h2>
                 <p>Email: g-travel@email.com</p>
@@ -470,16 +474,16 @@
                           data-dismiss="modal"
                           aria-label="Close"
                         >
-                          <span class="modalx" aria-hidden="true">&times;</span>
+                          <span class="modal-text" aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body">
+                      <div class="modal-text">
                         Thank You for contacting us. We will reply shortly to answer your query.
                       </div>
                       <div class="modal-footer">
                         <button
                           type="button"
-                          class="btn btn-secondary modalclose"
+                          class="btn btn-secondary modal-text"
                           data-dismiss="modal"
                         >
                           Close
