@@ -5,7 +5,8 @@ function sendNewsletter(form) {
     })
     .then(
       function (response) {
-        alert("SUCCESS", response);
+        console.log("SUCCESS", response);
+        $("#newsletterModal").modal({show:true});
         form.reset();
       },
       function (error) {
@@ -25,7 +26,7 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
-        $("#myModal").modal({ show: true });
+        $("#myModal").modal({show:true});
         contactForm.reset();
       },
       function (error) {

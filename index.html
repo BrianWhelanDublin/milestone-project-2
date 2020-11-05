@@ -375,7 +375,7 @@
           <div class="row signup-row">
             <div class="col-12">
               <div class="signup-background-image background-image"></div>
-              <div class="signup-container center animation-element"></div>
+              <div class="signup-container center "></div>
               <!-- <img src="assets/images/signup.jpg" alt="image of travel items" class="signup-img">-->
               <div class="signup-text-container animation-element center">
                 <h1 class="sub-heading signup-heading">
@@ -401,6 +401,46 @@
                     Sign Up
                   </button>
                 </form>
+                <div
+                  class="signup-modal modal"
+                  id="newsletterModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="newsletterModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span class="modal-text" aria-hidden="true"
+                            >&times;</span
+                          >
+                        </button>
+                      </div>
+                      <div class="modal-text">
+                        Thank You for signing up to our newsletter.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary modal-text"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -460,7 +500,7 @@
                 </form>
                 <!--Modal from bootstrap apears when someone fills out the contact form-->
                 <div
-                  class="modal fade"
+                  class="modal "
                   id="myModal"
                   tabindex="-1"
                   role="dialog"
