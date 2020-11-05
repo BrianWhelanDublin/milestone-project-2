@@ -127,22 +127,24 @@
       <!--end of About us section-->
       <!--Destination heading section-->
       <section id="destinations">
-       <div class="container-fluid">
-            <div class="row destination-heading-row">
-              <div class="col animation-element">
-                <h1 class="section-heading destination-heading">
-                  Our Destinations
-                </h1>
-              </div>
+        <div class="container-fluid">
+          <div class="row destination-heading-row">
+            <div class="col animation-element">
+              <h1 class="section-heading destination-heading">
+                Our Destinations
+              </h1>
             </div>
           </div>
+        </div>
         <!--Destination slider section-->
         <div class="container-fluid">
           <div class="row destination-row">
             <div
               class="col-12 col-md-4 destinations-subtitle animation-element"
             >
-              <h1 class="sub-heading destinations-subheading">City Destinations</h1>
+              <h1 class="sub-heading destinations-subheading">
+                City Destinations
+              </h1>
             </div>
             <div class="col-12 col-md-8 destinations-slider animation-element">
               <ul id="cities-slider" class="cs-hidden"></ul>
@@ -154,7 +156,9 @@
             <div
               class="col-12 col-md-4 destinations-subtitle animation-element"
             >
-              <h1 class="sub-heading destinations-subheading">Beach Destinations</h1>
+              <h1 class="sub-heading destinations-subheading">
+                Beach Destinations
+              </h1>
             </div>
             <div class="col-12 col-md-8 destinations-slider animation-element">
               <ul id="beach-slider" class="cs-hidden"></ul>
@@ -165,15 +169,15 @@
       <!--End of destinations section-->
       <!--Customer reviews section-->
       <section id="reviews">
-       <div class="container-fluid">
-            <div class="row review-heading-row">
-              <div class="col animation-element">
-                <h1 class="reviews-heading section-heading animation-element">
+        <div class="container-fluid">
+          <div class="row review-heading-row">
+            <div class="col animation-element">
+              <h1 class="reviews-heading section-heading animation-element">
                 Our Reviews
               </h1>
-              </div>
             </div>
           </div>
+        </div>
         <div class="container-fluid">
           <div class="row reviews-row">
             <div class="col-12">
@@ -371,13 +375,16 @@
           <div class="row signup-row">
             <div class="col-12">
               <div class="signup-background-image background-image"></div>
-              <div class="signup-container center"></div>
+              <div class="signup-container center animation-element"></div>
               <!-- <img src="assets/images/signup.jpg" alt="image of travel items" class="signup-img">-->
-              <div class="signup-text-container center">
+              <div class="signup-text-container animation-element center">
                 <h1 class="sub-heading signup-heading">
                   Sign up for our Montly Newsletter
                 </h1>
-                <form class="signup-form">
+                <form class="signup-form"
+                onsubmit="return sendNewsletter(this);"
+                  method="POST"
+                  >
                   <input
                     type="text"
                     name="email"
@@ -405,7 +412,7 @@
         <div class="container-fluid">
           <div class="row contact-row">
             <div class="col-md-6 contact-col">
-              <div class="contact-details center">
+              <div class="contact-details animation-element center">
                 <h2 class="contact-heading">Contact us</h2>
                 <p>Email: g-travel@email.com</p>
                 <p>Customer service: 01/5555555</p>
@@ -413,7 +420,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="contact-form-container center">
+              <div class="contact-form-container animation-element center">
                 <h2 class="contact-heading">Contact Form</h2>
 
                 <form
@@ -451,6 +458,7 @@
                     Book Now
                   </button>
                 </form>
+                <!--Modal from bootstrap apears when someone fills out the contact form-->
                 <div
                   class="modal fade"
                   id="myModal"
@@ -474,11 +482,14 @@
                           data-dismiss="modal"
                           aria-label="Close"
                         >
-                          <span class="modal-text" aria-hidden="true">&times;</span>
+                          <span class="modal-text" aria-hidden="true"
+                            >&times;</span
+                          >
                         </button>
                       </div>
                       <div class="modal-text">
-                        Thank You for contacting us. We will reply shortly to answer your query.
+                        Thank You for contacting us. We will reply shortly to
+                        answer your query.
                       </div>
                       <div class="modal-footer">
                         <button
