@@ -62,26 +62,34 @@ body {
   background-color: #fafafb;
   color: #181822;
   border-radius: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
-.hero-link:hover {
-  text-decoration: none;
-  transform: scale(1.2);
-  color: #181822;
-}
+
 .destination-link,
 .signup-btn,
 .contact-btn {
   font-size: 1.5rem;
-  padding: 0.5rem;
+  padding: .5rem;
   font-weight: 800;
 }
 .destination-link:hover,
 .signup-btn:hover,
-.contact-btn:hover {
+.contact-btn:hover,
+.hero-link:hover {
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
+}
+.social-media-links i {
+  font-size: 3rem;
+  color: #fafafb;
+  transition: all .5s ease-in-out;
+}
+.social-media-links i:hover {
+  background-color: #fafafb;
+  color: #181822;
+  padding: .2rem;
+  border-radius: 0.5rem;
 }
 /*---- Cards ----*/
 .destination-card,
@@ -115,11 +123,11 @@ body {
   font-size: 3rem;
   padding-bottom: 3.75rem;
   text-align: center;
-  text-shadow: 0.2rem 0.2rem 0.1rem #181822;
+  text-shadow: .2rem .2rem .1rem #181822;
 }
 .card-content p {
   font-size: 1.4rem;
-  text-shadow: 0.2rem 0.2rem 0.1rem #181822;
+  text-shadow: .2rem .2rem .1rem #181822;
 }
 .gradient {
   position: absolute;
@@ -128,7 +136,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.4;
+  opacity: .4;
   z-index: 200;
 }
 /* ------------------------------- Background images css -------------------  */
@@ -176,7 +184,13 @@ body {
   color: #fafafb;
   font-size: 2rem;
   z-index: 500;
+  transition: all 0.5s ease-out;
 }
+.logo a:hover {
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
 .hamburger {
   width: 5.5rem;
   height: 5.5rem;
@@ -192,11 +206,11 @@ body {
 }
 .line {
   width: 3rem;
-  height: 0.2rem;
+  height: .2rem;
   background-color: #fafafb;
-  margin: 0.2rem 0;
+  margin: .2rem 0;
   transform-origin: right;
-  transition: all 0.75s;
+  transition: all .75s;
 }
 .change .line1 {
   transform: rotate(-40deg) translateY(-5px);
@@ -240,21 +254,21 @@ body {
   visibility: visible;
 }
 .navigation-item {
-  margin: 1vh 0;
+  margin: 2% 0;
 }
 .navigation-link {
   font-weight: 600;
-  font-size: 4vw;
+  font-size: 2.5rem;
   letter-spacing: 0.4rem;
   text-decoration: none;
   color: #181822;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 .navigation-link:hover {
   background-color: #181822;
   color: #fafafb;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.5rem;
+  padding: .2rem .5rem;
+  border-radius: .5rem;
 }
 /*----------------------------- Hero image section------------------*/
 .hero-container,
@@ -308,10 +322,6 @@ body {
   padding-top: 2.5%;
 }
 /* ----------------------Destination Section------------------- */
-/*
-#destinations {
-  height: 100rem;
-}*/
 .destination-heading-row {
   height: 20rem;
 }
@@ -359,7 +369,7 @@ body {
 .reviews-container {
   height: 60rem;
   width: 80%;
-  opacity: 0.8;
+  opacity: .8;
 }
 .reviewers-list {
   list-style: none;
@@ -424,7 +434,7 @@ body {
 }
 .packages-title h1 {
   padding: 5% 0;
-  border-bottom: solid 0.2rem #fafafb;
+  border-bottom: solid .2rem #fafafb;
 }
 /* -------------------------------Signup Section -----------------------------*/
 .signup-row {
@@ -433,7 +443,7 @@ body {
 .signup-container {
   height: 40rem;
   width: 75%;
-  opacity: 0.8;
+  opacity: .8;
 }
 .signup-background-image {
   background: url(../images/signup2.jpg) no-repeat center center scroll;
@@ -476,12 +486,12 @@ body {
 }
 .contact-heading {
   font-size: 3rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: .2rem;
 }
 .contact-details p,
 .contact-input {
   font-size: 1.75rem;
-  margin: 0.75rem 0;
+  margin: .75rem 0;
 }
 
 .contact-form-container {
@@ -511,17 +521,7 @@ body {
   display: inline-block;
   margin: 5%;
 }
-.social-media-links i {
-  font-size: 3rem;
-  color: #fafafb;
-  transition: all 0.5s ease-in-out;
-}
-.social-media-links i:hover {
-  background-color: #fafafb;
-  color: #181822;
-  padding: 0.2rem;
-  border-radius: 0.5rem;
-}
+
 /* -----------------------------Bootstrap modal-----------------------------*/
 #myModal {
   color: #181822;
@@ -543,113 +543,27 @@ body {
   .hero-img::before {
     height: 100vh;
   }
-  /*
-  .heading {
-    left: 7.5%;
-  }*/
-  /*
-  .about-text {
-    font-size: 2.3vw;
-  }*/
-  /*
-  .hero-link {
-    font-size: 2vw;
-    width: 25rem;
-  }
-  */
-  /*
-  .reviews-heading {
-    font-size: 5vw;
-  }
-  .reviews-row {
-    height: 55rem;
-  }
-  .reviews-container {
-    height: 35rem;
-  }
-  .reviewers-list {
-    width: 30%;
-    top: 10%;
-    margin-left: 2.5%;
-  }
-  .reviewer {
-    padding: 2.3rem 0;
-    margin-left: 2%;
-  }
-  .reviewer h2 {
-    font-size: 1.75vw;
-  }
-  .reviews {
-    width: 60%;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .reviews h2 {
-    font-size: 3vw;
-  }
-  .reviews i,
-  .reviews p {
-    padding: 3rem 1rem 0rem 1rem;
-    font-size: 2vw;
-  }*/
 }
 /* ----------------------------for phone portrait mode-----------------------*/
 @media only screen and (min-width: 576px) and (max-width: 820px) and (orientation: landscape) {
   .heading {
     top: 12%;
   }
-
-  /*
-  .main-title {
-    font-size: 8vw;
-  }
-  */
-  /*
-  .hero-text {
-    font-size: 1.5vw;
-  }*/
-  /*
-  .hero-link {
-    font-size: 1.5vw;
-    width: 20rem;
-  }
-  */
-  /*
-  .about-text {
-    font-size: 2vw;
-  }
-  .about-col {
-    height: 100vh;
-  }*/
   .navigation-link {
-    font-size: 2vw;
+    font-size: 1.75rem;
   }
 }
 /* -------------------------bootstrap col-md breakpoint-----------------------*/
 @media (min-width: 768px) {
   .hero-text {
     font-size: 2rem;
-  } /*
-  #destinations {
-    height: 80rem;
   }
-  .destination-heading-section {
-    height: 20rem;
-  }
-  .destination-row,
-  .destinations-subtitle {
-    height: 30rem;
-  }*/
   .destinations-subtitle {
     height: 32.5rem;
   }
   .destinations-subheading {
     margin-top: 10rem;
-  } /*
-.destinations-slider {
-  height: 32.5rem;
-}*/
+  }
   .reviews-row {
     height: 45rem;
   }
@@ -665,91 +579,39 @@ body {
     padding: 2.3rem 0;
     margin-left: 2%;
   }
-
+  /*code from stack overflow on how to center div vertically as mentioned in readme*/
   .reviews {
     width: 60%;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
   }
-  .reviews h2 {
-    font-size: 3vw;
-  }
-
-  /*
-  #signup-email {
-    width: 60%;
-  }
-  .signup-row {
-    height: 40rem;
-  }
-  .signup-container {
-    height: 35rem;
-  }*/
   .contact-row {
     height: 30rem;
   }
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
-  /*.main-title {
-    font-size: 6.5vw;
-  }
-  */
   .heading {
     top: 40%;
     left: 15%;
   }
-  .about-text {
+  .about-text,
+  .hero-link {
     font-size: 2rem;
   }
   .main-title {
     font-size: 8rem;
   }
-  .hero-link {
-    font-size: 2rem;
-  }
   .hero-text {
     font-size: 2.25rem;
   }
-
-  /*
-  .hero-text,
-  .logo a {
-    font-size: 2vw;
-  }
-  .hero-link,
-  .about-text {
-    font-size: 1.75vw;
-  }*/
-  /*
-  .reviews-row {
-    height: 90rem;
-  }
-  .reviews-container {
-    height: 60%;
-  }
-  .reviewers-list {
-    top: 25%;
-  }
-  .reviewer-image {
-    height: 5rem;
-    width: 5rem;
-  }*/
-}
-
-@media (min-width: 1200px) {
-  /*
-  header,
-  .hero-img,
-  .right-gradient,
-  .hero-img::before {
-    height: 75rem;
-  }*/
   .navigation-link {
-    font-size: 3vw;
+    font-size: 4rem;
   }
-
+}
+/* -------------------------laptops and desktops-----------------------*/
+@media (min-width: 1200px) {
   .main-title {
     font-size: 8rem;
   }
@@ -759,27 +621,9 @@ body {
   .about-text {
     font-size: 2.2rem;
   }
-  /*
-  .hero-text {
-    font-size: 2vw;
-  }*/
-  /*
-  .reviewer-image {
-    height: 7rem;
-    width: 7rem;
-  }*/
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
 @media (min-width: 1450px) {
-  /*
-  header,
-  .hero-img,
-  .right-gradient,
-  .hero-img::before {
-    height: 95rem;
-  }
-  */
-
   .main-title {
     font-size: 9rem;
   }
@@ -789,16 +633,6 @@ body {
   .about-text {
     font-size: 2.75rem;
   }
-  /*
-  .hero-link,
-  .about-text {
-    font-size: 1.5vw;
-  }*/
-  /*
-  .destination-heading-section {
-    height: 30rem;
-  }*/
-
   .destinations-subtitle,
   .destinations-slider {
     height: 45rem;
@@ -828,17 +662,6 @@ body {
   .reviews-container {
     height: 40rem;
   }
-  /*
-  .packages-title {
-    height: 30rem;
-  } 
-  
-  .signup-row {
-    height: 75rem;
-  }
-  .signup-text-container {
-    padding-top: 30rem;
-  }*/
   .packages-col {
     height: 70rem;
   }
