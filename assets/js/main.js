@@ -1,5 +1,5 @@
 /*--code from css tricks to fix bug of transitions happining on page load using javaScript to remove the preload class from the body after the page has loaded*/
-window.onload = () => document.body.classList.remove("preload")
+window.onload = () => document.body.classList.remove("preload");
 
 /* Code to open and close the navigation menu*/
 
@@ -95,7 +95,7 @@ let cityDestinations = [
     name: "tokyo",
     image: "assets/images/cities/tokyo.jpg",
     bgImage: "assets/images/cities/tokyo-bg.jpg",
-  }
+  },
 ];
 let beachDestinations = [
   {
@@ -168,7 +168,7 @@ const renderDestination = (destination, sliderName) => {
       <img src="${destination.image}" alt="image of ${destination.name}" class="card-img">
         <div class="card-content">
           <h2 class="card-title">${destination.name}</h2>
-          <a href="#" class="destination-link link">Find Out More</a>
+          <a href="destination.html#${destination.id}" class="destination-link link">Find Out More</a>
         </div>
       <div class="gradient"></div>
     </li>
@@ -185,23 +185,29 @@ const getDestinationElement = (destinations, sliderName) => {
 };
 
 /* Makes destinations list upon loading website using light slider library and jQuery*/
-$(document).ready(function () {
-  getDestinationElement(cityDestinations, "cities-slider");
-  $("#cities-slider").lightSlider({
-    autoWidth: true,
-    loop: true,
-    slideMargin: 30,
-    easing: "cubic-bezier(0.25, 0, 0.25, 1)",
-    speed: 600,
-  });
-  getDestinationElement(beachDestinations, "beach-slider");
-  $("#beach-slider").lightSlider({
-    autoWidth: true,
-    loop: true,
-    slideMargin: 30,
-    easing: "cubic-bezier(0.25, 0, 0.25, 1)",
-    speed: 600,
-  });
+$(document).ready(() => {
+/*used code from stack overflow to fix bug of this loading on the destinations page more details in my readme file.
+ie. if(element.length){carry out function} */
+  if ($("#cities-slider").length) {
+    getDestinationElement(cityDestinations, "cities-slider");
+    $("#cities-slider").lightSlider({
+      autoWidth: true,
+      loop: true,
+      slideMargin: 30,
+      easing: "cubic-bezier(0.25, 0, 0.25, 1)",
+      speed: 600,
+    });
+  }
+  if ($("#beach-slider").length) {
+    getDestinationElement(beachDestinations, "beach-slider");
+    $("#beach-slider").lightSlider({
+      autoWidth: true,
+      loop: true,
+      slideMargin: 30,
+      easing: "cubic-bezier(0.25, 0, 0.25, 1)",
+      speed: 600,
+    });
+  }
 });
 
 /* Code to change reviews when you click on a reviewers details */
