@@ -289,7 +289,10 @@ const renderDestinationHeading = () => {
   title.innerHTML = destination.name;
 };
 
+
+
+$(document).ready(() => {
   if ($("body").hasClass("destination-page")) {
     renderDestinationHeading()
   }
-
+});

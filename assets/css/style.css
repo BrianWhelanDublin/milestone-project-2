@@ -62,14 +62,14 @@ body {
   background-color: #fafafb;
   color: #181822;
   border-radius: 1rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .destination-link,
 .signup-btn,
 .contact-btn {
   font-size: 1.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: 800;
 }
 .destination-link:hover,
@@ -83,12 +83,12 @@ body {
 .social-media-links i {
   font-size: 3rem;
   color: #fafafb;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .social-media-links i:hover {
   background-color: #fafafb;
   color: #181822;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 0.5rem;
 }
 /*---- Cards ----*/
@@ -123,11 +123,11 @@ body {
   font-size: 3rem;
   padding-bottom: 3.75rem;
   text-align: center;
-  text-shadow: .2rem .2rem .1rem #181822;
+  text-shadow: 0.2rem 0.2rem 0.1rem #181822;
 }
 .card-content p {
   font-size: 1.4rem;
-  text-shadow: .2rem .2rem .1rem #181822;
+  text-shadow: 0.2rem 0.2rem 0.1rem #181822;
 }
 .gradient {
   position: absolute;
@@ -136,7 +136,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: .4;
+  opacity: 0.4;
   z-index: 200;
 }
 /* ------------------------------- Background images css -------------------  */
@@ -206,11 +206,11 @@ body {
 }
 .line {
   width: 3rem;
-  height: .2rem;
+  height: 0.2rem;
   background-color: #fafafb;
-  margin: .2rem 0;
+  margin: 0.2rem 0;
   transform-origin: right;
-  transition: all .75s;
+  transition: all 0.75s;
 }
 .change .line1 {
   transform: rotate(-40deg) translateY(-5px);
@@ -262,13 +262,14 @@ body {
   letter-spacing: 0.4rem;
   text-decoration: none;
   color: #181822;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.navigation-link:hover {
+.navigation-link:hover,
+.other-des-link:hover {
   background-color: #181822;
   color: #fafafb;
-  padding: .2rem .5rem;
-  border-radius: .5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
 }
 /*----------------------------- Hero image section------------------*/
 .hero-container,
@@ -369,7 +370,7 @@ body {
 .reviews-container {
   height: 60rem;
   width: 80%;
-  opacity: .8;
+  opacity: 0.8;
 }
 .reviewers-list {
   list-style: none;
@@ -434,7 +435,7 @@ body {
 }
 .packages-title h1 {
   padding: 5% 0;
-  border-bottom: solid .2rem #fafafb;
+  border-bottom: solid 0.2rem #fafafb;
 }
 /* -------------------------------Signup Section -----------------------------*/
 .signup-row {
@@ -443,7 +444,7 @@ body {
 .signup-container {
   height: 40rem;
   width: 75%;
-  opacity: .8;
+  opacity: 0.8;
 }
 .signup-background-image {
   background: url(../images/signup2.jpg) no-repeat center center scroll;
@@ -486,12 +487,12 @@ body {
 }
 .contact-heading {
   font-size: 3rem;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
 .contact-details p,
 .contact-input {
   font-size: 1.75rem;
-  margin: .75rem 0;
+  margin: 0.75rem 0;
 }
 
 .contact-form-container {
@@ -536,18 +537,18 @@ body {
   font-size: 1.75rem;
 }
 /* The modal background was appearing infront of my modal and not allowing you to click to close the modal so I used this to remove it. */
-.modal-backdrop{
-   position:absolute;
-   height:0;
-   width:0;
+.modal-backdrop {
+  position: absolute;
+  height: 0;
+  width: 0;
 }
 /* -----------------------------Destinations page-----------------------------*/
 /* --------Title section----------*/
-#title-section{
-    height:100vh;
+#title-section {
+  height: 85vh;
 }
-.des-page-container{
-    height:100%;
+.des-page-container {
+  height: 100%;
 }
 /*
 .des-page-img{
@@ -558,16 +559,28 @@ body {
     max-width:100%;
 }*/
 
-.des-page-title{
-position:absolute;
-left:2%;
-bottom:5%;
-text-align:right;
-font-size:12rem;
-writing-mode: vertical-rl;
-background: rgba(0,0,0,.2);
-
+.des-page-title {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  text-align: right;
+  font-size: 8rem;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  background: rgba(0, 0, 0, 0.2);
 }
+.other-des-link {
+  font-size: 2rem;
+  color: #fafafb;
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  transition: all 0.5s ease;
+}
+.other-des-link i {
+  font-size: 2rem;
+}
+
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
@@ -584,6 +597,10 @@ background: rgba(0,0,0,.2);
   }
   .navigation-link {
     font-size: 1.75rem;
+  }
+  .des-page-title {
+    bottom: 25%;
+    writing-mode: horizontal-tb;
   }
 }
 /* -------------------------bootstrap col-md breakpoint-----------------------*/
@@ -622,6 +639,18 @@ background: rgba(0,0,0,.2);
   .contact-row {
     height: 30rem;
   }
+  .des-page-title {
+    bottom: 25%;
+    text-align: center;
+    font-size: 10rem;
+    writing-mode: horizontal-tb;
+  }
+  .other-des-link {
+    font-size: 2.5rem;
+  }
+  .other-des-link i {
+    font-size: 2.5rem;
+  }
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
@@ -653,6 +682,13 @@ background: rgba(0,0,0,.2);
   }
   .about-text {
     font-size: 2.2rem;
+  }
+  .des-page-title {
+    font-size: 18rem;
+  }
+  .other-des-link,
+  .other-des-link i {
+    font-size: 2.5rem;
   }
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
