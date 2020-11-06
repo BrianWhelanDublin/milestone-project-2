@@ -186,8 +186,8 @@ const getDestinationElement = (destinations, sliderName) => {
 
 /* Makes destinations list upon loading website using light slider library and jQuery*/
 $(document).ready(() => {
-/*used code from stack overflow to fix bug of this loading on the destinations page more details in my readme file.
-ie. if(element.length){carry out function} */
+  /*used code from stack overflow to fix bug of this loading on the destinations page more details in my readme file.
+ie. if(element.length){carry out function}*/
   if ($("#cities-slider").length) {
     getDestinationElement(cityDestinations, "cities-slider");
     $("#cities-slider").lightSlider({
@@ -255,3 +255,41 @@ customerList.forEach((customer) => {
     });
   });
 });
+
+// destination page
+/*
+const getId =()=>{
+    let id = window.location.hash.replace("#", "");
+    console.log(id)
+}*/
+const getDestination = () => {
+  let destinationId = window.location.hash.replace("#", "");
+ let destination;
+  cityDestinations.forEach((city) => {
+    if (city.id === destinationId) {
+    destination =city
+    }
+  });
+  beachDestinations.forEach((beach) => {
+    if (beach.id === destinationId) {
+     destination=beach
+    }
+  });
+  return destination
+};
+
+const renderDestinationHeading = () => {
+  let destination = getDestination();
+  let image = document.querySelector(".des-background-img");
+  let title = document.querySelector(".des-page-title");
+  image.style.cssText= ` 
+  background: url(${destination.bgImage}) no-repeat center center scroll; 
+  background-size:cover;`;
+  
+  title.innerHTML = destination.name;
+};
+
+  if ($("body").hasClass("destination-page")) {
+    renderDestinationHeading()
+  }
+

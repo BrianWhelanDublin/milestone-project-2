@@ -557,14 +557,11 @@ body {
     max-height:100%;
     max-width:100%;
 }*/
-.des-background-img{
-background: url(../images/cities/kyoto-bg.jpg) no-repeat center center scroll;
-  background-size: cover;
-}
+
 .des-page-title{
 position:absolute;
-bottom:5%;
 left:2%;
+bottom:5%;
 text-align:right;
 font-size:12rem;
 writing-mode: vertical-rl;
