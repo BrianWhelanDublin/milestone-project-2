@@ -550,15 +550,6 @@ body {
 .des-page-container {
   height: 100%;
 }
-/*
-.des-page-img{
-    position:absolute;
-    left:0;
-    top:0;
-    max-height:100%;
-    max-width:100%;
-}*/
-
 .des-page-title {
   position: absolute;
   left: 5%;
@@ -580,7 +571,29 @@ body {
 .other-des-link i {
   font-size: 2rem;
 }
-
+/* --------Details Section ----------*/
+.details-col {
+  height: 30rem;
+}
+.flag {
+  position: absolute;
+  max-height: 60%;
+  max-width: 60%;
+}
+.details-list,
+.about-des {
+  height: fit-content;
+  position: absolute;
+}
+.details-item {
+  font-size: 1.75rem;
+  padding: 0 1rem;
+}
+.about-des{
+    font-size:2.75rem;
+    text-align: center;
+    padding: 0 1rem;
+}
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
