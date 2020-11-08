@@ -254,7 +254,7 @@ body {
   visibility: visible;
 }
 .navigation-item {
-  margin: 2% 0;
+  margin: 1% 0;
 }
 .navigation-link {
   font-weight: 600;
@@ -545,7 +545,7 @@ body {
 /* -----------------------------Destinations page-----------------------------*/
 /* --------Title section----------*/
 #title-section {
-  height: 85vh;
+  height: 69rem;
 }
 .des-page-container {
   height: 100%;
@@ -586,7 +586,8 @@ body {
   header,
   .hero-img,
   .right-gradient,
-  .hero-img::before {
+  .hero-img::before,
+  #title-section {
     height: 100vh;
   }
 }
@@ -655,7 +656,7 @@ body {
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
   .heading {
-    top: 40%;
+    top: 25%;
     left: 15%;
   }
   .about-text,
