@@ -337,11 +337,7 @@ customerList.forEach((customer) => {
 });
 
 // destination page
-/*
-const getId =()=>{
-    let id = window.location.hash.replace("#", "");
-    console.log(id)
-}*/
+
 const getDestination = () => {
   let destinationId = window.location.hash.replace("#", "");
   let destination;
@@ -375,7 +371,7 @@ let infoArea = document.querySelector(".about-des");
 infoArea.innerHTML = destination.about
 }
 //fill destination page
-const fillDestinationPage = async() => {
+const fillDestinationPage = () => {
   let destination = getDestination();
   if (destination) {
     renderDestinationHeading(destination);
