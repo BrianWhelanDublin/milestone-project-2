@@ -203,18 +203,17 @@ let beachDestinations = [
     name: "seychelles",
     image: "assets/images/beaches/seychelles.jpg",
     bgImage: "assets/images/beaches/seychelles-bg.jpg",
-     country: "seychelles",
+    country: "seychelles",
     latLng: { lat: -7.05, lng: 46.68 },
     about:
       "A group of islands in the indian ocean the Seychelles is home to neumerous beaches, nature reserves and coral reefs. The Seychelles is a popular honneymoon spot.",
-    
   },
   {
     id: "b7",
     name: "philippines",
     image: "assets/images/beaches/philippines.jpg",
     bgImage: "assets/images/beaches/philippines-bg.jpg",
-     country: "philippines",
+    country: "philippines",
     latLng: { lat: 11.57, lng: 113.57 },
     about:
       "Situated in the pacific ocean the Philippines is a series of tropical islands home to amazing beaches and stunning corals.",
@@ -224,7 +223,7 @@ let beachDestinations = [
     name: "tulum",
     image: "assets/images/beaches/tulum.jpg",
     bgImage: "assets/images/beaches/tulum-bg.jpg",
-     country: "mexico",
+    country: "mexico",
     latLng: { lat: 20.21, lng: -87.53 },
     about:
       "Tulum is a hidden gem in Mexicos caribbean coast. Known for its beaches and ruins of an ancient Mayan city.",
@@ -234,7 +233,7 @@ let beachDestinations = [
     name: "santorini",
     image: "assets/images/beaches/santorini.jpg",
     bgImage: "assets/images/beaches/santorini-bg.jpg",
-     country: "greece",
+    country: "greece",
     latLng: { lat: 36.4, lng: 25.35 },
     about:
       "One of the most stunning Greek islands Santorini is know for its white buildings and blue roofs. Perfect for a romatic getaway or a peaceful retreat.",
@@ -359,8 +358,8 @@ const getDestination = () => {
   return destination;
 };
 
-const renderDestinationHeading = () => {
-  let destination = getDestination();
+const renderDestinationHeading = (destination) => {
+  //let destination = getDestination();
   let image = document.querySelector(".des-background-img");
   let title = document.querySelector(".des-page-title");
   image.style.cssText = ` 
@@ -369,9 +368,28 @@ const renderDestinationHeading = () => {
 
   title.innerHTML = destination.name;
 };
+// fill destination information from destination object 
+
+const renderDestinationInfo = (destination)=>{
+let infoArea = document.querySelector(".about-des");
+infoArea.innerHTML = destination.about
+}
+//fill destination page
+const fillDestinationPage = async() => {
+  let destination = getDestination();
+  if (destination) {
+    renderDestinationHeading(destination);
+    getCountryData(destination);
+    renderDestinationInfo(destination)
+
+  }
+  else{
+      alert("Something has gone wrong please try again")
+  }
+};
 
 $(document).ready(() => {
   if ($("body").hasClass("destination-page")) {
-    renderDestinationHeading();
+    fillDestinationPage();
   }
 });
