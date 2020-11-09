@@ -78,16 +78,29 @@
 				<div class="row details-row">
 					<div class="col-6 col-md-3 details-col details-flag-col">
 					</div>
-						<div class="col-6 col-md-3 details-col details-list-col">
-						</div>
-						<div class="col-12 col-md-6 details-col details-about-col">
-							<p class=" about-des center">
-							</p>
-						</div>
+					<div class="col-6 col-md-3 details-col details-list-col">
+					</div>
+					<div class="col-12 col-md-6 details-col details-about-col">
+						<p class=" about-des center">
+						</p>
 					</div>
 				</div>
+			</div>
 		</section>
 		<!--end of destination details section-->
+		<!--Map section-->
+		<section id="map-section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 map-btn-col"></div>
+					<div class="col-md-6 map-col">
+						<div id="map"></div>
+					</div>
+					<div class="col-md-3 map-results-col"></div>
+				</div>
+			</div>
+		</section>
+		<!--End of map section-->
 	</main>
 	<!-- footer section-->
 	<footer id="footer">
@@ -122,14 +135,18 @@
 	</footer>
 	<!-- end of footer section-->
 	<!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" defer></script>
 	<!-- Bootstrap-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"
 		defer></script>
-        	<!-- Rest Countries Api javaScript file-->
+	<!-- Google Maps Api including places library Script -->
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlkN1jBooLeGR3j28lHEiw7ML5P74WoX4&libraries=places" defer></script>
+	<!-- Rest Countries Api javaScript file-->
 	<script type="text/javascript" src="assets/js/restcountries.js" defer></script>
+	<!-- Google Maps javascript file-->
+	<script type="text/javascript" src="assets/js/maps.js" defer></script>
 	<!-- Main javascript file-->
 	<script type="text/javascript" src="assets/js/main.js" defer></script>
 </body>
