@@ -42,7 +42,7 @@ let cityDestinations = [
     image: "assets/images/cities/dubai.jpg",
     bgImage: "assets/images/cities/dubai-bg.jpg",
     country: "united arab emirates",
-    latLng: { lat: 25.2, lng: 55.2 },
+    latLng: { lat: 25.2048, lng: 55.2708 },
     about:
       "A Modern city built in the middle of a dessert. Enjoy the city of huge skyscraers, huge shooping malls or relax on Atlantis, a resort built on an artificial island.",
   },
@@ -52,7 +52,7 @@ let cityDestinations = [
     image: "assets/images/cities/kyoto.jpg",
     bgImage: "assets/images/cities/kyoto-bg.jpg",
     country: "japan",
-    latLng: { lat: 35, lng: 135.7 },
+    latLng: { lat: 35.0116, lng: 135.7681 },
     about:
       "Once the home of the Japanese emperor Kyoto is steeped in history. Enjoy the hundreds of ancient temples and shrines in this UNESCO world heritage site.",
   },
@@ -62,7 +62,7 @@ let cityDestinations = [
     image: "assets/images/cities/london.jpg",
     bgImage: "assets/images/cities/london-bg.jpg",
     country: "united kingdom",
-    latLng: { lat: 51.5, lng: -0.12 },
+    latLng: { lat: 51.5074, lng: -0.1278 },
     about:
       "The heart of the U.K enjoy all this great city has to offer from, Buckiingham Palace, Big ben, a west end show, or enjoy the world class shopping.",
   },
@@ -72,7 +72,7 @@ let cityDestinations = [
     image: "assets/images/cities/madrid.jpg",
     bgImage: "assets/images/cities/madrid-bg.jpg",
     country: "spain",
-    latLng: { lat: 40.4, lng: -3.7 },
+    latLng: { lat: 40.4168, lng: -3.7038 },
     about:
       "Madrid the capital of Spain know for its Art Museams and elegant boulevards. Spend the day marveling at historic artworks followed by an evening of great tappas.",
   },
@@ -82,7 +82,7 @@ let cityDestinations = [
     image: "assets/images/cities/new-york.jpg",
     bgImage: "assets/images/cities/new-york-bg.jpg",
     country: "usa",
-    latLng: { lat: 40.7, lng: -74.0 },
+    latLng: { lat: 40.7128, lng: -74.0060 },
     about:
       "The city that never sleeps. New york has something for everyone, from shopping on 5th avenue, strooling through centeral park, or taking in the view from the top of the empire state building.",
   },
@@ -92,7 +92,7 @@ let cityDestinations = [
     image: "assets/images/cities/paris.jpg",
     bgImage: "assets/images/cities/paris-bg.jpg",
     country: "france",
-    latLng: { lat: 48.85, lng: 2.35 },
+    latLng: { lat: 48.8566, lng: 2.3522 },
     about:
       "The worlds most romantic city. Stroll down the Champs-Elysees, spend the afternoon in the louvre and watch the Eiffel Tower illuminate at night.",
   },
@@ -102,7 +102,7 @@ let cityDestinations = [
     image: "assets/images/cities/prague.jpg",
     bgImage: "assets/images/cities/prague-bg.jpg",
     country: "czech republic",
-    latLng: { lat: 50.07, lng: 14.43 },
+    latLng: { lat: 50.0755, lng: 14.4378 },
     about:
       "Prague is know for it's Old Town Square, with beautiful baroque buildings. Strool around the city at day and then enjoy the lively night life come nightfall.",
   },
@@ -112,7 +112,7 @@ let cityDestinations = [
     image: "assets/images/cities/rome.jpg",
     bgImage: "assets/images/cities/rome-bg.jpg",
     country: "italy",
-    latLng: { lat: 41.9, lng: 12.49 },
+    latLng: { lat: 41.9028, lng: 12.4964 },
     about:
       "Dating back to the roman empire rome is steep in history. Enjoy the collusem or take a visit to vatican city.",
   },
@@ -122,7 +122,7 @@ let cityDestinations = [
     image: "assets/images/cities/singapore.jpg",
     bgImage: "assets/images/cities/singapore-bg.jpg",
     country: "singapore",
-    latLng: { lat: 1.35, lng: 103.8 },
+    latLng: { lat: 1.3521, lng: 103.8198 },
     about:
       "Singapore is a modern asian city. Enjoy the tradition market food and wash it all down with a singapore sling at Raffles Hotel. The gardens at the bay is a must see for any trip to this city.",
   },
@@ -132,7 +132,7 @@ let cityDestinations = [
     image: "assets/images/cities/tokyo.jpg",
     bgImage: "assets/images/cities/tokyo-bg.jpg",
     country: "japan",
-    latLng: { lat: 35.68, lng: 139.76 },
+    latLng: { lat: 35.6804, lng: 139.7690 },
     about:
       "Tokyo the city of the future. A city for foodies enjoy world class food in the city with the most Michelin Stars in the world.",
   },
@@ -144,7 +144,7 @@ let beachDestinations = [
     image: "assets/images/beaches/antigua.jpg",
     bgImage: "assets/images/beaches/antigua-bg.jpg",
     country: "antigua",
-    latLng: { lat: 17.07, lng: -61.81 },
+    latLng: { lat: 17.0747, lng: -61.8175 },
     about:
       "One of two major islands that make up Antigua and Barbuda. This island is ringed with anazing coral reefs and know for its white sandy beaches.",
   },
@@ -154,7 +154,7 @@ let beachDestinations = [
     image: "assets/images/beaches/bali.jpg",
     bgImage: "assets/images/beaches/bali-bg.jpg",
     country: "indonesia",
-    latLng: { lat: -8.45, lng: 115.188 },
+    latLng: { lat: -8.3405, lng: 115.0920 },
     about:
       "A volcanic indonesian island bali is know for its coral reefs and amazing beaches. Enjoy the busteling night life in kuta or get away from it all in the gilly islands",
   },
@@ -164,7 +164,7 @@ let beachDestinations = [
     image: "assets/images/beaches/capri.jpg",
     bgImage: "assets/images/beaches/capri-bg.jpg",
     country: "italy",
-    latLng: { lat: 40.54, lng: 14.19 },
+    latLng: { lat: 40.5532, lng: 14.2222 },
     about:
       "An Italian island capri is famous for its upsacle hotels and designer shopping or enjoy the crystal clear waters of the mediteranian sea.",
   },
@@ -174,7 +174,7 @@ let beachDestinations = [
     image: "assets/images/beaches/fiji.jpg",
     bgImage: "assets/images/beaches/fiji-bg.jpg",
     country: "fiji",
-    latLng: { lat: -16.49, lng: 174.96 },
+    latLng: { lat: -17.7134, lng: 178.0650 },
     about:
       "Made of more the 300 islands Fiji is famous for its tropical palm-lined beaches and stunning coral reefs..",
   },
@@ -184,7 +184,7 @@ let beachDestinations = [
     image: "assets/images/beaches/koh-phi-phi.jpg",
     bgImage: "assets/images/beaches/koh-phi-phi-bg.jpg",
     country: "thailand",
-    latLng: { lat: 7.73, lng: 98.7 },
+    latLng: { lat: 7.7407, lng: 98.7784 },
     about:
       "Koh Phi Phi is one of the most famous thai islands. Famous for its crystal clear waters and limestone outcrops a tropical oasis.",
   },
@@ -194,7 +194,7 @@ let beachDestinations = [
     image: "assets/images/beaches/maldives.jpg",
     bgImage: "assets/images/beaches/maldives-bg.jpg",
     country: "maldives",
-    latLng: { lat: 4.09, lng: 69.68 },
+    latLng: { lat: 3.2028, lng: 73.2207 },
     about:
       "A series of islands in the indian ocean the maldives is a tropical oasis with prestine beaches and crystal clear waters. A real favorite with honeymooners",
   },
@@ -204,7 +204,7 @@ let beachDestinations = [
     image: "assets/images/beaches/seychelles.jpg",
     bgImage: "assets/images/beaches/seychelles-bg.jpg",
     country: "seychelles",
-    latLng: { lat: -7.05, lng: 46.68 },
+    latLng: { lat: -4.6796, lng: 55.4920 },
     about:
       "A group of islands in the indian ocean the Seychelles is home to neumerous beaches, nature reserves and coral reefs. The Seychelles is a popular honneymoon spot.",
   },
@@ -214,7 +214,7 @@ let beachDestinations = [
     image: "assets/images/beaches/philippines.jpg",
     bgImage: "assets/images/beaches/philippines-bg.jpg",
     country: "philippines",
-    latLng: { lat: 11.57, lng: 113.57 },
+    latLng: { lat: 12.8797, lng: 121.7704 },
     about:
       "Situated in the pacific ocean the Philippines is a series of tropical islands home to amazing beaches and stunning corals.",
   },
@@ -224,7 +224,7 @@ let beachDestinations = [
     image: "assets/images/beaches/tulum.jpg",
     bgImage: "assets/images/beaches/tulum-bg.jpg",
     country: "mexico",
-    latLng: { lat: 20.21, lng: -87.53 },
+    latLng: { lat: 20.2114, lng: -87.4654 },
     about:
       "Tulum is a hidden gem in Mexicos caribbean coast. Known for its beaches and ruins of an ancient Mayan city.",
   },
@@ -234,7 +234,7 @@ let beachDestinations = [
     image: "assets/images/beaches/santorini.jpg",
     bgImage: "assets/images/beaches/santorini-bg.jpg",
     country: "greece",
-    latLng: { lat: 36.4, lng: 25.35 },
+    latLng: { lat: 36.3932, lng: 25.4615 },
     about:
       "One of the most stunning Greek islands Santorini is know for its white buildings and blue roofs. Perfect for a romatic getaway or a peaceful retreat.",
   },
@@ -377,6 +377,7 @@ const fillDestinationPage = () => {
     renderDestinationHeading(destination);
     getCountryData(destination);
     renderDestinationInfo(destination)
+    renderMap(destination.latLng)
 
   }
   else{
