@@ -594,6 +594,16 @@ body {
     text-align: center;
     padding: 0 1rem;
 }
+/* --------Map Section----------*/
+.map-btn-col,
+.map-col,
+.map-results-col{
+    height:60rem;
+}
+#map{
+    height:100%;
+    width:100%;
+}
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
