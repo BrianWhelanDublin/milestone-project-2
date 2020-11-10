@@ -53,7 +53,6 @@ const getCountryData = (destination) => {
       let countryData = response[0];
       renderDestinationInfoList(countryData);
       renderFlag(countryData);
-      console.log(countryData);
     },
     (errorResponse) => {
       if (errorResponse.status === 404) {

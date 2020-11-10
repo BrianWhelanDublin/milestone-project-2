@@ -5,6 +5,10 @@
 - The aim of this project is to build an interactive front end website using HTML CSS and javaScript.
 - I have decided to build a website for a fictional travel company G-Travel. I have used the knowledge I've learned in the course to date as well as good good user experience to create a responsive, well designed functional website.
 
+## Live project
+
+- [View the live project here.](https://brianwhelandublin.github.io/milestone-project-2/)
+
 ## User experience
 
 ### User Stories
