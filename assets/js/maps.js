@@ -13,7 +13,7 @@ let markerCluster;
 
 // Function to render map onto page for each destination area.
 const renderMap = (area) => {
-// to desplay info when markers are clicked
+  // to desplay info when markers are clicked
   infoWindow = new google.maps.InfoWindow();
   currentInfoWindow = infoWindow;
   const mapArea = {
@@ -34,8 +34,10 @@ const placesSearch = (keyword) => {
 };
 
 /*Callback function that will call the createMarkers if the request was succsessful */
-//
+
 const callBack = (results, status) => {
+    /*first remove previous clusters */
+    removePreviousCluster()
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     createMarkers(results);
     markerCluster = new MarkerClusterer(map, markers, {
@@ -52,6 +54,8 @@ const callBack = (results, status) => {
 /* Function to create markers for the search taken from the google documentation and google codelab tutorials*/
 
 const createMarkers = (places) => {
+    /* first remove previous markers*/
+    removePreviousMarkers()
   places.forEach((place) => {
     let marker = new google.maps.Marker({
       position: place.geometry.location,
@@ -80,7 +84,7 @@ const createMarkers = (places) => {
     });
   });
 };
-
+/* sows details of each place to the map infowindow */
 const showDetails = (placeResult, marker, status) => {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     let placeInfowindow = new google.maps.InfoWindow();
@@ -99,6 +103,22 @@ const showDetails = (placeResult, marker, status) => {
   }
 };
 
+/* Functions to remove markers and markers cluster when a new search happens */
+const removePreviousMarkers = () => {
+  if (markers.length) {
+    markers.forEach((marker) => {
+      marker.setMap(null);
+    });
+    markers = [];
+  }
+};
+
+const removePreviousCluster = () =>{
+    if(markerCluster) {
+        markerCluster.setMap(null)
+    };
+};
+
 /* Event listeners for each button to make the search */
 document.getElementById("shopping-btn").addEventListener("click", () => {
   placesSearch("shopping");
@@ -115,6 +135,3 @@ document.getElementById("restaurant-btn").addEventListener("click", () => {
 document.getElementById("bars-btn").addEventListener("click", () => {
   placesSearch("bar");
 });
-
-
-
