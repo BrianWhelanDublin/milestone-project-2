@@ -70,4 +70,4 @@ const getCountryData = (destination) => {
     }
   );
 };
-getCountryData("");
+
