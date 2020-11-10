@@ -101,7 +101,20 @@ const showDetails = (placeResult, marker, status) => {
 
 /* Event listeners for each button to make the search */
 document.getElementById("shopping-btn").addEventListener("click", () => {
-  //event.preventDefault();
-
   placesSearch("shopping");
 });
+document.getElementById("attraction-btn").addEventListener("click", () => {
+  placesSearch("tourist attraction");
+});
+document.getElementById("parks-btn").addEventListener("click", () => {
+  placesSearch("parks");
+});
+document.getElementById("restaurant-btn").addEventListener("click", () => {
+  placesSearch("restaurant");
+});
+document.getElementById("bars-btn").addEventListener("click", () => {
+  placesSearch("bar");
+});
+
+
+
