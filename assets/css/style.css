@@ -665,9 +665,12 @@ body {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2rem;
+  color:#181822;
 }
-.dark-text {
+.window-text,
+.window-text strong{
   color: #181822;
+  font-size:1.5rem;
 }
 
 /* ---------------------------------Media Querys-----------------------*/
@@ -778,16 +781,16 @@ body {
     width: 20rem;
   }
   .result-img {
-    max-height: 12rem;
+    max-height: 10rem;
   }
   .result-text p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .result-heading h3 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   .web-address a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 /* -------------------------laptops and desktops-----------------------*/
@@ -889,18 +892,18 @@ body {
   }
   #panel {
     height: 40rem;
-    width: 28rem;
+    width: 26rem;
   }
   .result-img {
-    max-height: 18rem;
+    max-height: 16rem;
   }
   .result-text p {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   .result-heading h3 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
   .web-address a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
