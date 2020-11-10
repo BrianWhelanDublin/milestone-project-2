@@ -133,7 +133,7 @@ const showPanel = (placeResult) => {
         infoPane.classList.remove("open");
         infoPane.classList.add("hidden");
     }
-    /* shows image if there is one otherwise lets user know that there was none found */
+    /* shows image if there is one otherwise lets user know that there wasn't one found */
     if (placeResult.photos) {
         photo = placeResult.photos[0].getUrl();
         image.innerHTML = `
@@ -146,7 +146,7 @@ const showPanel = (placeResult) => {
     heading.innerHTML = `
     <h3>${placeResult.name}</h3>
     `
-    /* shows ratinf if there is one otherwise lets user know that there was none found */
+    /* shows ratinf if there is one otherwise lets user know that there wasn't one found */
     if (placeResult.rating) {
         rating.innerHTML = `
         <p>Rating: ${placeResult.rating} \u272e</p>
@@ -160,7 +160,7 @@ const showPanel = (placeResult) => {
     address.innerHTML = `
       <p>${placeResult.formatted_address}</p>
       `
-      /* shows webaddress if there is one otherwise lets user know that there was none found */
+      /* shows webaddress if there is one otherwise lets user know that there wasn't one found */
     if (placeResult.website) {
         webAddress.innerHTML = `
           <a href="${placeResult.website}">Web Page</a>
