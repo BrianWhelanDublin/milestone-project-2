@@ -298,12 +298,12 @@ body {
   flex-direction: column;
   background: rgba(0, 0, 0, 0.3);
 }
-.home-page-title{
-    text-shadow: 0.4rem 0.4rem 0.3rem #181822;
+.home-page-title {
+  text-shadow: 0.4rem 0.4rem 0.3rem #181822;
 }
 .hero-text {
   padding: 5% 0;
- text-shadow: 0.3rem 0.3rem 0.2rem #181822;
+  text-shadow: 0.3rem 0.3rem 0.2rem #181822;
 }
 .hero-link {
   font-size: 1.75rem;
@@ -602,15 +602,19 @@ body {
 }
 /* -----------------Map Section-------------*/
 .map-title-col {
-  height: 12rem;
+  height: 14rem;
 }
 .map-section-heading {
   margin-top: 2rem;
 }
-.map-btn-col,
-.map-col,
+.map-btn-col {
+  height: 22rem;
+}
+.map-col {
+  height: 26rem;
+}
 .map-results-col {
-  height: 25rem;
+  height: 28rem;
 }
 .map-btn {
   font-size: 1.6rem;
@@ -631,8 +635,8 @@ body {
 }
 #panel {
   background-color: #fafafb;
-  height: 23rem;
-  width: 15rem;
+  height: 26rem;
+  width: 18rem;
   overflow-x: hidden;
   transition: all 0.2s ease-out;
   position: absolute;
@@ -649,22 +653,23 @@ body {
 .result-img {
   max-width: 100%;
   height: auto;
-  max-height: 10rem;
-  display:block;
-  margin:0 auto;
+  max-height: 8rem;
+  display: block;
+  margin: 0 auto;
 }
 .result-text {
   color: #181822;
   text-align: center;
   position: absolute;
-  bottom:1rem;
+  width: 100%;
+  bottom: 0.5rem;
   margin-top: 5%;
 }
 .result-text p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 .result-heading h3 {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
 }
 .web-address a {
   font-size: 1rem;
@@ -673,12 +678,12 @@ body {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2rem;
-  color:#181822;
+  color: #181822;
 }
 .window-text,
-.window-text strong{
+.window-text strong {
   color: #181822;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 /* ---------------------------------Media Querys-----------------------*/
@@ -885,7 +890,7 @@ body {
   .social-media-links i {
     font-size: 5rem;
   }
-  
+
   .map-title-col {
     height: 15rem;
   }
@@ -903,7 +908,7 @@ body {
     width: 26rem;
   }
   .result-img {
-    max-height: 18rem;
+    max-height: 15rem;
   }
   .result-text p {
     font-size: 1.9rem;
