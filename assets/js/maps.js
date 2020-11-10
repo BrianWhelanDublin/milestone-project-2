@@ -163,7 +163,7 @@ const showPanel = (placeResult) => {
       /* shows webaddress if there is one otherwise lets user know that there wasn't one found */
     if (placeResult.website) {
         webAddress.innerHTML = `
-          <a href="${placeResult.website}">Web Page</a>
+          <a href="${placeResult.website}  target="_blank">Web Page</a>
           `
     } else {
         webAddress.innerHTML = `
