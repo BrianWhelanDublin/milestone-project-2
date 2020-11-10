@@ -75,7 +75,8 @@ body {
 .destination-link:hover,
 .signup-btn:hover,
 .contact-btn:hover,
-.hero-link:hover {
+.hero-link:hover,
+.map-btn:hover {
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
@@ -595,10 +596,29 @@ body {
   padding: 0 1rem;
 }
 /* -----------------Map Section-------------*/
+.map-title-col {
+  height: 12rem;
+}
+.map-section-heading {
+  margin-top: 2rem;
+}
 .map-btn-col,
 .map-col,
 .map-results-col {
-  height: 60rem;
+  height: 25rem;
+}
+.map-btn {
+  font-size: 1.6rem;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+.map-btn-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
 }
 #map {
   height: 100%;
@@ -606,8 +626,8 @@ body {
 }
 #panel {
   background-color: #fafafb;
-  height: 42rem;
-  width: 25rem;
+  height: 23rem;
+  width: 15rem;
   overflow-x: hidden;
   transition: all 0.2s ease-out;
   position: absolute;
@@ -624,30 +644,30 @@ body {
 .result-img {
   width: 100%;
   height: auto;
-  max-height: 20rem;
+  max-height: 10rem;
 }
 .result-text {
   color: #181822;
   text-align: center;
   position: absolute;
-  margin-top:5%;
+  margin-top: 5%;
 }
 .result-text p {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 .result-heading h3 {
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 .web-address a {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .no-result {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2rem;
 }
-.dark-text{
-    color:#181822;
+.dark-text {
+  color: #181822;
 }
 
 /* ---------------------------------Media Querys-----------------------*/
@@ -741,6 +761,34 @@ body {
   .navigation-link {
     font-size: 4rem;
   }
+  .map-title-col {
+    height: 15rem;
+  }
+  .map-btn-col,
+  .map-col,
+  .map-results-col {
+    height: 35rem;
+  }
+  .map-btn {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+  }
+  #panel {
+    height: 30rem;
+    width: 20rem;
+  }
+  .result-img {
+    max-height: 12rem;
+  }
+  .result-text p {
+    font-size: 1.75rem;
+  }
+  .result-heading h3 {
+    font-size: 2.25rem;
+  }
+  .web-address a {
+    font-size: 1.5rem;
+  }
 }
 /* -------------------------laptops and desktops-----------------------*/
 @media (min-width: 1200px) {
@@ -825,5 +873,34 @@ body {
   }
   .social-media-links i {
     font-size: 5rem;
+  }
+  
+  .map-title-col {
+    height: 15rem;
+  }
+  .map-btn-col,
+  .map-col,
+  .map-results-col {
+    height: 45rem;
+  }
+  .map-btn {
+    font-size: 2.5rem;
+    margin-top: 1.75rem;
+  }
+  #panel {
+    height: 40rem;
+    width: 28rem;
+  }
+  .result-img {
+    max-height: 18rem;
+  }
+  .result-text p {
+    font-size: 2.25rem;
+  }
+  .result-heading h3 {
+    font-size: 3rem;
+  }
+  .web-address a {
+    font-size: 2rem;
   }
 }
