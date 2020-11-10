@@ -16,10 +16,7 @@ const renderMap = (area) => {
   // to desplay info when markers are clicked
   infoWindow = new google.maps.InfoWindow();
   currentInfoWindow = infoWindow;
-  const mapArea = {
-    center: area,
-    zoom: 10,
-  };
+  const mapArea = area;
   map = new google.maps.Map(document.getElementById("map"), mapArea);
   /* Adds map panel for search results*/
   infoPane = document.getElementById('panel');

@@ -1,7 +1,9 @@
-/*--code from css tricks to fix bug of transitions happining on page load using javaScript to remove the preload class from the body after the page has loaded*/
+/*--code from stack overflow more details in my readme file to fix bug of transitions happining on page load using javaScript to remove the preload class from the body after the page has loaded*/
+
 window.onload = () => document.body.classList.remove("preload");
 
-/* Code to open and close the navigation menu*/
+/* Code to open and close the navigation menu
+Code from Code and create tutorial I've edited this code as the tutorial only opened and closed when you clicked the hambrger so i've changed it to close once a navigation item is clicked more details in readme*/
 
 let menu = document.querySelector(".hamburger");
 let navigation = document.querySelector(".navigation");
@@ -18,11 +20,12 @@ link.forEach((item) => {
   });
 });
 
-/* Code to fade elements in upon scrolling */
-
+/* Code to fade elements in upon scrolling
+Code inspired by dev Ed tutorial details in readme I've changed the code to work for more than one element by using querySelectorAll() and the using forEach on it */
 const animationOnScroll = () => {
   let animationElement = document.querySelectorAll(".animation-element");
   animationElement.forEach((element) => {
+    // Code taken from the tutorian
     let position = element.getBoundingClientRect().top;
     let screenPosition = window.innerHeight / 1.2;
     if (position < screenPosition) {
@@ -30,11 +33,11 @@ const animationOnScroll = () => {
     }
   });
 };
-
+// call function when window is scrolled
 window.addEventListener("scroll", animationOnScroll);
 
 /* Destinations */
-
+//array of all the city destinations
 let cityDestinations = [
   {
     id: "c0",
@@ -137,6 +140,7 @@ let cityDestinations = [
       "Tokyo the city of the future. A city for foodies enjoy world class food in the city with the most Michelin Stars in the world.",
   },
 ];
+// Array of all the beach destinations
 let beachDestinations = [
   {
     id: "b0",
@@ -241,7 +245,6 @@ let beachDestinations = [
 ];
 
 /* Renders li elements from destinations array's */
-
 const renderDestination = (destination, sliderName) => {
   const markup = `
     <li class="destination-card">
@@ -257,7 +260,6 @@ const renderDestination = (destination, sliderName) => {
 };
 
 /* Literates through destination list and for each destination renders a li element */
-
 const getDestinationElement = (destinations, sliderName) => {
   destinations.forEach((destination) => {
     renderDestination(destination, sliderName);
@@ -290,28 +292,29 @@ ie. if(element.length){carry out function}*/
   }
 });
 
-/* Code to change reviews when you click on a reviewers details */
+/* Code to change which review is being displayed when you click on a customers details */
 
 let customerList = document.querySelectorAll(".reviewer");
 let reviewList = document.querySelectorAll(".review");
 
-// Removes the reviews from view
+// Removes the review thats currently displayed from view
 const clearReviews = () => {
   reviewList.forEach((review) => {
     review.classList.add("hidden");
   });
 };
-// removes the actice class from the reviewers details
+// removes the actice class from the customers detail that currently has it.
 const removeActiveClass = () => {
   customerList.forEach((customer) => {
     customer.classList.remove("active");
   });
 };
-/* adds an event listener to each reviewer and then shows the review when its clicked and changes the active class */
+/* adds an event listener to each customer and then shows the review when its clicked and changes the active class */
 customerList.forEach((customer) => {
   customer.addEventListener("click", () => {
     clearReviews();
     removeActiveClass();
+    //Matches customer whit their review.
     reviewList.forEach((review) => {
       if (
         customer.classList.contains("reviewer-1") &&
@@ -337,9 +340,11 @@ customerList.forEach((customer) => {
 });
 
 // destination page
-
+// gets the current destination when you click on the page
 const getDestination = () => {
+  // gets destinastion id from the windows url and removes the hash.
   let destinationId = window.location.hash.replace("#", "");
+  // checks through each array to find a match for the id and return it
   let destination;
   cityDestinations.forEach((city) => {
     if (city.id === destinationId) {
@@ -354,29 +359,43 @@ const getDestination = () => {
   return destination;
 };
 
+// Fills the heading of the destination page from the above arrays using the id
 const renderDestinationHeading = (destination) => {
-  //let destination = getDestination();
   let image = document.querySelector(".des-background-img");
   let title = document.querySelector(".des-page-title");
-  image.style.cssText = ` 
+  // Adds the image as a background in the css
+  if (destination) {
+    image.style.cssText = ` 
   background: url(${destination.bgImage}) no-repeat center center scroll; 
   background-size:cover;`;
-
-  title.innerHTML = destination.name;
+    title.innerHTML = destination.name;
+  } else {
+    alert("Something has gone wrong please try again");
+  }
 };
-// fill destination information from destination object
 
+// fill the destination information from destination object
 const renderDestinationInfo = (destination) => {
-  let infoArea = document.querySelector(".about-des");
+if(destination){
+      let infoArea = document.querySelector(".about-des");
   infoArea.innerHTML = destination.about;
+}else{
+        alert("Something has gone wrong please try again");
+  };
 };
-//fill destination page
+
+//fill the rest of the destination page
 const fillDestinationPage = () => {
+    //gets destination
   let destination = getDestination();
   if (destination) {
+      // fills in heading
     renderDestinationHeading(destination);
+    // gets data from the rest countries api
     getCountryData(destination);
+    // fills in about section
     renderDestinationInfo(destination);
+    // places the googles map
     renderMap(destination.latLng);
   } else {
     alert("Something has gone wrong please try again");
@@ -384,6 +403,7 @@ const fillDestinationPage = () => {
 };
 
 $(document).ready(() => {
+    // only runs function for destination page
   if ($("body").hasClass("destination-page")) {
     fillDestinationPage();
   }
