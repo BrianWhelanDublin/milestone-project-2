@@ -15,7 +15,7 @@ var markers = [];
 const renderMap = (area) =>{
   const mapArea = {
         center: area,
-        zoom: 12
+        zoom: 10
     }
      map = new google.maps.Map(document.getElementById("map"), mapArea)
 }

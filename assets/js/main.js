@@ -194,7 +194,7 @@ let beachDestinations = [
     image: "assets/images/beaches/maldives.jpg",
     bgImage: "assets/images/beaches/maldives-bg.jpg",
     country: "maldives",
-    latLng: { lat: 3.2028, lng: 73.2207 },
+    latLng: { lat: 4.1755, lng: 73.5093 },
     about:
       "A series of islands in the indian ocean the maldives is a tropical oasis with prestine beaches and crystal clear waters. A real favorite with honeymooners",
   },
