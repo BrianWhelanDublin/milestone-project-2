@@ -766,47 +766,47 @@ body {
   .other-des-link i {
     font-size: 2.5rem;
   }
-
+  .map-btn-col {
+  height: 35rem;
+}
+.map-col {
+  height: 35rem;
+}
+.map-results-col {
+  height: 35rem;
+}
   #panel {
-    height: 42rem;
-    width: 25rem;
+    height: 30rem;
+    width: 20rem;
   }
   .result-img-container {
     position: absolute;
     left: 0;
     top: 0;
-    height: 20rem;
+    height: 10rem;
     width: 100%;
-  }
-
-  .result-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 18rem;
   }
   .result-text-container {
     position: absolute;
-    top: 18rem;
-    width:100%;
-    height: 32rem;
+    top: 10rem;
+    width: 100%;
+    height: 20rem;
   }
   .result-text {
-  position: relative;
-}
-  .result-text p {
-    font-size: 1.8rem;
+    position: relative;
   }
   .result-heading h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .result-text p {
+    font-size: 1.5rem;
   }
   .web-address a {
     font-size: 1.75rem;
   }
   .no-result {
     font-size: 1.25rem;
-
   }
- 
 }
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
@@ -838,22 +838,6 @@ body {
   .map-btn {
     font-size: 2rem;
     margin-top: 1.25rem;
-  }
-  #panel {
-    height: 30rem;
-    width: 20rem;
-  }
-  .result-img {
-    max-height: 10rem;
-  }
-  .result-text p {
-    font-size: 1.5rem;
-  }
-  .result-heading h3 {
-    font-size: 2rem;
-  }
-  .web-address a {
-    font-size: 1.25rem;
   }
 }
 /* -------------------------laptops and desktops-----------------------*/
@@ -956,6 +940,13 @@ body {
   #panel {
     height: 42rem;
     width: 26rem;
+  }
+  .result-img-container {
+    height: 15rem;
+  }
+  .result-text-container {
+    top: 15rem;
+    height: 27rem;
   }
   .result-img {
     max-height: 15rem;
