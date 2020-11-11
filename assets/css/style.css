@@ -611,10 +611,10 @@ body {
   height: 22rem;
 }
 .map-col {
-  height: 26rem;
+  height: 30rem;
 }
 .map-results-col {
-  height: 28rem;
+  height: 25rem;
 }
 .map-btn {
   font-size: 1.6rem;
@@ -635,8 +635,8 @@ body {
 }
 #panel {
   background-color: #fafafb;
-  height: 26rem;
-  width: 18rem;
+  height: 20rem;
+  width: 35rem;
   overflow-x: hidden;
   transition: all 0.2s ease-out;
   position: absolute;
@@ -650,38 +650,47 @@ body {
 .open {
   visibility: visible;
 }
+.result-img-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 150px;
+}
 .result-img {
   max-width: 100%;
-  height: auto;
-  max-height: 8rem;
-  display: block;
-  margin: 0 auto;
+  max-height: 100%;
+  position: absolute;
+}
+.result-text-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
 }
 .result-text {
   color: #181822;
   text-align: center;
   position: absolute;
-  width: 100%;
-  bottom: 0.5rem;
-  margin-top: 5%;
+  height: fit-content;
 }
 .result-text p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .result-heading h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 .web-address a {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .no-result {
-  font-size: 1.5rem;
   text-align: center;
-  margin-top: 2rem;
-  color: #181822;
+  margin-top: 1.5rem;
 }
 .window-text,
-.window-text strong {
+.window-text strong,
+.no-result {
   color: #181822;
   font-size: 1.5rem;
 }

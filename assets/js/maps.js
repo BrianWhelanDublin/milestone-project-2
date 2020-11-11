@@ -137,7 +137,7 @@ const showPanel = (placeResult) => {
     if (placeResult.photos) {
         photo = placeResult.photos[0].getUrl();
         image.innerHTML = `
-        <img src="${photo}" alt="image ${placeResult.name}" class="result-img">
+        <img src="${photo}" alt="image ${placeResult.name}" class="result-img center">
         `
     } else {
         image.innerHTML = `<p class="no-result"> No Image Available for this choice </p>`
