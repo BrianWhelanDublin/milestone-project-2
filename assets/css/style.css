@@ -54,7 +54,7 @@ body {
   font-weight: 400;
 }
 /* ------------------------ Common Elements link and destination cards ----- */
-/*---- Links ----*/
+/*---- Links and buttons ----*/
 .link {
   border: #fafafb 2px solid;
   text-decoration: none;
@@ -76,7 +76,8 @@ body {
 .signup-btn:hover,
 .contact-btn:hover,
 .hero-link:hover,
-.map-btn:hover {
+.map-btn:hover,
+.packages-btn:hover {
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
@@ -91,6 +92,9 @@ body {
   color: #181822;
   padding: 0.2rem;
   border-radius: 0.5rem;
+}
+button:focus {
+  outline: none;
 }
 /*---- Cards ----*/
 .destination-card,
@@ -204,10 +208,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border:none;
+  border: none;
 }
-.hamburger:focus{
-    outline: none;
+.hamburger:focus {
+  outline: none;
 }
 .line {
   width: 3rem;
@@ -605,24 +609,26 @@ body {
   padding: 0 1rem;
 }
 /* -----------------Map Section-------------*/
-.map-title-col {
-  height: 14rem;
+.map-title-col,
+.packages-title-col {
+  height: 20rem;
 }
 .map-section-heading {
-  margin-top: 2rem;
+  margin-top: 5rem;
+  border-bottom: solid 2px #fafafb;
 }
 .map-btn-col {
-  height: 22rem;
+  height: 27rem;
 }
 .map-col {
   height: 30rem;
 }
 .map-results-col {
-  height: 25rem;
+  height: 30rem;
 }
 .map-btn {
-  font-size: 1.6rem;
-  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
   width: 100%;
 }
 .map-btn-list {
@@ -637,13 +643,20 @@ body {
   height: 100%;
   width: 100%;
 }
+.map-subheading {
+  margin-top: 1.25rem;
+  font-size: 3rem;
+  text-align: center;
+}
 #panel {
   background-color: #fafafb;
   height: 22.5rem;
   width: 35rem;
   overflow-x: hidden;
   transition: all 0.2s ease-out;
-  position: absolute;
+  position:relative;
+  display: block;
+  margin: auto;
   box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 /*-Classes hidden and open to hide and show panel-*/
@@ -696,6 +709,35 @@ body {
 .window-text strong,
 .no-result {
   color: #181822;
+  font-size: 1.5rem;
+}
+/* ----------------Destinations Packages Section-------------*/
+
+.des-package-heading {
+  margin-top: 4rem;
+}
+.des-packages-col {
+  height: 80rem;
+}
+.packages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.packages-list li {
+  margin: 3rem 0;
+}
+
+.package {
+  text-align: center;
+}
+.package h2 {
+  font-size: 2.5rem;
+}
+.package p,
+.packages-btn {
   font-size: 1.5rem;
 }
 
@@ -764,21 +806,26 @@ body {
     font-size: 10rem;
     writing-mode: horizontal-tb;
   }
-  .other-des-link {
-    font-size: 2.5rem;
-  }
+  .other-des-link,
   .other-des-link i {
     font-size: 2.5rem;
   }
-  .map-btn-col {
-  height: 35rem;
-}
-.map-col {
-  height: 35rem;
-}
-.map-results-col {
-  height: 35rem;
-}
+  .map-btn-col,
+  .map-col,
+  .map-results-col {
+    height: 35rem;
+  }
+  .map-section-heading {
+    margin-top: 2rem;
+  }
+  .map-subheading {
+    margin-top: 0;
+  }
+  .map-btn {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+  }
+
   #panel {
     height: 30rem;
     width: 20rem;
@@ -799,17 +846,29 @@ body {
   .result-text {
     position: relative;
   }
-  .result-heading h3 {
-    font-size: 2rem;
+  .result-heading h3,
+  .package p,
+  .packages-btn {
+    font-size: 1.75rem;
   }
   .result-text p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .web-address a {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   .no-result {
     font-size: 1.25rem;
+  }
+  .des-packages-col {
+    height: 35rem;
+  }
+  .packages-list {
+    flex-direction: row;
+    width: 80%;
+  }
+  .package h2 {
+    font-size: 3rem;
   }
 }
 /* -------------------------ipad and tablets-----------------------*/
@@ -831,18 +890,6 @@ body {
   .navigation-link {
     font-size: 4rem;
   }
-  .map-title-col {
-    height: 15rem;
-  }
-  .map-btn-col,
-  .map-col,
-  .map-results-col {
-    height: 35rem;
-  }
-  .map-btn {
-    font-size: 2rem;
-    margin-top: 1.25rem;
-  }
 }
 /* -------------------------laptops and desktops-----------------------*/
 @media (min-width: 1200px) {
@@ -861,6 +908,42 @@ body {
   .other-des-link,
   .other-des-link i {
     font-size: 2.5rem;
+  }
+  .map-title-col,
+  .packages-title-col {
+    height: 20rem;
+  }
+  .map-btn-col,
+  .map-col,
+  .map-results-col {
+    height: 45rem;
+  }
+  .map-btn {
+    font-size: 2.5rem;
+    margin-top: 1.75rem;
+  }
+  #panel {
+    height: 38rem;
+    width: 26rem;
+  }
+  .result-img-container {
+    height: 12rem;
+  }
+  .result-text-container {
+    top: 12rem;
+    height: 26rem;
+  }
+  .result-img {
+    max-height: 12rem;
+  }
+  .result-text p {
+    font-size: 1.8rem;
+  }
+  .result-heading h3 {
+    font-size: 2.25rem;
+  }
+  .web-address a {
+    font-size: 1.6rem;
   }
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
@@ -927,41 +1010,5 @@ body {
   }
   .social-media-links i {
     font-size: 5rem;
-  }
-
-  .map-title-col {
-    height: 15rem;
-  }
-  .map-btn-col,
-  .map-col,
-  .map-results-col {
-    height: 45rem;
-  }
-  .map-btn {
-    font-size: 2.5rem;
-    margin-top: 1.75rem;
-  }
-  #panel {
-    height: 42rem;
-    width: 26rem;
-  }
-  .result-img-container {
-    height: 15rem;
-  }
-  .result-text-container {
-    top: 15rem;
-    height: 27rem;
-  }
-  .result-img {
-    max-height: 15rem;
-  }
-  .result-text p {
-    font-size: 1.9rem;
-  }
-  .result-heading h3 {
-    font-size: 2.5rem;
-  }
-  .web-address a {
-    font-size: 1.7rem;
   }
 }
