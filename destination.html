@@ -23,11 +23,12 @@
 				<div class="col-12">
 					<nav class="navigation">
 						<div class="logo"><a href="index.html#home">G-Travel</a></div>
-						<div class="hamburger">
-							<div class="line line1"></div>
-							<div class="line line2"></div>
-							<div class="line line3"></div>
-						</div>
+						<button class="hamburger" aria-haspopup="true" aria-expanded="false">
+							<div class="line line1" aria-hidden="true"></div>
+							<div class="line line2" aria-hidden="true"></div>
+							<div class="line line3" aria-hidden="true"></div>
+                            <div id="menu-sr" class="sr-only"></div>
+						</button>
 						<div class="nav-background"></div>
 						<ul class="navigation-list">
 							<li class="navigation-item">
@@ -93,9 +94,9 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col map-title-col">
-						<h1 class="map-section-heading section-heading">
+						<h2 class="map-section-heading section-heading">
 							Map of local Attractions
-						</h1>
+						</h2>
 					</div>
 				</div>
 			</div>
@@ -150,6 +151,55 @@
 			</div>
 		</section>
 		<!--End of map section-->
+		<!--Packages Section-->
+		<section id="packages">
+			<div class="containner-fluid">
+				<div class="row">
+					<div class="col packages-title-col">
+						<h2 class="des-package-heading section-heading">Destination Packages</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col des-packages-col">
+						<ul class="packages-list">
+							<li>
+								<div class="package">
+									<h2>3 star package</h2>
+									<p>3 Night Weekend Break</p>
+									<p>3 Star Hotel</p>
+									<p>Flights ncluded</p>
+									<p>€299 / person sharing</p>
+									<button>Enquire Now</button>
+								</div>
+							</li>
+							<li>
+								<div class="package">
+									<h1>4 star package</h1>
+									<p>3 night weekend break</p>
+									<p>4 star hotel</p>
+									<p>Flights included</p>
+									<p>€299 / person sharing</p>
+									<button>Enquire Now</button>
+								</div>
+							</li>
+							<li>
+								<div class="package">
+									<h1>5 star package</h1>
+									<p>3 night weekend break</p>
+									<p>5 star hotel</p>
+									<p>Flights included</p>
+									<p>€299 / person sharing</p>
+									<button>Enquire Now</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End of packages section-->
 	</main>
 	<!-- footer section-->
 	<footer id="footer">
