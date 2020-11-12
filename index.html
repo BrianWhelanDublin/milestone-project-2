@@ -1,616 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G-Travel</title>
     <!--Bootstrap-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <!--Line Awsome icons-->
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <!--Lighslider css-->
     <link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />
     <!--stylesheet css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!--Email.js-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function () {
-        emailjs.init("user_sQZBqJUBHtlJBN9jnQ1l6");
-      })();
+        (function () {
+            emailjs.init("user_sQZBqJUBHtlJBN9jnQ1l6");
+        })();
     </script>
-  </head>
-  <!--Preload class code from stack overflow to fix bug of transitions happining on page load-->
-  <body class="preload">
+</head>
+<!--Preload class code from stack overflow to fix bug of transitions happining on page load-->
+
+<body class="preload">
     <header id="home">
-      <!--Navigation Section  Inspired by Code and Create tutorial on youtube-->
-      <div class="contianer-fluid">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navigation">
-              <div class="logo"><a href="#home">G-Travel</a></div>
-              <div class="hamburger">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-              </div>
-              <div class="nav-background"></div>
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a href="#home" class="navigation-link"> Home</a>
-                </li>
-                <li class="navigation-item">
-                  <a href="#about" class="navigation-link">About</a>
-                </li>
-                <li class="navigation-item">
-                  <a href="#destinations" class="navigation-link">
-                    Destinations</a
-                  >
-                </li>
-                <li class="navigation-item">
-                  <a href="#reviews" class="navigation-link">Reviews</a>
-                </li>
-                <li class="navigation-item">
-                  <a href="#packages" class="navigation-link">Packages</a>
-                </li>
-                <li class="navigation-item">
-                  <a href="#contact" class="navigation-link">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <!--End of nav-->
-      <!--Hero image Section-->
-      <section class="hero-section">
-        <div class="container-fluid hero-container">
-          <div class="row">
-            <div class="col-12">
-              <div class="hero-img background-image"></div>
-              <div class="right-gradient"></div>
-              <div class="heading">
-                <h1 class="main-title home-page-title">Great Escapes</h1>
-                <p class="hero-text">
-                  Experience one of our excillerating top city breaks,
-                  <br />
-                  or escape and relax on whitesand beaches <br />
-                  on one of our tropical getaways.
-                </p>
-                <a href="#about" class="link hero-link">Find Out More</a>
-              </div>
+        <!--Navigation Section  Inspired by Code and Create tutorial on youtube-->
+        <div class="contianer-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navigation">
+                       	<button class="hamburger" aria-haspopup="true" aria-expanded="false">
+							<div class="line line1" aria-hidden="true"></div>
+							<div class="line line2" aria-hidden="true"></div>
+							<div class="line line3" aria-hidden="true"></div>
+                            <div id="menu-sr" class="sr-only"></div>
+						</button>
+                        <div class="nav-background"></div>
+                        <ul class="navigation-list">
+                            <li class="navigation-item">
+                                <a href="#home" class="navigation-link"> Home</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#about" class="navigation-link">About</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#destinations" class="navigation-link">
+                                    Destinations</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#reviews" class="navigation-link">Reviews</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#packages" class="navigation-link">Packages</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#contact" class="navigation-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!--end of Hero image Section-->
+        <!--End of nav-->
+        <!--Hero image Section-->
+        <section class="hero-section">
+            <div class="container-fluid hero-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-img background-image"></div>
+                        <div class="right-gradient"></div>
+                        <div class="heading">
+                            <h1 class="main-title home-page-title">Great Escapes</h1>
+                            <p class="hero-text">
+                                Experience one of our excillerating top city breaks,
+                                <br />
+                                or escape and relax on whitesand beaches <br />
+                                on one of our tropical getaways.
+                            </p>
+                            <a href="#about" class="link hero-link">Find Out More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of Hero image Section-->
     </header>
     <main>
-      <!--About us section-->
-      <section id="about">
-        <div class="container-fluid">
-          <div class="row about-row">
-            <div class="col-12 col-md-6 about-col">
-              <div class="about-text-container animation-element center">
-                <h1 class="about-heading section-heading">Explore The World</h1>
-                <p class="about-text">
-                  At G-Travel we offer a wide range of travel packages for any
-                  type of trip. From a short weekend stay in a major European
-                  capital city or when not travel further a field to any one of
-                  our amazing cosmopolitan city destinations. Want to relax on
-                  the white-sands instead? We travel to many amazing beach
-                  resorts in Europe and further afield.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 about-col">
-              <img
-                src="assets/images/about.jpg"
-                alt="image of rio"
-                class="about-img animation-element center"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--end of About us section-->
-      <!--Destination heading section-->
-      <section id="destinations">
-        <div class="container-fluid">
-          <div class="row destination-heading-row">
-            <div class="col animation-element">
-              <h1 class="section-heading destination-heading">
-                Our Destinations
-              </h1>
-            </div>
-          </div>
-        </div>
-        <!--Destination slider section-->
-        <div class="container-fluid">
-          <div class="row destination-row">
-            <div
-              class="col-12 col-md-4 destinations-subtitle animation-element"
-            >
-              <h1 class="sub-heading destinations-subheading">
-                City Destinations
-              </h1>
-            </div>
-            <div class="col-12 col-md-8 destinations-slider animation-element">
-              <ul id="cities-slider" class="cs-hidden"></ul>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row destination-row">
-            <div
-              class="col-12 col-md-4 destinations-subtitle animation-element"
-            >
-              <h1 class="sub-heading destinations-subheading">
-                Beach Destinations
-              </h1>
-            </div>
-            <div class="col-12 col-md-8 destinations-slider animation-element">
-              <ul id="beach-slider" class="cs-hidden"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--End of destinations section-->
-      <!--Customer reviews section-->
-      <section id="reviews">
-        <div class="container-fluid">
-          <div class="row review-heading-row">
-            <div class="col animation-element">
-              <h1 class="reviews-heading section-heading animation-element">
-                Our Reviews
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row reviews-row">
-            <div class="col-12">
-              <div class="reviews-background-image background-image"></div>
-              <div class="reviews-container center animation-element">
-                <div class="reviewers">
-                  <ul class="reviewers-list animation-element">
-                    <li class="reviewer reviewer-1 active">
-                      <div class="reviewer-image">
-                        <img
-                          src="assets/images/reviewers/reviewer-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <h2>
-                        Tom Gregson <br />
-                        London
-                      </h2>
-                    </li>
-                    <li class="reviewer reviewer-2">
-                      <div class="reviewer-image">
-                        <img
-                          src="assets/images/reviewers/reviewer-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <h2>
-                        Victoria Kidd <br />
-                        Paris
-                      </h2>
-                    </li>
-                    <li class="reviewer reviewer-3">
-                      <div class="reviewer-image">
-                        <img
-                          src="assets/images/reviewers/reviewer-3.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <h2>
-                        Rebecca Forde <br />
-                        Dublin
-                      </h2>
-                    </li>
-                  </ul>
-                </div>
-                <div class="reviews animation-element">
-                  <div class="review review-1">
-                    <h2>Tom Gregson</h2>
-                    <div class="stars">
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
+        <!--About us section-->
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row about-row">
+                    <div class="col-12 col-md-6 about-col">
+                        <div class="about-text-container animation-element center">
+                            <h2 class="about-heading section-heading">Explore The World</h2>
+                            <p class="about-text">
+                                At G-Travel we offer a wide range of travel packages for any
+                                type of trip. From a short weekend stay in a major European
+                                capital city or when not travel further a field to any one of
+                                our amazing cosmopolitan city destinations. Want to relax on
+                                the white-sands instead? We travel to many amazing beach
+                                resorts in Europe and further afield.
+                            </p>
+                        </div>
                     </div>
-                    <p>
-                      Fantastic Trip to New York. Loved every minute of it.
-                      Would highly recomend G-Travel
-                    </p>
-                  </div>
-                  <div class="review review-2 hidden">
-                    <h2>Victoria Kidd</h2>
-                    <div class="stars">
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
+                    <div class="col-12 col-md-6 about-col">
+                        <img src="assets/images/about.jpg" alt="image of rio"
+                            class="about-img animation-element center" />
                     </div>
-                    <p>
-                      I booked an amazing beach holiday for me and my husband to
-                      the maldives. G-travel didnt disapoint we had the time of
-                      our lives.
-                    </p>
-                  </div>
-                  <div class="review review-3 hidden">
-                    <h2>Rebecca Forde</h2>
-                    <div class="stars">
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
+                </div>
+            </div>
+        </section>
+        <!--end of About us section-->
+        <!--Destination heading section-->
+        <section id="destinations">
+            <div class="container-fluid">
+                <div class="row destination-heading-row">
+                    <div class="col animation-element">
+                        <h2 class="section-heading destination-heading">
+                            Our Destinations
+                        </h2>
                     </div>
-                    <p>
-                      Myself and my partner booked a city break to paris. We had
-                      a great time seeing the sites and G-travel really
-                      organised everything very well. Would highly recomend.
-                    </p>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- End of Customer reviews section-->
-      <!--Packages Section-->
-      <section id="packages">
-        <div class="container-fluid">
-          <div class="row packages-title">
-            <div class="col-12">
-              <h1 class="section-heading animation-element">
-                Our Favorite Packages
-              </h1>
-            </div>
-          </div>
-          <div class="row packages-row">
-            <div class="col-md-4 packages-col">
-              <div class="package-card center animation-element">
-                <img
-                  src="assets/images/cities/new-york.jpg"
-                  alt="image of new york"
-                  class="card-img"
-                />
-                <div class="gradient"></div>
-                <div class="card-content">
-                  <h2 class="card-title">New York</h2>
-                  <p>4 Night Weekend Break</p>
-                  <p>
-                    4 Stars <br />
-                    <span class="stars">
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                    </span>
-                    <br />
-                    From only €499 / person.
-                  </p>
-                  <a href="#" class="destination-link link">Book Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 packages-col">
-              <div class="package-card center animation-element">
-                <img
-                  src="assets/images/beaches/santorini.jpg"
-                  alt="image of santorini"
-                  class="card-img"
-                />
-                <div class="gradient"></div>
-                <div class="card-content">
-                  <h2 class="card-title">Santorini</h2>
-                  <p>7 Night Break</p>
-                  <p>
-                    5 Stars <br />
-                    <span class="stars">
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                    </span>
-                    <br />
-                    From only €999 / person.
-                  </p>
-                  <a href="#" class="destination-link link">Book Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 packages-col">
-              <div class="package-card center animation-element">
-                <img
-                  src="assets/images/cities/new-york.jpg"
-                  alt="image of new york"
-                  class="card-img"
-                />
-                <div class="gradient"></div>
-                <div class="card-content">
-                  <h2 class="card-title">Paris</h2>
-                  <p>3 Night Weekend Break</p>
-                  <p>
-                    4 Stars <br />
-                    <span class="stars">
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                      <i class="las la-star"></i>
-                    </span>
-                    <br />
-                    From only €299 / person.
-                  </p>
-                  <a href="#" class="destination-link link">Book Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End of Packages section-->
-      <!--Signup Section-->
-      <section id="signup">
-        <div class="container-fluid">
-          <div class="row signup-row">
-            <div class="col-12">
-              <div class="signup-background-image background-image"></div>
-              <div class="signup-container center "></div>
-              <!-- <img src="assets/images/signup.jpg" alt="image of travel items" class="signup-img">-->
-              <div class="signup-text-container animation-element center">
-                <h1 class="sub-heading signup-heading">
-                  Sign up for our Montly Newsletter
-                </h1>
-                <form class="signup-form"
-                onsubmit="return sendNewsletter(this);"
-                  method="POST"
-                  >
-                  <input
-                    type="text"
-                    name="email"
-                    id="signup-email"
-                    class="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    id="signup-submit"
-                    class="link signup-btn"
-                  >
-                    Sign Up
-                  </button>
-                </form>
-                <div
-                  class="signup-modal modal"
-                  id="newsletterModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="newsletterModal"
-                  aria-hidden="true"
-                >
-                  <div
-                    class="modal-dialog modal-dialog-centered"
-                    role="document"
-                  >
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span class="modal-text" aria-hidden="true"
-                            >&times;</span
-                          >
-                        </button>
-                      </div>
-                      <div class="modal-text">
-                        Thank You for signing up to our newsletter.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary modal-text"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
+            <!--Destination slider section-->
+            <div class="container-fluid">
+                <div class="row destination-row">
+                    <div class="col-12 col-md-4 destinations-subtitle animation-element">
+                        <h2 class="sub-heading destinations-subheading">
+                            City Destinations
+                        </h2>
                     </div>
-                  </div>
+                    <div class="col-12 col-md-8 destinations-slider animation-element">
+                        <ul id="cities-slider" class="cs-hidden"></ul>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- End of Signup section-->
-      <!--contact section-->
-      <section id="contact">
-        <div class="container-fluid">
-          <div class="row contact-row">
-            <div class="col-md-6 contact-col">
-              <div class="contact-details animation-element center">
-                <h2 class="contact-heading">Contact us</h2>
-                <p>Email: g-travel@email.com</p>
-                <p>Customer service: 01/5555555</p>
-                <p>Bookings : 01/222222</p>
-              </div>
+            <div class="container-fluid">
+                <div class="row destination-row">
+                    <div class="col-12 col-md-4 destinations-subtitle animation-element">
+                        <h2 class="sub-heading destinations-subheading">
+                            Beach Destinations
+                        </h2>
+                    </div>
+                    <div class="col-12 col-md-8 destinations-slider animation-element">
+                        <ul id="beach-slider" class="cs-hidden"></ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <div class="contact-form-container animation-element center">
-                <h2 class="contact-heading">Contact Form</h2>
+        </section>
+        <!--End of destinations section-->
+        <!--Customer reviews section-->
+        <section id="reviews">
+            <div class="container-fluid">
+                <div class="row review-heading-row">
+                    <div class="col animation-element">
+                        <h2 class="reviews-heading section-heading animation-element">
+                            Our Reviews
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row reviews-row">
+                    <div class="col-12">
+                        <div class="reviews-background-image background-image"></div>
+                        <div class="reviews-container center animation-element">
+                            <div class="reviewers">
+                                <ul class="reviewers-list animation-element">
+                                    <li class="reviewer reviewer-1 active">
+                                        <div class="reviewer-image">
+                                            <img src="assets/images/reviewers/reviewer-1.jpg" alt="" />
+                                        </div>
+                                        <h2>
+                                            Tom Gregson <br />
+                                            London
+                                        </h2>
+                                    </li>
+                                    <li class="reviewer reviewer-2">
+                                        <div class="reviewer-image">
+                                            <img src="assets/images/reviewers/reviewer-2.jpg" alt="" />
+                                        </div>
+                                        <h2>
+                                            Victoria Kidd <br />
+                                            Paris
+                                        </h2>
+                                    </li>
+                                    <li class="reviewer reviewer-3">
+                                        <div class="reviewer-image">
+                                            <img src="assets/images/reviewers/reviewer-3.jpg" alt="" />
+                                        </div>
+                                        <h2>
+                                            Rebecca Forde <br />
+                                            Dublin
+                                        </h2>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reviews animation-element">
+                                <div class="review review-1">
+                                    <h2>Tom Gregson</h2>
+                                    <div class="stars">
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+                                        Fantastic Trip to New York. Loved every minute of it.
+                                        Would highly recomend G-Travel
+                                    </p>
+                                </div>
+                                <div class="review review-2 hidden">
+                                    <h2>Victoria Kidd</h2>
+                                    <div class="stars">
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+                                        I booked an amazing beach holiday for me and my husband to
+                                        the maldives. G-travel didnt disapoint we had the time of
+                                        our lives.
+                                    </p>
+                                </div>
+                                <div class="review review-3 hidden">
+                                    <h2>Rebecca Forde</h2>
+                                    <div class="stars">
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+                                        Myself and my partner booked a city break to paris. We had
+                                        a great time seeing the sites and G-travel really
+                                        organised everything very well. Would highly recomend.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Customer reviews section-->
+        <!--Packages Section-->
+        <section id="packages">
+            <div class="container-fluid">
+                <div class="row packages-title">
+                    <div class="col-12">
+                        <h2 class="section-heading animation-element">
+                            Our Favorite Packages
+                        </h2>
+                    </div>
+                </div>
+                <div class="row packages-row">
+                    <div class="col-md-4 packages-col">
+                        <div class="package-card center animation-element">
+                            <img src="assets/images/cities/new-york.jpg" alt="image of new york" class="card-img" />
+                            <div class="gradient"></div>
+                            <div class="card-content">
+                                <h2 class="card-title">New York</h2>
+                                <p>4 Night Weekend Break</p>
+                                <p>
+                                    4 Stars <br />
+                                    <span class="stars">
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                    </span>
+                                    <br />
+                                    From only €499 / person.
+                                </p>
+                                <a href="#" class="destination-link link">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 packages-col">
+                        <div class="package-card center animation-element">
+                            <img src="assets/images/beaches/santorini.jpg" alt="image of santorini" class="card-img" />
+                            <div class="gradient"></div>
+                            <div class="card-content">
+                                <h2 class="card-title">Santorini</h2>
+                                <p>7 Night Break</p>
+                                <p>
+                                    5 Stars <br />
+                                    <span class="stars">
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                    </span>
+                                    <br />
+                                    From only €999 / person.
+                                </p>
+                                <a href="#" class="destination-link link">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 packages-col">
+                        <div class="package-card center animation-element">
+                            <img src="assets/images/cities/new-york.jpg" alt="image of new york" class="card-img" />
+                            <div class="gradient"></div>
+                            <div class="card-content">
+                                <h2 class="card-title">Paris</h2>
+                                <p>3 Night Weekend Break</p>
+                                <p>
+                                    4 Stars <br />
+                                    <span class="stars">
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                        <i class="las la-star" aria-hidden="true"></i>
+                                    </span>
+                                    <br />
+                                    From only €299 / person.
+                                </p>
+                                <a href="#" class="destination-link link">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Packages section-->
+        <!--Signup Section-->
+        <section id="signup">
+            <div class="container-fluid">
+                <div class="row signup-row">
+                    <div class="col-12">
+                        <div class="signup-background-image background-image"></div>
+                        <div class="signup-container center "></div>
+                        <!-- <img src="assets/images/signup.jpg" alt="image of travel items" class="signup-img">-->
+                        <div class="signup-text-container animation-element center">
+                            <h2 class="sub-heading signup-heading">
+                                Sign up for our Montly Newsletter
+                            </h2>
+                            <form class="signup-form" onsubmit="return sendNewsletter(this);" method="POST">
+                                <input type="text" name="email" id="signup-email" class="email" placeholder="Email"
+                                    required />
+                                <button type="submit" id="signup-submit" class="link signup-btn">
+                                    Sign Up
+                                </button>
+                            </form>
+                            <div class="signup-modal modal" id="newsletterModal" tabindex="-1" role="dialog"
+                                aria-labelledby="newsletterModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="modal-text" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-text">
+                                            Thank You for signing up to our newsletter.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary modal-text"
+                                                data-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Signup section-->
+        <!--contact section-->
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row contact-row">
+                    <div class="col-md-6 contact-col">
+                        <div class="contact-details animation-element center">
+                            <h2 class="contact-heading">Contact us</h2>
+                            <p>Email: g-travel@email.com</p>
+                            <p>Customer service: 01/5555555</p>
+                            <p>Bookings : 01/222222</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-form-container animation-element center">
+                            <h2 class="contact-heading">Contact Form</h2>
 
-                <form
-                  onsubmit="return sendMail(this);"
-                  method="POST"
-                  class="contact-form"
-                >
-                  <input
-                    type="text"
-                    name="name"
-                    id="contact-name"
-                    class="contact-input"
-                    placeholder="First Name"
-                    required
-                  />
+                            <form onsubmit="return sendMail(this);" method="POST" class="contact-form">
+                                <input type="text" name="name" id="contact-name" class="contact-input"
+                                    placeholder="First Name" required />
 
-                  <input
-                    type="text"
-                    name="email"
-                    class="contact-input"
-                    id="contact-email"
-                    placeholder="Email"
-                    required
-                  />
+                                <input type="text" name="email" class="contact-input" id="contact-email"
+                                    placeholder="Email" required />
 
-                  <textarea
-                    name="message"
-                    id="contact-message"
-                    class="contact-input"
-                    rows="3"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                  <button type="submit" class="link contact-btn">
-                    Book Now
-                  </button>
-                </form>
-                <!--Modal from bootstrap apears when someone fills out the contact form-->
-                <div
-                  class="modal "
-                  id="myModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="myModal"
-                  aria-hidden="true"
-                >
-                  <div
-                    class="modal-dialog modal-dialog-centered"
-                    role="document"
-                  >
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">
-                          Thank You for contacting us.
-                        </h5>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span class="modal-text" aria-hidden="true"
-                            >&times;</span
-                          >
-                        </button>
-                      </div>
-                      <div class="modal-text">
-                        Thank You for contacting us. We will reply shortly to
-                        answer your query.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary modal-text"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
+                                <textarea name="message" id="contact-message" class="contact-input" rows="3"
+                                    placeholder="Message" required></textarea>
+                                <button type="submit" class="link contact-btn">
+                                    Book Now
+                                </button>
+                            </form>
+                            <!--Modal from bootstrap apears when someone fills out the contact form-->
+                            <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">
+                                                Thank You for contacting us.
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="modal-text" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-text">
+                                            Thank You for contacting us. We will reply shortly to
+                                            answer your query.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary modal-text"
+                                                data-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- end of contact section-->
+        </section>
+        <!-- end of contact section-->
     </main>
     <!-- footer section-->
     <footer id="footer">
-      <div class="container-fluid">
-        <div class="row footer-row">
-          <div class="col-12">
-            <ul class="social-media">
-              <li>
-                <a
-                  class="social-media-links"
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                >
-                  <i class="lab la-instagram" aria-hidden="true"></i>
-                  <span class="sr-only">Instagram Link.</span></a
-                >
-              </li>
-              <li>
-                <a
-                  class="social-media-links"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                >
-                  <i class="lab la-facebook-square" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook Link.</span></a
-                >
-              </li>
-              <li>
-                <a
-                  class="social-media-links"
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                >
-                  <i class="lab la-twitter-square" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter Link.</span></a
-                >
-              </li>
-              <li class="social-media-links">
-                <a href="https://www.tripadvisor.ie/" target="_blank">
-                  <i class="lab la-tripadvisor" aria-hidden="true"></i>
-                  <span class="sr-only">Tripadvisor Link.</span></a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="container-fluid">
+            <div class="row footer-row">
+                <div class="col-12">
+                    <ul class="social-media">
+                        <li>
+                            <a class="social-media-links" href="https://www.instagram.com/" target="_blank">
+                                <i class="lab la-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram Link.</span></a>
+                        </li>
+                        <li>
+                            <a class="social-media-links" href="https://www.facebook.com/" target="_blank">
+                                <i class="lab la-facebook-square" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook Link.</span></a>
+                        </li>
+                        <li>
+                            <a class="social-media-links" href="https://www.twitter.com/" target="_blank">
+                                <i class="lab la-twitter-square" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter Link.</span></a>
+                        </li>
+                        <li class="social-media-links">
+                            <a href="https://www.tripadvisor.ie/" target="_blank">
+                                <i class="lab la-tripadvisor" aria-hidden="true"></i>
+                                <span class="sr-only">Tripadvisor Link.</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-   
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/lightslider.js"
-      defer
-    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"
+        defer></script>
+    <script type="text/javascript" src="assets/js/lightslider.js" defer></script>
     <script type="text/javascript" src="assets/js/email.js" defer></script>
     <script type="text/javascript" src="assets/js/main.js" defer></script>
-  </body>
+</body>
+
 </html>

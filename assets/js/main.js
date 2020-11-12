@@ -11,14 +11,29 @@ let link = document.querySelectorAll(".navigation-item");
 
 menu.addEventListener("click", () => {
   navigation.classList.toggle("change");
+  changeAriaSettings()
 });
 
 /* Adds an event listener to each navigation item to close the navigation menu when the link is clicked*/
 link.forEach((item) => {
   item.addEventListener("click", () => {
     navigation.classList.toggle("change");
+    changeAriaSettings()
   });
 });
+/* Code for screen reader on nav button */
+const  changeAriaSettings =() =>{
+    let screenReader = document.getElementById("menu-sr")
+    if(navigation.classList.contains("change")){
+         menu.setAttribute("aria-expanded",true);
+         screenReader.innerHTML="Close Menu";
+    }else{
+         menu.setAttribute("aria-expanded",false);
+          screenReader.innerHTML="Open Menu"
+    }
+   
+}
+
 
 /* Code to fade elements in upon scrolling
 Code inspired by dev Ed tutorial details in readme I've changed the code to work for more than one element by using querySelectorAll() and the using forEach on it */
