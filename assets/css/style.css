@@ -5,8 +5,8 @@
 /* Set global size for easy rem calculation and add some reset style */
 * {
   font-size: 10px;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0;*/
 }
 body {
   font-family: "Mulish", sans-serif;
@@ -67,7 +67,9 @@ body {
 
 .destination-link,
 .signup-btn,
-.contact-btn {
+.contact-btn,
+.booking-form-btn,
+.packages-btn {
   font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: 800;
@@ -77,6 +79,8 @@ body {
 .contact-btn:hover,
 .hero-link:hover,
 .map-btn:hover,
+.packages-btn:hover,
+.booking-form-btn:hover,
 .packages-btn:hover {
   background-color: #181822;
   color: #fafafb;
@@ -723,6 +727,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   list-style: none;
 }
 
@@ -732,6 +737,7 @@ button:focus {
 
 .package {
   text-align: center;
+  height: 25rem;
 }
 .package h2 {
   font-size: 2.5rem;
@@ -739,11 +745,20 @@ button:focus {
 .package p,
 .packages-btn {
   font-size: 1.5rem;
+  margin: 2.5rem 0;
 }
+.packages-btn {
+  margin-top: 10rem;
+}
+/*
+.packages-btn a {
+  text-decoration: none;
+  color: #181822;
+}*/
 /* -----------------Booking form-------------*/
 .booking-heading-col,
 #booking-form {
-  height: 100vh;
+  height: 130rem;
   width: 100%;
   position: absolute;
   top: 0;
@@ -755,26 +770,28 @@ button:focus {
 }
 .booking-title {
   position: absolute;
-  top: 0;
+  top: 2.5%;
   width: 100%;
   text-align: center;
 }
 .booking-form-container {
   background-color: rgba(24, 24, 34, 0.7);
   position: absolute;
-  width: 75%;
-  height: 85%;
+  width: 80%;
+  height: 90%;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px #181822;
 }
 .booking-form {
   color: #fafafb;
- position:absolute;
- bottom:0;
- width:80%;
- margin:0 10%;
+  position: absolute;
+  bottom: 5%;
+  width: 80%;
+  margin: 0 10%;
 }
 .form-group label,
-.form-control{
-    font-size:1.3rem;
+.form-control {
+  font-size: 1.1rem;
 }
 /*
 .bookin-gradient{
@@ -914,6 +931,17 @@ button:focus {
   }
   .package h2 {
     font-size: 3rem;
+  }
+  .booking-heading-col,
+  #booking-form {
+    height: 90rem;
+  }
+  .booking-form-container {
+    height: 85%;
+  }
+  .form-group label,
+  .form-control {
+    font-size: 1.4rem;
   }
 }
 /* -------------------------ipad and tablets-----------------------*/
