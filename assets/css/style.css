@@ -162,11 +162,11 @@ button:focus {
 }
 .background-image::before {
   bottom: 0;
-  background: linear-gradient(to top, #181822, transparent 30%);
+  background: linear-gradient(to top, #181822, transparent 35%);
 }
 .background-image:after {
   top: 0;
-  background: linear-gradient(to bottom, #181822, transparent 30%);
+  background: linear-gradient(to bottom, #181822, transparent 35%);
 }
 
 /*---------------------------------- Css for animating elements in------------*/
@@ -654,7 +654,7 @@ button:focus {
   width: 35rem;
   overflow-x: hidden;
   transition: all 0.2s ease-out;
-  position:relative;
+  position: relative;
   display: block;
   margin: auto;
   box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -740,7 +740,52 @@ button:focus {
 .packages-btn {
   font-size: 1.5rem;
 }
-
+/* -----------------Booking form-------------*/
+.booking-heading-col,
+#booking-form {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.booking-img {
+  background: url(../images/booking3.jpg) no-repeat center center scroll;
+  background-size: cover;
+}
+.booking-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+.booking-form-container {
+  background-color: rgba(24, 24, 34, 0.7);
+  position: absolute;
+  width: 75%;
+  height: 85%;
+}
+.booking-form {
+  color: #fafafb;
+ position:absolute;
+ bottom:0;
+ width:80%;
+ margin:0 10%;
+}
+.form-group label,
+.form-control{
+    font-size:1.3rem;
+}
+/*
+.bookin-gradient{
+    height:100%;
+    width:30%;
+    position: absolute;
+    top:0;
+    left:0;
+     background: linear-gradient(to left, #181822, transparent 50%);
+}
+*/
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
