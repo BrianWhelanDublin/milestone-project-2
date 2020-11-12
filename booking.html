@@ -1,11 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G-travel</title>
-</head>
-<body>
-    
-</body>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!--stylesheet css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body class="preload">
+    <header id="destination-home ">
+      <!--Navigation Section  Inspired by Code and Create tutorial on youtube-->
+      <div class="contianer-fluid">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navigation">
+              <div class="logo"><a href="index.html#home">G-Travel</a></div>
+              <button
+                class="hamburger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="line line1" aria-hidden="true"></div>
+                <div class="line line2" aria-hidden="true"></div>
+                <div class="line line3" aria-hidden="true"></div>
+                <div id="menu-sr" class="sr-only"></div>
+              </button>
+              <div class="nav-background"></div>
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a href="index.html#home" class="navigation-link"> Home</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#details" class="navigation-link"
+                    >Destination Details</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="#map-section" class="navigation-link">Map</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="index.html#destinations" class="navigation-link">
+                    Destinations</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="index.html#reviews" class="navigation-link"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="index.html#packages" class="navigation-link"
+                    >Packages</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="index.html#contact" class="navigation-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--End of nav-->
+    </header>
+    <!--Title section-->
+    <main>
+      <section id="booking-form">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col booking-heading-col">
+              <div class="booking-img background-image"></div>
+               <div class="booking-form-container center">
+              <h1 class="main-title booking-title">Booking Enquiry</h1>
+ 
+              <form class="booking-form">
+                <div class="form-row">
+                  <div class="form-group booking-enq col-md-6">
+                    <label for="destination-bf">Destination</label>
+                    <input
+                      type="text"
+                      name="destination-bf"
+                      id="destination-bf"
+                      class="form-control"
+                      placeholder="Destination"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="package-bf">Package</label>
+                    <input
+                      type="text"
+                      name="package-bf"
+                      id="package-bf"
+                      class="form-control"
+                      placeholder="Package"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstname-bf">First Name</label>
+                    <input
+                      type="text"
+                      name="firstname-bf"
+                      id="firstname-bf"
+                      class="form-control"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="surname-bf">Surname</label>
+                    <input
+                      type="text"
+                      name="surname-bf"
+                      id="surname-bf"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="emailaddress-bf">Email</label>
+                    <input
+                      type="text"
+                      name="emailaddress-bf"
+                      id="emailaddress-bf"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone-bf">Contact Number</label>
+                    <input
+                      type="tel"
+                      name="phone-bf"
+                      id="phone-bf"
+                      class="form-control"
+                      placeholder="Contact Number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputaddress1-bf">Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="inputaddress1-bf"
+                      id="inputaddress1-bf"
+                      placeholder="House / Apartment Number"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputaddress2-bf">Address 2</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="inputaddress2-bf"
+                      id="inputaddress2-bf"
+                      placeholder="Street Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputcity-bf">City / Town</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="inputcity-bf"
+                      id="inputcity-bf"
+                      placeholder="City / Town"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputprovince-bf">Province</label>
+                    <select name="inputprovince-bf" id="inputprovince-bf" class="form-control" required>
+                      <option selected value="">Choose...</option>
+                      <option>Leinster</option>
+                      <option>Ulster</option>
+                      <option>Connact</option>
+                      <option>Munster</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputeircode-bf">Eircode</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="inputeircode-bf"
+                      id="inputeircode-bf"
+                      placeholder="Eircode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="adults-bf">Number of Adults</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="adults-bf"
+                      name="adults-bf"
+                      min="0"
+                      max="9"
+                      placeholder="0"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="children-bf">Number of Children</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="children-bf"
+                      name="children-bf"
+                      min="0"
+                      max="9"
+                      placeholder="0"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="arrival-bf">Arrival Date dd/mm/yyyy</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="arrival-bf"
+                      name="arrival-bf"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="depart-bf">Departure Date dd/mm/yyyy</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="depart-bf"
+                      name="depart-bf"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col">
+                    <label for="requests-bf">Special Requests</label>
+                    <textarea
+                      class="form-control"
+                      id="requests-bf"
+                      name="requests-bf"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button
+                    type="submit"
+                    class="booking-form-btn btn btn-outline-dark dk-green-text"
+                  >
+                    Enquire Now
+                  </button>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <!-- footer section-->
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row footer-row">
+          <div class="col-12">
+            <ul class="social-media">
+              <li>
+                <a
+                  class="social-media-links"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <i class="lab la-instagram" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram Link.</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="social-media-links"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <i class="lab la-facebook-square" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook Link.</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="social-media-links"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                >
+                  <i class="lab la-twitter-square" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter Link.</span></a
+                >
+              </li>
+              <li class="social-media-links">
+                <a href="https://www.tripadvisor.ie/" target="_blank">
+                  <i class="lab la-tripadvisor" aria-hidden="true"></i>
+                  <span class="sr-only">Tripadvisor Link.</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer section-->
+    <!-- jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Main javascript file-->
+    <script type="text/javascript" src="assets/js/main.js" defer></script>
+  </body>
 </html>
