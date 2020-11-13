@@ -491,9 +491,9 @@ $(document).ready(() => {
   let ids= window.location.hash.replace("#", "").split("+");
   let bookingDestinationId = ids[0];
   let bookingsPackageId=ids[1]
-  console.log(bookingDestinationId)
-  console.log(bookingsPackageId)
-  fillFormElements(bookingDestinationId,bookingsPackageId)
+  if(bookingDestinationId && bookingsPackageId){
+      fillFormElements(bookingDestinationId,bookingsPackageId);
+  }
   
   }
 });
