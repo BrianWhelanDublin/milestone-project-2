@@ -457,7 +457,7 @@ const fillDestinationPage = (destinationId) => {
 // booking form page 
 const fillFormElements = (bookingDestinationId,bookingsPackageId)=>{
     let destination=getDestination(bookingDestinationId);
-    let package = getPackage(destination.packages, bookingsPackageId);
+    let package = getPackageDetails(destination.packages, bookingsPackageId);
    let destinationInput = document.getElementById("destination-bf");
    let packageInput = document.getElementById("package-bf");
    destinationInput.value = destination.name;
@@ -465,13 +465,13 @@ const fillFormElements = (bookingDestinationId,bookingsPackageId)=>{
 
 }
 // get package
-const getPackage = (packages, packageId)=>{
-    let currentPackage
-    packages.forEach(package=>{
-        if (package.id === packageId){
-        currentPackage = package;
-        }
+const getPackageDetails = (packages, packageId)=>{
+    let packageDetails
+    packages.forEach(detail=>{
+        if (detail.id === packageId){
+        currentPackage = detail;        }
     });
+    console.log(currentPackage);
     return currentPackage
 }
 
@@ -487,7 +487,7 @@ $(document).ready(() => {
 $(document).ready(() => {
     // only runs function for destination page
   if ($("body").hasClass("booking-page")) {
-// gets destinastion id from the windows url and paclkage id
+// gets destinastion id from the windows url and package id
   let ids= window.location.hash.replace("#", "").split("+");
   let bookingDestinationId = ids[0];
   let bookingsPackageId=ids[1]
