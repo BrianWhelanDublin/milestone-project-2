@@ -458,7 +458,10 @@ const fillDestinationPage = (destinationId) => {
 const fillFormElements = (bookingDestinationId,bookingsPackageId)=>{
     let destination=getDestination(bookingDestinationId);
     let package = getPackage(destination.packages, bookingsPackageId);
-    console.log(package)
+   let destinationInput = document.getElementById("destination-bf");
+   let packageInput = document.getElementById("package-bf");
+   destinationInput.value = destination.name;
+   packageInput.value = package.type
 
 }
 // get package
