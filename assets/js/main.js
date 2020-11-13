@@ -63,6 +63,10 @@ let cityDestinations = [
     latLng: { center: { lat: 25.2048, lng: 55.2708 }, zoom: 11 },
     about:
       "A Modern city built in the middle of a dessert. Enjoy the city of huge skyscraers, huge shooping malls or relax on Atlantis, a resort built on an artificial island.",
+    packages:[
+      {id:"p1", type:"3 Star", nights:"3 Nights Weekend Break", price:"€299"},
+      {id:"p2", type:"4 Star", nights:"3 Nights Weekend Break", price:"€349"},
+      {id:"p3", type:"5 Star", nights:"3 Nights Weekend Break", price:"€499"}]
   },
   {
     id: "c1",
@@ -373,6 +377,15 @@ const getDestination = () => {
   });
   return destination;
 };
+// fills details in navagation
+const renderNavbar =(destination)=>{
+    let details = document.getElementById("des-details");
+    let map = document.getElementById("des-map");
+    let packages = document.getElementById("des-packages");
+    details.innerHTML = `${destination.name} Details`;
+    map.innerHTML= `${destination.name} Map`;
+     packages.innerHTML= `${destination.name} Packages`
+}
 
 // Fills the heading of the destination page from the above arrays using the id
 const renderDestinationHeading = (destination) => {
@@ -399,11 +412,33 @@ if(destination){
   };
 };
 
+//fills in destination packages 
+
+const renderPackage = (destination,package) =>{
+let packageList = document.getElementById("destination-pk-ul")
+let packageLi=`
+     	<li class="packages-item">
+			<div class="package">
+				<h2>${package.type} package</h2>
+				<p>${package.nights}</p>
+				<p>${package.type} Hotel</p>
+				<p>Flights Included</p>
+				<p>${package.price}/ person sharing</p>
+                <a class="packages-btn link" href="booking.html#${destination.id}+${package.id}">
+                Enquire Now</a>
+            </div>
+        </li>
+        `
+    packageList.insertAdjacentHTML("beforeend", packageLi)
+};
+
 //fill the rest of the destination page
 const fillDestinationPage = () => {
     //gets destination
   let destination = getDestination();
   if (destination) {
+      // fills in navbar
+      renderNavbar(destination);
       // fills in heading
     renderDestinationHeading(destination);
     // gets data from the rest countries api
@@ -412,6 +447,10 @@ const fillDestinationPage = () => {
     renderDestinationInfo(destination);
     // places the googles map
     renderMap(destination.latLng);
+    //renders pakages
+    destination.packages.forEach(package=>{
+        renderPackage(destination, package)
+    })
   } else {
     alert("Something has gone wrong please try again");
   }
