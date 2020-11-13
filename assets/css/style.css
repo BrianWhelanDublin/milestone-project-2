@@ -8,6 +8,10 @@
   /* margin: 0;
   padding: 0;*/
 }
+ul {
+  padding-inline-start: 0px;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   background-color: #181822;
@@ -721,7 +725,7 @@ button:focus {
   margin-top: 4rem;
 }
 .des-packages-col {
-  height: 80rem;
+  height: 95rem;
 }
 .packages-list {
   display: flex;
@@ -750,17 +754,14 @@ button:focus {
 .packages-btn {
   margin-top: 10rem;
 }
-/*
-.packages-btn a {
-  text-decoration: none;
-  color: #181822;
-}*/
 /* -----------------Booking form-------------*/
-.booking-heading-col,
-#booking-form {
-  height: 130rem;
+#booking-home{
+    height:0;
+}
+.booking-heading-col {
+  height: 135rem;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
 }
@@ -793,16 +794,6 @@ button:focus {
 .form-control {
   font-size: 1.1rem;
 }
-/*
-.bookin-gradient{
-    height:100%;
-    width:30%;
-    position: absolute;
-    top:0;
-    left:0;
-     background: linear-gradient(to left, #181822, transparent 50%);
-}
-*/
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
   header,
