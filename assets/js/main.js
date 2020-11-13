@@ -359,10 +359,9 @@ customerList.forEach((customer) => {
 });
 
 // destination page
+
 // gets the current destination when you click on the page
-const getDestination = () => {
-  // gets destinastion id from the windows url and removes the hash.
-  let destinationId = window.location.hash.replace("#", "");
+const getDestination = (destinationId) => {
   // checks through each array to find a match for the id and return it
   let destination;
   cityDestinations.forEach((city) => {
@@ -433,9 +432,9 @@ let packageLi=`
 };
 
 //fill the rest of the destination page
-const fillDestinationPage = () => {
+const fillDestinationPage = (destinationId) => {
     //gets destination
-  let destination = getDestination();
+  let destination = getDestination(destinationId);
   if (destination) {
       // fills in navbar
       renderNavbar(destination);
@@ -455,10 +454,43 @@ const fillDestinationPage = () => {
     alert("Something has gone wrong please try again");
   }
 };
+// booking form page 
+const fillFormElements = (bookingDestinationId,bookingsPackageId)=>{
+    let destination=getDestination(bookingDestinationId);
+    let package = getPackage(destination.packages, bookingsPackageId);
+    console.log(package)
+
+}
+// get package
+const getPackage = (packages, packageId)=>{
+    let currentPackage
+    packages.forEach(package=>{
+        if (package.id === packageId){
+        currentPackage = package;
+        }
+    });
+    return currentPackage
+}
 
 $(document).ready(() => {
     // only runs function for destination page
   if ($("body").hasClass("destination-page")) {
-    fillDestinationPage();
+// gets destinastion id from the windows url and removes the hash.
+  let destinationId = window.location.hash.replace("#", "");
+    fillDestinationPage(destinationId);
+  }
+});
+
+$(document).ready(() => {
+    // only runs function for destination page
+  if ($("body").hasClass("booking-page")) {
+// gets destinastion id from the windows url and paclkage id
+  let ids= window.location.hash.replace("#", "").split("+");
+  let bookingDestinationId = ids[0];
+  let bookingsPackageId=ids[1]
+  console.log(bookingDestinationId)
+  console.log(bookingsPackageId)
+  fillFormElements(bookingDestinationId,bookingsPackageId)
+  
   }
 });
