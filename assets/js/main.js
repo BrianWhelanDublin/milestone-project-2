@@ -453,13 +453,15 @@ const getDestination = (destinationId) => {
     return destination;
 };
 // fills details in navagation
-const renderNavbar = (destination) => {
+const renderDestinationNavbar = (destination) => {
     let details = document.getElementById("des-details");
     let map = document.getElementById("des-map");
     let packages = document.getElementById("des-packages");
+    let enquiry = document.querySelector(".des-enquiry");
     details.innerHTML = `${destination.name} Details`;
     map.innerHTML = `${destination.name} Map`;
     packages.innerHTML = `${destination.name} Packages`
+    enquiry.innerHTML=`<a href="booking.html#${destination.id}" class="navigation-link">Booking Enquiry</a>`
 }
 
 // Fills the heading of the destination page from the above arrays using the id
@@ -522,7 +524,7 @@ const fillDestinationPage = (destinationId) => {
     let destination = getDestination(destinationId);
     if (destination) {
         // fills in navbar
-        renderNavbar(destination);
+        renderDestinationNavbar(destination);
         // fills in heading
         renderDestinationHeading(destination);
         // gets data from the rest countries api
@@ -540,7 +542,30 @@ const fillDestinationPage = (destinationId) => {
      renderEmptyDestination()
     }
 };
+// fill booking for nav
+
+const renderBookingNavbar=(destination) =>{
+    let details = document.getElementById("bnav-details");
+    details.innerHTML = `<a href="destination.html#${destination.id}" class="navigation-link">${destination.name} Details</a>`;
+ }
 // booking form page 
+const fillBookingPage = (ids)=>{
+    let bookingDesId = ids[0];
+    let bookingPacId = ids[1]
+    let destination = getDestination(bookingDesId);
+    //let package = getPackageDetails(destination.packages, bookingPacId);
+    let destinationInput = document.getElementById("destination-bf");
+    let packageInput = document.getElementById("package-bf");
+    if (bookingDesId){
+          destinationInput.value = destination.name;
+          renderBookingNavbar(destination)
+    }
+    if(bookingPacId){
+        let package = getPackageDetails(destination.packages, bookingPacId);
+          packageInput.value = package.type
+    }
+}
+/*
 const fillFormElements = (bookingDestinationId, bookingsPackageId) => {
     let destination = getDestination(bookingDestinationId);
     let package = getPackageDetails(destination.packages, bookingsPackageId);
@@ -548,8 +573,8 @@ const fillFormElements = (bookingDestinationId, bookingsPackageId) => {
     let packageInput = document.getElementById("package-bf");
     destinationInput.value = destination.name;
     packageInput.value = package.type
-
 }
+*/
 // get package
 const getPackageDetails = (packages, packageId) => {
     let packageDetails
@@ -558,10 +583,9 @@ const getPackageDetails = (packages, packageId) => {
             currentPackage = detail;
         }
     });
-    console.log(currentPackage);
+    //console.log(currentPackage);
     return currentPackage
 }
-
 $(document).ready(() => {
     // only runs function for destination page
     if ($("body").hasClass("destination-page")) {
@@ -576,11 +600,12 @@ $(document).ready(() => {
     if ($("body").hasClass("booking-page")) {
         // gets destinastion id from the windows url and package id
         let ids = window.location.hash.replace("#", "").split("+");
-        let bookingDestinationId = ids[0];
-        let bookingsPackageId = ids[1]
+//console.log(ids)
+   fillBookingPage(ids)
+        /*
         if (bookingDestinationId && bookingsPackageId) {
             fillFormElements(bookingDestinationId, bookingsPackageId);
-        }
+        }*/
 
     }
 });

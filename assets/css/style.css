@@ -90,7 +90,8 @@ body {
 .packages-btn:hover,
 .booking-form-btn:hover,
 .packages-btn:hover */
-a:hover{
+a:hover,
+.submit-btn:hover{
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
