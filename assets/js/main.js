@@ -488,7 +488,6 @@ const renderDestinationInfo = (destination) => {
 };
 
 //fills in destination packages 
-
 const renderPackage = (destination, package) => {
     let packageList = document.getElementById("destination-pk-ul")
     let packageLi = `
@@ -506,6 +505,16 @@ const renderPackage = (destination, package) => {
         `
     packageList.insertAdjacentHTML("beforeend", packageLi)
 };
+
+// renders destination page if no destination
+const renderEmptyDestination = () =>{
+    let noDestination = document.querySelectorAll(".no-destination");
+        let message = `<p> Opps no destination details have been found. <br> Please go back to our home page to pick a destination</p> 
+        <a href="index.html" class="link"><i class="las la-angle-double-left" aria-hidden="true"></i>Home Page</a>`;
+     noDestination.forEach(area =>{
+         area.innerHTML = message;
+     })
+}
 
 //fill the rest of the destination page
 const fillDestinationPage = (destinationId) => {
@@ -527,7 +536,8 @@ const fillDestinationPage = (destinationId) => {
             renderPackage(destination, package)
         })
     } else {
-        alert("Something has gone wrong please try again");
+        /*lets user know that there is no destination details and to link back to home page and pick one*/
+     renderEmptyDestination()
     }
 };
 // booking form page 
