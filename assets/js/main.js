@@ -346,7 +346,7 @@ const renderDestination = (destination, sliderName) => {
       <img src="${destination.image}" alt="image of ${destination.name}" class="card-img">
         <div class="card-content">
           <h2 class="card-title">${destination.name}</h2>
-          <a href="destination.html#${destination.id}" class="destination-link link">Find Out More</a>
+          <a href="destination.html?${destination.id}" class="destination-link link">Find Out More</a>
         </div>
       <div class="gradient"></div>
     </li>
@@ -500,7 +500,7 @@ const renderPackage = (destination, package) => {
 				<p>${package.type} Hotel</p>
 				<p>Flights Included</p>
 				<p>${package.price}/ person sharing</p>
-                <a class="packages-btn link" href="booking.html#${destination.id}+${package.id}">
+                <a class="packages-btn link" href="booking.html?${destination.id}+${package.id}">
                 Enquire Now</a>
             </div>
         </li>
@@ -546,7 +546,10 @@ const fillDestinationPage = (destinationId) => {
 
 const renderBookingNavbar=(destination) =>{
     let details = document.getElementById("bnav-details");
+    let packages = document.getElementById("bnav-packages");
     details.innerHTML = `<a href="destination.html#${destination.id}" class="navigation-link">${destination.name} Details</a>`;
+    packages.innerHTML=` <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
+    `
  }
 // booking form page 
 const fillBookingPage = (ids)=>{
@@ -590,8 +593,15 @@ $(document).ready(() => {
     // only runs function for destination page
     if ($("body").hasClass("destination-page")) {
         // gets destinastion id from the windows url and removes the hash.
-        let destinationId = window.location.hash.replace("#", "");
-        fillDestinationPage(destinationId);
+        let urlArray = window.location.href.split("?")
+          let destinationId =urlArray[1]
+          if(destinationId.includes("#")){
+              let newDestinationIdArray=destinationId.split("#");
+              fillDestinationPage(newDestinationIdArray[0])
+          }else{
+                fillDestinationPage(destinationId);
+          }
+     
     }
 });
 
@@ -599,8 +609,10 @@ $(document).ready(() => {
     // only runs function for destination page
     if ($("body").hasClass("booking-page")) {
         // gets destinastion id from the windows url and package id
-        let ids = window.location.hash.replace("#", "").split("+");
-//console.log(ids)
+      let urlArray = window.location.href.split("?")
+      let ids = urlArray[1].split("+")
+      console.log(urlArray)
+         console.log(ids)
    fillBookingPage(ids)
         /*
         if (bookingDestinationId && bookingsPackageId) {
