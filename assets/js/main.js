@@ -461,7 +461,7 @@ const renderDestinationNavbar = (destination) => {
     details.innerHTML = `${destination.name} Details`;
     map.innerHTML = `${destination.name} Map`;
     packages.innerHTML = `${destination.name} Packages`
-    enquiry.innerHTML=`<a href="booking.html#${destination.id}" class="navigation-link">Booking Enquiry</a>`
+    enquiry.innerHTML=`<a href="booking.html?${destination.id}" class="navigation-link">Booking Enquiry</a>`
 }
 
 // Fills the heading of the destination page from the above arrays using the id
@@ -520,8 +520,15 @@ const renderEmptyDestination = () =>{
 
 //fill the rest of the destination page
 const fillDestinationPage = (destinationId) => {
+    let id
+      if(destinationId.includes("#")){
+              let newDestinationIdArray=destinationId.split("#");
+            id=newDestinationIdArray[0]
+          }else{
+             id = destinationId
+          }
     //gets destination
-    let destination = getDestination(destinationId);
+    let destination = getDestination(id);
     if (destination) {
         // fills in navbar
         renderDestinationNavbar(destination);
@@ -547,7 +554,7 @@ const fillDestinationPage = (destinationId) => {
 const renderBookingNavbar=(destination) =>{
     let details = document.getElementById("bnav-details");
     let packages = document.getElementById("bnav-packages");
-    details.innerHTML = `<a href="destination.html#${destination.id}" class="navigation-link">${destination.name} Details</a>`;
+    details.innerHTML = `<a href="destination.html?${destination.id}" class="navigation-link">${destination.name} Details</a>`;
     packages.innerHTML=` <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
     `
  }
@@ -580,7 +587,7 @@ const fillFormElements = (bookingDestinationId, bookingsPackageId) => {
 */
 // get package
 const getPackageDetails = (packages, packageId) => {
-    let packageDetails
+
     packages.forEach(detail => {
         if (detail.id === packageId) {
             currentPackage = detail;
@@ -595,13 +602,11 @@ $(document).ready(() => {
         // gets destinastion id from the windows url and removes the hash.
         let urlArray = window.location.href.split("?")
           let destinationId =urlArray[1]
-          if(destinationId.includes("#")){
-              let newDestinationIdArray=destinationId.split("#");
-              fillDestinationPage(newDestinationIdArray[0])
-          }else{
-                fillDestinationPage(destinationId);
-          }
-     
+       if(destinationId){
+              fillDestinationPage(destinationId);
+       }else{
+           renderEmptyDestination()
+       }
     }
 });
 
