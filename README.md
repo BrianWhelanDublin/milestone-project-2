@@ -66,6 +66,71 @@
 
 ## Features
 
+
+## Technologies used
+
+### Languages Used.
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  - HTML5 was used to create the content and base of each page.
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS) 
+  - CSS3 was used to then style the page and make it responive through media querys, and interactive through using css transitions.
+
+- [javaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - javaScript was used throughout the website to make the site interactive. The javaScript will change what is being shown to the user depending on what they click. 
+
+
+### Frameworks Libraries and Programs. 
+
+- [Bootstrap 4](https://getbootstrap.com/) 
+  - I used bootstrap throughout the site to make it responsive. I also used bootstrap to create the booking forms, and the modals pop up when the forms have been submited. 
+  
+- [Google Fonts](https://fonts.google.com/)
+  - I imported the Mulish font from google fonts and used it consistently across the site.
+  
+- [Line awesome](https://icons8.com/line-awesome)
+  - I used different icons from Line awesome throughout the site for social media links and for some back links to improve user experience.
+
+- [Lightsilder](http://sachinchoolur.github.io/lightslider/) 
+  - I used Lightslider to create the responsive destinations slider on my home page.
+
+- [Git](https://git-scm.com/)
+  - Git was used as a version control in the terminal.
+
+- [Github](https://github.com/)
+  - Github was used to create and store the project repository.
+
+- [Gitpod](https://gitpod.io/)
+  - Gitpod was used to create my files and code the project.
+
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to create Wireframes for the project during the initial planning stage.
+
+- [Am I responsive](http://ami.responsivedesign.is/)
+  - Am i responsive was used to take screenshots of the page at different screen sizes.
+
+- [jQuery](https://jquery.com/)
+  - jQuery was used for the Rest Countries Api call and for the Lightslider. 
+
+### Api's 
+
+- [Rest Countries](https://restcountries.eu/)
+  - I used the rest countries Api on my destination page to get details for each destination. I called data for the countrymap, its capital, region, language and currency and rendered it to the page for each different destination.
+
+- [Google Maps Api](https://cloud.google.com/maps-platform)
+  - I used the google maps api to render a map for each destination on the destination page. I set each destinations coordinates and zoom in the destination object which then tailored the map for each destination.
+
+- [Google maps Places Library](https://developers.google.com/maps/documentation/javascript/places/)
+  -  I used the Google Maps places library to do a nearby search of popular attractions for each destination. The user can choose from a list of attractions and they will be shown on the map.
+
+- [Marker Cluster Plus](https://github.com/googlemaps/js-markerclustererplus)
+  - I used the Marker Cluster Plus library from Google Maps to place cluster markers on each map. This keeps the map less cluttered when performing a search but lets the user know there is a number of places in a specific area.
+
+- [EmailJS](https://www.emailjs.com/)
+  - EmailJS was used for all forms including the contact form and the booking enquiry form. The newsletter form will also send an attomatic reply to thank the user for signing up.
+
+
 ## Credits
 
 ### Code
