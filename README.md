@@ -137,7 +137,7 @@
 
 ### Github, Gitpod, Git and Gitub pages
 
-- To start the project I used Github and Gitpod.
+- #### To start the project I used Github and Gitpod.
 
 1. I first signed into git hub and located the Code Institute gitpod template.
 
@@ -179,7 +179,7 @@
 
 
 
-Git 
+- #### Git 
 
 1. Throughout the project I used git to save and store my progress. 
 
@@ -198,14 +198,28 @@ Git
 5. The above steps were used for each stage of development throught the project.
 
 
-To make my project live I then used github pages.
+- #### To make my project live I then used github pages.
 
-1. I First signed into github and located my repository
+1. I First signed into my github and located my project repository.
+
 2. At the top of the repository I selected the settings option.
+  
+  - ![Image of settings](assets/images/readme/gitpages-settings.png)
+
 3. I then scrolled down the page until I reached the github pages section.
-4. Under sources I selected the Master Branch.
-5. The page then refreshed itself.
+
+  - ![Image of gitpages source](assets/images/readme/gitpages-source.png)
+
+4. Under sources I then selected the Master Branch.
+
+  - ![Image of select master](assets/images/readme/select-master.png)
+
+5. The page will then refreshed itself.
+
 6. I then scrolled back down and the link to my live page was then visible.
+
+  - ![Image of live page link](assets/images/readme/site-live.png)
+
 
 
 
