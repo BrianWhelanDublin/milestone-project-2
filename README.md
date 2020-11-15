@@ -139,86 +139,86 @@
 
 - #### To start the project I used Github and Gitpod.
 
-1. I first signed into git hub and located the Code Institute gitpod template.
+  1. I first signed into git hub and located the Code Institute gitpod template.
 
-  - ![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
+     - ![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
 
-2. I then clicked the use this template button.
+  2. I then clicked the use this template button.
 
-  - ![Image of use template button](assets/images/readme/use-this-template.png)
+     - ![Image of use template button](assets/images/readme/use-this-template.png)
 
-3. I then named the repository and created it.
+  3. I then named the repository and created it.
 
-  - ![Image of use template button](assets/images/readme/new-repository.png)
+     - ![Image of use template button](assets/images/readme/new-repository.png)
 
-4. Once the repository was created I could then open it on Gitpod.
+  4. Once the repository was created I could then open it on Gitpod.
 
-5. I the used my terminal to create my files and folders. I started with my index.html.
+  5. I the used my terminal to create my files and folders. I started with my index.html.
 
-  - ![Image of index.html in terminal](assets/images/readme/touch-index.png)
+     - ![Image of index.html in terminal](assets/images/readme/touch-index.png)
 
-6. Then my Assets folder.
+  6. Then my Assets folder.
 
-  - ![Image of mkdir in terminal](assets/images/readme/mkdir.png)
+     - ![Image of mkdir in terminal](assets/images/readme/mkdir.png)
+  
+  7. I used the same steps to create my style.css file, my javascript folder and my main.js file.
 
-7. I used the same steps to create my style.css file, my javascript folder and my main.js file.
+  8. Once all files were created I then used the git add command to add them to the staging area.
 
-8. Once all files were created I then used the git add command to add them to the staging area.
+     - ![Image of git add command](assets/images/readme/git-add.png)
 
-  - ![Image of git add command](assets/images/readme/git-add.png)
+  9. I then used git commit command to add commit the files using initial commit as my comment.
 
-9. I then used git commit command to add commit the files using initial commit as my comment.
+      - ![Image of git commit](assets/images/readme/git-commit.png)
 
-  - ![Image of git commit](assets/images/readme/git-commit.png)
+  10. I then used git push to push them all to github.
 
-10. I then used git push to push them all to github.
+      - ![Image of git push](assets/images/readme/git-push.png)
 
-  - ![Image of git push](assets/images/readme/git-push.png)
-
-11. Once this was completed I was able to start work on the project.
+  11. Once this was completed I was able to start work on the project.
 
 
 
 - #### Git 
 
-1. Throughout the project I used git to save and store my progress. 
+  1. Throughout the project I used git to save and store my progress. 
 
-2. Once I completed a section I used git add command to add the changes I had made to the staging area. 
+  2. Once I completed a section I used git add command to add the changes I had made to the staging area. 
 
-  - ![Image of add readme file](assets/images/readme/add-readme.png)
+     - ![Image of add readme file](assets/images/readme/add-readme.png)
 
-3. Once the file was staged I the used the git commit command to commit the changes.
+  3. Once the file was staged I the used the git commit command to commit the changes.
 
-  - ![Image of commit readme file](assets/images/readme/git-readme-commit.png).
+     - ![Image of commit readme file](assets/images/readme/git-readme-commit.png).
 
-4. Then the changes were pushed to github using git push command.
+  4. Then the changes were pushed to github using git push command.
 
-  - ![Image of push readme](assets/images/readme/git-readme-push.png)
+    - ![Image of push readme](assets/images/readme/git-readme-push.png)
 
-5. The above steps were used for each stage of development throught the project.
+  5. The above steps were used for each stage of development throught the project.
 
 
 - #### To make my project live I then used github pages.
 
-1. I First signed into my github and located my project repository.
+  1. I First signed into my github and located my project repository.
 
-2. At the top of the repository I selected the settings option.
+  2. At the top of the repository I selected the settings option.
   
-  - ![Image of settings](assets/images/readme/gitpages-settings.png)
+     - ![Image of settings](assets/images/readme/gitpages-settings.png)
 
-3. I then scrolled down the page until I reached the github pages section.
+  3. I then scrolled down the page until I reached the github pages section.
 
-  - ![Image of gitpages source](assets/images/readme/gitpages-source.png)
+       - ![Image of gitpages source](assets/images/readme/gitpages-source.png)
 
-4. Under sources I then selected the Master Branch.
+  4. Under sources I then selected the Master Branch.
 
-  - ![Image of select master](assets/images/readme/select-master.png)
+     - ![Image of select master](assets/images/readme/select-master.png)
 
-5. The page will then refreshed itself.
+  5. The page will then refreshed itself.
 
-6. I then scrolled back down and the link to my live page was then visible.
+  6. I then scrolled back down and the link to my live page was then visible.
 
-  - ![Image of live page link](assets/images/readme/site-live.png)
+     - ![Image of live page link](assets/images/readme/site-live.png)
 
 
 
