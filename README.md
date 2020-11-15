@@ -130,6 +130,67 @@
 - [EmailJS](https://www.emailjs.com/)
   - EmailJS was used for all forms including the contact form and the booking enquiry form. The newsletter form will also send an attomatic reply to thank the user for signing up.
 
+## Testing 
+
+## Deployment
+
+
+### Github, Gitpod, Git and Gitub pages
+
+- To start the project I used Github and Gitpod.
+
+1. I first signed into git hub and located the Code Institute gitpod template.
+![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
+
+2. I then clicked the use this template button.
+![Image of use template button](assets/images/readme/use-this-template.png)
+
+3. I then named the repository and created it.
+![Image of use template button](assets/images/readme/new-repository.png)
+
+4. Once the repository was created I could then open it on Gitpod.
+
+5. I the used my terminal to create my files and folders.
+I started with my index.html.
+![Image of index.html in terminal](assets/images/readme/touch-index.png)
+Then my Assets folder.
+![Image of mkdir in terminal](assets/images/readme/mkdir.png)
+
+6. I used the same steps to create my style.css file, my javascript folder and my main.js file.
+
+7. Once all files were created I then used the git add command to add them to the staging area.
+![Image of git add command](assets/images/readme/git-add.png)
+
+8. I then used git commit command to add commit the files using initial commit as my comment.
+![Image of git commit](assets/images/readme/git-commit.png)
+
+9. I then used git push to push them all to github.
+![Image of git push](assets/images/readme/git-push.png)
+
+10. Once this was completed I was able to start work on the project.
+
+
+
+
+
+Git 
+
+1. Once I created the main files and folders I then used the git add . command to add them to the staging area.
+2. Once they were staged I then used git commit -m "initial commit" to commit them to github.
+3. I then used git push to push the files onto my gihub page.
+4. I used these steps to commit the project regularly throughout the development to keep everything saved and up to date on my github.
+
+To make my project live I then used github pages.
+
+1. I First signed into github and located my repository
+2. At the top of the repository I selected the settings option.
+3. I then scrolled down the page until I reached the github pages section.
+4. Under sources I selected the Master Branch.
+5. The page then refreshed itself.
+6. I then scrolled back down and the link to my live page was then visible.
+
+
+
 
 ## Credits
 
