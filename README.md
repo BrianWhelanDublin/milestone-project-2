@@ -141,39 +141,41 @@
 
 1. I first signed into git hub and located the Code Institute gitpod template.
 
-![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
+  - ![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
 
 2. I then clicked the use this template button.
 
-![Image of use template button](assets/images/readme/use-this-template.png)
+  - ![Image of use template button](assets/images/readme/use-this-template.png)
 
 3. I then named the repository and created it.
 
-![Image of use template button](assets/images/readme/new-repository.png)
+  - ![Image of use template button](assets/images/readme/new-repository.png)
 
 4. Once the repository was created I could then open it on Gitpod.
 
-5. I the used my terminal to create my files and folders.
-I started with my index.html.
+5. I the used my terminal to create my files and folders. I started with my index.html.
 
-![Image of index.html in terminal](assets/images/readme/touch-index.png)
+  - ![Image of index.html in terminal](assets/images/readme/touch-index.png)
 
-Then my Assets folder.
+6. Then my Assets folder.
 
-![Image of mkdir in terminal](assets/images/readme/mkdir.png)
+  - ![Image of mkdir in terminal](assets/images/readme/mkdir.png)
 
-6. I used the same steps to create my style.css file, my javascript folder and my main.js file.
+7. I used the same steps to create my style.css file, my javascript folder and my main.js file.
 
-7. Once all files were created I then used the git add command to add them to the staging area.
-![Image of git add command](assets/images/readme/git-add.png)
+8. Once all files were created I then used the git add command to add them to the staging area.
 
-8. I then used git commit command to add commit the files using initial commit as my comment.
-![Image of git commit](assets/images/readme/git-commit.png)
+  - ![Image of git add command](assets/images/readme/git-add.png)
 
-9. I then used git push to push them all to github.
-![Image of git push](assets/images/readme/git-push.png)
+9. I then used git commit command to add commit the files using initial commit as my comment.
 
-10. Once this was completed I was able to start work on the project.
+  - ![Image of git commit](assets/images/readme/git-commit.png)
+
+10. I then used git push to push them all to github.
+
+  - ![Image of git push](assets/images/readme/git-push.png)
+
+11. Once this was completed I was able to start work on the project.
 
 
 
@@ -182,18 +184,18 @@ Git
 1. Throughout the project I used git to save and store my progress. 
 
 2. Once I completed a section I used git add command to add the changes I had made to the staging area. 
-![Image of add readme file](assets/images/readme/add-readme.png)
+
+  - ![Image of add readme file](assets/images/readme/add-readme.png)
 
 3. Once the file was staged I the used the git commit command to commit the changes.
-![Image of commit readme file](assets/images/readme/git-readme-commit.png).
+
+  - ![Image of commit readme file](assets/images/readme/git-readme-commit.png).
 
 4. Then the changes were pushed to github using git push command.
-![Image of push readme](assets/images/readme/git-readme-push.png)
+
+  - ![Image of push readme](assets/images/readme/git-readme-push.png)
 
 5. The above steps were used for each stage of development throught the project.
-
-
-
 
 
 To make my project live I then used github pages.
