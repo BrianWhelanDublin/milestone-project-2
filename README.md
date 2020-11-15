@@ -259,32 +259,48 @@
 
         - I used the above tutorial to add the effect of my elements fading in upon page scroll. In the tutorial the code was used for only one element to use it throughout the page I have edited the code by using the querySelectorAll on the animation-element class. I then added the .forEach() function so the code work work for any element with the class of animation element.
 
-    - #### Code Institute.
+- #### Code Institute.
 
-      - [My Version of the walkthrough project](https://github.com/BrianWhelanDublin/resume-walkthrough-project)
+  - [My Version of the walkthrough project](https://github.com/BrianWhelanDublin/resume-walkthrough-project)
 
-        - I used the Code Institue resume project to help me with using the emailJS code and also for calling the rest countries Api using jQuery.
+    - I used the Code Institue resume project to help me with using the emailJS code and also for calling the rest countries Api using jQuery.
 
-  - #### Google Maps Documentation.
+- #### Google Maps Documentation.
 
-    - [Google Maps javascript Api Documentation](https://developers.google.com/maps/documentation/javascript/overview)
+  - [Google Maps javascript Api Documentation](https://developers.google.com/maps/documentation/javascript/overview)
 
-      - I used the documentation from google maps to get an overview of
-        1. How to add google maps into your html.
-        2. How to create a map.
-        3. The basics of how to use map cluster.
+    - I used the documentation from google maps to get an overview of
+      1. How to add google maps into your html.
+      2. How to create a map.
+      3. The basics of how to use map cluster.
 
-    - [Google Places Library Documentation](https://developers.google.com/maps/documentation/javascript/places)
+  - [Google Places Library Documentation](https://developers.google.com/maps/documentation/javascript/places)
 
-      - I used the Google Map Places Library documentation to learn the basics of calling a nearby search on my map.
+    - I used the Google Map Places Library documentation to learn the basics of calling a nearby search on my map.
 
-    - [Google Code Labs](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js?hl=en#0)
+  - [Google Code Labs](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js?hl=en#0)
 
-      - I used code form the Build a Nearby Business Search service with Google Maps Platform tutorial on google codelabs.
-      - I used this tutorial to help me understand an implement a search on my map.
-      - I've edited the code to search for a type of place depending on which button the user picks.
-      - I also added google maps marker clustering to make my map look cleaner.
-      - I created two functions to clear the map of Markers and then Marker clustering when a new button is clicked.
+    - I used code form the Build a Nearby Business Search service with Google Maps Platform tutorial on google codelabs.
+    - I used this tutorial to help me understand an implement a search on my map.
+    - I've edited the code to search for a type of place depending on which button the user picks.
+    - I also added google maps marker clustering to make my map look cleaner.
+    - I created two functions to clear the map of Markers and then Marker clustering when a new button is clicked.
 
-      - I rewrote the showPanel function to work with this website and to render the results of the search to the website when a marker is clicked.
-      - I've also edited the showDetails function to use Template literals and to add classes for font-size and color.
+    - I rewrote the showPanel function to work with this website and to render the results of the search to the website when a marker is clicked.
+    - I've also edited the showDetails function to use Template literals and to add classes for font-size and color.
+
+
+### Content 
+
+  - All Text for the website was written by myself.
+
+### Media 
+
+  - [Unsplash](https://unsplash.com/)
+    - All images for the website were obtained from unsplash.
+
+### Acknowledgements
+
+   - Code Institute for getting me to this point
+
+   - My Mentor for his help with this project.
