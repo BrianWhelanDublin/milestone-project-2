@@ -986,7 +986,7 @@ const fillDestinationPage = (destinationId) => {
   }
 };
 
-// fill booking for nav
+// fill booking form nav
 const renderBookingNavbar = (destination) => {
   let details = document.getElementById("bnav-details");
   let packages = document.getElementById("bnav-packages");
