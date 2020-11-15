@@ -171,14 +171,24 @@ Then my Assets folder.
 
 
 
-
-
 Git 
 
-1. Once I created the main files and folders I then used the git add . command to add them to the staging area.
-2. Once they were staged I then used git commit -m "initial commit" to commit them to github.
-3. I then used git push to push the files onto my gihub page.
-4. I used these steps to commit the project regularly throughout the development to keep everything saved and up to date on my github.
+1. Throughout the project I used git to save and store my progress. 
+
+2. Once I completed a section I used git add command to add the changes I had made to the staging area. 
+![Image of add readme file](assets/images/readme/add-readme.png)
+
+3. Once the file was staged I the used the git commit command to commit the changes.
+![Image of commit readme file](assets/images/readme/git-readme-commit.png).
+
+4. Then the changes were pushed to github using git push command.
+![Image of push readme](assets/images/readme/git-readme-push.png)
+
+5. The above steps were used for each stage of development throught the project.
+
+
+
+
 
 To make my project live I then used github pages.
 
