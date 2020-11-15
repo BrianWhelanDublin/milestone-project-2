@@ -553,7 +553,9 @@ button:focus {
 }
 
 /* -----------------------------Bootstrap modal-----------------------------*/
-#myModal {
+#myModal,
+#booking-modal,
+ #newsletterModal{
   color: #181822;
 }
 .modal-content {
