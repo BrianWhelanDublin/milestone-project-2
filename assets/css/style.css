@@ -784,7 +784,7 @@ button:focus {
   right: 0;
 }
 .booking-img {
-  background: url(../images/booking3.jpg) no-repeat center center scroll;
+  background: url(../images/booking-img.jpg) no-repeat center center ;
   background-size: cover;
 }
 .booking-title {
