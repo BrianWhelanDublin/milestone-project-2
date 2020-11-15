@@ -140,20 +140,26 @@
 - To start the project I used Github and Gitpod.
 
 1. I first signed into git hub and located the Code Institute gitpod template.
+
 ![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
 
 2. I then clicked the use this template button.
+
 ![Image of use template button](assets/images/readme/use-this-template.png)
 
 3. I then named the repository and created it.
+
 ![Image of use template button](assets/images/readme/new-repository.png)
 
 4. Once the repository was created I could then open it on Gitpod.
 
 5. I the used my terminal to create my files and folders.
 I started with my index.html.
+
 ![Image of index.html in terminal](assets/images/readme/touch-index.png)
+
 Then my Assets folder.
+
 ![Image of mkdir in terminal](assets/images/readme/mkdir.png)
 
 6. I used the same steps to create my style.css file, my javascript folder and my main.js file.
