@@ -1026,13 +1026,16 @@ $(document).ready(() => {
   // only runs function for destination page
   if ($("body").hasClass("destination-page")) {
     // gets destinastion id from the windows url and removes the hash.
-    let urlArray = window.location.href.split("?");
-    let destinationId = urlArray[1];
-    if (destinationId) {
-      fillDestinationPage(destinationId);
-    } else {
-      renderEmptyDestination();
+    if (window.location.href.includes("?")) {
+      let urlArray = window.location.href.split("?");
+      let destinationId = urlArray[1];
+      if (destinationId) {
+        fillDestinationPage(destinationId);
+      } else {
+        renderEmptyDestination();
+      }
     }
+    renderEmptyDestination();
   }
 });
 
@@ -1040,10 +1043,14 @@ $(document).ready(() => {
   // only runs function for destination page
   if ($("body").hasClass("booking-page")) {
     // gets destinastion id from the windows url and package id
-    let urlArray = window.location.href.split("?");
-    let ids = urlArray[1].split("+");
-    console.log(urlArray);
-    console.log(ids);
-    fillBookingPage(ids);
+    if (window.location.href.includes("?")) {
+
+      let urlArray = window.location.href.split("?");
+      console.log(urlArray)
+      let ids = urlArray[1].split("+");
+      //console.log(urlArray);
+      //console.log(ids);
+      fillBookingPage(ids);
+    }
   }
 });
