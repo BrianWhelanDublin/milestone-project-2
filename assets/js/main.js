@@ -1034,8 +1034,9 @@ $(document).ready(() => {
       } else {
         renderEmptyDestination();
       }
-    }
-    renderEmptyDestination();
+    }else{
+        renderEmptyDestination();
+    }    
   }
 });
 
