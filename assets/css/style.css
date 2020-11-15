@@ -777,7 +777,7 @@ button:focus {
     height:0;
 }
 .booking-heading-col {
-  height: 135rem;
+  height: 145rem;
   width: 100%;
   position: relative;
   top: 0;
@@ -797,20 +797,20 @@ button:focus {
   background-color: rgba(24, 24, 34, 0.7);
   position: absolute;
   width: 80%;
-  height: 90%;
+  height: 92%;
   border-radius: 1rem;
   box-shadow: 10px 10px 5px #181822;
 }
 .booking-form {
   color: #fafafb;
   position: absolute;
-  bottom: 5%;
+  bottom: 2.5%;
   width: 80%;
   margin: 0 10%;
 }
 .form-group label,
 .form-control {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
