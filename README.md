@@ -228,7 +228,7 @@
 
 ### Code
 
-- Stack Overflow
+- #### Stack Overflow
 
   - [Centre Divs](https://stackoverflow.com/questions/1776915/how-can-i-center-an-absolutely-positioned-element-in-a-div)
 
@@ -237,17 +237,17 @@
   - [Fixing the css transitions on load](https://stackoverflow.com/questions/22744438/remove-body-class-after-window-load-with-javascript)
     - I used code from the above link to fix an issue I had with my css transitions running on page load.
 
-- You tube Tutorials
+- #### You tube Tutorials
 
   - I used two main tutorials on youtube to learn to have an interactive navbar and also how to fade elements in upon scrolling. I have used some elements of the code but have edited it to fit this website.
 
-    - Code and Create youtube tutorial
+    - ##### Code and Create youtube tutorial
 
       - [Navigation bar](https://www.youtube.com/watch?v=9Q7wy8r3i8w&list=WL&index=2)
 
         - I used the above tutorial on you tube to inspire my navbar. I have edited the code to adapt to my website design. I also have edited the javascript to fix an issue with the nav background not disappearing when a link is clicked . I have discussed this in more detail in the testing section.
 
-    - Dev Ed Visual effects in javascript tutorial.
+    - ##### Dev Ed Visual effects in javascript tutorial.
 
       - [Visual effects javascript](https://www.youtube.com/watch?v=C_JKlr4WKKs&list=PLDyQo7g0_nsXlSfuoBpG5Fgz0Qe3IvWnA&index=2)
 
