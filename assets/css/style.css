@@ -365,9 +365,7 @@ button:focus {
   margin-top: 5rem;
   border-bottom: solid 2px #fafafb;
 }
-
-/*--- Conatiners for reviews and signup images css --*/
-
+/*-Conatiners for reviews and signup images css -*/
 .reviews-container,
 .signup-container {
   background-color: #fafafb;
@@ -412,6 +410,21 @@ button:focus {
 .reviewer h2 {
   padding-left: 1rem;
   font-size: 1.5rem;
+}
+.reviewer-icon{
+    position:absolute;
+    right:5%;
+   background-color:#fafafb;
+    color:#181822;
+    border-radius:50%;
+    transition:all .5s ease-in-out;
+}
+.reviewer-icon:hover{
+    background-color: rgba(24, 24, 34, 0.4);
+    color:#fafafb;
+}
+.reviewer-icon i{
+    font-size: 3rem;  
 }
 .reviews {
   width: 100%;
