@@ -71,25 +71,6 @@ body {
   padding: 0.5rem;
   font-weight: 800;
 }
-/*
-.destination-link,
-.signup-btn,
-.contact-btn,
-.booking-form-btn,
-.packages-btn {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  font-weight: 800;
-}*/
-/*
-.destination-link:hover,
-.signup-btn:hover,
-.contact-btn:hover,
-.hero-link:hover,
-.map-btn:hover,
-.packages-btn:hover,
-.booking-form-btn:hover,
-.packages-btn:hover */
 a:hover,
 .submit-btn:hover {
   background-color: #181822;
@@ -189,7 +170,7 @@ button:focus {
 .animation-element {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 2s ease-in-out;
+  transition: all 1.2s ease-in;
 }
 .animation-active {
   opacity: 1;
