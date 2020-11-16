@@ -967,10 +967,16 @@ const renderEmptyDestination = () => {
 };
 
 //fill the rest of the destination page
-const fillDestinationPage = (destinationId) => {
-    //gets destination
+const fillDestinationPage = (destinationPageId) => {
+    let destinationId;
+    if (destinationPageId.includes("#")) {
+        let idArray = destinationPageId.split("#")
+        destinationId = idArray[0];
+    } else {
+        destinationId = destinationPageId
+    }
     let destination = getDestination(destinationId);
-    //if (destination) {
+   if (destination){
     // fills in navbar
     renderDestinationNavbar(destination);
     // fills in heading
@@ -985,24 +991,21 @@ const fillDestinationPage = (destinationId) => {
     destination.packages.forEach((package) => {
         renderPackage(destination, package);
     });
+   }else{
+       renderEmptyDestination();
+   }
 };
+
 
 // only runs function for destination page
 if (document.body.classList.contains("destination-page")) {
-    // gets destinastion id from the windows url and removes the ?.
     if (window.location.href.includes("?")) {
-        let urlArray = window.location.href.split("?");
-        let destinationId = urlArray[1];
-        if (destinationId) {
-            fillDestinationPage(destinationId);
-        } else {
-            // displays the error message if a wrong destination code is put in
-            renderEmptyDestination();
+        let destinationPageIdArray = window.location.href.split("?");
+        let destinationPageId = destinationPageIdArray[1]
+        if (destinationPageId) {
+            fillDestinationPage(destinationPageId)
         }
-    } else {
-        // displays the error message if there is no code displayed
-        renderEmptyDestination();
-    }
+    }else renderEmptyDestination()
 }
 
 
@@ -1036,14 +1039,16 @@ const fillPackageInputValue = (packages, packageId) => {
 
 // get package from the 
 const getPackageDetails = (destinationPackages, packageId) => {
+    let currentPackage
     destinationPackages.forEach((destinationPackage) => {
         if (destinationPackage.id === packageId) {
             currentPackage = destinationPackage;
-        } else {
-            currentPackage = ""
-        }
-    });
-    return currentPackage;
+    }
+});
+      if(currentPackage){
+          return currentPackage
+      }
+ 
 };
 
 // fills out the booking form details depending on destination.

@@ -714,14 +714,12 @@ button:focus {
   position: absolute;
   height: fit-content;
 }
-.result-text p {
+.result-text p,
+.web-address a {
   font-size: 1.25rem;
 }
 .result-heading h3 {
   font-size: 1.75rem;
-}
-.web-address a {
-  font-size: 1rem;
 }
 .no-result {
   text-align: center;
@@ -910,7 +908,7 @@ button:focus {
   .map-btn-col,
   .map-col,
   .map-results-col {
-    height: 35rem;
+    height: 40rem;
   }
   .map-section-heading {
     margin-top: 2rem;
@@ -919,8 +917,8 @@ button:focus {
     margin-top: 0;
   }
   .map-btn {
-    font-size: 2rem;
-    margin-top: 1.25rem;
+    font-size: 1.75rem;
+    margin-top: 1rem;
   }
 
   #panel {
