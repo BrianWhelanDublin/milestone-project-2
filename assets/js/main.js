@@ -226,6 +226,10 @@ let cityDestinations = [
                 nights: "4 Nights Weekend Break",
                 price: "€899",
             },
+              {
+                id: "sp",
+                type: "New York Special",
+            },
         ],
     },
     {
@@ -261,6 +265,10 @@ let cityDestinations = [
                 type: "5 Star",
                 nights: "3 Nights Weekend Break",
                 price: "€599",
+            },
+             {
+                id: "sp",
+                type: "Paris Special",
             },
         ],
     },
@@ -769,6 +777,10 @@ let beachDestinations = [
                 type: "5 Star",
                 nights: "7 nights Hotel",
                 price: "€1599",
+            },
+            {
+                id: "sp",
+                type: "Santorini Special",
             },
         ],
     },
