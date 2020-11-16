@@ -67,7 +67,7 @@ body {
   color: #181822;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
-   font-size: 1.5rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: 800;
 }
@@ -91,7 +91,7 @@ body {
 .booking-form-btn:hover,
 .packages-btn:hover */
 a:hover,
-.submit-btn:hover{
+.submit-btn:hover {
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
@@ -498,6 +498,8 @@ button:focus {
   border: solid 2px;
   border-color: rgba(223, 225, 229, 0);
   border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 #signup-email:hover {
   border-color: #181822;
@@ -555,7 +557,7 @@ button:focus {
 /* -----------------------------Bootstrap modal-----------------------------*/
 #myModal,
 #booking-modal,
- #newsletterModal{
+#newsletterModal {
   color: #181822;
 }
 .modal-content {
@@ -600,16 +602,16 @@ button:focus {
 .other-des-link i {
   font-size: 2rem;
 }
-.no-destination{
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    text-align:center;
+.no-destination {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
 }
 .no-destination p,
 .no-destination i,
-.no-destination a{
-    font-size:2.5rem;
+.no-destination a {
+  font-size: 2.5rem;
 }
 /* --------Details Section ----------*/
 .details-col {
@@ -670,7 +672,7 @@ button:focus {
   width: 100%;
 }
 .map-subheading {
-  margin:.5rem 0;
+  margin: 0.5rem 0;
   font-size: 3rem;
   text-align: center;
 }
@@ -773,8 +775,8 @@ button:focus {
   margin-top: 10rem;
 }
 /* -----------------Booking form-------------*/
-#booking-home{
-    height:0;
+#booking-home {
+  height: 0;
 }
 .booking-heading-col {
   height: 145rem;
@@ -784,7 +786,7 @@ button:focus {
   right: 0;
 }
 .booking-img {
-  background: url(../images/booking-img.jpg) no-repeat center center ;
+  background: url(../images/booking-img.jpg) no-repeat center center;
   background-size: cover;
 }
 .booking-title {
@@ -973,8 +975,8 @@ button:focus {
     font-size: 3.75rem;
   }
   .navigation-item {
-  margin: 1.5% 0;
-}
+    margin: 1.5% 0;
+  }
 }
 /* -------------------------laptops and desktops-----------------------*/
 @media (min-width: 1200px) {
