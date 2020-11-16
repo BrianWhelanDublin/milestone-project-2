@@ -785,7 +785,8 @@ button:focus {
   top: 0;
   right: 0;
 }
-.booking-img {
+.booking-img,
+.image404  {
   background: url(../images/booking-img.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -813,6 +814,33 @@ button:focus {
 .form-group label,
 .form-control {
   font-size: 1.35rem;
+}
+/* --------------404 Form-----------*/
+.body404 {
+  height: 100vh;
+}
+#home404Page {
+  height: 100vh;
+}
+.text404{
+    height:fit-content;
+    width:fit-content;
+    background-color:rgba(24, 24, 34, 0.3);
+    position:absolute;
+     text-align: center;
+}
+.text404 h1{
+    font-size:2.5rem; 
+ 
+}
+.home-link404{
+   position:absolute;
+   bottom:30%;
+   right:20%;
+   font-size:3rem;
+}
+.home-link404 i{
+  font-size:2.25rem;
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
