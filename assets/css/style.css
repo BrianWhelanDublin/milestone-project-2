@@ -824,14 +824,16 @@ button:focus {
 }
 .text404{
     height:fit-content;
-    width:fit-content;
-    background-color:rgba(24, 24, 34, 0.3);
+    width:90%;
+    background-color:rgba(24, 24, 34, 0.5);
     position:absolute;
+    top:20%;
+    left:5%;
+    right:5%;
      text-align: center;
 }
 .text404 h1{
-    font-size:2.5rem; 
- 
+    font-size:2.75rem; 
 }
 .home-link404{
    position:absolute;
@@ -1005,6 +1007,9 @@ button:focus {
   .navigation-item {
     margin: 1.5% 0;
   }
+  .text404 h1{
+    font-size:3.5rem; 
+}
 }
 /* -------------------------laptops and desktops-----------------------*/
 @media (min-width: 1200px) {
@@ -1060,6 +1065,9 @@ button:focus {
   .web-address a {
     font-size: 1.6rem;
   }
+  .text404 h1{
+    font-size:4.5rem; 
+}
 }
 /* ------------------larger desktops and laptop screens-----------------------*/
 @media (min-width: 1450px) {
