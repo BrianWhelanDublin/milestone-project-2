@@ -38,7 +38,7 @@ body {
 }
 /* ------------------ Font sizes and weights------------------*/
 .main-title {
-  font-size: 6rem;
+  font-size: 5.75rem;
   font-weight: 800;
 }
 .section-heading {
@@ -54,7 +54,7 @@ body {
 }
 .hero-text,
 .about-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 /* ------------------------ Common Elements link and destination cards ----- */
@@ -294,8 +294,8 @@ button:focus {
 }
 .heading {
   position: absolute;
-  top: 30%;
-  left: 5%;
+  top: 20%;
+  left: 2.5%;
   border-left: #fafafb 2px solid;
   padding: 3% 5%;
   display: flex;
@@ -856,13 +856,13 @@ button:focus {
   height: 100vh;
 }
   .heading {
-    top: 5%;
+    top: 2.5%;
   }
   .navigation-link {
     font-size: 5vh;
   }
   .des-page-title {
-    bottom: 25%;
+    bottom: 20%;
     writing-mode: horizontal-tb;
   }
 }
