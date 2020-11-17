@@ -20,17 +20,17 @@
 
 ## Screenshots
 
-### Landing page screenshot
+### Home page screenshot
 
 <div align="center"><img src="assets/images/readme/responsive/responsive-homepage.png"></div>
 
-### Section page screenshot
+### Destination page screenshot
 
 <div align="center"><img src="assets/images/readme/responsive/responsive-destination-page.png"></div>
 
-### Booking-form screenshot
+### Booking Enquiry form screenshot
 
-<div align="center"><img src="assets/images/readme/responsive/responsive-homepage.png"></div>
+<div align="center"><img src="assets/images/readme/responsive/responsive-booking-page.png"></div>
 
 
 - All screen shots created using [Am I responsive](http://ami.responsivedesign.is/)
