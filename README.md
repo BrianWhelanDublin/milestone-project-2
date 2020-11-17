@@ -147,6 +147,16 @@
      - Error message
        - ![Image of error message](assets/images/features/newsletter-error.png)
 
+ - #### Contact Form 
+    - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
+     -  Contact Form.
+       - ![Image of scontact form](assets/images/features/contact.png)
+      -  Sucessfully submited.
+       - ![Image of successful modal](assets/images/features/contact-success.png)
+     - Error message
+       - ![Image of error message](assets/images/features/contact-error.png)
+        
+
 ## Technologies used
 
 ### Languages Used.
