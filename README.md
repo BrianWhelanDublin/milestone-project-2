@@ -10,7 +10,6 @@
   - They packages then lead to a booking enquiry form which can be filled out and sent to make a booking enquiry.
 
 
-
 ## Live project
 
 - [View the live project here.](https://brianwhelandublin.github.io/milestone-project-2/)
@@ -155,39 +154,39 @@
 
   1. I first signed into Github and located the Code Institute Gitpod template.
 
-     - ![Image of Code Institute Template](assets/images/readme/code-institute-template.png)
+     - ![Image of Code Institute Template](assets/images/readme/deployment/code-institute-template.png)
 
   2. I then clicked the use this template button.
 
-     - ![Image of use template button](assets/images/readme/use-this-template.png)
+     - ![Image of use template button](assets/images/readme/deployment/use-this-template.png)
 
   3. I then named the repository and created it.
 
-     - ![Image of use template button](assets/images/readme/new-repository.png)
+     - ![Image of use template button](assets/images/readme/deployment/new-repository.png)
 
   4. Once the repository was created I could then open it on Gitpod.
 
   5. I the used my terminal to create my files and folders. I started with my index.html.
 
-     - ![Image of index.html in terminal](assets/images/readme/touch-index.png)
+     - ![Image of index.html in terminal](assets/images/readme/deployment/touch-index.png)
 
   6. Then my assets folder.
 
-     - ![Image of mkdir in terminal](assets/images/readme/mkdir.png)
+     - ![Image of mkdir in terminal](assets/images/readme/deployment/mkdir.png)
 
   7. I used the same steps to create my css folder,images folder, style.css file, my javascript js folder and my main.js file.
 
   8. Once all files were created I then used the git add command to add them to the staging area.
 
-     - ![Image of git add command](assets/images/readme/git-add.png)
+     - ![Image of git add command](assets/images/readme/deployment/git-add.png)
 
   9. I then used git commit command to add commit the files using initial commit as my comment.
 
-     - ![Image of git commit](assets/images/readme/git-commit.png)
+     - ![Image of git commit](assets/images/readme/deployment/git-commit.png)
 
   10. I then used git push to push them all to Github.
 
-      - ![Image of git push](assets/images/readme/git-push.png)
+      - ![Image of git push](assets/images/readme/deployment/git-push.png)
 
   11. Once this was completed I was able to start work on the project.
 
@@ -197,15 +196,15 @@
 
   2. Once I completed a section I used git add command to add the changes I had made to the staging area.
 
-     - ![Image of add readme file](assets/images/readme/add-readme.png)
+     - ![Image of add readme file](assets/images/readme/deployment/add-readme.png)
 
   3. Once the file was staged I the used the git commit command to commit the changes.
 
-     - ![Image of commit readme file](assets/images/readme/git-readme-commit.png).
+     - ![Image of commit readme file](assets/images/readme/deployment/git-readme-commit.png).
 
   4. Then the changes were pushed to Github using git push command.
 
-  - ![Image of push readme](assets/images/readme/git-readme-push.png)
+  - ![Image of push readme](assets/images/readme/deployment/git-readme-push.png)
 
   5. The above steps were used for each stage of development throught the project.
 
@@ -215,21 +214,21 @@
 
   2. At the top of the repository I selected the settings option.
 
-     - ![Image of settings](assets/images/readme/gitpages-settings.png)
+     - ![Image of settings](assets/images/readme/deployment/gitpages-settings.png)
 
   3. I then scrolled down the page until I reached the Github pages section.
 
-     - ![Image of gitpages source](assets/images/readme/gitpages-source.png)
+     - ![Image of gitpages source](assets/images/readme/deployment/gitpages-source.png)
 
   4. Under sources I then selected the Master Branch.
 
-     - ![Image of select master](assets/images/readme/select-master.png)
+     - ![Image of select master](assets/images/readme/deployment/select-master.png)
 
   5. The page then refreshed itself.
 
   6. I then scrolled back down and the link to my live page was then visible.
 
-     - ![Image of live page link](assets/images/readme/site-live.png)
+     - ![Image of live page link](assets/images/readme/deployment/site-live.png)
 
 ## Credits
 
