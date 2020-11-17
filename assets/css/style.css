@@ -572,7 +572,7 @@ button:focus {
 /* -----------------------------Destinations page-----------------------------*/
 /* --------Title section----------*/
 #title-section {
-  height: 65rem;
+  height: 100vh;
 }
 .des-page-container {
   height: 100%;
@@ -844,9 +844,6 @@ button:focus {
   .right-gradient,
   .hero-img::before {
     height: 75rem;
-  }
-  #title-section {
-      height:100vh;
   }
 }
 /* ----------------------------for phone portrait mode-----------------------*/
