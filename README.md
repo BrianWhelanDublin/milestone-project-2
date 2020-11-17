@@ -4,6 +4,12 @@
 
 - The aim of this project is to build an interactive front end website using HTML CSS and javaScript.
 - I have decided to build a website for a fictional travel company G-Travel. I have used the knowledge I've learned in the course to date as well as good good user experience to create a responsive, well designed functional website.
+- My web page consists of:
+  - A home page containing the company information, all the destinations the company travels to, customer reviews, special offers, newsletter sign up and a simple contact form and contact details. My footer contains the social media links.
+  - Each destination then fills out the destination page with a title section, information about the destination, a map with search capabilities for local attractions and destination packages section.
+  - They packages then lead to a booking enquiry form which can be filled out and sent to make a booking enquiry.
+
+
 
 ## Live project
 
