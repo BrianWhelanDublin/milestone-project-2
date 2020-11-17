@@ -276,7 +276,7 @@ button:focus {
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
 }
-/*----------------------------- Hero image section------------------*/
+/*----------------------------- Hero image section home page------------------*/
 .hero-container,
 .right-gradient {
   height: 69rem;
@@ -314,7 +314,7 @@ button:focus {
   font-weight: 600;
   width: 22rem;
 }
-/* --------------------------About Section---------------------*/
+/* --------------------------About Section home page---------------------*/
 .about-col {
   height: 45rem;
 }
@@ -332,7 +332,7 @@ button:focus {
 .about-text {
   padding-top: 2.5%;
 }
-/* ----------------------Destination Section------------------- */
+/* ----------------------Destination Section home page------------------- */
 .destination-heading-row {
   height: 20rem;
 }
@@ -350,7 +350,7 @@ button:focus {
 .lSSlideOuter {
   margin-top: 3rem;
 }
-/* ------------------------------------Reviews section------------------------*/
+/* --------------------------Reviews section home page------------------------*/
 .review-heading-row {
   height: 15rem;
 }
@@ -446,7 +446,7 @@ button:focus {
 .active {
   box-shadow: 10px 10px 5px #181822;
 }
-/* -------------------------------Packages Section---------------------*/
+/* ---------------------------Packages Section home page---------------------*/
 .packages-title {
   height: 15rem;
 }
@@ -460,7 +460,7 @@ button:focus {
   padding: 5% 0;
   border-bottom: solid 0.2rem #fafafb;
 }
-/* -------------------------------Signup Section -----------------------------*/
+/* ------------------------Signup Section home page---------------------------*/
 .signup-row {
   height: 50rem;
 }
@@ -501,7 +501,7 @@ button:focus {
 .signup-btn {
   margin-top: 1rem;
 }
-/* -----------------------------Contact Section -----------------------------*/
+/* --------------------Contact Section home page-----------------------------*/
 .contact-row {
   height: 60rem;
 }
@@ -570,7 +570,7 @@ button:focus {
   width: 0;
 }
 /* -----------------------------Destinations page-----------------------------*/
-/* --------Title section----------*/
+/* --------Title section destination page----------*/
 #title-section {
   height: 100vh;
 }
@@ -608,7 +608,7 @@ button:focus {
 .no-destination a {
   font-size: 2.5rem;
 }
-/* --------Details Section ----------*/
+/* --------Details Section destination page----------*/
 .details-col {
   height: 30rem;
 }
@@ -631,17 +631,17 @@ button:focus {
   text-align: center;
   padding: 0 1rem;
 }
-/* -----------------Map Section-------------*/
+/* -----------------Map Section destination page-------------*/
 .map-title-col,
 .packages-title-col {
-  height: 20rem;
+  height: 26rem;
 }
 .map-section-heading {
   margin-top: 5rem;
   border-bottom: solid 2px #fafafb;
 }
 .map-btn-col {
-  height: 29rem;
+  height: 30rem;
 }
 .map-col {
   height: 30rem;
@@ -668,7 +668,7 @@ button:focus {
 }
 .map-subheading {
   margin: 0.5rem 0;
-  font-size: 3rem;
+  font-size: 2.75rem;
   text-align: center;
 }
 #panel {
