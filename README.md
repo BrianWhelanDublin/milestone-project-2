@@ -190,6 +190,11 @@
        - ![Image map section with button pressed](assets/images/readme/features/map-section-btn.png)
   - Map section result when marker pressed
        - ![Image of map section with marker clicked](assets/images/readme/features/map-section-results.png)
+
+- #### Destination packages
+  - Each destination has 3 different packages a 3 star, 4 star and 5 star and each link to the booking enquiry form.
+    - Map section result when marker pressed
+       - ![Image of destination packages section](assets/images/readme/features/destination-packages.png)
     
 
 
