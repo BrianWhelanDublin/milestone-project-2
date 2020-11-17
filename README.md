@@ -133,6 +133,11 @@
       - Second customer clicked
         - ![Image of second reviewer clicked](assets/images/features/review2.png)
 
+ - #### Special packages
+   - This feature can be used by the site owner to showcase packages to the user that are on special offer.
+     - Special packages section
+       -![Image of packages on offer section](assets/images/features/packages-offer.png)
+
 
 ## Technologies used
 
