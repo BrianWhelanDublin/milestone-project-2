@@ -113,49 +113,61 @@
  -  #### navbar
    - With the help of Code and Create youtube tutorial (details in the credit section) I have created a hamburger menu. The navbar appears on click of the hamburger and then dissapears on a click of the x. The navbar also disapears when you click an option in the list. The list items background colour and text colour also change on hover.
      - To Open navbar 
-       - ![Image of navbar hamburger](assets/images/features/navbar-hamburger.png)
+       - ![Image of navbar hamburger](assets/images/readme/features/navbar-hamburger.png)
      - Opened navbar 
-       - ![Image of navbar opened](assets/images/features/navbar-open.png)
+       - ![Image of navbar opened](assets/images/readme/features/navbar-open.png)
      - Nav item hover
-       - ![Image of navbar hover](assets/images/features/navbar-hover.png)
+       - ![Image of navbar hover](assets/images/readme/features/navbar-hover.png)
 
   - #### Destination Sliders
     - Using lightslider (details in technologies used section) I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the perticular object in the array.
       - City Destinations
-        - ![Image of city destination slider](assets/images/features/citydestinations.png)
+        - ![Image of city destination slider](assets/images/readme/features/citydestinations.png)
       - Beach Destinations
-        - ![Image of beach destination slider](assets/images/features/beachdestinations.png)
+        - ![Image of beach destination slider](assets/images/readme/features/beachdestinations.png)
 
   - #### Reviews 
     - The reviews section features 3 reviews by different customers. On page opening one review is shown with the customers name who wrote the review highlighted with a box shadow to show the user the review was written by them. On click of the next person their review will then be shown and their name highlighted. I have also added directional arrows to encourage users to click.
       - Review on open 
-        -![Image of review on page open](assets/images/features/review1.png)
+        -![Image of review on page open](assets/images/readme/features/review1.png)
       - Second customer clicked
-        - ![Image of second reviewer clicked](assets/images/features/review2.png)
+        - ![Image of second reviewer clicked](assets/images/readme/features/review2.png)
 
  - #### Special packages
    - This feature can be used by the site owner to showcase packages to the user that are on special offer.
      - Special packages section
-       -![Image of packages on offer section](assets/images/features/packages-offer.png)
+       -![Image of packages on offer section](assets/images/readme/features/packages-offer.png)
 
  - #### Newsletter 
    - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a sucessful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
      - Newsletter section. 
-       - ![Image of newsletter section](assets/images/features/newsletter.png)
+       - ![Image of newsletter section](assets/images/readme/features/newsletter.png)
      - Sucessfully submited.
-       - ![Image of successful modal](assets/images/features/newsletter-success.png)
+       - ![Image of successful modal](assets/images/readme/features/newsletter-success.png)
      - Error message
-       - ![Image of error message](assets/images/features/newsletter-error.png)
+       - ![Image of error message](assets/images/readme/features/newsletter-error.png)
 
  - #### Contact Form 
     - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
      -  Contact Form.
-       - ![Image of scontact form](assets/images/features/contact.png)
+       - ![Image of scontact form](assets/images/readme/features/contact.png)
       -  Sucessfully submited.
-       - ![Image of successful modal](assets/images/features/contact-success.png)
+       - ![Image of successful modal](assets/images/readme/features/contact-success.png)
      - Error message
-       - ![Image of error message](assets/images/features/contact-error.png)
+       - ![Image of error message](assets/images/readme/features/contact-error.png)
         
+### Destination Page Features 
+  
+  - #### Destination page 
+    - When a user clicks on a destination on the landing page it brings you to the destination page. All destinations have a unique code and by grabbing that code from the pages url I have written code to fill the page differently for every destination. 
+
+- #### Heading section
+  - Each page has a unique image and title for each destination.
+     - Kyoto Page
+       - ![Image of kyoto page](assets/images/readme/features/kyoto-page.png)
+     - Fiji Page
+       - ![Image of fiji page](assets/images/readme/features/fiji-page.png)
+
 
 ## Technologies used
 
