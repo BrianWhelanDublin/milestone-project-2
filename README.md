@@ -138,6 +138,14 @@
      - Special packages section
        -![Image of packages on offer section](assets/images/features/packages-offer.png)
 
+ - #### Newsletter 
+   - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a sucessful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
+     - Newsletter section. 
+       - ![Image of newsletter section](assets/images/features/newsletter.png)
+     - Sucessfully submited.
+       - ![Image of successful modal](assets/images/features/newsletter-success.png)
+     - Error message
+       - ![Image of error message](assets/images/features/newsletter-error.png)
 
 ## Technologies used
 
