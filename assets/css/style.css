@@ -258,11 +258,11 @@ button:focus {
   visibility: visible;
 }
 .navigation-item {
-  margin: 2% 0;
+  margin: .8vh;
 }
 .navigation-link {
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   letter-spacing: 0.4rem;
   text-decoration: none;
   color: #181822;
@@ -843,7 +843,7 @@ button:focus {
   .right-gradient,
   .hero-img::before,
   #title-section {
-    height: 100vh;
+    height: 70rem;
   }
 }
 /* ----------------------------for phone portrait mode-----------------------*/
@@ -852,7 +852,7 @@ button:focus {
     top: 5%;
   }
   .navigation-link {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
   .des-page-title {
     bottom: 25%;
@@ -980,24 +980,21 @@ button:focus {
 /* -------------------------ipad and tablets-----------------------*/
 @media (min-width: 992px) {
   .heading {
-    top: 25%;
+    top: 15%;
     left: 15%;
   }
   .about-text,
   .hero-link {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .main-title {
-    font-size: 8rem;
+    font-size: 7.5rem;
   }
   .hero-text {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
   .navigation-link {
-    font-size: 3.75rem;
-  }
-  .navigation-item {
-    margin: 1.5% 0;
+    font-size: 2.5rem;
   }
   .text404 h1{
     font-size:3.5rem; 
