@@ -120,11 +120,18 @@
        - ![Image of navbar hover](assets/images/features/navbar-hover.png)
 
   - #### Destination Sliders
-    - Using lightslider I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the perticular object in the array.
+    - Using lightslider (details in technologies used section) I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the perticular object in the array.
       - City Destinations
         - ![Image of city destination slider](assets/images/features/citydestinations.png)
       - Beach Destinations
         - ![Image of beach destination slider](assets/images/features/beachdestinations.png)
+
+  - #### Reviews 
+    - The reviews section features 3 reviews by different customers. On page opening one review is shown with the customers name who wrote the review highlighted with a box shadow to show the user the review was written by them. On click of the next person their review will then be shown and their name highlighted. I have also added directional arrows to encourage users to click.
+      - Review on open 
+        -![Image of review on page open](assets/images/features/review1.png)
+      - Second customer clicked
+        - ![Image of second reviewer clicked](assets/images/features/review2.png)
 
 
 ## Technologies used
@@ -146,8 +153,11 @@
 
 - [Bootstrap 4](https://getbootstrap.com/)
   - I used bootstrap throughout the site to make it responsive. I also used bootstrap to create the booking forms, and the modals pop up when the forms have been submited.
+
 - [Google Fonts](https://fonts.google.com/)
+
   - I imported the Mulish font from google fonts and used it consistently across the site.
+
 - [Line awesome](https://icons8.com/line-awesome)
 
   - I used different icons from Line awesome throughout the site for social media links and for some back links to improve user experience.
