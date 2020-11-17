@@ -36,28 +36,34 @@
 ### User Stories
 
 - New Visitor
-
+  - As a new user I would like to know what the company does upon open the site.
   - As a new user I would like to get information about the company.
   - As a new user I would like to see what destinations the company travel too.
   - As a new user I would like to see information about each destination.
   - As a new user I would like to sign up to a newsletter.
+  - As a new user I would like to easily get around the website.
 
 - Repeat users
 
-  - As a repeat user I would like to book a package.
+  - As a repeat user I would like to make a booking enquiry.
   - As a repeat user I would like to be able to contact the company.
+  - As a repeat user I would like to send a contact message.
   - As a repeat user I would like to be able to see the companies social media.
+  - As a repeat user I would like to be able to search for local attractions for each destination.
 
 - Regular Visitor
 
-  - As a repeat user I would like to see if there are any new packages.
-  - As a repeat visitor I would like to be able to see what the travel packages the company does.
-  - As a repeat user I would like to see reviews before I decide to book.
-
+  - As a regular user I would like to see if there are any new offers.
+  - As a regular visitor I would like to be able to see what the travel packages the company does.
+  - As a regular user I would like to see reviews before I decide to book.
+  
 - Website owner
-- As the owner I want my customers to be able to find information easily.
-- As the owner I want my customers to be able to book holiday packages.
-- As the owner I want my customers to be able to contact me easily by whichever means they choose.
+
+  - As the owner I want my customers to be able to find information easily.
+  - As the owner I want my customers to be able to enquire aboutholiday packages.
+  - As the owner I want my customers to be able to contact me easily by whichever means they choose.
+  - As a site owner I want my customers to be able to navigate back to all destinations from the destination page.
+  - As a site owner I want my customers to be able to navigate back to there chosen destination from the booking enquiry form.
 
 ### WireFrames
 
