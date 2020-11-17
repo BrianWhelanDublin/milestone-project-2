@@ -839,7 +839,7 @@ button:focus {
 }
 /* ---------------------------------Media Querys-----------------------*/
 @media (min-width: 576px) {
-  header,
+  #home,
   .hero-img,
   .right-gradient,
   .hero-img::before {
@@ -851,7 +851,7 @@ button:focus {
 }
 /* ----------------------------for phone portrait mode-----------------------*/
 @media only screen and (min-width: 576px) and (max-width: 820px) and (orientation: landscape) {
-      header,
+    #home,
   .hero-img,
   .right-gradient,
   .hero-img::before,
@@ -1012,7 +1012,7 @@ button:focus {
 }
 /* -------------------------laptops and desktops-----------------------*/
 @media (min-width: 1200px) {
-     header,
+     #home,
   .hero-img,
   .right-gradient,
   .hero-img::before{
