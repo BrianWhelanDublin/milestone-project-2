@@ -162,11 +162,27 @@
     - When a user clicks on a destination on the landing page it brings you to the destination page. All destinations have a unique code and by grabbing that code from the pages url I have written code to fill the page differently for every destination. 
 
 - #### Heading section
-  - Each page has a unique image and title for each destination.
+  - Each page has a unique image and title for each destination. I've included images from one city destination and one beach destination there are 10 in cities and 10 beaches in total.
      - Kyoto Page
        - ![Image of kyoto page](assets/images/readme/features/kyoto-page.png)
      - Fiji Page
        - ![Image of fiji page](assets/images/readme/features/fiji-page.png)
+  
+- #### Destination Navbar
+  - The destination navbar has been coded to change for each destination. 
+    - Kyoto Navbar
+       - ![Image of kyoto nav](assets/images/readme/features/kyoto-nav.png)
+     - Fiji Navbar
+       - ![Image of fiji nav](assets/images/readme/features/fiji-nav.png)
+
+- #### Destination details.
+   - The destination details section take data from the rest countries Api and fills the details depending on the destination. I've included the country flag, it's capital and region, and it's language and currency. There is also a short description for each destination takeing from the array i have created.
+     - Kyoto Details Section
+       - ![Image of kyoto nav](assets/images/readme/features/kyoto-details.png)
+     - Fiji Details Section
+       - ![Image of fiji nav](assets/images/readme/features/fiji-details.png)
+    
+    
 
 
 ## Technologies used
