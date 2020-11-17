@@ -178,10 +178,18 @@
 - #### Destination details.
    - The destination details section take data from the rest countries Api and fills the details depending on the destination. I've included the country flag, it's capital and region, and it's language and currency. There is also a short description for each destination takeing from the array i have created.
      - Kyoto Details Section
-       - ![Image of kyoto nav](assets/images/readme/features/kyoto-details.png)
+       - ![Image of kyoto details](assets/images/readme/features/kyoto-details.png)
      - Fiji Details Section
-       - ![Image of fiji nav](assets/images/readme/features/fiji-details.png)
-    
+       - ![Image of fiji details](assets/images/readme/features/fiji-details.png)
+       
+- #### Destination Map.
+  - The destination Map section uses the Google maps Api with the Google Places Library and the Marker Clusterer library. The map changes for each destination. The user is then provided with 5 buttons with different types of attractions to click. The buttons change colour on hover to encourage clicking. Once clicked the map will show the top 20 attractions with a marker. You can the click on each marker to show the result.
+  - Map Section
+       - ![Image of map section](assets/images/readme/features/map-section.png)
+  - Map section When button Presses
+       - ![Image map section with button pressed](assets/images/readme/features/map-section-btn.png)
+  - Map section result when marker pressed
+       - ![Image of map section with marker clicked](assets/images/readme/features/map-section-results.png)
     
 
 
