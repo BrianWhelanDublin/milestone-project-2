@@ -5,7 +5,7 @@
 - The aim of this project is to build an interactive front end website using HTML CSS and javaScript.
 - I have decided to build a website for a fictional travel company G-Travel. I have used the knowledge I've learned in the course to date as well as good good user experience to create a responsive, well designed functional website.
 - My web page consists of:
-  - A home page containing the company information, all the destinations the company travels to, customer reviews, special offers, newsletter sign up and a simple contact form and contact details. My footer contains the social media links.
+  - A landing page containing the company information, all the destinations the company travels to, customer reviews, special offers, newsletter sign up and a simple contact form and contact details. My footer contains the social media links.
   - Each destination then fills out the destination page with a title section, information about the destination, a map with search capabilities for local attractions and destination packages section.
   - They packages then lead to a booking enquiry form which can be filled out and sent to make a booking enquiry.
 
@@ -92,20 +92,33 @@
 #### Typography
 
 - I've used one font in different weights for headings and text element across the site to create a uniform theme throughout all the text.
-  Ive imported the Mulish font to my css stylesheet from Google Fonts.
+  I,ve imported the Mulish font to my css stylesheet from Google Fonts.
   I used sans-serif as a fall-back font in case for any reason my fonts were not imported.
 
 #### Imagery
 
-- Imagery was very important to me and I choose images that conveyed the feel of the company throughout I tried to choose images of well known landmarks for each destination also.
-  I used images as backgrounds to help separate sections and placed slightly opaque elements overtime. This also helped to soften the dark background.
+- Imagery was very important to me and I choose images that conveyed the feel of the company throughout. I tried to choose images of well known landmarks for each destination also.
+  I used images as backgrounds to help separate sections and placed a slightly opaque element over them to conatain the text. This also helped to soften the dark background.
   I sourced all my images from unsplash.
 
 #### Icons
 
-- I used line awesome for icons for social media links which I've included in the footer.
+- I used line awesome for icons for social media links which I've included in the footer. I've also used arrows on some links to help draw attention to them and to show the user they are clickable.
+
 
 ## Features
+
+### Landing Page Features.
+
+ -  #### navbar
+   - With the help of Code and Create youtube tutorial (details in the credit section) I have created a hamburger menu. The navbar appears on click of the hamburger and then dissapears on a click of the x. The navbar also disapears when you click an option in the list. The list items background colour and text colour also change on hover.
+     - To Open navbar 
+       - ![Image of navbar hamburger](assets/images/features/navbar-hamburger.png)
+     - Opened navbar 
+       - ![Image of navbar opened](assets/images/features/navbar-open.png)
+     - Nav item hover
+       - ![Image of navbar hover](assets/images/features/navbar-hover.png)
+
 
 ## Technologies used
 
