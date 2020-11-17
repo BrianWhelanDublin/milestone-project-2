@@ -14,6 +14,27 @@
 
 - [View the live project here.](https://brianwhelandublin.github.io/milestone-project-2/)
 
+## Live project
+
+- [View the live project here.](https://brianwhelandublin.github.io/milestone-project-1/)
+
+## Screenshots
+
+### Landing page screenshot
+
+<div align="center"><img src="assets/images/readme/responsive/responsive-homepage.png"></div>
+
+### Section page screenshot
+
+<div align="center"><img src="assets/images/readme/responsive/responsive-destination-page.png"></div>
+
+### Booking-form screenshot
+
+<div align="center"><img src="assets/images/readme/responsive/responsive-homepage.png"></div>
+
+
+- All screen shots created using [Am I responsive](http://ami.responsivedesign.is/)
+
 ## User experience
 
 ### User Stories
