@@ -67,7 +67,20 @@
 
 ### WireFrames
 
-- I've crated WireFrames using Balsamiq and have included a link here to access them here in pdf form.
+- I've crated WireFrames using Balsamiq and have included the links to access them in pdf form.
+  
+  - Landing page
+    - [Desktop](assets/wireframes/landingpage-desktop-wireframe.pdf)
+    - [Tablet](assets/wireframes/landingpage-tablet-wireframe.pdf)
+    - [Phone](assets/wireframes/landingpage-phone-wireframe.pdf)
+  - Destination page
+    - [Desktop](assets/wireframes/destinationpage-desktop.pdf)
+    - [Tablet](assets/wireframes/destinationpage-tablet.pdf)
+    - [Phone](assets/wireframes/destinationpage-phone.pdf)
+  - Booking page
+    - [Desktop](assets/wireframes/landingpage-desktop.pdf)
+    - [Tablet](assets/wireframes/landingpage-tablet.pdf)
+    - [Phone](assets/wireframes/landingpage-phone.pdf)
 
 ## Design
 
