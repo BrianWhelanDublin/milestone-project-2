@@ -119,6 +119,13 @@
      - Nav item hover
        - ![Image of navbar hover](assets/images/features/navbar-hover.png)
 
+  - #### Destination Sliders
+    - Using lightslider I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the perticular object in the array.
+      - City Destinations
+        - ![Image of city destination slider](assets/images/features/citydestinations.png)
+      - Beach Destinations
+        - ![Image of beach destination slider](assets/images/features/beachdestinations.png)
+
 
 ## Technologies used
 
