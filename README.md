@@ -14,10 +14,6 @@
 
 - [View the live project here.](https://brianwhelandublin.github.io/milestone-project-2/)
 
-## Live project
-
-- [View the live project here.](https://brianwhelandublin.github.io/milestone-project-1/)
-
 ## Screenshots
 
 ### Home page screenshot
