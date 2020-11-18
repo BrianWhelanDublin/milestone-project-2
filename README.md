@@ -88,12 +88,14 @@
 
 - I've created a dark theme for this website using a dark russian black #181822 as my main background colour. My text is an off white #fafafb to contrast against the dark background.
   I have alternated the colours on hover effects too to show the user what elements are clickable.
+   - ![Image of colour scheme](assets/images/readme/design/colour-scheme.png)
 
 #### Typography
 
 - I've used one font in different weights for headings and text element across the site to create a uniform theme throughout all the text.
   I,ve imported the Mulish font to my css stylesheet from Google Fonts.
   I used sans-serif as a fall-back font in case for any reason my fonts were not imported.
+   - - ![Image of google font](assets/images/readme/design/font.png)
 
 #### Imagery
 
