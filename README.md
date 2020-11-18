@@ -202,6 +202,17 @@
   - If for somereason a user gets to the destination page without a destination code in the url or a wrong destination code the page will fill with an error to tell the user there has been no destination found. It also contains a lik to the homepage where the user can pick a destination.
   - ![Image of destination error](assets/images/readme/features/destination-error.png)
 
+### Booking Enquiry Form 
+
+  - The booking enquiry form allows the user to fill out and submit an enquiry to book a package. The main page links to an empty form. The destination page links to the form with the destination prefilled out. If the user clicks on a destination packed the forms destination and package input will be pre filled out also. The package input is not required to allow the user that the user might only want to enquire about a destination only.
+    -  Empty Form
+      - ![Image of empty form](assets/images/readme/features/empty-booking.png)
+    - Destination prefilled
+      - ![Image of destination prefilled](assets/images/readme/features/destination-booking.png)
+    -  Destination and Package pre filled
+      - ![Image of destination and packages prefilled](assets/images/readme/features/package-booking.png)
+
+
 
 ## Technologies used
 
