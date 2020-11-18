@@ -197,7 +197,10 @@
   - Each destination has 3 different packages a 3 star, 4 star and 5 star and each link to the booking enquiry form.
     - Destination Packages Section
        - ![Image of destination packages section](assets/images/readme/features/destination-packages.png)
-    
+
+- #### Destination Error 
+  - If for somereason a user gets to the destination page without a destination code in the url or a wrong destination code the page will fill with an error to tell the user there has been no destination found. It also contains a lik to the homepage where the user can pick a destination.
+  - ![Image of destination error](assets/images/readme/features/destination-error.png)
 
 
 ## Technologies used
