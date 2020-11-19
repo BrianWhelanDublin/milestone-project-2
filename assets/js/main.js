@@ -1000,10 +1000,15 @@ if (document.body.classList.contains("destination-page")) {
 // fill booking form nav
 const renderBookingNavbar = (destination) => {
   let details = document.getElementById("bnav-details");
-  let packages = document.getElementById("bnav-packages");
+  //let packages = document.getElementById("bnav-packages");
+  let packages = `<li class="navigation-item" id="bnav-packages">
+   <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
+    </li>
+    `
   details.innerHTML = `<a href="destination.html?${destination.id}" class="navigation-link">${destination.name} Page</a>`;
-  packages.innerHTML = ` <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
-    `;
+  /*packages.innerHTML = ` <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
+    `;*/
+    details.insertAdjacentHTML("afterend", packages)
 };
 
 // fills destination input value
