@@ -231,6 +231,17 @@
       -  Booking Enquiry Error.
         -  ![Image of booking error](assets/images/readme/features/booking-error.png)
 
+ - #### 404 error page. 
+   - I've also included a 404 error page with github pages if the user navigates to a wrong url for whatever reason. To do this I did the following:
+     1. I first located and clicked the add file button in github.
+       -  ![Image of add file button](assets/images/readme/features/new-file.png)
+     2. Git hub then asks you to name your file.
+       - ![Image of name your file input](assets/images/readme/features/name-file.png)
+     3.  I then named my file 404.html.
+       - ![Image of file named 404.html](assets/images/readme/features/file-404.png)
+     4. Once these steps were complete then commit the file to your master branch in the project repository with a commit message.
+       ![Image of message commit](assets/images/readme/features/commit-404.png)
+
 
 ## Technologies used
 
