@@ -5,13 +5,7 @@
 /* Set global size for easy rem calculation and add some reset style */
 * {
   font-size: 10px;
-  /* margin: 0;
-  padding: 0;*/
 }
-ul {
-  padding-inline-start: 0px;
-}
-
 body {
   font-family: "Mulish", sans-serif;
   background-color: #181822;
@@ -19,10 +13,7 @@ body {
 }
 /*--Preload class code from stack overflow to fix bug of transitions happening on page load*/
 .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+ transition:none;
 }
 .row {
   height: 100%;
@@ -60,7 +51,6 @@ body {
 /* ------------------------ Common Elements link and destination cards ----- */
 /*---- Links and buttons ----*/
 .link {
-  border: #fafafb 2px solid;
   text-decoration: none;
   text-align: center;
   background-color: #fafafb;
@@ -531,7 +521,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
 }
-/* -----------------------------Footer Section -----------------------------*/
+/* --------------Footer Section across all pages -----------------------------*/
 .footer-row {
   height: 20rem;
 }
@@ -549,7 +539,7 @@ button:focus {
   margin: 5%;
 }
 
-/* -----------------------------Bootstrap modal-----------------------------*/
+/* -----------------------------Bootstrap modal -----------------------------*/
 #myModal,
 #booking-modal,
 #newsletterModal {
@@ -564,7 +554,7 @@ button:focus {
 .modal-text {
   font-size: 1.75rem;
 }
-/* The modal background was appearing infront of my modal and not allowing you to click to close the modal so I used this to remove it. */
+/* The modal background was appearing infront of my modal and not allowing you to click to close the modal so I used this to remove it. I obtained the class from google developer tools */
 .modal-backdrop {
   position: absolute;
   height: 0;
