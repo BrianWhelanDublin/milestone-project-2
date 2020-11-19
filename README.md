@@ -302,6 +302,12 @@
      4. Once these steps were complete then commit the file to your master branch in the project repository with a commit message.
        ![Image of message commit](assets/images/readme/features/commit-404.png)
 
+### Features left to Implement.
+
+  - In the future I could expand on the website adding a booking feature to book packages directly from the website instead of just enquiring about them.
+  - The feature to book flights could also be added.
+  - The feature to book different hotels at each destination could be added too.
+
 
 ## Technologies used
 
