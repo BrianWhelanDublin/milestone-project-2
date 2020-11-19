@@ -31,6 +31,64 @@
 
 - All screen shots created using [Am I responsive](http://ami.responsivedesign.is/)
 
+
+## Table of Contents.
+
+  * [User experience](#user-experience)
+    + [User Stories](#user-stories)
+    + [WireFrames](#wireframes)
+  * [Design](#design)
+      - [Colour Scheme](#colour-scheme)
+      - [Typography](#typography)
+      - [Imagery](#imagery)
+      - [Icons](#icons)
+  * [Features](#features)
+    + [Landing Page Features.](#landing-page-features)
+      - [navbar](#navbar)
+      - [Destination Sliders](#destination-sliders)
+      - [Reviews](#reviews)
+      - [Special packages](#special-packages)
+      - [Newsletter](#newsletter)
+      - [Contact Form](#contact-form)
+    + [Destination Page Features](#destination-page-features)
+      - [Destination page](#destination-page)
+      - [Heading section](#heading-section)
+      - [Destination Navbar](#destination-navbar)
+      - [Destination details.](#destination-details)
+      - [Destination Map.](#destination-map)
+      - [Destination packages](#destination-packages)
+      - [Destination Error](#destination-error)
+    + [Booking Enquiry Form](#booking-enquiry-form)
+      - [The booking enquiry form](#the-booking-enquiry-form)
+      - [Booking Enquiry Navigation.](#booking-enquiry-navigation)
+      - [Booking modal](#booking-modal)
+      - [Booking Enquiry Error](#booking-enquiry-error)
+      - [404 error page.](#404-error-page)
+  * [Technologies used](#technologies-used)
+    + [Languages Used.](#languages-used)
+    + [Frameworks Libraries and Programs.](#frameworks-libraries-and-programs)
+    + [Application Programming Interface (Api's)](#application-programming-interface--api-s-)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+    + [Github, Gitpod, Git and Gitub pages](#github--gitpod--git-and-gitub-pages)
+      - [To start the project I used Github and Gitpod.](#to-start-the-project-i-used-github-and-gitpod)
+      - [Git](#git)
+      - [To make my project live I then used Github pages.](#to-make-my-project-live-i-then-used-github-pages)
+  * [Credits](#credits)
+    + [Code](#code)
+      - [Stack Overflow.](#stack-overflow)
+      - [You tube Tutorials.](#you-tube-tutorials)
+        * [Code and Create youtube tutorial.](#code-and-create-youtube-tutorial)
+        * [Dev Ed Visual effects in javascript tutorial.](#dev-ed-visual-effects-in-javascript-tutorial)
+      - [Code Institute.](#code-institute)
+      - [Google Maps Documentation.](#google-maps-documentation)
+    + [Content](#content)
+    + [Media](#media)
+    + [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## User experience
 
 ### User Stories
@@ -230,6 +288,8 @@
     - If for whatever reason an error occurs the booking for will alert the user.
       -  Booking Enquiry Error.
         -  ![Image of booking error](assets/images/readme/features/booking-error.png)
+
+### 404 Error Page
 
  - #### 404 error page. 
    - I've also included a 404 error page with github pages if the user navigates to a wrong url for whatever reason. To do this I did the following:
