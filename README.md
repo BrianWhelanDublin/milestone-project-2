@@ -226,6 +226,11 @@
       - Modal on form submit
         - ![Image of booking modal](assets/images/readme/features/booking-modal.png)
 
+  - #### Booking Enquiry Error
+    - If for whatever reason an error occurs the booking for will alert the user.
+      -  Booking Enquiry Error.
+        -  ![Image of booking error](assets/images/readme/features/booking-error.png)
+
 
 ## Technologies used
 
