@@ -89,6 +89,7 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
+
 ## User experience
 
 ### User Stories
@@ -139,6 +140,8 @@
     - [Desktop](assets/wireframes/landingpage-desktop.pdf)
     - [Tablet](assets/wireframes/landingpage-tablet.pdf)
     - [Phone](assets/wireframes/landingpage-phone.pdf)
+
+
 
 ## Design
 
@@ -309,6 +312,7 @@
   - The feature to book different hotels at each destination could be added too.
 
 
+
 ## Technologies used
 
 ### Languages Used.
@@ -385,7 +389,13 @@
 - [EmailJS](https://www.emailjs.com/)
   - EmailJS was used for all forms including the contact form and the booking enquiry form. The newsletter form will also send an attomatic reply to thank the user for signing up.
 
+
+
 ## Testing
+
+ - #### Testing.
+   - The testing section for this site is located at the following link.
+     - [Testing file](testing.md)]
 
 ## Deployment
 
