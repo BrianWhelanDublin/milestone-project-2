@@ -355,7 +355,7 @@
 								Sign up for our Montly Newsletter
 							</h2>
 							<form class="signup-form" onsubmit="return sendNewsletter(this);" method="POST">
-								<input type="text" name="email" id="signup-email" class="email" placeholder="Email"
+								<input type="email" name="email" id="signup-email" class="email" placeholder="Email"
                                     required />
 								<button type="submit" id="signup-submit" class="link signup-btn submit-btn">
                                     Sign Up
@@ -396,7 +396,7 @@
 					<div class="col-md-6 contact-col">
 						<div class="contact-details animation-element center">
 							<h2 class="contact-heading">Contact us</h2>
-							<p>Email: g-travel@email.com</p>
+						<a class="email-link" href="mailto:g-travel@email.com"><p>Email: g-travel@email.com</p></a>
 							<p>Customer service: 01/5555555</p>
 							<p>Bookings : 01/222222</p>
 						</div>
@@ -409,7 +409,7 @@
 								<input type="text" name="name" id="contact-name" class="contact-input"
                                     placeholder="First Name" required />
 
-								<input type="text" name="email" class="contact-input" id="contact-email"
+								<input type="email" name="email" class="contact-input" id="contact-email"
                                     placeholder="Email" required />
 
 								<textarea name="message" id="contact-message" class="contact-input" rows="3"

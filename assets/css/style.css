@@ -510,6 +510,12 @@ button:focus {
   font-size: 1.75rem;
   margin: 0.75rem 0;
 }
+.email-contact-link{
+    color:#fafafb;
+}
+.email-contact-link:hover{
+    text-decoration:underline;
+}
 
 .contact-form-container {
   margin-top: 3rem;
