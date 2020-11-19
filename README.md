@@ -395,7 +395,7 @@
 
  - #### Testing.
    - The testing section for this site is located at the following link.
-     - [Testing file](testing.md)]
+     - [Testing file](testing.md)
 
 ## Deployment
 
