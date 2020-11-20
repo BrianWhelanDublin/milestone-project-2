@@ -105,3 +105,150 @@
   - As the owner I want my customers to be able to contact me easily by whichever means they choose.
   - As a site owner I want my customers to be able to navigate back to all destinations from the destination page.
   - As a site owner I want my customers to be able to navigate back to there chosen destination from the booking enquiry form.
+
+
+
+## Test and bugs during development.
+
+  - During development I used Gitpod to code the site and used the command python3 -m http.server to run the website on the server to see the changes I had made.
+  
+  - I then used the browser development tools to check the page across different screen sizes and also to change elements to see what worked and doesn't.
+
+  - During the development several issues or bugs appeared that I had to deal with.
+
+  - ### Navigation menu. 
+    - I followed the Code and Create a youtube tutorial to create my navbar (details in the credit section). 
+    - Once I had the initial code completed I noticed the navigation menu would move the page to the particular area but not disappear.
+    - To fix the issue I used the ```document.querySelectorAll()``` to add a click event listener to each item within the navigation list to toggle the change class.
+    - I then noticed this only worked for the first element so I used the ```.forEach()``` function on the list and this then placed the event listener for each element on the navigation list.
+      
+      - ``` javascript
+        let link = document.querySelectorAll(".navigation-item"); 
+        link.forEach((item) => {
+           item.addEventListener("click", () => {
+           navigation.classList.toggle("change");
+           changeAriaSettings();
+          });
+        });
+        ```
+
+  - ### Animation.
+    - I followed Dev Ed Visual effects in javascript tutorial to add an animation element on elements on my landing page (details in the credit section).
+    - I then noticed upon testing that the code would only work for one element.
+    - I then used similar reasoning to the navigation menu.
+    - I used ``` querySelectorAll()``` to select all the elements with the animation-element class and the the ```.forEach()``` to add the function for elements with the class.
+      - ``` javascript 
+          const animationOnScroll = () => {
+          let animationElement = document.querySelectorAll(".animation-element");
+          animationElement.forEach((element) => {
+          // Code taken from the tutorial
+          let position = element.getBoundingClientRect().top;
+          let screenPosition = window.innerHeight / 1.2;
+             if (position < screenPosition) {
+             element.classList.add("animation-active");
+            }
+          });
+        };
+        ```
+
+ -  ### Center Divs
+   - I was having hassel with centering my divs both vertically and horizontaly so I found code on stack overflow (details in the credit section) to help.
+   - To center the element in the parent div both vertically and horizontally I used the following code to create a center class:
+     - ``` css
+       .center{
+           position: absolute;
+           top:0;
+           right:0;
+           bottom:0;
+           left:0;
+           margin:auto;
+       }
+       ```
+   - To center horizontally I used the following:
+     - ``` css
+       element{
+           position:absolute;
+           left:50%;
+           transform:translate(-50%,0);
+       }
+       ```
+
+- ### Css transitions running upon page opening.
+  - During the development I started to notice that every time I refreshed the page the CSS transitions would run. 
+  - I researched the problem and found it was a common enough bug. 
+  - One suggestion was to place a script tag containing a space.
+   ie  ``` <script> </script> ``` but I found if the code was formatted it would get rid of the space creating the problem again.
+  - I then found a solution on stack overflow (details in credits section), of adding a preload class to the body element and then removing it upon page load.
+    - ``` html
+      <body class="preload"> </body> 
+      ```
+    - ``` css
+        .preload * {
+            transition:none;
+         }
+      ```
+    - ``` javascript
+       window.onload = () => document.body.classList.remove("preload");
+       ```
+
+- ### Marker Cluster 
+  - When creating the google map places search I wanted to add the cluster function to keep the map looking less clutered. 
+  - I was following the google documentation but it didn't seem to function as I wished.
+  - I then found code on stack overflow (details in credits section) that suggested adding each marker to an array and then using the create markers function with this array.
+    - ``` javascript
+      // declares the variables
+      let markers = [];
+      let markerCluster;
+      // creates the markers
+      const createMarkers = (places) => {
+       /* first remove previous markers*/
+        removePreviousMarkers()
+        places.forEach((place) => {
+        let marker = new google.maps.Marker({
+          position: place.geometry.location,
+          map: map,
+          title: place.name,
+          animation: google.maps.Animation.DROP,
+      });
+      // Pushes markers to markers array
+      markers.push(marker);
+      }}
+       // callback function for places search that created the markers and cluster.
+       const callBack = (results, status) => {
+       /*first remove previous clusters */
+       removePreviousCluster()
+       if (status == google.maps.places.PlacesServiceStatus.OK) {
+       createMarkers(results);
+       markerCluster = new MarkerClusterer(map, markers, {
+        imagePath:
+          "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+      });
+       
+      ```
+
+ - ### Modal Background.
+   - I've used a bootstrap modal to thank the user for filling out the form sections. 
+   - When developing I noticed that the modal would appear but I could not click on it to remove it.
+   - Through using the developer tools I could see that the bootstrap modal background was appearing on top of my element. 
+   - I tried giving the modal a higher z-index but this didn't work.
+   - in the end I just targeted the background by using its selector I got from the developer tools and gave it 0 height and width;
+     -  ``` css
+          .modal-backdrop {
+            height: 0;
+            width: 0;
+          }
+        ```
+
+- ### Light slider running on all HTML pages. 
+  - After I had finished the index.html page and moved onto the destination page I noticed that when I loaded the page the console was giving an error for the lightslider functions.
+  - I then realised this function was running on this page also.
+  - I found a solution on stack overflow (details in credits section) to first check if the elements to create the slider were there first.
+  -  ``` javascript
+        //ie. if(element.length){carry out function}*/
+         if ($("#cities-slider").length)
+     ```
+
+    
+
+
+
