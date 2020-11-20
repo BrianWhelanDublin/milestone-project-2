@@ -499,6 +499,11 @@
 
     - I used the above code to fix an issue I had with the marker clusterer in google maps. The answer included pushing the markers into an array before assigning them to the markerclusterer function which I then used.
 
+  - [Making sure element is there to run function](https://stackoverflow.com/questions/5629684/how-can-i-check-if-an-element-exists-in-the-visible-dom)
+
+    - I used the above code to fix an issue I had with the light slider functions running on all html pages. I used the answer that suggest checking if the element.length . More details in the testing section.
+
+
 - #### Youtube Tutorials.
 
   - I used two main tutorials on youtube to learn to have an interactive navbar and also how to fade elements in upon scrolling. I have used some elements of the code but have edited it to fit this website.
