@@ -275,10 +275,32 @@
    - The page then shows this.
      - ![Image of rest countries error message](assets/images/readme/testing/restcountries-error.png).
 
- - Google Maps and Places Api
+ - ### Google Maps and Places Api
     - If there is an error searching for a map the map section will display a message telling the user there has been an error.
-    - Ive tested this by searching for a map with no coordinates.
+    - Ive tested this by searching for a map with no coordinates to force an error.
     - The following message was shown.
-       - ![Image of rest countries error message](assets/images/readme/testing/map-error.png).
+       - ![Image of map error message](assets/images/readme/testing/map-error.png).
+    - If there is an error with the google places library an alert will show to let the user know an error had occured.
+    - I tested this by making an invalid search with one of the buttons.
+    - The following alert poped up.
+      - ![Image of places error alert](assets/images/readme/testing/places-error.png).
+    - Place results vary in some have an image and some do also some contain a website and others do.
+    - If they dont contain an image the result will let the user that there has been no image found for this place.
+      - ![Image of no picture for this place](assets/images/readme/testing/no-pic-result.png).
+    - if they dont't contain a website link the user will be told that no website is available for this place.
+      - ![Image of no website result](assets/images/readme/testing/no-web-result.png).
+    - I have completed serval searches to test that this function is working.
+
+ - ### Destination Page Error.
+   - If the user gets to the destination page with no code in the url, or a wrong code the page will fill with the error message. 
+   - I have tested this numerous times by visiting the page with no code in the url and with an invalid code.
+   - No code in url:
+     - ![Image of no code in destination url](assets/images/readme/testing/no-code.png).
+   - Invalid code:
+     - ![Image of invalid code in destination url](assets/images/readme/testing/invalid-code.png).
+     
+     
+
+
                
 
