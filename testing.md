@@ -254,8 +254,31 @@
 
    - Throughout the development, the browser development tools were used to make sure the site is responsive across all screen sizes.
    - I've also checked the site on numerous different devices to confirm this.
-   - bootstrap grid system was used to help with responsiveness as the screen gets larger. 
+   - Bootstrap grid system was used to help with responsiveness as the screen gets larger. 
    - media queries were also used to change elements at different screen size.
    - The site was opened on Chrome, Safari, Firefox, Edge and Opera to confirm browser compatibility.
    - I used am I responsive to show the sites responsiveness and the images can be sen at the start of the readme.
+
+
+## API fail tests and Error Tests.
+
+  - ### EmailJS 
+    -  If an error occurs for the emailJs the browser should display an alert.
+    -  This alert lets the user know that an error has occured.
+    - I've tested this out by delibrety causing an error.
+    - the error then caused this to pop up across all booking forms.
+      - ![Image of error message](assets/images/readme/features/contact-error.png)
+
+ - ### Rest countries.
+   - If an error occurs from the rest countries API the destination details section will fill with an error message.
+   - I've tested this by delibrety searching for a blank country.
+   - The page then shows this.
+     - ![Image of rest countries error message](assets/images/readme/testing/restcountries-error.png).
+
+ - Google Maps and Places Api
+    - If there is an error searching for a map the map section will display a message telling the user there has been an error.
+    - Ive tested this by searching for a map with no coordinates.
+    - The following message was shown.
+       - ![Image of rest countries error message](assets/images/readme/testing/map-error.png).
+               
 
