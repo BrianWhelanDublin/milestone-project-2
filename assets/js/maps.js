@@ -13,13 +13,18 @@ let markerCluster;
 
 // Function to render map onto page for each destination area.
 const renderMap = (area) => {
-  // to desplay info when markers are clicked
+if(area){
+      // to desplay info when markers are clicked
   infoWindow = new google.maps.InfoWindow();
   currentInfoWindow = infoWindow;
   const mapArea = area;
   map = new google.maps.Map(document.getElementById("map"), mapArea);
   /* Adds map panel for search results*/
   infoPane = document.getElementById('panel');
+}
+else{
+    document.getElementById("map").innerHTML =`<h3>Opps something has gone wrong with the map. Please contact us so we can fix the error.</h3>`
+}
 };
 
 /* Function to search for different places in each area using Google places nearbySearch and a keyword */

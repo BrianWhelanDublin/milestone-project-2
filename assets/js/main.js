@@ -970,7 +970,7 @@ const fillDestinationPage = (destinationPageId) => {
     // fills in heading
     renderDestinationHeading(destination);
     // gets data from the rest countries api
-    getCountryData("");
+    getCountryData(destination);
     // fills in about section
     renderDestinationInfo(destination);
     // places the googles map
