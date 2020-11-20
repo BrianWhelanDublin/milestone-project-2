@@ -14,7 +14,11 @@ body {
 }
 /*--Preload class code from stack overflow to fix bug of transitions happening on page load*/
 .preload * {
- transition:none;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 }
 .row {
   height: 100%;
