@@ -5,6 +5,7 @@
 /* Set global size for easy rem calculation and add some reset style */
 * {
   font-size: 10px;
+  padding:0;
 }
 body {
   font-family: "Mulish", sans-serif;
@@ -67,6 +68,7 @@ a:hover,
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
+  border: solid 2px #fafafb;
 }
 .social-media-links i {
   font-size: 3rem;
@@ -655,9 +657,6 @@ button:focus {
   list-style: none;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  height: fit-content;
-  width: fit-content;
 }
 #map {
   height: 100%;
