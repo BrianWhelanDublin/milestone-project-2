@@ -68,7 +68,6 @@ a:hover,
   background-color: #181822;
   color: #fafafb;
   text-decoration: none;
-  border: solid 2px #fafafb;
 }
 .social-media-links i {
   font-size: 3rem;
@@ -564,7 +563,6 @@ button:focus {
 }
 /* The modal background was appearing infront of my modal and not allowing you to click to close the modal so I used this to remove it. I obtained the class from google developer tools */
 .modal-backdrop {
-  position: absolute;
   height: 0;
   width: 0;
 }
@@ -629,6 +627,9 @@ button:focus {
   font-size: 2.75rem;
   text-align: center;
   padding: 0 1rem;
+}
+.error{
+    font-size: 2rem;
 }
 /* -----------------Map Section destination page-------------*/
 .map-title-col,

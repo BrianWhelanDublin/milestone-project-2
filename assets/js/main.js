@@ -1,3 +1,4 @@
+// Code form stack overflow to remove the preload class on load.
 window.onload = () => document.body.classList.remove("preload");
 
 /* Code to open and close the navigation menu
@@ -23,7 +24,6 @@ menu.addEventListener("click", () => {
   navigation.classList.toggle("change");
   changeAriaSettings();
 });
-
 /* Adds an event listener to each navigation item to close the navigation menu when the link is clicked*/
 link.forEach((item) => {
   item.addEventListener("click", () => {
@@ -970,7 +970,7 @@ const fillDestinationPage = (destinationPageId) => {
     // fills in heading
     renderDestinationHeading(destination);
     // gets data from the rest countries api
-    getCountryData(destination);
+    getCountryData("");
     // fills in about section
     renderDestinationInfo(destination);
     // places the googles map

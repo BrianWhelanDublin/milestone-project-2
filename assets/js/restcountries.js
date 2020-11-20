@@ -42,7 +42,7 @@ const renderDestinationInfoList = (destination) =>{
 // renders message to site if theres an error finding the countries details
 const renderDestinationInfoListError = () => {
   detailsList.innerHTML = `
-      <p class="error"> No Country details found </p>`;
+      <p class="error"> Error No Country details found </p>`;
 };
 
 // Api call to rest countries api using jQuery
