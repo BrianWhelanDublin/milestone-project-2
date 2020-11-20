@@ -250,5 +250,12 @@
 
     
 
+## Responsiveness and Browser Compatability.
 
+   - Throughout the development, the browser development tools were used to make sure the site is responsive across all screen sizes.
+   - I've also checked the site on numerous different devices to confirm this.
+   - bootstrap grid system was used to help with responsiveness as the screen gets larger. 
+   - media queries were also used to change elements at different screen size.
+   - The site was opened on Chrome, Safari, Firefox, Edge and Opera to confirm browser compatibility.
+   - I used am I responsive to show the sites responsiveness and the images can be sen at the start of the readme.
 
