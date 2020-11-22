@@ -27,7 +27,7 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
-        $("#myModal").modal({show:true});
+        $("#contactformModal").modal({show:true});
         contactForm.reset();
       },
       function (error) {
