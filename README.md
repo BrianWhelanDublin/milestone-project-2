@@ -149,14 +149,16 @@
 
 - I've created a dark theme for this website using a dark Russian black #181822 as my main background colour. My text is an off white #fafafb to contrast against the dark background.
   I have alternated the colours on hover effects too to show the user what elements are clickable.
-   - ![Image of colour scheme](assets/images/readme/design/colour-scheme.png)
+  - <p align="center"><img src="assets/images/readme/design/colour-scheme.png" alt="Image of colour scheme" height="200px" width="350px"/></p>
+  
 
 #### Typography
 
 - I've used one font in different weights for headings and text element across the site to create a uniform theme throughout all the text.
   I've imported the Mulish font to my CSS stylesheet from Google Fonts.
   I used sans-serif as a fall-back font in the case for any reason my fonts were not imported.
-   - - ![Image of google font](assets/images/readme/design/font.png)
+- <p align="center"><img src="assets/images/readme/design/font.png" alt="Image of google font" height="200px" width="300px"/></p>
+   
 
 #### Imagery
 
@@ -213,9 +215,9 @@
  - #### Contact Form 
     - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
      -  Contact Form.
-       - ![Image of scontact form](assets/images/readme/features/contact.png)
+       - <p align="center"><img src="assets/images/readme/features/contact.png" alt="Image of contact form" height="300px" width="400px"/></p>
       -  Sucessfully submited.
-       - ![Image of successful modal](assets/images/readme/features/contact-success.png)
+        -  <p align="center"><img src="assets/images/readme/features/contact-success.png" alt="Image of modal" height="280px" width="390px"/></p>
      - Error message
        - ![Image of error message](assets/images/readme/features/contact-error.png)
         

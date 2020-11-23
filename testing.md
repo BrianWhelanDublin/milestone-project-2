@@ -299,6 +299,8 @@
    - Invalid code:
      - ![Image of invalid code in destination url](assets/images/readme/testing/invalid-code.png).
      
+<p align="center"><img src="assets/images/readme/testing/invalid-code.png" alt="Image of invalid code in destination url" height="250px" width="350px"/></p>
+     
 
 
                
