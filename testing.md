@@ -60,17 +60,17 @@
   - As a repeat user I would like to be able to contact the company.
     - The landing page contains a contact section.
     - This section is linked to from the navigation menu of all pages.
-    - The contact contains the companies email, general phone number aand bookings number.
+    - The contact contains the companies email, general phone number and bookings number.
 
   - As a repeat user I would like to send a contact message.
     -  There is also a contact form the user can fill out if they choose.
-    - If thet fill this out the will recieve a conformation message upon submiting if it was successfull.
+    - If they fill this out the will receive a confirmation message upon submitting if it was successful.
     - If unsuccessful they will be alerted of the error with an error message.
 
   - As a repeat user I would like to be able to see the companies social media.
     - The companies social media links are in the footer of all pages.
     - The links are marked with the social media logos.
-    - The have a hover effect to show they are clickable.
+    - They have a hover effect to show they are clickable.
     - Upon clicking they will open the relevant social media site on a new page or tab.
 
   - As a repeat user I would like to be able to search for local attractions for each destination.
@@ -78,33 +78,33 @@
     - The section includes a list of buttons titled "choose an attraction".
     - When the user clicks on one of these buttons the map will fill with markers of different attractions.
     - if the user then clicks on a marker the result section will fill with details of the attraction.
-    - The map has been programed to empty if their are markers on oit to keep it all clean.
+    - The map has been programmed to empty if there are markers on it to keep it all clean.
 
 - Regular Visitor
 
   - As a regular user I would like to see if there are any offers.
-    - The landing page contains a Packages  section clearly labled "Our package offers"
-    - The user can get to this from scrooling or from the navigation menu on each page.
+    - The landing page contains a Packages  section clearly labelled "Our package offers"
+    - The user can get to this from scrolling or from the navigation menu on each page.
     - These offers then contain details of the offer.
     - Once clicked the user will be taken to the booking enquiry form.
 
 
   - As a regular visitor I would like to be able to see what the travel packages the company does.
     - Each destination page contains a packages section contain 3 different packages.
-    - The user can get to this from scrooling or from the destination navigation menu.
+    - The user can get to this from scrolling or from the destination navigation menu.
     - Each package contains details of the package.
     - Each package contains a link "Enquire now" which leads to the booking enquiry form.
-    - If the user clicks the "Enquire now" button to get to the bookin form the booking navigation menu will then include a link linking back to the specific destinations packages section.
+    - If the user clicks the "Enquire Now" button to get to the booking form the booking navigation menu will then include a link linking back to the specific destinations packages section.
 
   - As a regular user I would like to see reviews before I decide to book.
   
 - Website owner
 
   - As the owner I want my customers to be able to find information easily.
-  - As the owner I want my customers to be able to enquire aboutholiday packages.
+  - As the owner I want my customers to be able to enquire about holiday packages.
   - As the owner I want my customers to be able to contact me easily by whichever means they choose.
   - As a site owner I want my customers to be able to navigate back to all destinations from the destination page.
-  - As a site owner I want my customers to be able to navigate back to there chosen destination from the booking enquiry form.
+  - As a site owner I want my customers to be able to navigate back to their chosen destination from the booking enquiry form.
 
 
 
@@ -264,41 +264,40 @@
 
   - ### EmailJS 
     -  If an error occurs for the emailJs the browser should display an alert.
-    -  This alert lets the user know that an error has occured.
-    - I've tested this out by delibrety causing an error.
+    -  This alert lets the user know that an error has occurred.
+    - I've tested this out by deliberate causing an error.
     - the error then caused this to pop up across all booking forms.
       - ![Image of error message](assets/images/readme/features/contact-error.png)
 
  - ### Rest countries.
    - If an error occurs from the rest countries API the destination details section will fill with an error message.
-   - I've tested this by delibrety searching for a blank country.
+   - I've tested this by deliberate searching for a blank country.
    - The page then shows this.
      - ![Image of rest countries error message](assets/images/readme/testing/restcountries-error.png).
 
- - ### Google Maps and Places Api
+ - ### Google Maps and Places API
     - If there is an error searching for a map the map section will display a message telling the user there has been an error.
-    - Ive tested this by searching for a map with no coordinates to force an error.
+    - I've tested this by searching for a map with no coordinates to force an error.
     - The following message was shown.
        - ![Image of map error message](assets/images/readme/testing/map-error.png).
-    - If there is an error with the google places library an alert will show to let the user know an error had occured.
+    - If there is an error with the google places library an alert will show to let the user know an error had occurred.
     - I tested this by making an invalid search with one of the buttons.
-    - The following alert poped up.
+    - The following alert popped up.
       - ![Image of places error alert](assets/images/readme/testing/places-error.png).
     - Place results vary in some have an image and some do also some contain a website and others do.
-    - If they dont contain an image the result will let the user that there has been no image found for this place.
+    - If they don't contain an image the result will let the user that there has been no image found for this place.
       - ![Image of no picture for this place](assets/images/readme/testing/no-pic-result.png).
-    - if they dont't contain a website link the user will be told that no website is available for this place.
+    - if they don't contain a website link the user will be told that no website is available for this place.
       - ![Image of no website result](assets/images/readme/testing/no-web-result.png).
     - I have completed serval searches to test that this function is working.
 
  - ### Destination Page Error.
-   - If the user gets to the destination page with no code in the url, or a wrong code the page will fill with the error message. 
-   - I have tested this numerous times by visiting the page with no code in the url and with an invalid code.
-   - No code in url:
+   - If the user gets to the destination page with no code in the URL, or a wrong code the page will fill with the error message. 
+   - I have tested this numerous times by visiting the page with no code in the URL and with an invalid code.
+   - No code in URL:
      - ![Image of no code in destination url](assets/images/readme/testing/no-code.png).
    - Invalid code:
      - ![Image of invalid code in destination url](assets/images/readme/testing/invalid-code.png).
-     
      
 
 
