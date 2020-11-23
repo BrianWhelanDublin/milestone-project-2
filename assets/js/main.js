@@ -222,7 +222,7 @@ let cityDestinations = [
       },
       {
         id: "sp",
-        type: "4 star Special",
+        type: "4 Star Special",
         nights: "4 Nights Weekend Break",
         price: "€499",
       },
