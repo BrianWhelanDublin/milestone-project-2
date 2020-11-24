@@ -176,11 +176,11 @@
 - To center horizontally I used the following:
 
   - ```css
-    element {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
+      element {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
     ```
 
 - ### Css transitions running upon page opening.
@@ -195,8 +195,11 @@
       ```
     - ```css
       .preload * {
-        transition: none;
-      }
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+      } 
       ```
     - ```javascript
       window.onload = () => document.body.classList.remove("preload");
@@ -344,14 +347,18 @@
 
 ## Automated Testing
 
-- To test the functionality of my site I have used (Cypress)[https://www.cypress.io/]. This has allowed me to test each page for the correct content, and that the functionality is working as it should. To test the functionality of my site I have used (Cypress)[https://www.cypress.io/]. This has allowed me to test each page for the correct content, and that the functionality is working as it should. I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
+-  To test the functionality of my site I have used [Cypress](https://www.cypress.io/). 
+This has allowed me to test each page for the correct content, and that the functionality is working as it should. 
+I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
 
 - ### Homepage
+  - All test were exicuted and passed. 
+    - <div float="left"><img src="assets/images/readme/testing/cy-homepage/all-home-tests.png" alt="image of homepage test"  width="450px" height="400px"/></div>
 
-  - <div float="left"><img src="assets/images/readme/testing/cy-homepage/all-home-tests.png" alt="image of homepage test"  width="450px" height="400px"/></div>
   - #### Visit the page.
 
     - Test the page will load.
+
       - <div float="left"><img src="assets/images/readme/testing/cy-homepage/visit-homepage.png" alt="image of visit homepage test"  width="550px" height="200px"/></div>
 
   - #### Title Testing
@@ -432,3 +439,49 @@
     - <div float="left">
            <img src="assets/images/readme/testing/cy-homepage/test-contact.png" alt="image of homepage review test" width="390px" height="700px" />
         </div>
+
+- ### Navigation Menu
+
+  - All navigation test exicuted and passed.
+
+    - <div float="left">
+           <img src="assets/images/readme/testing/cy-navigation/navigation-tests.png" alt="image of navigation tests" width="320px" height="370px" />
+        </div>
+
+  - #### Test navigation menu will open and close.
+    - Visit site.
+    - Check navigation menu is currently hidden.
+    - Click on the hamburger icon.
+    - Check navigation menu is now visible.
+    - Click on the hamburger icon again.
+    - Check navigation menu is now hidden again.
+
+    -  <div float="left">
+           <img src="assets/images/readme/testing/cy-navigation/nav-opening.png" alt="image of navigation opening and closing" width="350px" height="380px" />
+        </div>
+
+  - #### Check the navigation menu has the right contents.
+    - For each item in the navigation I checked they contained the correct text and they contained the correct href.
+
+      - <div float="left">
+           <img src="assets/images/readme/testing/cy-navigation/nav-list-one.png" alt="image of navigation list test" width="350px" height="500px" />
+           <img src="assets/images/readme/testing/cy-navigation/nav-list-two.png" alt="image of navigation list test" width="350px" height="400px" />
+        </div>
+
+  - #### Check each link.
+    - For each item in the navigation list I used the following test to confirm the link worked.
+      - Click Hamburger.
+      - Check list is now visible.
+      - Click on the item.
+      - Then check url contains the relevant href.
+      - Then check the navigation list is now hidden again.
+      
+        - <div float="left">
+           <img src="assets/images/readme/testing/cy-navigation/test-home-link.png" alt="image of navigation home link test" width="300px" height="330px" />
+           <img src="assets/images/readme/testing/cy-navigation/test-about-link.png" alt="image of navigation about link test" width="300px" height="330px" />
+           <img src="assets/images/readme/testing/cy-navigation/test-des-link.png" alt="image of nnavigation destinations link test" width="300px" height="330px" />
+          <img src="assets/images/readme/testing/cy-navigation/test-rev-link.png" alt="image of navigation reviews link test" width="300px" height="330px" />
+          <img src="assets/images/readme/testing/cy-navigation/test-pack-link.png" alt="image of navigation packages link test" width="300px" height="330px" />
+            <img src="assets/images/readme/testing/cy-navigation/test-cont-link.png" alt="image of navigation contact link test" width="300px" height="330px" />
+        </div>
+        
