@@ -302,6 +302,93 @@
 <p align="center"><img src="assets/images/readme/testing/invalid-code.png" alt="Image of invalid code in destination url" height="250px" width="350px"/></p>
      
 
+## Automated Testing
+
+  - To test the functionality of my site I have used (Cypress)[https://www.cypress.io/]. This has allowed me to test each page for the correct content, and that the functionality is working as it should. To test the functionality of my site I have used (Cypress)[https://www.cypress.io/]. This has allowed me to test each page for the correct content, and that the functionality is working as it should. I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
+
+  - ### Homepage 
+      -  <p align="left"><img src="assets/images/readme/testing/cy-homepage/all-home-tests.png" alt="image of homepage test"  width="450px" height="400px"/></p>
+    -  #### Visit the page.
+       - Test the page will load.
+         -  <p align="left"><img src="assets/images/readme/testing/cy-homepage/visit-homepage.png" alt="image of visit homepage test"  width="550px" height="200px"/></p>
+
+    - #### Title Testing
+      - Test the title is correct
+      - Test Find out more link exists
+      - Test it contains the correct href attribute
+
+        -  <p align="left"><img src="assets/images/readme/testing/cy-homepage/test-main-title.png" alt="image of homepage title test" width="550px" height="380px" /></p>
+
+    - #### Testing About section
+      - Click find pout more Link and checks ur then contains #about.
+      - Check the image is there.
+      - Check the heading had the correct text.
+      
+        -  <p align="left"><img src="assets/images/readme/testing/cy-homepage/test-about-section.png" alt="image of homepage about section test" width="450px" height="500px" /></p>
+
+    - #### Test Destination section.
+      - Scroll section into view.
+      - Check heading contains the correct text.
+      - Check the cities slider ul has filled with each li element ie the destination cards.
+      - Scroll back slider into view.
+      - Check the beach slider ul has filled with each li element ie the destination cards.
+
+       -  <div float="left">
+             <img src="assets/images/readme/testing/cy-homepage/test-ourdes-one.png" alt="image of homepage destination test" width="390px" height="700px" />
+             <img src="assets/images/readme/testing/cy-homepage/test-ourdes-two.png" alt="image of homepage destination test" width="390px" height="700px" />
+             <img src="assets/images/readme/testing/cy-homepage/test-ourdes-three.png" alt="image of homepage destination test" width="390px" height="700px"/>
+          </div>
+     
+    - #### Test the Reviews section
+      - Scroll the review section into view.
+      - Check heading has correct text.
+      - Check the reviewer has the active class. 
+      - Check that only one review shows.
+      - Check the classes and reviews change on each click.
+
+        - <div float="left">
+             <img src="assets/images/readme/testing/cy-homepage/test-rev-one.png" alt="image of homepage review test" width="390px" height="700px" />
+             <img src="assets/images/readme/testing/cy-homepage/test-rev-two.png" alt="image of homepage review test" width="390px" height="480px" />
+          </div>
+
+    - #### Test the Offers section
+      - Scroll into view.
+      - Check Title is correct.
+
+        -  <div float="left">
+             <img src="assets/images/readme/testing/cy-homepage/test-offer.png" alt="image of homepage offer test" width="390px" height="250px" />
+          </div>
+
+    - #### Test Newsletter Section
+      - Scroll section into view.
+      - Check modal is hidden.
+      - Check Palceholder on email input is correct
+      - Type an email address
+      - Click the submit button
+      - Wait and then check if the modal has appeared.
+      - Then click to close it
+
+        -  <div float="left">
+             <img src="assets/images/readme/testing/cy-homepage/test-newsletter.png" alt="image of homepage newsletter test" width="420px" height="650px" />
+          </div>
+
+    - #### Test contact From
+       - Scroll Contact form into view
+       - Ckeck the modal is hidden.
+       - Check the input placeholders are correct.
+       - Fill the form
+       - Click the submit button.
+       - Wait and check modal has appeared.
+
+      - <div float="left">
+             <img src="assets/images/readme/testing/cy-homepage/test-contact.png" alt="image of homepage review test" width="390px" height="700px" />
+          </div>
+
+      
+
+
+
+
 
                
 
