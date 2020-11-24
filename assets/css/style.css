@@ -550,7 +550,7 @@ button:focus {
 }
 
 /* -----------------------------Bootstrap modal -----------------------------*/
-#myModal,
+#contactformModal,
 #booking-modal,
 #newsletterModal {
   color: #181822;
