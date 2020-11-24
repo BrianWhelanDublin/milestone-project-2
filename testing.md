@@ -176,11 +176,11 @@
 - To center horizontally I used the following:
 
   - ```css
-      element {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-      }
+    element {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
     ```
 
 - ### Css transitions running upon page opening.
@@ -195,11 +195,11 @@
       ```
     - ```css
       .preload * {
-      -webkit-transition: none !important;
-      -moz-transition: none !important;
-      -ms-transition: none !important;
-      -o-transition: none !important;
-      } 
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+      }
       ```
     - ```javascript
       window.onload = () => document.body.classList.remove("preload");
@@ -210,6 +210,7 @@
   - When creating the google map places search I wanted to add the cluster function to keep the map looking less clutered.
   - I was following the google documentation but it didn't seem to function as I wished.
   - I then found code on stack overflow (details in credits section) that suggested adding each marker to an array and then using the create markers function with this array.
+
     - ```javascript
       // declares the variables
       let markers = [];
@@ -347,12 +348,14 @@
 
 ## Automated Testing
 
--  To test the functionality of my site I have used [Cypress](https://www.cypress.io/). 
-This has allowed me to test each page for the correct content, and that the functionality is working as it should. 
-I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
+- To test the functionality of my site I have used [Cypress](https://www.cypress.io/).
+  This has allowed me to test each page for the correct content, and that the functionality is working as it should.
+  I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
 
 - ### Homepage
-  - All test were exicuted and passed. 
+
+  - All test were exicuted and passed.
+
     - <div float="left"><img src="assets/images/readme/testing/cy-homepage/all-home-tests.png" alt="image of homepage test"  width="450px" height="400px"/></div>
 
   - #### Visit the page.
@@ -449,6 +452,7 @@ I have written tests for each page and each section, and they have all passed. H
         </div>
 
   - #### Test navigation menu will open and close.
+
     - Visit site.
     - Check navigation menu is currently hidden.
     - Click on the hamburger icon.
@@ -456,11 +460,12 @@ I have written tests for each page and each section, and they have all passed. H
     - Click on the hamburger icon again.
     - Check navigation menu is now hidden again.
 
-    -  <div float="left">
-           <img src="assets/images/readme/testing/cy-navigation/nav-opening.png" alt="image of navigation opening and closing" width="350px" height="380px" />
-        </div>
+    - <div float="left">
+          <img src="assets/images/readme/testing/cy-navigation/nav-opening.png" alt="image of navigation opening and closing" width="350px" height="380px" />
+       </div>
 
   - #### Check the navigation menu has the right contents.
+
     - For each item in the navigation I checked they contained the correct text and they contained the correct href.
 
       - <div float="left">
@@ -469,19 +474,58 @@ I have written tests for each page and each section, and they have all passed. H
         </div>
 
   - #### Check each link.
+
     - For each item in the navigation list I used the following test to confirm the link worked.
+
       - Click Hamburger.
       - Check list is now visible.
       - Click on the item.
       - Then check url contains the relevant href.
       - Then check the navigation list is now hidden again.
-      
+
         - <div float="left">
-           <img src="assets/images/readme/testing/cy-navigation/test-home-link.png" alt="image of navigation home link test" width="300px" height="330px" />
-           <img src="assets/images/readme/testing/cy-navigation/test-about-link.png" alt="image of navigation about link test" width="300px" height="330px" />
-           <img src="assets/images/readme/testing/cy-navigation/test-des-link.png" alt="image of nnavigation destinations link test" width="300px" height="330px" />
-          <img src="assets/images/readme/testing/cy-navigation/test-rev-link.png" alt="image of navigation reviews link test" width="300px" height="330px" />
-          <img src="assets/images/readme/testing/cy-navigation/test-pack-link.png" alt="image of navigation packages link test" width="300px" height="330px" />
-            <img src="assets/images/readme/testing/cy-navigation/test-cont-link.png" alt="image of navigation contact link test" width="300px" height="330px" />
-        </div>
+             <img src="assets/images/readme/testing/cy-navigation/test-home-link.png" alt="image of navigation home link test" width="300px" height="330px" />
+             <img src="assets/images/readme/testing/cy-navigation/test-about-link.png" alt="image of navigation about link test" width="300px" height="330px" />
+             <img src="assets/images/readme/testing/cy-navigation/test-des-link.png" alt="image of nnavigation destinations link test" width="300px" height="330px" />
+             <img src="assets/images/readme/testing/cy-navigation/test-rev-link.png" alt="image of navigation reviews link test" width="300px" height="330px" />
+             <img src="assets/images/readme/testing/cy-navigation/test-pack-link.png" alt="image of navigation packages link test" width="300px" height="330px" />
+             <img src="assets/images/readme/testing/cy-navigation/test-cont-link.png" alt="image of navigation contact link test" width="300px" height="330px" />
+          </div>
+
+  - ### Destination page
+
+    - I carried out the same round of testing for each destination page. I Have shown one here in detail, and for the others just the summary that they have passed the test.
+
+    - #### Dubai destination page.
+      - First vist the destination page.
+      -  Test the details are all correct 
+        - Test the title contains the correct destination name.
+        - Test the background image is the correct destination image.
+        - The country flag should be visible.
+        - The google map should be visible.
+        - The destination package details should contain the correct details.
+
+        - <div float="left">
+             <img src="assets/images/readme/testing/cy-destination/test-dubai-page.png" alt="image of dubai page details test" width="350px" height="600px" />
+          </div>
+
+    - #### Dubai navigation test.
+      - I completed a similar round of tests on the destination navigation menu as before testing for the new changes for each destination aswell.
+        - Test the list contains the right text.
+        - Test the links contain the right hfre attribute
+
+        -  <div float="left">
+              <img src="assets/images/readme/testing/cy-destination/test-dubainav-one.png" alt="image of dubai navigation test" width="350px" height="600px" />
+              <img src="assets/images/readme/testing/cy-destination/test-dubainav-two.png" alt="image of dubai navigation test" width="350px" height="420px" />
+           </div>
+
+    - #### All Destinations
+      - I then edited the tests for every destination page and they all passsed.
+
+      -  <div float="left">
+              <img src="assets/images/readme/testing/cy-destination/alldest-one.png" alt="image of all destinations test" width="350px" height="600px" />
+              <img src="assets/images/readme/testing/cy-destination/alldest-two.png" alt="image of all destinations test" width="350px" height="420px" />
+              <img src="assets/images/readme/testing/cy-destination/alldest-three.png" alt="image of all destinations test" width="350px" height="420px" />
+           </div>
+
         
