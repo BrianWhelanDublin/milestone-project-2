@@ -766,7 +766,7 @@ let beachDestinations = [
       },
       {
         id: "sp",
-        type: "5 star Special",
+        type: "5 Star Special",
         nights: "7 nights Hotel",
         price: "€1199",
       },
