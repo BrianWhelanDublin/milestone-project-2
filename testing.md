@@ -354,7 +354,7 @@
 
 - ### Homepage
 
-  - All test were exicuted and passed.
+  - All test were executed and passed.
 
     - <div float="left"><img src="assets/images/readme/testing/cy-homepage/all-home-tests.png" alt="image of homepage test"  width="450px" height="400px"/></div>
 
@@ -385,7 +385,7 @@
     - Scroll section into view.
     - Check heading contains the correct text.
     - Check the cities slider ul has filled with each li element ie the destination cards.
-    - Scroll back slider into view.
+    - Scroll beach slider into view.
     - Check the beach slider ul has filled with each li element ie the destination cards.
 
     - <div float="left">
@@ -420,7 +420,7 @@
 
     - Scroll section into view.
     - Check modal is hidden.
-    - Check Palceholder on email input is correct
+    - Check Placeholder on email input is correct
     - Type an email address
     - Click the submit button
     - Wait and then check if the modal has appeared.
@@ -433,7 +433,7 @@
   - #### Test contact From
 
     - Scroll Contact form into view
-    - Ckeck the modal is hidden.
+    - Check the modal is hidden.
     - Check the input placeholders are correct.
     - Fill the form
     - Click the submit button.
@@ -445,7 +445,7 @@
 
 - ### Navigation Menu
 
-  - All navigation test exicuted and passed.
+  - All navigation test executed and passed.
 
     - <div float="left">
            <img src="assets/images/readme/testing/cy-navigation/navigation-tests.png" alt="image of navigation tests" width="320px" height="370px" />
@@ -478,7 +478,7 @@
     - For each item in the navigation list I used the following test to confirm the link worked.
 
       - Click Hamburger.
-      - Check list is now visible.
+      - Check the list is now visible.
       - Click on the item.
       - Then check url contains the relevant href.
       - Then check the navigation list is now hidden again.
@@ -494,38 +494,60 @@
 
   - ### Destination page
 
-    - I carried out the same round of testing for each destination page. I Have shown one here in detail, and for the others just the summary that they have passed the test.
+    - I carried out the same round of testing for each destination page. I Have shown one here in detail and for the others just the summary that they have passed the test.
 
     - #### Dubai destination page.
-      - First vist the destination page.
-      -  Test the details are all correct 
-        - Test the title contains the correct destination name.
-        - Test the background image is the correct destination image.
-        - The country flag should be visible.
-        - The google map should be visible.
-        - The destination package details should contain the correct details.
 
-        - <div float="left">
-             <img src="assets/images/readme/testing/cy-destination/test-dubai-page.png" alt="image of dubai page details test" width="350px" height="600px" />
-          </div>
+      - First, visit the destination page.
+      - Test the details are all correct
+      - Test the title contains the correct destination name.
+      - Test the background image is the correct destination image.
+      - The country flag should be visible.
+      - The google map should be visible.
+      - The destination package details should contain the correct details.
+
+      - <div float="left">
+           <img src="assets/images/readme/testing/cy-destination/test-dubai-page.png" alt="image of dubai page details test" width="350px" height="600px" />
+        </div>
 
     - #### Dubai navigation test.
-      - I completed a similar round of tests on the destination navigation menu as before testing for the new changes for each destination aswell.
+
+      - I completed a similar round of tests on the destination navigation menu as before testing for the new changes for each destination as well.
+
         - Test the list contains the right text.
         - Test the links contain the right hfre attribute
 
-        -  <div float="left">
-              <img src="assets/images/readme/testing/cy-destination/test-dubainav-one.png" alt="image of dubai navigation test" width="350px" height="600px" />
-              <img src="assets/images/readme/testing/cy-destination/test-dubainav-two.png" alt="image of dubai navigation test" width="350px" height="420px" />
-           </div>
+        - <div float="left">
+             <img src="assets/images/readme/testing/cy-destination/test-dubainav-one.png" alt="image of dubai navigation test" width="350px" height="600px" />
+             <img src="assets/images/readme/testing/cy-destination/test-dubainav-two.png" alt="image of dubai navigation test" width="350px" height="420px" />
+          </div>
 
     - #### All Destinations
-      - I then edited the tests for every destination page and they all passsed.
 
-      -  <div float="left">
-              <img src="assets/images/readme/testing/cy-destination/alldest-one.png" alt="image of all destinations test" width="350px" height="600px" />
-              <img src="assets/images/readme/testing/cy-destination/alldest-two.png" alt="image of all destinations test" width="350px" height="420px" />
-              <img src="assets/images/readme/testing/cy-destination/alldest-three.png" alt="image of all destinations test" width="350px" height="420px" />
+      - I then edited the tests for every destination page and they all passed.
+
+      - <div float="left">
+             <img src="assets/images/readme/testing/cy-destination/alldest-one.png" alt="image of all destinations test" width="350px" height="820px" />
+             <img src="assets/images/readme/testing/cy-destination/alldest-two.png" alt="image of all destinations test" width="350px" height="740px" />
+             <img src="assets/images/readme/testing/cy-destination/alldest-three.png" alt="image of all destinations test" width="350px" height="500px" />
+          </div>
+
+    - #### Empty destination page and wrong code errors.
+
+      - The empty destination page was tested to see if the error message rendered to the page.
+      - The navigation menu was also tested to make sure it contained the correct details.
+
+        - <div float="left">
+              <img src="assets/images/readme/testing/cy-destination/empty-dest-error.png" alt="image of destination error test" width="350px" height="350px" />
+          </div>
+
+        - <div float="left">
+            <h4>Empty destination navigation menu</h4>
+               <img src="assets/images/readme/testing/cy-destination/empty-dest-nav.png" alt="image of empty destination nav" width="350px" height="740px" />
+               <img src="assets/images/readme/testing/cy-destination/empty-destnav-two.png" alt="image of empty destination nav" width="350px" height="500px" />
            </div>
 
-        
+        - <div float="left">
+           <h4>Wrong destination code</h4>
+              <img src="assets/images/readme/testing/cy-destination/wrong-code.png" alt="image of destination error test" width="320px" height="190px" />
+          </div>
