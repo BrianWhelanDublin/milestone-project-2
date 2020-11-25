@@ -633,8 +633,8 @@
 
 ## Manual Testing.
 
-    - ### Destination and Packages links.
-     - The destinations links were all tested manually to confirm they link to the correct destination page on nemerous ocasions.
+     - ### Destination and Packages links.
+     - The destinations links were all tested manually to confirm the link to the correct destination page on numerous occasions.
      - The same was done for each package link.
 
    - ### Destination map. 
@@ -659,10 +659,95 @@
   - I then tried to enter the wrong input into the email inputs to confirm it would request that the user input an email.
   - I then completed each from to confirm the successful modal appeared.
   - I also then deliberately caused an error to confirm the error alert had popped up.
-  - Images of the error messages, and the successful messages can be found in the features section of the README.
+  - Images of the error messages and the successful messages can be found in the features section of the README.
 
     - <div float="left">
        <img src="assets/images/readme/testing/fill-email.png" alt="image email input error" width="400px" height="125px" />
        <img src="assets/images/readme/testing/fill-in-field.png" alt="image of empty input" width="400px" height="115px" />
     </div>
   
+## Code validators
+
+  - I've passed all code through the relevant code validators and seen the following results.
+
+    - HTML Validator.
+      - index.html pass the validator without any warnings or errors.
+
+        - <div float="left">
+            <img src="assets/images/readme/testing/code-validators/index.html-validator.png" alt="image of index.html code validator result" width="400px" height="200px" />
+          </div>
+
+      - destination.html had two warnings. One for an empty heading but this heading will be filled when the javascript is loaded.
+       The other was for no heading the country details section but, again that is filled once the javascript has loaded.
+
+        - <div float="left">
+            <img src="assets/images/readme/testing/code-validators/destination.html-validator.png" alt="image of destination.html code validator result" width="650px" height="200px" />
+          </div>
+
+      - booking.html passed the validator with no issues.
+        
+        -  <div float="left">
+            <img src="assets/images/readme/testing/code-validators/booking.html-validator.png" alt="image of booking.html code validator result" width="450px" height="200px" />
+          </div>
+
+  - CSS
+    
+    - My CSS was passed through with no errors. It received one warning.
+
+      -  <div float="left">
+            <img src="assets/images/readme/testing/code-validators/css-warning.png" alt="image of css warning result" width="500px" height="180px" />
+          </div>
+    
+    - I researched it and it seems that the validator will always warn for this as these are browser-specific rules. See known bugs for further explanation.
+
+    - CSS no errors
+     
+       -<div float="left">
+            <img src="assets/images/readme/testing/code-validators/css-validator.png" alt="image of css no errors" width="500px" height="250px" />
+          </div>
+
+  - Javascript
+  
+    - EmailJS
+      - My email js has passed the validator. 
+      The undefined variables are $ from jquery bootstrap modal selector,
+      and emailjs from the script tag in the HTML.
+        
+        -  <div float="left">
+            <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of emailjs code validator" width="500px" height="400px" />
+          </div>
+
+    - Maps javascript.
+      - My maps javascript has passed the validator.
+       The undefined variables are from the google script that is in the HTML page, 
+       and my renderMap function that is called in the main javascript file.
+        
+        - <div float="left">
+            <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of maps javascript code validator" width="500px" height="400px" />
+          </div>
+
+    - Rest Countries javascript
+      - My rest countries javascript passed the validator. 
+      The unused selector is the $ from jquery and my getCountryData function which is called in my main javascript file.
+       
+        - <div float="left">
+            <img src="assets/images/readme/testing/code-validators/rest-countries-validator.png" alt="image of rest countries javascript code validator" width="500px" height="400px" />
+          </div>
+
+    - Main javascript file.
+      - My main javascript file has passed the validator. Again the undefined variables are the $ from jQuery and my two functions that are from other files.
+
+        - <div float="left">
+            <img src="assets/images/readme/testing/code-validators/main-js-validator.png" alt="image of main javascript code validator" width="500px" height="400px" />
+          </div>
+
+
+
+
+## Known bugs.
+
+  - CSS transitions. 
+    - My CSS transitions were running on page load. I've found several solutions to fix it and have explained the one I used earlier in the bugs during the development section. 
+    This code seems to have caused a warning than with my CSS validation. I have researched it and tried to remove the browser-specific selectors but I noticed the bug seemed to return on some occasions when I refreshed the page. 
+    It could be the browser issue as some suggested it only happens on google chrome. I have put the browser-specific selectors back and it seems to have fixed the situation from my testing.
+
