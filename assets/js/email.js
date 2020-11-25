@@ -1,3 +1,4 @@
+// sends for newslette
 function sendNewsletter(form) {
   emailjs
     .send("brianwhelandublin", "newsletter", {
@@ -6,8 +7,9 @@ function sendNewsletter(form) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
+        // code from bootstrap to show modal
         $("#newsletterModal").modal({show:true});
-        form.reset();
+       form.reset();
       },
       function (error) {
         alert("Something went wrong Please try again");
@@ -16,7 +18,7 @@ function sendNewsletter(form) {
     );
   return false;
 }
-
+// send for contact form 
 function sendMail(contactForm) {
   emailjs
     .send("brianwhelandublin", "cont-for-m2", {
@@ -27,6 +29,7 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
+        // code from bootstrap to show modal
         $("#contactformModal").modal({show:true});
         contactForm.reset();
       },
@@ -37,7 +40,7 @@ function sendMail(contactForm) {
     );
   return false; // To block from loading a new page
 };
-
+// send for booking enquiry form
 function sendBookingEnquiry(bookingForm){
     emailjs.
     send("g-adventures2020", "booking-enquiry",{
@@ -60,6 +63,7 @@ function sendBookingEnquiry(bookingForm){
   }).then(
       function(response){
            console.log("SUCCESS", response);
+        // code from bootstrap to show modal
         $("#booking-modal").modal({show:true});
         bookingForm.reset();
       },

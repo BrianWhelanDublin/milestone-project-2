@@ -8,13 +8,13 @@ let detailsList = document.querySelector(".details-list-col");
 const renderFlag = (destination) =>{
       flagArea.innerHTML = `
         <img src="${destination.flag}" alt="${destination.name} flag" class="flag center">`;
-}
+};
 
 // renders message to site if theres an error finding the flag
 const renderFlagError = () =>{
     flagArea.innerHTML = `
       <p class="error"> Error No flag found </p>`;
-}
+};
 
 // renders list of country information onto page
 const renderDestinationInfoList = (destination) =>{
@@ -37,7 +37,7 @@ const renderDestinationInfoList = (destination) =>{
       </li>
     </ul>
     `;
-}
+};
 
 // renders message to site if theres an error finding the countries details
 const renderDestinationInfoListError = () => {
@@ -59,14 +59,13 @@ const getCountryData = (destination) => {
         renderFlagError();
         renderDestinationInfoListError();
       } else {
-          console.log(errorResponse)
+          console.log(errorResponse);
           flagArea.innerHTML=`
           <p class ="error">${errorResponse.status}</p>
-          `
+          `;
         detailsList.innerHTML = `
       <p class="error">${errorResponse.status}</p>`;
       }
     }
   );
 };
-

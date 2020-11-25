@@ -3,7 +3,6 @@ code used and edited from google maps documentation and google code labs more de
 
 // Global Variables
 let map;
-let bounds;
 let infoWindow;
 let currentInfoWindow;
 let service;
@@ -13,18 +12,19 @@ let markerCluster;
 
 // Function to render map onto page for each destination area.
 const renderMap = (area) => {
-if(area){
-      // to desplay info when markers are clicked
-  infoWindow = new google.maps.InfoWindow();
-  currentInfoWindow = infoWindow;
-  const mapArea = area;
-  map = new google.maps.Map(document.getElementById("map"), mapArea);
-  /* Adds map panel for search results*/
-  infoPane = document.getElementById('panel');
-}
-else{
-    document.getElementById("map").innerHTML =`<h3>Opps something has gone wrong with the map. Please contact us so we can fix the error.</h3>`
-}
+  if (area) {
+    // to desplay info when markers are clicked
+    infoWindow = new google.maps.InfoWindow();
+    currentInfoWindow = infoWindow;
+    const mapArea = area;
+    map = new google.maps.Map(document.getElementById("map"), mapArea);
+    /* Adds map panel for search results*/
+    infoPane = document.getElementById("panel");
+  } else {
+    document.getElementById(
+      "map"
+    ).innerHTML = `<h3>Opps something has gone wrong with the map. Please contact us so we can fix the error.</h3>`;
+  }
 };
 
 /* Function to search for different places in each area using Google places nearbySearch and a keyword */
@@ -40,8 +40,8 @@ const placesSearch = (keyword) => {
 /*Callback function that will call the createMarkers if the request was succsessful */
 
 const callBack = (results, status) => {
-    /*first remove previous clusters */
-    removePreviousCluster()
+  /*first remove previous clusters */
+  removePreviousCluster();
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     createMarkers(results);
     markerCluster = new MarkerClusterer(map, markers, {
@@ -58,8 +58,8 @@ const callBack = (results, status) => {
 /* Function to create markers for the search taken from the google documentation and google codelab tutorials*/
 
 const createMarkers = (places) => {
-    /* first remove previous markers*/
-    removePreviousMarkers()
+  /* first remove previous markers*/
+  removePreviousMarkers();
   places.forEach((place) => {
     let marker = new google.maps.Marker({
       position: place.geometry.location,
@@ -103,7 +103,7 @@ const showDetails = (placeResult, marker, status) => {
     currentInfoWindow.close();
     currentInfoWindow = placeInfowindow;
     /* calls showpanel function */
-    showPanel(placeResult)
+    showPanel(placeResult);
   } else {
     console.log("showDetails failed: " + status);
   }
@@ -119,66 +119,66 @@ const removePreviousMarkers = () => {
   }
 };
 
-const removePreviousCluster = () =>{
-    if(markerCluster) {
-        markerCluster.setMap(null)
-    };
+const removePreviousCluster = () => {
+  if (markerCluster) {
+    markerCluster.setMap(null);
+  }
 };
 
 /* Function to show panel with details about each place */
 
 const showPanel = (placeResult) => {
-    let image = document.querySelector(".result-img-container");
-    let heading = document.querySelector(".result-heading");
-    let rating = document.querySelector(".rating");
-    let address = document.querySelector(".result-address");
-    let webAddress = document.querySelector(".web-address");
-/* closes infopane if it is open  */
-    if (infoPane.classList.contains("open")) {
-        infoPane.classList.remove("open");
-        infoPane.classList.add("hidden");
-    }
-    /* shows image if there is one otherwise lets user know that there wasn't one found */
-    if (placeResult.photos) {
-        photo = placeResult.photos[0].getUrl();
-        image.innerHTML = `
+  let image = document.querySelector(".result-img-container");
+  let heading = document.querySelector(".result-heading");
+  let rating = document.querySelector(".rating");
+  let address = document.querySelector(".result-address");
+  let webAddress = document.querySelector(".web-address");
+  /* closes infopane if it is open  */
+  if (infoPane.classList.contains("open")) {
+    infoPane.classList.remove("open");
+    infoPane.classList.add("hidden");
+  }
+  /* shows image if there is one otherwise lets user know that there wasn't one found */
+  if (placeResult.photos) {
+    photo = placeResult.photos[0].getUrl();
+    image.innerHTML = `
         <img src="${photo}" alt="image ${placeResult.name}" class="result-img center">
-        `
-    } else {
-        image.innerHTML = `<p class="no-result"> No Image Available for this choice </p>`
-    }
-/* renders heading */
-    heading.innerHTML = `
+        `;
+  } else {
+    image.innerHTML = `<p class="no-result"> No Image Available for this choice </p>`;
+  }
+  /* renders heading */
+  heading.innerHTML = `
     <h3>${placeResult.name}</h3>
-    `
-    /* shows ratinf if there is one otherwise lets user know that there wasn't one found */
-    if (placeResult.rating) {
-        rating.innerHTML = `
+    `;
+  /* shows ratinf if there is one otherwise lets user know that there wasn't one found */
+  if (placeResult.rating) {
+    rating.innerHTML = `
         <p>Rating: ${placeResult.rating} \u272e</p>
-        `
-    } else {
-        rating.innerHTML = `
+        `;
+  } else {
+    rating.innerHTML = `
         <p>No ratings found </p>
-        `
-    }
-    /* renders address */
-    address.innerHTML = `
+        `;
+  }
+  /* renders address */
+  address.innerHTML = `
       <p>${placeResult.formatted_address}</p>
-      `
-      /* shows webaddress if there is one otherwise lets user know that there wasn't one found */
-    if (placeResult.website) {
-        webAddress.innerHTML = `
+      `;
+  /* shows webaddress if there is one otherwise lets user know that there wasn't one found */
+  if (placeResult.website) {
+    webAddress.innerHTML = `
           <a href="${placeResult.website}" target="_blank">Web Page</a>
-          `
-    } else {
-        webAddress.innerHTML = `
+          `;
+  } else {
+    webAddress.innerHTML = `
           <p>No web address found</p>
-          `
-    }
-    /* opens the infopane */
-    infoPane.classList.remove("hidden");
-    infoPane.classList.add("open");
-}
+          `;
+  }
+  /* opens the infopane */
+  infoPane.classList.remove("hidden");
+  infoPane.classList.add("open");
+};
 
 /* Event listeners for each button to make the search */
 document.getElementById("shopping-btn").addEventListener("click", () => {

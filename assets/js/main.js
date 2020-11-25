@@ -910,7 +910,7 @@ const renderDestinationHeading = (destination) => {
     image.style.cssText = ` 
   background: url(${destination.bgImage}) no-repeat center center scroll; 
   background-size:cover;`;
-    title.innerHTML = destination.name;
+    title.innerHTML = destination.name ;
   } else {
     alert("Something has gone wrong please try again");
   }
@@ -1004,11 +1004,11 @@ const renderBookingNavbar = (destination) => {
   let packages = `<li class="navigation-item" id="bnav-packages">
    <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
     </li>
-    `
+    `;
   details.innerHTML = `<a href="destination.html?${destination.id}" class="navigation-link">${destination.name} Page</a>`;
   /*packages.innerHTML = ` <a href="destination.html?${destination.id}#destination-packages" class="navigation-link">${destination.name} Packages</a>
     `;*/
-    details.insertAdjacentHTML("afterend", packages)
+    details.insertAdjacentHTML("afterend", packages);
 };
 
 // fills destination input value
