@@ -584,7 +584,7 @@ button:focus {
 .des-page-title {
   position: absolute;
   left: 5%;
-  bottom: 5%;
+  bottom: 15%;
   margin:0;
   text-align: right;
   font-size: 8rem;
@@ -907,7 +907,7 @@ button:focus {
     height: 30rem;
   }
   .des-page-title {
-    bottom: 15%;
+    bottom: 20%;
     text-align: center;
     font-size: 10rem;
     writing-mode: horizontal-tb;
