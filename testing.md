@@ -610,3 +610,19 @@
           <img src="assets/images/readme/testing/cy-booking/alldest-booking-two.png" alt="image of all destination booking test" width="300px" height="700px" />
           <img src="assets/images/readme/testing/cy-booking/alldest-booking-three.png" alt="image of all destination booking test" width="300px" height="400px" />
         </div>
+
+- ### Footer Tests
+  - To test the footer section I've checked that eack link contains both the correct href and the target is set to _blank.
+   I've also clicked each link to see if it opens a new tab. I've then ran the tests across each page.
+     - Visit page.
+     - Scroll to fotter section.
+     - Check each link for the correct href and target.
+     - Then click on each item.
+     - Repeat for each page.
+       - <div float="left">
+          <img src="assets/images/readme/testing/cy-footer/footer-open-test.png" alt="image of footer open test" width="300px" height="200px" />
+          <img src="assets/images/readme/testing/cy-footer/footer-href-test.png" alt="image of footer attribute tests" width="300px" height="550px" />
+          <img src="assets/images/readme/testing/cy-footer/footer-open-links.png" alt="image of footer link test" width="300px" height="250px" />
+          <img src="assets/images/readme/testing/cy-footer/footer-links-test.png" alt="image of all links opening test" width="850px" height="200px" />
+        </div>
+
