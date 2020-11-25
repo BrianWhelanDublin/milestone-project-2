@@ -2,6 +2,54 @@
 
 - In this section, I will document the testing procedure I have completed for the project.
 
+- [User Stories.](#user-stories)
+- [Test and bugs during development.](#test-and-bugs-during-development)
+  * [Navigation menu.](#navigation-menu)
+  * [Animation.](#animation)
+  * [Center Divs](#center-divs)
+  * [Css transitions running upon page opening.](#css-transitions-running-upon-page-opening)
+  * [Marker Cluster](#marker-cluster)
+  * [Modal Background.](#modal-background)
+  * [Light slider running on all HTML pages.](#light-slider-running-on-all-html-pages)
+- [Responsiveness and Browser Compatability.](#responsiveness-and-browser-compatability)
+- [API fail tests and Error Tests.](#api-fail-tests-and-error-tests)
+  * [EmailJS](#emailjs)
+  * [Rest countries.](#rest-countries)
+  * [Google Maps and Places API](#google-maps-and-places-api)
+  * [Destination Page Error.](#destination-page-error)
+- [Automated Testing](#automated-testing)
+  * [Homepage](#homepage)
+    + [Visit the page.](#visit-the-page)
+    + [Title Testing](#title-testing)
+    + [Testing About section](#testing-about-section)
+    + [Test Destination section.](#test-destination-section)
+    + [Test the Reviews section](#test-the-reviews-section)
+    + [Test the Offers section](#test-the-offers-section)
+    + [Test Newsletter Section](#test-newsletter-section)
+    + [Test contact From](#test-contact-from)
+  * [Navigation Menu](#navigation-menu)
+    + [Test navigation menu will open and close.](#test-navigation-menu-will-open-and-close)
+    + [Check the navigation menu has the right contents.](#check-the-navigation-menu-has-the-right-contents)
+    + [Check each link.](#check-each-link)
+  * [Destination page](#destination-page)
+    + [Dubai destination page.](#dubai-destination-page)
+    + [Dubai navigation test.](#dubai-navigation-test)
+    + [All Destinations](#all-destinations)
+    + [Empty destination page and wrong code errors.](#empty-destination-page-and-wrong-code-errors)
+  * [Booking Page.](#booking-page)
+    + [General Booking Enquiry no Destination code.](#general-booking-enquiry-no-destination-code)
+  * [Footer Tests](#footer-tests)
+- [Manual Testing.](#manual-testing)
+  * [Destination map.](#destination-map)
+  * [Links.](#links)
+  * [Errors .](#errors-)
+- [Contact Form Testing.](#contact-form-testing)
+- [Code validators](#code-validators)
+- [Known bugs.](#known-bugs)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## User Stories.
 
 - New Visitor
@@ -723,7 +771,7 @@
        and my renderMap function that is called in the main javascript file.
         
         - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of maps javascript code validator" width="500px" height="400px" />
+            <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of maps javascript code validator" width="500px" height="450px" />
           </div>
 
     - Rest Countries javascript
@@ -731,14 +779,14 @@
       The unused selector is the $ from jquery and my getCountryData function which is called in my main javascript file.
        
         - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/rest-countries-validator.png" alt="image of rest countries javascript code validator" width="500px" height="400px" />
+            <img src="assets/images/readme/testing/code-validators/rest-countries-validator.png" alt="image of rest countries javascript code validator" width="500px" height="500px" />
           </div>
 
     - Main javascript file.
       - My main javascript file has passed the validator. Again the undefined variables are the $ from jQuery and my two functions that are from other files.
 
         - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/main-js-validator.png" alt="image of main javascript code validator" width="500px" height="400px" />
+            <img src="assets/images/readme/testing/code-validators/main-js-validator.png" alt="image of main javascript code validator" width="500px" height="500px" />
           </div>
 
 
