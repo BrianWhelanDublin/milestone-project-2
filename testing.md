@@ -590,14 +590,13 @@
             <img src="assets/images/readme/testing/cy-booking/complete-form-two.png" alt="image of booking form submit test" width="300px" height="480px" />
         </div>
 
-  - For each destination selected I then run tests to confirm the destination and package input had been filled correctly,
-    and that correct changes were made to the navigation menu.
+  - For each destination selected I then ran tests to confirm, the destination and, the package input have both been filled out correctly,
+    and that the correct changes were made to the navigation menu.
 
-    - Visit page containig the destination code.
+    - Visit page containing the destination code.
     - Check the navigation for the correct changes.
     - Check the destination input contains the correct destination.
-    - Open page for each package code and check the package input contains the correct text.
-
+    - Open the page for each package code and check the package input contains the correct text.
     - <div float="left">
         <h4>Dubai Booking Tests</h4>
           <img src="assets/images/readme/testing/cy-booking/dubai-booking-testnav.png" alt="image of dubai booking nav test" width="300px" height="380px" />
@@ -612,10 +611,10 @@
         </div>
 
 - ### Footer Tests
-  - To test the footer section I've checked that eack link contains both the correct href and the target is set to _blank.
-   I've also clicked each link to see if it opens a new tab. I've then ran the tests across each page.
+  - To test the footer section I've checked that each link contains both the correct href and the target is set to _blank.
+   I've also clicked each link to see if it opens a new tab. I've then run each test across each page.
      - Visit page.
-     - Scroll to fotter section.
+     - Scroll to the footer section.
      - Check each link for the correct href and target.
      - Then click on each item.
      - Repeat for each page.
@@ -632,4 +631,38 @@
             <img src="assets/images/readme/testing/cy-footer/footer-all-pages.png" alt="image of visit booking page test" width="325px" height="250px" />
         </div>
 
+## Manual Testing.
 
+    - ### Destination and Packages links.
+     - The destinations links were all tested manually to confirm they link to the correct destination page on nemerous ocasions.
+     - The same was done for each package link.
+
+   - ### Destination map. 
+     - Each destination page was checked to confirm the map was showing the correct location.
+     - Each button was the click to check each search was completed correctly.
+     - Then the markers were also checked to confirm they contained the correct type of information.
+     - This process was completed constantly during development and several times during the testing phase.
+
+  - ### Links.
+    - All links throughout the website have been tested on several occasions to confirm they all lead to the correct link.
+
+  - ### Errors .
+    - Each email.js form has been tested by deliberately causing an error to confirm the error function is working.
+    - The destination page has been tested with both an empty code and a wrong code in the URL to confirm the error messages are rendered to the page.
+    - Google maps and places API have also been tested by deliberately causing an error to confirm the error message will appear.
+    - Images of the error codes can be found in the features section of the README.
+
+## Contact Form Testing.
+
+  - Each form throughout the site was tested to confirm their functionality.
+  - Firstly I tried to submit an empty form to test the required function.
+  - I then tried to enter the wrong input into the email inputs to confirm it would request that the user input an email.
+  - I then completed each from to confirm the successful modal appeared.
+  - I also then deliberately caused an error to confirm the error alert had popped up.
+  - Images of the error messages, and the successful messages can be found in the features section of the README.
+
+    - <div float="left">
+       <img src="assets/images/readme/testing/fill-email.png" alt="image email input error" width="400px" height="125px" />
+       <img src="assets/images/readme/testing/fill-in-field.png" alt="image of empty input" width="400px" height="115px" />
+    </div>
+  
