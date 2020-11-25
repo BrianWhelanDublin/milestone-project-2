@@ -370,6 +370,12 @@
 - [jQuery](https://jquery.com/)
   - jQuery was used for the Rest Countries Api call and for the Lightslider.
 
+- [Cypress](https://www.cypress.io/)
+  - Cypress was used to writing and execute automated tests for the page.
+
+- [Markdown toc](http://ecotrust-canada.github.io/markdown-toc/)
+  - Markdown toc was used to create my table of contents.
+
 ### Application Programming Interface (API's)
 
 - [Rest Countries](https://restcountries.eu/)
