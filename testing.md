@@ -619,10 +619,17 @@
      - Check each link for the correct href and target.
      - Then click on each item.
      - Repeat for each page.
+
        - <div float="left">
           <img src="assets/images/readme/testing/cy-footer/footer-open-test.png" alt="image of footer open test" width="300px" height="200px" />
           <img src="assets/images/readme/testing/cy-footer/footer-href-test.png" alt="image of footer attribute tests" width="300px" height="550px" />
           <img src="assets/images/readme/testing/cy-footer/footer-open-links.png" alt="image of footer link test" width="300px" height="250px" />
-          <img src="assets/images/readme/testing/cy-footer/footer-links-test.png" alt="image of all links opening test" width="850px" height="200px" />
+          <img src="assets/images/readme/testing/cy-footer/footer-links-test.png" alt="image of all links opening test" width="900px" height="350px" />
         </div>
+
+      - <div float="left">
+           <h4>All pages Fotter test</h4>
+            <img src="assets/images/readme/testing/cy-footer/footer-all-pages.png" alt="image of visit booking page test" width="325px" height="250px" />
+        </div>
+
 
