@@ -527,9 +527,9 @@
       - I then edited the tests for every destination page and they all passed.
 
       - <div float="left">
-             <img src="assets/images/readme/testing/cy-destination/alldest-one.png" alt="image of all destinations test" width="350px" height="820px" />
-             <img src="assets/images/readme/testing/cy-destination/alldest-two.png" alt="image of all destinations test" width="350px" height="740px" />
-             <img src="assets/images/readme/testing/cy-destination/alldest-three.png" alt="image of all destinations test" width="350px" height="500px" />
+             <img src="assets/images/readme/testing/cy-destination/alldest-one.png" alt="image of all destinations test" width="350px" height="950px" />
+             <img src="assets/images/readme/testing/cy-destination/alldest-two.png" alt="image of all destinations test" width="350px" height="900px" />
+             <img src="assets/images/readme/testing/cy-destination/alldest-three.png" alt="image of all destinations test" width="350px" height="650px" />
           </div>
 
     - #### Empty destination page and wrong code errors.
@@ -551,3 +551,62 @@
            <h4>Wrong destination code</h4>
               <img src="assets/images/readme/testing/cy-destination/wrong-code.png" alt="image of destination error test" width="320px" height="190px" />
           </div>
+
+- ### Booking Page.
+
+  - To test the booking page I've tested it without any destination selected first.
+    I then ran a test for each destination and also for each destination package.
+
+  - #### General Booking Enquiry no Destination code.
+
+    - Visit page
+    - Test navigation menu is currently hidden.
+    - Click hamburger to open navigation.
+    - Check navigation is now visible.
+    - Check navigation list has correct text and each link has correct href attribute.
+    - Click hamburger again.
+    - Check navigation menu is now hidden again.
+
+      - <div float="left">
+           <h4>Visit Page</h4>
+            <img src="assets/images/readme/testing/cy-booking/visit-booking.png" alt="image of visit booking page test" width="325px" height="125px" />
+        </div>
+
+      - <div float="left">
+         <h4>Navigation Tests</h4>
+          <img src="assets/images/readme/testing/cy-booking/booking-nav-test.png" alt="image of booking nav test" width="300px" height="440px" />
+          <img src="assets/images/readme/testing/cy-booking/booking-nav-test-two.png" alt="image of booking nav test" width="300px" height="480px" />
+        </div>
+
+  - I then tested the form by filling it and clicking the submit button.
+
+    - Firstly Check the modal is currently hidden.
+    - Then fill out each form input.
+    - Click on the submit button.
+    - Wait and then check that the modal is now visible.
+
+      - <div float="left">
+            <img src="assets/images/readme/testing/cy-booking/complete-form-one.png" alt="image of booking form submit test" width="300px" height="440px" />
+            <img src="assets/images/readme/testing/cy-booking/complete-form-two.png" alt="image of booking form submit test" width="300px" height="480px" />
+        </div>
+
+  - For each destination selected I then run tests to confirm the destination and package input had been filled correctly,
+    and that correct changes were made to the navigation menu.
+
+    - Visit page containig the destination code.
+    - Check the navigation for the correct changes.
+    - Check the destination input contains the correct destination.
+    - Open page for each package code and check the package input contains the correct text.
+
+    - <div float="left">
+        <h4>Dubai Booking Tests</h4>
+          <img src="assets/images/readme/testing/cy-booking/dubai-booking-testnav.png" alt="image of dubai booking nav test" width="300px" height="380px" />
+          <img src="assets/images/readme/testing/cy-booking/dubai-booking-test-input.png" alt="image of dubai booking input test" width="300px" height="460px" />
+        </div>
+
+    - <div float="left">
+        <h4>All Destinations Booking Tests</h4>
+          <img src="assets/images/readme/testing/cy-booking/alldest-booking-one.png" alt="image of all destination booking test" width="300px" height="700px" />
+          <img src="assets/images/readme/testing/cy-booking/alldest-booking-two.png" alt="image of all destination booking test" width="300px" height="700px" />
+          <img src="assets/images/readme/testing/cy-booking/alldest-booking-three.png" alt="image of all destination booking test" width="300px" height="400px" />
+        </div>
