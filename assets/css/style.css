@@ -514,6 +514,10 @@ button:focus {
   font-size: 1.75rem;
   margin: 0.75rem 0;
 }
+.contact-input{
+    width:75%;
+    text-align:center;
+}
 .email-contact-link{
     color:#fafafb;
 }
