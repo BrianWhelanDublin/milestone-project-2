@@ -401,7 +401,7 @@
   I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
 
 - The test can be found In a seperate repository here.
-  - (Cypress tests for Milestone 2)[https://github.com/BrianWhelanDublin/milestone2-cypress-test]
+  - [Cypress tests for Milestone 2](ttps://github.com/BrianWhelanDublin/milestone2-cypress-test)
 
 - ### Homepage
 
