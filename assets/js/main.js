@@ -37,7 +37,7 @@ Code inspired by dev Ed tutorial details in readme I've changed the code to work
 const animationOnScroll = () => {
   let animationElement = document.querySelectorAll(".animation-element");
   animationElement.forEach((element) => {
-    // Code taken from the tutorian
+    // Code taken from the tutorial
     let position = element.getBoundingClientRect().top;
     let screenPosition = window.innerHeight / 1.2;
     if (position < screenPosition) {
@@ -986,6 +986,7 @@ const fillDestinationPage = (destinationPageId) => {
 
 // only runs function for destination page
 if (document.body.classList.contains("destination-page")) {
+    // get destination code from the url
   if (window.location.href.includes("?")) {
     let destinationPageIdArray = window.location.href.split("?");
     let destinationPageId = destinationPageIdArray[1];
@@ -1028,7 +1029,7 @@ const fillPackageInputValue = (packages, packageId) => {
   }
 };
 
-// get package from the
+// get package from the destination array
 const getPackageDetails = (destinationPackages, packageId) => {
   let currentPackage;
   destinationPackages.forEach((destinationPackage) => {
@@ -1062,7 +1063,7 @@ const renderBookingPage = (bookingPageId) => {
   }
 };
 
-// only runs function for bookingpage
+// only runs function for booking page
 if (document.body.classList.contains("booking-page")) {
   if (window.location.href.includes("?")) {
     let bookingPageIdArray = window.location.href.split("?");
