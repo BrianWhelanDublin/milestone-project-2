@@ -2,7 +2,7 @@
 window.onload = () => document.body.classList.remove("preload");
 
 /* Code to open and close the navigation menu
-Code from Code and create tutorial I've edited this code as the tutorial only opened and closed when you clicked the hambrger so i've changed it to close once a navigation item is clicked more details in readme*/
+Code from, Code and create tutorial I've edited this code as the tutorial only opened and closed when you clicked the hamburger so I've changed it to close once a navigation item is clicked more details in readme*/
 
 let menu = document.querySelector(".hamburger");
 let navigation = document.querySelector(".navigation");
@@ -62,7 +62,7 @@ let cityDestinations = [
       zoom: 11,
     },
     about:
-      "A Modern city built in the middle of a dessert. Enjoy the city of huge skyscraers, huge shooping malls or relax on Atlantis, a resort built on an artificial island.",
+      "A Modern city built in the middle of a dessert. Enjoy the city of huge skyscrapers, huge shopping malls or relax on Atlantis, a resort built on an artificial island.",
     packages: [
       {
         id: "p1",
@@ -98,7 +98,7 @@ let cityDestinations = [
       zoom: 11,
     },
     about:
-      "Once the home of the Japanese emperor Kyoto is steeped in history. Enjoy the hundreds of ancient temples and shrines in this UNESCO world heritage site.",
+       "Once the home of the Japanese emperor Kyoto, is steeped in history. Enjoy the hundreds of ancient temples and shrines in this UNESCO world heritage site.",
     packages: [
       {
         id: "p1",
@@ -134,7 +134,7 @@ let cityDestinations = [
       zoom: 12,
     },
     about:
-      "The heart of the U.K enjoy all this great city has to offer from, Buckiingham Palace, Big ben, a west end show, or enjoy the world class shopping.",
+      "The heart of the U.K enjoy all this great city has to offer from, Buckingham Palace, Big Ben, a west end show, or enjoy the world-class shopping.",
     packages: [
       {
         id: "p1",
@@ -170,7 +170,7 @@ let cityDestinations = [
       zoom: 11,
     },
     about:
-      "Madrid the capital of Spain know for its Art Museams and elegant boulevards. Spend the day marveling at historic artworks followed by an evening of great tappas.",
+      "Madrid the, capital of Spain known for its Art Museums and elegant boulevards. Spend the day marvelling at historic artworks followed by an evening of great tapas.",
     packages: [
       {
         id: "p1",
@@ -206,7 +206,7 @@ let cityDestinations = [
       zoom: 11,
     },
     about:
-      "The city that never sleeps. New york has something for everyone, from shopping on 5th avenue, strooling through centeral park, or taking in the view from the top of the empire state building.",
+      "The city that never sleeps. New York has something for everyone, from shopping on 5th avenue, strolling through central park, or taking in the view from the top of the empire state building.",
     packages: [
       {
         id: "p1",
@@ -242,7 +242,7 @@ let cityDestinations = [
       zoom: 12,
     },
     about:
-      "The worlds most romantic city. Stroll down the Champs-Elysees, spend the afternoon in the louvre and watch the Eiffel Tower illuminate at night.",
+       "The worlds most romantic city. Stroll down the Champs-Elysees, spend the afternoon in the louvre and watch the Eiffel Tower illuminated at night.",
     packages: [
       {
         id: "p1",
@@ -278,7 +278,7 @@ let cityDestinations = [
       zoom: 13,
     },
     about:
-      "Prague is know for it's Old Town Square, with beautiful baroque buildings. Strool around the city at day and then enjoy the lively night life come nightfall.",
+     "Prague is known for it's Old Town Square, with beautiful baroque buildings. Stroll around the city at day and then enjoy the lively night life come nightfall.",
 
     packages: [
       {
@@ -315,7 +315,7 @@ let cityDestinations = [
       zoom: 13,
     },
     about:
-      "Dating back to the roman empire rome is steep in history. Enjoy the collusem or take a visit to vatican city.",
+      "Dating back to the roman empire Rome is steep in history. Enjoy the Colosseum or take a visit to Vatican city.",
     packages: [
       {
         id: "p1",
@@ -351,7 +351,7 @@ let cityDestinations = [
       zoom: 11,
     },
     about:
-      "Singapore is a modern asian city. Enjoy the tradition market food and wash it all down with a singapore sling at Raffles Hotel. The gardens at the bay is a must see for any trip to this city.",
+     "Singapore is a modern Asian city. Enjoy the tradition market food and wash it all down with a Singapore sling at Raffles Hotel. The gardens at the bay is a must-see for any trip to this city.",
     packages: [
       {
         id: "p1",
@@ -387,7 +387,7 @@ let cityDestinations = [
       zoom: 12,
     },
     about:
-      "Tokyo the city of the future. A city for foodies enjoy world class food in the city with the most Michelin Stars in the world.",
+       "Tokyo, the city of the future. A city for foodies enjoy world-class food in the city with the most Michelin Stars in the world.",
     packages: [
       {
         id: "p1",
@@ -426,7 +426,7 @@ let beachDestinations = [
       zoom: 11,
     },
     about:
-      "One of two major islands that make up Antigua and Barbuda. This island is ringed with anazing coral reefs and know for its white sandy beaches.",
+      "One of two major islands that make up Antigua and Barbuda. This island is ringed with amazing coral reefs and know for its white sandy beaches.",
     packages: [
       {
         id: "p1",
@@ -462,7 +462,7 @@ let beachDestinations = [
       zoom: 9,
     },
     about:
-      "A volcanic indonesian island bali is know for its coral reefs and amazing beaches. Enjoy the busteling night life in kuta or get away from it all in the gilly islands",
+     "A volcanic, Indonesian island Bali is known for its coral reefs and amazing beaches. Enjoy the bustling nightlife in Kuta or get away from it all in the gilly islands",
     packages: [
       {
         id: "p1",
@@ -498,7 +498,7 @@ let beachDestinations = [
       zoom: 13.5,
     },
     about:
-      "An Italian island capri is famous for its upsacle hotels and designer shopping or enjoy the crystal clear waters of the mediteranian sea.",
+     "An Italian island Capri is famous for its upscale hotels and designer shopping or enjoy the crystal clear waters of the Mediterranean sea.",
     packages: [
       {
         id: "p1",
@@ -534,7 +534,7 @@ let beachDestinations = [
       zoom: 9,
     },
     about:
-      "Made of more the 300 islands Fiji is famous for its tropical palm-lined beaches and stunning coral reefs..",
+      "Made of more the 300 islands Fiji is famous for its tropical palm-lined beaches and stunning coral reefs.",
     packages: [
       {
         id: "p1",
@@ -570,7 +570,7 @@ let beachDestinations = [
       zoom: 12,
     },
     about:
-      "Koh Phi Phi is one of the most famous thai islands. Famous for its crystal clear waters and limestone outcrops a tropical oasis.",
+      "Koh Phi Phi is one of the most famous Thai islands. Famous for its crystal clear waters and limestone outcrops a tropical oasis.",
     packages: [
       {
         id: "p1",
@@ -605,8 +605,8 @@ let beachDestinations = [
       },
       zoom: 12,
     },
-    about:
-      "A series of islands in the indian ocean the maldives is a tropical oasis with prestine beaches and crystal clear waters. A real favorite with honeymooners",
+    about: 
+    "A series of islands in the Indian Ocean the Maldives is a tropical oasis with pristine beaches and crystal clear waters. A real favourite with honeymooners",
     packages: [
       {
         id: "p1",
@@ -642,7 +642,7 @@ let beachDestinations = [
       zoom: 11,
     },
     about:
-      "A group of islands in the indian ocean the Seychelles is home to neumerous beaches, nature reserves and coral reefs. The Seychelles is a popular honneymoon spot.",
+        "A group of islands in the Indian ocean Seychelles is home to numerous beaches, nature reserves and coral reefs. Seychelles is a popular honeymoon spot.",
     packages: [
       {
         id: "p1",
@@ -714,7 +714,7 @@ let beachDestinations = [
       zoom: 13,
     },
     about:
-      "Tulum is a hidden gem in Mexicos caribbean coast. Known for its beaches and ruins of an ancient Mayan city.",
+          "Tulum is a hidden gem in Mexicos Caribbean coast. Known for its beaches and ruins of an ancient Mayan city.",
     packages: [
       {
         id: "p1",
@@ -750,7 +750,7 @@ let beachDestinations = [
       zoom: 11,
     },
     about:
-      "One of the most stunning Greek islands Santorini is know for its white buildings and blue roofs. Perfect for a romatic getaway or a peaceful retreat.",
+       "One of the most stunning Greek islands Santorini is known for its white buildings and blue roofs. Perfect for a romantic getaway or a peaceful retreat.",
     packages: [
       {
         id: "p1",
