@@ -153,15 +153,46 @@
     - Each package contains a link "Enquire now" which leads to the booking enquiry form.
     - If the user clicks the "Enquire Now" button to get to the booking form the booking navigation menu will then include a link linking back to the specific destinations packages section.
 
-  - As a regular user I would like to see reviews before I decide to book.
+  - As a regular user, I would like to see reviews before I decide to book.
+
+    - If the user scrolls down on the landing page there is the reviews section containing 3 customer reviews.
+    - The user can also access this from the navigation menu.
+    - One customer review is shown with the customer's name highlighted.
+    - The other customer's names can then be clicked to show their reviews.
+    - I have used a hover effect and used arrows to encourage the user to click on the customer's names.
 
 - Website owner
 
-  - As the owner I want my customers to be able to find information easily.
+ - As the owner I want my customers to be able to find information easily.
+
+    - The site has been laid out with all information clear and concise.
+    - All elements of interest have been linked to in the navigation menu.
+    - Upon scrolling sections have very clear headings.
+    - All links have been highlighted and given hover effects to show the user they are clickable.
+
   - As the owner I want my customers to be able to enquire about holiday packages.
+
+   -  I have created the booking enquiry form for the users to fill in and enquire about bookings.
+   - This can be accessed from the navigation menu of both the landing page and the destination page.
+   - All packages contain a link to this page.
+   - Upon completion of the form the user can then submit and emailjs will send the enquiry to the website owner.
+
   - As the owner I want my customers to be able to contact me easily by whichever means they choose.
+
+    - The landing page contains a contact section at the bottom.
+    - This can be reached by scrolling or from all the navigation menus.
+    - This section contains the company phone number, a booking phone number, the company email, and a contact form the user can complete with their details so the company can then email them.
+
   - As a site owner I want my customers to be able to navigate back to all destinations from the destination page.
+  
+    - The heading section contains a link entitled "All destinations".
+    - This link contains an arrow pointing back to show the user it links back to all the destinations.
+    - There is also a link in the navigation menus.
+
   - As a site owner I want my customers to be able to navigate back to their chosen destination from the booking enquiry form.
+
+    - The booking navigation menu will change depending on what destination the user has navigated here from.
+    - It will then contain a link to link back to the particular destination page and also a link to this destinations packages.
 
 ## Test and bugs during development.
 
