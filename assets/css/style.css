@@ -613,6 +613,9 @@ button:focus {
   font-size: 2.5rem;
 }
 /* --------Details Section destination page----------*/
+.details-title-col{
+height: 15rem;
+}
 .details-col {
   height: 30rem;
 }
@@ -643,6 +646,7 @@ button:focus {
 .packages-title-col {
   height: 26rem;
 }
+.details-section-heading,
 .map-section-heading {
   margin-top: 5rem;
   border-bottom: solid 2px #fafafb;
