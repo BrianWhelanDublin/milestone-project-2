@@ -45,6 +45,7 @@
   * [Errors .](#errors-)
 - [Contact Form Testing.](#contact-form-testing)
 - [Code validators](#code-validators)
+- [Accessibility](#accessibility)
 - [Known bugs.](#known-bugs)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
