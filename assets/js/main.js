@@ -10,13 +10,13 @@ let link = document.querySelectorAll(".navigation-item");
 
 /* Code for screen reader on nav button */
 const changeAriaSettings = () => {
-  let screenReader = document.getElementById("menu-sr");
   if (navigation.classList.contains("change")) {
     menu.setAttribute("aria-expanded", true);
-    screenReader.innerHTML = "Close Menu";
+    menu.setAttribute("aria-label", "close navigation");
   } else {
     menu.setAttribute("aria-expanded", false);
-    screenReader.innerHTML = "Open Menu";
+    menu.setAttribute("aria-label", "open navigation");
+  
   }
 };
 
