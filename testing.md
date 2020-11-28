@@ -760,11 +760,11 @@
             <img src="assets/images/readme/testing/code-validators/index.html-validator.png" alt="image of index.html code validator result" width="400px" height="200px" />
           </div>
 
-      - destination.html had two warnings. One for an empty heading but this heading will be filled when the javascript is loaded.
-       The other was for no heading the country details section but, again that is filled once the javascript has loaded.
+      - destination.html had one warning for an empty heading but this heading will be filled when the javascript is loaded.
+       
 
         - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/destination.html-validator.png" alt="image of destination.html code validator result" width="650px" height="200px" />
+            <img src="assets/images/readme/testing/code-validators/destination-validator.png" alt="image of destination.html code validator result" width="350px" height="200px" />
           </div>
 
       - booking.html passed the validator with no issues.
