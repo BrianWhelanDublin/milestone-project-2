@@ -176,50 +176,102 @@
 ### Landing Page Features.
 
  -  #### navbar
+
    - With the help of Code and Create youtube tutorial (details in the credit section) I have created a hamburger menu. The navbar appears on click of the hamburger and then disappears on a click of the x. The navbar also disappears when you click an option in the list. The list items background colour and text colour also change on hover.
+
      - To Open navbar 
-       - ![Image of navbar hamburger](assets/images/readme/features/navbar-hamburger.png)
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
+          </div>
      - Opened navbar 
-       - ![Image of navbar opened](assets/images/readme/features/navbar-open.png)
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
+          </div>
+
      - Nav item hover
-       - ![Image of navbar hover](assets/images/readme/features/navbar-hover.png)
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="340px" height="220px" />
+          </div>
 
   - #### Destination Sliders
+
     - Using lightslider (details in technologies used section) I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the particular object in the array.
       - City Destinations
-        - ![Image of city destination slider](assets/images/readme/features/citydestinations.png)
+
+        -  <div float="left">
+            <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="440px" height="150px" />
+          </div>
+
       - Beach Destinations
-        - ![Image of beach destination slider](assets/images/readme/features/beachdestinations.png)
+
+        - <div float="left">
+            <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="450px" height="140px" />
+          </div>
+          
 
   - #### Reviews 
+
     - The reviews section features 3 reviews by different customers. On page opening, one review is shown with the customer's name who wrote the review highlighted with a box shadow to show the user the review was written by them. On click of the next person, their review will then be shown and their name highlighted. I have also added directional arrows to encourage users to click.
       - Review on open 
-        -![Image of review on page open](assets/images/readme/features/review1.png)
+
+        - <div float="left">
+            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="350px" height="140px" />
+          </div>
+
       - Second customer clicked
-        - ![Image of the second reviewer clicked](assets/images/readme/features/review2.png)
+        - <div float="left">
+            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="350px" height="140px" />
+          </div>
+        
 
  - #### Special packages
    - This feature can be used by the site owner to showcase packages to the user that are on special offer.
      - Special packages section
-       -![Image of packages on offer section](assets/images/readme/features/packages-offer.png)
+       - <div float="left">
+            <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="380px" height="160px" />
+          </div>
 
  - #### Newsletter 
    - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a successful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
      - Newsletter section. 
-       - ![Image of newsletter section](assets/images/readme/features/newsletter.png)
+       - <div float="left">
+            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="360px" height="150px" />
+          </div>
+
      - Successfully submitted.
-       - ![Image of successful modal](assets/images/readme/features/newsletter-success.png)
+
+       - <div float="left">
+            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="360px" height="150px" />
+          </div>
+
      - Error message
-       - ![Image of error message](assets/images/readme/features/newsletter-error.png)
+     
+       - <div float="left">
+            <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="360px" height="140px" />
+          </div>
 
  - #### Contact Form 
     - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
-     -  Contact Form.
-       - <p align="center"><img src="assets/images/readme/features/contact.png" alt="Image of contact form" height="300px" width="400px"/></p>
+      -  Contact Form.
+
+         - <div float="left">
+             <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="260px" height="180px" />
+           </div>
+       
       -  Sucessfully submited.
-        -  <p align="center"><img src="assets/images/readme/features/contact-success.png" alt="Image of modal" height="280px" width="390px"/></p>
+
+         - <div float="left">
+             <img src="assets/images/readme/features/contact-success.png" alt="Image of modal" width="260px" height="180px" />
+           </div>
+
      - Error message
-       - ![Image of error message](assets/images/readme/features/contact-error.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/contact-error.png" alt="Image of error message" width="290px" height="120px" />
+           </div>
         
 ### Destination Page Features 
   
@@ -229,83 +281,173 @@
 - #### Heading section
   - Each page has a unique image and title for each destination. I've included images from one city destination and one beach destination there are 10 in cities and 10 beaches in total.
      - Kyoto Page
-       - ![Image of Kyoto page](assets/images/readme/features/kyoto-page.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/kyoto-page.png" alt="Image of Kyoto page" width="300px" height="200px" />
+           </div>
      - Fiji Page
-       - ![Image of Fiji page](assets/images/readme/features/fiji-page.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/fiji-page.png" alt="Image of Fiji page" width="300px" height="200px" />
+           </div>
   
 - #### Destination Navbar
   - The destination navbar has been coded to change for each destination. 
+
     - Kyoto Navbar
-       - ![Image of kyoto nav](assets/images/readme/features/kyoto-nav.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="300px" height="200px" />
+           </div>
+
      - Fiji Navbar
-       - ![Image of fiji nav](assets/images/readme/features/fiji-nav.png)
+
+       -  <div float="left">
+             <img src="assets/images/readme/features/fiji-nav.png" alt="Image of fiji nav" width="300px" height="200px" />
+           </div>
+     
 
 - #### Destination details.
    - The destination details section take data from the rest countries Api and fills the details depending on the destination. I've included the country flag, it's capital and region, and it's language and currency. There is also a short description for each destination taking from the array i have created.
      - Kyoto Details Section
-       - ![Image of Kyoto details](assets/images/readme/features/kyoto-details.png)
+
+       - <div float="left">
+              <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="460px" height="140px" />
+           </div>
+
      - Fiji Details Section
-       - ![Image of Fiji details](assets/images/readme/features/fiji-details.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/fiji-details.png" alt="Image of Fiji details" width="460px" height="140px" />
+           </div>
        
 - #### Destination Map.
+
   - The destination Map section uses the Google maps API with the Google Places Library and the Marker Clusterer library. The map changes for each destination. The user is then provided with 5 buttons with different types of attractions to click. The buttons change colour on hover to encourage clicking. Once clicked the map will show the top 20 attractions with a marker. You can click on each marker to show the result.
   - Map Section
-       - ![Image of map section](assets/images/readme/features/map-section.png)
+
+       - <div float="left">
+              <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="400px" height="210px" />
+           </div>
   - Map section When button Presses
-       - ![Image map section with the button pressed](assets/images/readme/features/map-section-btn.png)
+
+       - <div float="left">
+              <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="400px" height="210px" />
+           </div>
   - Map section result when marker pressed
-       - ![Image of map section with marker clicked](assets/images/readme/features/map-section-results.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="400px" height="210px" />
+           </div>
 
 - #### Destination packages
+
   - Each destination has 3 different packages a 3 star, 4 star and 5 star and each link to the booking enquiry form.
     - Destination Packages Section
-       - ![Image of destination packages section](assets/images/readme/features/destination-packages.png)
+
+       - <div float="left">
+             <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="590px" height="205px" />
+           </div>
+       
 
 - #### Destination Error 
+
   - If for some reason a user gets to the destination page without a destination code in the URL or a wrong destination code the page will fill with an error to tell the user there has been no destination found. It also contains a link to the homepage where the user can pick a destination.
     - Destination error 
-      - ![Image of destination error](assets/images/readme/features/destination-error.png)
+
+      - <div float="left">
+             <img src="assets/images/readme/features/destination-error.png" alt="Image of destination error" width="500px" height="220px" />
+           </div>
+
 
 ### Booking Enquiry Form 
 
   - #### The booking enquiry form 
     - This page allows the user to fill out and submit an enquiry to book a package. The main page links to an empty form. The destination page links to the form with the destination prefilled out. If the user clicks on a destination packed the forms destination and package input will be pre-filled out also. The package input is not required to allow the user that the user might only want to enquire about a destination only.
       -  Empty Form
-        - ![Image of empty form](assets/images/readme/features/empty-booking.png)
+
+        - <div float="left">
+             <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="400px" height="250px" />
+           </div>
+
       - Destination prefilled
-        - ![Image of destination prefilled](assets/images/readme/features/destination-booking.png)
+
+        - <div float="left">
+             <img src="assets/images/readme/features/destination-booking.png" alt="Image of destination prefilled" width="450px" height="140px" />
+           </div>
+        
       -  Destination and Package prefilled
-        - ![Image of destination and packages prefilled](assets/images/readme/features/package-booking.png)
+
+         - <div float="left">
+             <img src="assets/images/readme/features/package-booking.png" alt="Image of destination and packages prefilled" width="550px" height="180px" />
+           </div>
+       
 
   - #### Booking Enquiry Navigation.
     - The navigation on the booking enquiry page will change depending on two factors. If you come to this page from the home page it will have a general navigation menu that links back to the home page. If you come to it from a destination it will link back to that destinations page and its packages.
+     
       - General Navbar
-        - ![Image of general navihation](assets/images/readme/features/general-nav.png)
+
+        - <div float="left">
+             <img src="assets/images/readme/features/general-nav.png" alt="Image of general navihation" width="350px" height="290px" />
+           </div>
+           
       - Navbar with a destination
-        - ![Image of destination-specific navigation](assets/images/readme/features/destination-specific-nav.png)
+
+        - <div float="left">
+             <img src="assets/images/readme/features/destination-specific-nav.png" alt="Image of destination-specific navigation" width="350px" height="290px" />
+           </div>
      
   - #### Booking modal
+
     - The booking enquiry form uses emailjs to send the details to the business owner. Upon completion of the form, a modal pops up to let the user know someone will be in touch with them soon.
+     
       - Modal on form submit
-        - ![Image of booking modal](assets/images/readme/features/booking-modal.png)
+
+        -  <div float="left">
+             <img src="assets/images/readme/features/booking-modal.png" alt="Image of booking modal" width="350px" height="230px" />
+           </div>
+      
 
   - #### Booking Enquiry Error
+
     - If for whatever reason an error occurs the booking for will alert the user.
       -  Booking Enquiry Error.
-        -  ![Image of booking error](assets/images/readme/features/booking-error.png)
+
+        -  <div float="left">
+             <img src="assets/images/readme/features/booking-error.png" alt="Image of booking error" width="370px" height="180px" />
+           </div>
+    
 
 ### 404 Error Page
 
  - #### 404 error page. 
    - I've also included a 404 error page with GitHub pages if the user navigates to a wrong URL for whatever reason. To do this I did the following:
      1. I first located and clicked the add file button in Github.
-       -  ![Image of add file button](assets/images/readme/features/new-file.png)
+
+        - <div float="left">
+             <img src="assets/images/readme/features/new-file.png" alt="Image of add file button" width="280px" height="130px" />
+           </div>
+       
      2. Git hub then asks you to name your file.
-       - ![Image of name your file input](assets/images/readme/features/name-file.png)
+
+        - <div float="left">
+             <img src="assets/images/readme/features/name-file.png" alt="Image of name your file input" width="500px" height="140px" />
+           </div>
+    
      3.  I then named my file 404.html.
-       - ![Image of the file named 404.html](assets/images/readme/features/file-404.png)
+
+         - <div float="left">
+             <img src="assets/images/readme/features/file-404.png" alt="Image of the file named 404.html" width="500px" height="140px" />
+           </div>
+       
      4. Once these steps were complete then commit the file to your master branch in the project repository with a commit message.
-       ![Image of message commit](assets/images/readme/features/commit-404.png)
+       
+        - <div float="left">
+             <img src="assets/images/readme/features/commit-404.png" alt="Image of message commit" width="380px" height="230px" />
+           </div>
+       
+
 
 ### Features left to Implement.
 
@@ -413,15 +555,23 @@
 
   1. I first signed into Github and located the Code Institute Gitpod template.
 
-     - ![Image of Code Institute Template](assets/images/readme/deployment/code-institute-template.png)
+     -  <div float="left">
+           <img src="assets/images/readme/deployment/code-institute-template.png" alt="Image of Code Institute Template" width="600px" height="300px" />
+         </div>
+       
 
   2. I then clicked the use this template button.
 
-     - ![Image of use template button](assets/images/readme/deployment/use-this-template.png)
+     - <div float="left">
+           <img src="assets/images/readme/deployment/use-this-template.png" alt="Image of use template button" width="300px" height="150px" />
+         </div>
+
 
   3. I then named the repository and created it.
 
-     - ![Image of use template button](assets/images/readme/deployment/new-repository.png)
+     - <div float="left">
+           <img src="assets/images/readme/deployment/new-repository.png" alt="Image ofnew repository" width="550px" height="250px" />
+         </div>
 
   4. Once the repository was created I could then open it on Gitpod.
 
@@ -473,21 +623,31 @@
 
   2. At the top of the repository I selected the settings option.
 
-     - ![Image of settings](assets/images/readme/deployment/gitpages-settings.png)
+     - <div float="left">
+           <img src="assets/images/readme/deployment/gitpages-settings.png" alt="Image of settings" width="700px" height="170px" />
+         </div>
 
   3. I then scrolled down the page until I reached the Github pages section.
 
-     - ![Image of gitpages source](assets/images/readme/deployment/gitpages-source.png)
+     -  <div float="left">
+           <img src="assets/images/readme/deployment/gitpages-source.png" alt="Image of gitpages source" width="700px" height="270px" />
+         </div>
 
   4. Under sources I then selected the Master Branch.
 
-     - ![Image of select master](assets/images/readme/deployment/select-master.png)
+     - <div float="left">
+           <img src="assets/images/readme/deployment/select-master.png" alt="Image of select master" width="700px" height="240px" />
+         </div>
+   
 
   5. The page then refreshed itself.
 
   6. I then scrolled back down and the link to my live page was then visible.
 
-     - ![Image of live page link](assets/images/readme/deployment/site-live.png)
+     - <div float="left">
+           <img src="assets/images/readme/deployment/site-live.png" alt="Image of live page link" width="680px" height="240px" />
+         </div>
+    
 
 ## Credits
 
