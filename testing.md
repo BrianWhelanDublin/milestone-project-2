@@ -55,24 +55,23 @@
 
 - ### New Visitor
 
-  - As a new user I would like to know what the company does upon open the site.
-
+  - **As a new user I would like to know what the company does upon open the site**.
     - The title of the website contains information to inform the user that the website is for a travel company. The company logo is also in a fixed position in the top right-hand corner.
     - The text also contains a link entitled "find out more" which then links to the about section on the landing page.
        
        -   <div float="left">
               <img src="assets/images/readme/testing/user-stories/landing-title.png" alt="Image title" width="340px" height="200px" />
             </div>
-  - As a new user I would like to get information about the company.
 
-    - The landing page contains an about section upon scrolling after the heading section with information about the company.
-    - The user can get to this information by scrolling or by clicking the "find out more" link or by clicking the "about" link in the navigation.
+  -  **As a new user I would like to get information about the company**
+     - The landing page contains an about section upon scrolling after the heading section with information about the company.
+     - The user can get to this information by scrolling or by clicking the "find out more" link or by clicking the "about" link in the navigation.
 
        -  <div float="left">
               <img src="assets/images/readme/testing/user-stories/about.png" alt="Image of about section" width="500px" height="280px" />
             </div>
 
-  - As a new user I would like to see what destinations the company travels to.
+  - **As a new user I would like to see what destinations the company travels to.**
 
     - Upon scrolling down the homepage the user is presented with two sliders contain the company destinations.
     - This section has a very clear title "Our Destinations"
@@ -93,8 +92,7 @@
     - Each destination is then clearly labelled within the slider.
     - The slider then contains arrows so the user knows there are more destinations.
 
-  - As a new user I would like to see information about each destination.
-
+  - **As a new user I would like to see information about each destination.**
     - Each destination in the slider contains a link to its page.
     - This link is clearly labelled with suggestive language, "Find Out More".
     - The link also has a hover effect to show it's clickable.
@@ -104,7 +102,7 @@
               <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="460px" height="140px" />
            </div>
 
-  - As a new user I would like to sign up for a newsletter.
+  - **As a new user I would like to sign up for a newsletter.**
 
     - Upon scrolling down the Landing page the user will come to the newsletter section.
     - This section is clearly labelled as "Sign up for our newsletter".
@@ -114,24 +112,37 @@
     - If there is an issue the user will be alerted with an error message.
 
        -  <div float="left">
-            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="360px" height="150px" />
+            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="460px" height="200px" />
           </div>
 
      - Successfully submitted.
 
        - <div float="left">
-            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="360px" height="150px" />
+            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="460px" height="200px" />
           </div>
 
      - Error message
      
        -  <div float="left">
-           <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="360px" height="140px" />
+           <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="460px" height="200px" />
           </div>
 
-  - As a new user I would like to easily get around the website.
+  - **As a new user I would like to easily get around the website.**
     - The site contains a navigation menu by clicking on a hamburger button.
     - The navigation menu then contains links to each element of interest within the site.
+      
+      - To Open navbar 
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
+          </div>
+
+     - Opened navbar 
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
+          </div>
+
     - The navbar will also change depending on what destination the user has clicked.
     - The destination page has a link in the title to link back to all destinations so the user doesn't have to use the browser back button.
      
@@ -140,29 +151,24 @@
           </div>
 
     - The destination navbar also has a link to all destinations.
+      - Destination navbar
+
+        - <div float="left">
+             <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="300px" height="200px" />
+           </div>
     - The booking enquiry form will link back to the landing page and the home page specials if the user has linked here from the landing page.
     - The booking enquiry form navbar will link back to the user's particular destination also and the particular destination packages if they have linked here from the destination page.
-      
-        - To Open navbar 
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
-          </div>
-     - Opened navbar 
+      - Booking enquiry navbar
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
-          </div>
+        - <div float="left">
+             <img src="assets/images/readme/features/destination-specific-nav.png" alt="Image of destination-specific navigation" width="350px" height="290px" />
+           </div>
 
-     - Nav item hover
-
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="340px" height="220px" />
-          </div>
 
 - ### Repeat User
 
-  - As a repeat user I would like to make a booking enquiry.
+  - **As a repeat user I would like to make a booking enquiry.**
 
     - The user can link to the booking enquiry page from the landing page navigation menu.
     - The user can also link to the booking enquiry from the booking page navigation.
@@ -182,7 +188,7 @@
 
         
 
-  - As a repeat user I would like to be able to contact the company.
+  - **As a repeat user I would like to be able to contact the company.**
 
     - The landing page contains a contact section.
     - This section is linked to from the navigation menu of all pages.
@@ -192,7 +198,7 @@
              <img src="assets/images/readme/testing/user-stories/contact-info.png" alt="Image of contact information" width="290px" height="180px" />
         </div>
 
-  - As a repeat user I would like to send a contact message.
+  - **As a repeat user I would like to send a contact message.**
 
     - There is also a contact form the user can fill out if they choose.
     - If they fill this out the will receive a confirmation message upon submitting if it was successful.
@@ -202,7 +208,7 @@
              <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="260px" height="180px" />
         </div>
 
-  - As a repeat user I would like to be able to see the companies social media.
+  - **As a repeat user I would like to be able to see the companies social media.**
 
     - The companies social media links are in the footer of all pages.
     - The links are marked with the social media logos.
@@ -271,29 +277,32 @@
     - I have used a hover effect and used arrows to encourage the user to click on the customer's names.
       
       -  <div float="left">
-            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="350px" height="140px" />
+            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="540px" height="200px" />
           </div>
 
       - Second customer clicked
       - <div float="left">
-            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="350px" height="140px" />
+            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="540px" height="200px" />
           </div>
 
 - Website owner
 
- - As the owner I want my customers to be able to find information easily.
+ - **As the owner I want my customers to be able to find information easily.**
 
     - The site has been laid out with all information clear and concise.
     - All elements of interest have been linked to in the navigation menu.
     - Upon scrolling sections have very clear headings.
+      
+      - 
     - All links have been highlighted and given hover effects to show the user they are clickable.
+       
 
   - As the owner I want my customers to be able to enquire about holiday packages.
 
-   -  I have created the booking enquiry form for the users to fill in and enquire about bookings.
-   - This can be accessed from the navigation menu of both the landing page and the destination page.
-   - All packages contain a link to this page.
-   - Upon completion of the form the user can then submit and emailjs will send the enquiry to the website owner.
+    - I have created the booking enquiry form for the users to fill in and enquire about bookings.
+    - This can be accessed from the navigation menu of both the landing page and the destination page.
+    - All packages contain a link to this page.
+    - Upon completion of the form the user can then submit and emailjs will send the enquiry to the website owner.
 
   - As the owner I want my customers to be able to contact me easily by whichever means they choose.
 

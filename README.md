@@ -218,12 +218,12 @@
       - Review on open 
 
         - <div float="left">
-            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="350px" height="140px" />
+            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="450px" height="180px" />
           </div>
 
       - Second customer clicked
         - <div float="left">
-            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="350px" height="140px" />
+            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="450px" height="180px" />
           </div>
         
 
@@ -238,20 +238,20 @@
    - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a successful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
      - Newsletter section. 
        - <div float="left">
-            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="360px" height="150px" />
+            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="460px" height="200px" />
           </div>
 
      - Successfully submitted.
 
        - <div float="left">
-            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="360px" height="150px" />
+            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="460px" height="200px" />
           </div>
 
      - Error message
      
        - <div float="left">
-            <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="360px" height="140px" />
-          </div>
+          <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="460px" height="200px" />
+         </div>
 
  - #### Contact Form 
     - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
