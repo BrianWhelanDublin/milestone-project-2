@@ -53,17 +53,24 @@
 
 ## User Stories.
 
-- New Visitor
+- ### New Visitor
 
   - As a new user I would like to know what the company does upon open the site.
 
     - The title of the website contains information to inform the user that the website is for a travel company. The company logo is also in a fixed position in the top right-hand corner.
     - The text also contains a link entitled "find out more" which then links to the about section on the landing page.
-
+       
+       -   <div float="left">
+              <img src="assets/images/readme/testing/user-stories/landing-title.png" alt="Image title" width="340px" height="200px" />
+            </div>
   - As a new user I would like to get information about the company.
 
     - The landing page contains an about section upon scrolling after the heading section with information about the company.
     - The user can get to this information by scrolling or by clicking the "find out more" link or by clicking the "about" link in the navigation.
+
+       -  <div float="left">
+              <img src="assets/images/readme/testing/user-stories/about.png" alt="Image of about section" width="500px" height="280px" />
+            </div>
 
   - As a new user I would like to see what destinations the company travels to.
 
@@ -71,7 +78,18 @@
     - This section has a very clear title "Our Destinations"
     - Both sliders are also very clearly titled,
       1.  "City Destinations"
+         
+          -  <div float="left">
+              <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="440px" height="150px" />
+            </div>
+
       2.  "Beach Destinations"
+
+          -  <div float="left">
+               <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="450px" height="140px" />
+            </div>
+          
+
     - Each destination is then clearly labelled within the slider.
     - The slider then contains arrows so the user knows there are more destinations.
 
@@ -81,6 +99,10 @@
     - This link is clearly labelled with suggestive language, "Find Out More".
     - The link also has a hover effect to show it's clickable.
     - Once clicked the user will be brought to the destination page which will fill with information unique to each destination.
+       
+       -  <div float="left">
+              <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="460px" height="140px" />
+           </div>
 
   - As a new user I would like to sign up for a newsletter.
 
@@ -91,31 +113,84 @@
     - EmailJS will then send the site owner and the user an email.
     - If there is an issue the user will be alerted with an error message.
 
+       -  <div float="left">
+            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="360px" height="150px" />
+          </div>
+
+     - Successfully submitted.
+
+       - <div float="left">
+            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="360px" height="150px" />
+          </div>
+
+     - Error message
+     
+       -  <div float="left">
+           <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="360px" height="140px" />
+          </div>
+
   - As a new user I would like to easily get around the website.
     - The site contains a navigation menu by clicking on a hamburger button.
     - The navigation menu then contains links to each element of interest within the site.
     - The navbar will also change depending on what destination the user has clicked.
     - The destination page has a link in the title to link back to all destinations so the user doesn't have to use the browser back button.
+     
+       -  <div float="left">
+           <img src="assets/images/readme/testing/user-stories/other-link.png" alt="Image other destinations link" width="270px" height="110px" />
+          </div>
+
     - The destination navbar also has a link to all destinations.
     - The booking enquiry form will link back to the landing page and the home page specials if the user has linked here from the landing page.
     - The booking enquiry form navbar will link back to the user's particular destination also and the particular destination packages if they have linked here from the destination page.
+      
+        - To Open navbar 
 
-- Repeat users
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
+          </div>
+     - Opened navbar 
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
+          </div>
+
+     - Nav item hover
+
+       -  <div float="left">
+            <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="340px" height="220px" />
+          </div>
+
+- ### Repeat User
 
   - As a repeat user I would like to make a booking enquiry.
 
     - The user can link to the booking enquiry page from the landing page navigation menu.
     - The user can also link to the booking enquiry from the booking page navigation.
     - Each package on both the landing page and on each destination page has a link clearly labelled "Enquire Now" which leads to the form.
+       
+        - <div float="left">
+           <img src="assets/images/readme/testing/user-stories/enquire-link.png" alt="Image enquire now link" width="260px" height="100px" />
+          </div>
+    
     - The user can then fill out the form and click submit.
     - Once submitted successfully the user will get a message telling them a customer representative will contact them soon re their booking.
     - If there is an issue the user will be alerted of the error and asked to try again.
+      
+       -  <div float="left">
+             <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="400px" height="250px" />
+           </div>
+
+        
 
   - As a repeat user I would like to be able to contact the company.
 
     - The landing page contains a contact section.
     - This section is linked to from the navigation menu of all pages.
     - The contact contains the companies email, general phone number and bookings number.
+      
+      - <div float="left">
+             <img src="assets/images/readme/testing/user-stories/contact-info.png" alt="Image of contact information" width="290px" height="180px" />
+        </div>
 
   - As a repeat user I would like to send a contact message.
 
@@ -123,12 +198,20 @@
     - If they fill this out the will receive a confirmation message upon submitting if it was successful.
     - If unsuccessful they will be alerted of the error with an error message.
 
+      - <div float="left">
+             <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="260px" height="180px" />
+        </div>
+
   - As a repeat user I would like to be able to see the companies social media.
 
     - The companies social media links are in the footer of all pages.
     - The links are marked with the social media logos.
     - They have a hover effect to show they are clickable.
     - Upon clicking they will open the relevant social media site on a new page or tab.
+      
+       - <div float="left">
+             <img src="assets/images/readme/testing/user-stories/social.png" alt="Image of social media links" width="850px" height="80px" />
+        </div>
 
   - As a repeat user I would like to be able to search for local attractions for each destination.
     - Each destination contains a map section clearly titled "Map of local attractions.
@@ -136,6 +219,23 @@
     - When the user clicks on one of these buttons the map will fill with markers of different attractions.
     - if the user then clicks on a marker the result section will fill with details of the attraction.
     - The map has been programmed to empty if there are markers on it to keep it all clean.
+
+      - Map Section
+
+         - <div float="left">
+              <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="400px" height="210px" />
+           </div>
+
+      - Map section When button Presses
+
+         - <div float="left">
+              <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="400px" height="210px" />
+           </div>
+      - Map section result when marker pressed
+
+         - <div float="left">
+             <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="400px" height="210px" />
+           </div>
 
 - Regular Visitor
 
@@ -145,6 +245,10 @@
     - The user can get to this from scrolling or from the navigation menu on each page.
     - These offers then contain details of the offer.
     - Once clicked the user will be taken to the booking enquiry form.
+      
+       -  <div float="left">
+            <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="380px" height="160px" />
+          </div>
 
   - As a regular visitor I would like to be able to see what the travel packages the company does.
 
@@ -154,6 +258,10 @@
     - Each package contains a link "Enquire now" which leads to the booking enquiry form.
     - If the user clicks the "Enquire Now" button to get to the booking form the booking navigation menu will then include a link linking back to the specific destinations packages section.
 
+       - <div float="left">
+             <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="590px" height="205px" />
+           </div>
+
   - As a regular user, I would like to see reviews before I decide to book.
 
     - If the user scrolls down on the landing page there is the reviews section containing 3 customer reviews.
@@ -161,6 +269,15 @@
     - One customer review is shown with the customer's name highlighted.
     - The other customer's names can then be clicked to show their reviews.
     - I have used a hover effect and used arrows to encourage the user to click on the customer's names.
+      
+      -  <div float="left">
+            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="350px" height="140px" />
+          </div>
+
+      - Second customer clicked
+      - <div float="left">
+            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="350px" height="140px" />
+          </div>
 
 - Website owner
 
