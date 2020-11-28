@@ -823,7 +823,14 @@
             <img src="assets/images/readme/testing/code-validators/main-js-validator.png" alt="image of main javascript code validator" width="500px" height="500px" />
           </div>
 
+## Accessibility
 
+  -  Google lighthouse was used to confirm the site accessibility was correct. When first tested, lighthouse suggested adding aria labels to my navigation button and the form elements on the landing page. 
+  Lighthouse also suggested adding rel="noreferrer" to the links in my nav to improve security. I have made these changes and the site has passed with 100% in accessibility throughout each page.
+
+     - <div float="left">
+         <img src="assets/images/readme/testing/accessibility.png" alt="image of accessibility score" width="400px" height="250px" />
+       </div>
 
 
 ## Known bugs.
