@@ -182,18 +182,18 @@
      - To Open navbar 
 
        -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
+            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="420px" height="200px" />
           </div>
      - Opened navbar 
 
        -  <div float="left">
-            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
+            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="500px" height="260px" />
           </div>
 
      - Nav item hover
 
        -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="340px" height="220px" />
+            <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="500px" height="300px" />
           </div>
 
   - #### Destination Sliders
@@ -202,13 +202,13 @@
       - City Destinations
 
         -  <div float="left">
-            <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="440px" height="150px" />
+            <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="600px" height="200px" />
           </div>
 
       - Beach Destinations
 
         - <div float="left">
-            <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="450px" height="140px" />
+            <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="700px" height="200px" />
           </div>
           
 
@@ -218,12 +218,12 @@
       - Review on open 
 
         - <div float="left">
-            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="450px" height="180px" />
+            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="650px" height="250px" />
           </div>
 
       - Second customer clicked
         - <div float="left">
-            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="450px" height="180px" />
+            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="650px" height="250px" />
           </div>
         
 
@@ -231,26 +231,26 @@
    - This feature can be used by the site owner to showcase packages to the user that are on special offer.
      - Special packages section
        - <div float="left">
-            <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="380px" height="160px" />
+            <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="580px" height="240px" />
           </div>
 
  - #### Newsletter 
    - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a successful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
      - Newsletter section. 
        - <div float="left">
-            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="460px" height="200px" />
+            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="650px" height="300px" />
           </div>
 
      - Successfully submitted.
 
        - <div float="left">
-            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="460px" height="200px" />
+            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="650px" height="300px" />
           </div>
 
      - Error message
      
        - <div float="left">
-          <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="460px" height="200px" />
+          <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="540px" height="220px" />
          </div>
 
  - #### Contact Form 
@@ -258,19 +258,19 @@
       -  Contact Form.
 
          - <div float="left">
-             <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="260px" height="180px" />
+             <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="350px" height="270px" />
            </div>
        
       -  Sucessfully submited.
 
          - <div float="left">
-             <img src="assets/images/readme/features/contact-success.png" alt="Image of modal" width="260px" height="180px" />
+             <img src="assets/images/readme/features/contact-success.png" alt="Image of modal" width="400px" height="260px" />
            </div>
 
      - Error message
 
        - <div float="left">
-             <img src="assets/images/readme/features/contact-error.png" alt="Image of error message" width="290px" height="120px" />
+             <img src="assets/images/readme/features/contact-error.png" alt="Image of error message" width="420px" height="150px" />
            </div>
         
 ### Destination Page Features 
@@ -283,12 +283,12 @@
      - Kyoto Page
 
        - <div float="left">
-             <img src="assets/images/readme/features/kyoto-page.png" alt="Image of Kyoto page" width="300px" height="200px" />
+             <img src="assets/images/readme/features/kyoto-page.png" alt="Image of Kyoto page" width="400px" height="250px" />
            </div>
      - Fiji Page
 
        - <div float="left">
-             <img src="assets/images/readme/features/fiji-page.png" alt="Image of Fiji page" width="300px" height="200px" />
+             <img src="assets/images/readme/features/fiji-page.png" alt="Image of Fiji page" width="400px" height="250px" />
            </div>
   
 - #### Destination Navbar
@@ -297,13 +297,13 @@
     - Kyoto Navbar
 
        - <div float="left">
-             <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="300px" height="200px" />
+             <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="400px" height="260px" />
            </div>
 
      - Fiji Navbar
 
        -  <div float="left">
-             <img src="assets/images/readme/features/fiji-nav.png" alt="Image of fiji nav" width="300px" height="200px" />
+             <img src="assets/images/readme/features/fiji-nav.png" alt="Image of fiji nav" width="400px" height="260px" />
            </div>
      
 
@@ -312,13 +312,13 @@
      - Kyoto Details Section
 
        - <div float="left">
-              <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="460px" height="140px" />
+              <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="700px" height="200px" />
            </div>
 
      - Fiji Details Section
 
        - <div float="left">
-             <img src="assets/images/readme/features/fiji-details.png" alt="Image of Fiji details" width="460px" height="140px" />
+             <img src="assets/images/readme/features/fiji-details.png" alt="Image of Fiji details" width="700px" height="200px" />
            </div>
        
 - #### Destination Map.
@@ -327,17 +327,17 @@
   - Map Section
 
        - <div float="left">
-              <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="400px" height="210px" />
+              <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="550px" height="310px" />
            </div>
   - Map section When button Presses
 
        - <div float="left">
-              <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="400px" height="210px" />
+              <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="550px" height="310px" />
            </div>
   - Map section result when marker pressed
 
        - <div float="left">
-             <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="400px" height="210px" />
+             <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="550px" height="310px" />
            </div>
 
 - #### Destination packages
@@ -346,7 +346,7 @@
     - Destination Packages Section
 
        - <div float="left">
-             <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="590px" height="205px" />
+             <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="750px" height="240px" />
            </div>
        
 
@@ -356,7 +356,7 @@
     - Destination error 
 
       - <div float="left">
-             <img src="assets/images/readme/features/destination-error.png" alt="Image of destination error" width="500px" height="220px" />
+             <img src="assets/images/readme/features/destination-error.png" alt="Image of destination error" width="600px" height="320px" />
            </div>
 
 
@@ -367,19 +367,19 @@
       -  Empty Form
 
         - <div float="left">
-             <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="400px" height="250px" />
+             <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="600px" height="400px" />
            </div>
 
       - Destination prefilled
 
         - <div float="left">
-             <img src="assets/images/readme/features/destination-booking.png" alt="Image of destination prefilled" width="450px" height="140px" />
+             <img src="assets/images/readme/features/destination-booking.png" alt="Image of destination prefilled" width="800px" height="240px" />
            </div>
         
       -  Destination and Package prefilled
 
          - <div float="left">
-             <img src="assets/images/readme/features/package-booking.png" alt="Image of destination and packages prefilled" width="550px" height="180px" />
+             <img src="assets/images/readme/features/package-booking.png" alt="Image of destination and packages prefilled" width="800px" height="240px" />
            </div>
        
 
@@ -405,7 +405,7 @@
       - Modal on form submit
 
         -  <div float="left">
-             <img src="assets/images/readme/features/booking-modal.png" alt="Image of booking modal" width="350px" height="230px" />
+             <img src="assets/images/readme/features/booking-modal.png" alt="Image of booking modal" width="450px" height="300px" />
            </div>
       
 
@@ -415,7 +415,7 @@
       -  Booking Enquiry Error.
 
         -  <div float="left">
-             <img src="assets/images/readme/features/booking-error.png" alt="Image of booking error" width="370px" height="180px" />
+             <img src="assets/images/readme/features/booking-error.png" alt="Image of booking error" width="550px" height="200px" />
            </div>
     
 
@@ -426,13 +426,13 @@
      1. I first located and clicked the add file button in Github.
 
         - <div float="left">
-             <img src="assets/images/readme/features/new-file.png" alt="Image of add file button" width="280px" height="130px" />
+             <img src="assets/images/readme/features/new-file.png" alt="Image of add file button" width="520px" height="200px" />
            </div>
        
      2. Git hub then asks you to name your file.
 
         - <div float="left">
-             <img src="assets/images/readme/features/name-file.png" alt="Image of name your file input" width="500px" height="140px" />
+             <img src="assets/images/readme/features/name-file.png" alt="Image of name your file input" width="650px" height="200px" />
            </div>
     
      3.  I then named my file 404.html.
@@ -444,7 +444,7 @@
      4. Once these steps were complete then commit the file to your master branch in the project repository with a commit message.
        
         - <div float="left">
-             <img src="assets/images/readme/features/commit-404.png" alt="Image of message commit" width="380px" height="230px" />
+             <img src="assets/images/readme/features/commit-404.png" alt="Image of message commit" width="560px" height="300px" />
            </div>
        
 
@@ -556,21 +556,21 @@
   1. I first signed into Github and located the Code Institute Gitpod template.
 
      -  <div float="left">
-           <img src="assets/images/readme/deployment/code-institute-template.png" alt="Image of Code Institute Template" width="600px" height="300px" />
+           <img src="assets/images/readme/deployment/code-institute-template.png" alt="Image of Code Institute Template" width="840px" height="420px" />
          </div>
        
 
   2. I then clicked the use this template button.
 
      - <div float="left">
-           <img src="assets/images/readme/deployment/use-this-template.png" alt="Image of use template button" width="300px" height="150px" />
+           <img src="assets/images/readme/deployment/use-this-template.png" alt="Image of use template button" width="400px" height="200px" />
          </div>
 
 
   3. I then named the repository and created it.
 
      - <div float="left">
-           <img src="assets/images/readme/deployment/new-repository.png" alt="Image ofnew repository" width="550px" height="250px" />
+           <img src="assets/images/readme/deployment/new-repository.png" alt="Image ofnew repository" width="800px" height="400px" />
          </div>
 
   4. Once the repository was created I could then open it on Gitpod.
@@ -624,7 +624,7 @@
   2. At the top of the repository I selected the settings option.
 
      - <div float="left">
-           <img src="assets/images/readme/deployment/gitpages-settings.png" alt="Image of settings" width="700px" height="170px" />
+           <img src="assets/images/readme/deployment/gitpages-settings.png" alt="Image of settings" width="800px" height="210px" />
          </div>
 
   3. I then scrolled down the page until I reached the Github pages section.
