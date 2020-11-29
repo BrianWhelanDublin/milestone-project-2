@@ -137,9 +137,9 @@
     - [Tablet](assets/wireframes/destinationpage-tablet.pdf)
     - [Phone](assets/wireframes/destinationpage-phone.pdf)
   - Booking page
-    - [Desktop](assets/wireframes/landingpage-desktop.pdf)
-    - [Tablet](assets/wireframes/landingpage-tablet.pdf)
-    - [Phone](assets/wireframes/landingpage-phone.pdf)
+    - [Desktop](assets/wireframes/bookingpage-desktop.pdf)
+    - [Tablet](assets/wireframes/bookingpage-tablet.pdf)
+    - [Phone](assets/wireframes/bookingpage-phone.pdf)
 
 
 
