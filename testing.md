@@ -897,9 +897,9 @@
 
 ## Manual Testing.
 
-     - ### Destination and Packages links.
-     - The destinations links were all tested manually to confirm the link to the correct destination page on numerous occasions.
-     - The same was done for each package link.
+- ### Destination and Packages links.
+    - The destinations links were all tested manually to confirm the link to the correct destination page on numerous occasions.
+    - The same was done for each package link.
 
 - ### Destination map.
 
