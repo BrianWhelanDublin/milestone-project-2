@@ -1,4 +1,3 @@
-// sends for newslette
 function sendNewsletter(form) {
   emailjs
     .send("brianwhelandublin", "newsletter", {
@@ -34,12 +33,12 @@ function sendMail(contactForm) {
         contactForm.reset();
       },
       function (error) {
-          alert("Opp's something has gone wrong Please try agian.")
+          alert("Opp's something has gone wrong Please try agian.");
         console.log("FAILED", error);
       }
     );
   return false; // To block from loading a new page
-};
+}
 // send for booking enquiry form
 function sendBookingEnquiry(bookingForm){
     emailjs.
@@ -68,8 +67,8 @@ function sendBookingEnquiry(bookingForm){
         bookingForm.reset();
       },
       function (error) {
-          alert("Opp's something has gone wrong Please try agian.")
+          alert("Opp's something has gone wrong Please try agian.");
         console.log("FAILED", error);
       });
         return false; // To block from loading a new page
-};
+}
