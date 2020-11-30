@@ -3,6 +3,8 @@
 - In this section, I will document the testing procedure I have completed for the project.
 
 - [User Stories.](#user-stories)
+  * [New Visitor](#new-visitor)
+  * [Repeat User](#repeat-user)
 - [Test and bugs during development.](#test-and-bugs-during-development)
   * [Navigation menu.](#navigation-menu)
   * [Animation.](#animation)
@@ -56,51 +58,52 @@
 - ### New Visitor
 
   - **As a new user I would like to know what the company does upon open the site**.
+
     - The title of the website contains information to inform the user that the website is for a travel company. The company logo is also in a fixed position in the top right-hand corner.
     - The text also contains a link entitled "find out more" which then links to the about section on the landing page.
-       
-       -   <div float="left">
-              <img src="assets/images/readme/testing/user-stories/landing-title.png" alt="Image title" width="340px" height="200px" />
-            </div>
+      - <div float="left">
+           <img src="assets/images/readme/testing/user-stories/landing-title.png" alt="Image title" width="340px" height="200px" />
+         </div>
 
-  -  **As a new user I would like to get information about the company**
-     - The landing page contains an about section upon scrolling after the heading section with information about the company.
-     - The user can get to this information by scrolling or by clicking the "find out more" link or by clicking the "about" link in the navigation.
+  - **As a new user I would like to get information about the company**
 
-       -  <div float="left">
-              <img src="assets/images/readme/testing/user-stories/about.png" alt="Image of about section" width="500px" height="280px" />
-            </div>
+    - The landing page contains an about section upon scrolling after the heading section with information about the company.
+    - The user can get to this information by scrolling or by clicking the "find out more" link or by clicking the "about" link in the navigation.
+
+      - <div float="left">
+            <img src="assets/images/readme/testing/user-stories/about.png" alt="Image of about section" width="500px" height="280px" />
+          </div>
 
   - **As a new user I would like to see what destinations the company travels to.**
 
     - Upon scrolling down the homepage the user is presented with two sliders contain the company destinations.
     - This section has a very clear title "Our Destinations"
     - Both sliders are also very clearly titled,
+
       1.  "City Destinations"
-         
-          -  <div float="left">
+
+          - <div float="left">
               <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="440px" height="150px" />
             </div>
 
       2.  "Beach Destinations"
 
-          -  <div float="left">
+          - <div float="left">
                <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="450px" height="140px" />
             </div>
-          
 
     - Each destination is then clearly labelled within the slider.
     - The slider then contains arrows so the user knows there are more destinations.
 
   - **As a new user I would like to see information about each destination.**
+
     - Each destination in the slider contains a link to its page.
     - This link is clearly labelled with suggestive language, "Find Out More".
     - The link also has a hover effect to show it's clickable.
     - Once clicked the user will be brought to the destination page which will fill with information unique to each destination.
-       
-       -  <div float="left">
-              <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="460px" height="140px" />
-           </div>
+      - <div float="left">
+            <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="460px" height="140px" />
+         </div>
 
   - **As a new user I would like to sign up for a newsletter.**
 
@@ -111,60 +114,62 @@
     - EmailJS will then send the site owner and the user an email.
     - If there is an issue the user will be alerted with an error message.
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="460px" height="200px" />
-          </div>
+      - <div float="left">
+          <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="460px" height="200px" />
+        </div>
 
-     - Successfully submitted.
+    - Successfully submitted.
 
-       - <div float="left">
-            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="460px" height="200px" />
-          </div>
+      - <div float="left">
+           <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="460px" height="200px" />
+         </div>
 
-     - Error message
-     
-       -  <div float="left">
-           <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="460px" height="200px" />
-          </div>
+    - Error message
+
+      - <div float="left">
+         <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="460px" height="200px" />
+        </div>
 
   - **As a new user I would like to easily get around the website.**
+
     - The site contains a navigation menu by clicking on a hamburger button.
     - The navigation menu then contains links to each element of interest within the site.
-      
-      - To Open navbar 
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
-          </div>
+      - To Open navigation menu.
 
-     - Opened navbar 
+      - <div float="left">
+          <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="320px" height="140px" />
+        </div>
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
-          </div>
+    - Opened navigation menu.
 
-    - The navbar will also change depending on what destination the user has clicked.
+      - <div float="left">
+          <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
+        </div>
+
+    - The navigation menu will also change depending on what destination the user has clicked.
     - The destination page has a link in the title to link back to all destinations so the user doesn't have to use the browser back button.
-     
-       -  <div float="left">
-           <img src="assets/images/readme/testing/user-stories/other-link.png" alt="Image other destinations link" width="270px" height="110px" />
-          </div>
 
-    - The destination navbar also has a link to all destinations.
-      - Destination navbar
+      - <div float="left">
+         <img src="assets/images/readme/testing/user-stories/other-link.png" alt="Image other destinations link" width="270px" height="110px" />
+        </div>
+
+    - The destination navigation menu also has a link to all destinations.
+
+      - Destination navigation menu
 
         - <div float="left">
              <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="300px" height="200px" />
            </div>
-    - The booking enquiry form will link back to the landing page and the home page specials if the user has linked here from the landing page.
-    - The booking enquiry form navbar will link back to the user's particular destination also and the particular destination packages if they have linked here from the destination page.
 
-      - Booking enquiry navbar
+    - The booking enquiry form will link back to the landing page and the home page specials if the user has linked here from the landing page.
+    - The booking enquiry form navigation menu will link back to the user's particular destination also and the particular destination packages if they have linked here from the destination page.
+
+      - Booking enquiry navigation menu
 
         - <div float="left">
              <img src="assets/images/readme/features/destination-specific-nav.png" alt="Image of destination-specific navigation" width="350px" height="290px" />
            </div>
-
 
 - ### Repeat User
 
@@ -173,27 +178,25 @@
     - The user can link to the booking enquiry page from the landing page navigation menu.
     - The user can also link to the booking enquiry from the booking page navigation.
     - Each package on both the landing page and on each destination page has a link clearly labelled "Enquire Now" which leads to the form.
-       
-        - <div float="left">
-           <img src="assets/images/readme/testing/user-stories/enquire-link.png" alt="Image enquire now link" width="260px" height="100px" />
-          </div>
-    
-    - The user can then fill out the form and click submit.
-    - Once submitted successfully the user will get a message telling them a customer representative will contact them soon re their booking.
-    - If there is an issue the user will be alerted of the error and asked to try again.
-      
-       -  <div float="left">
-             <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="400px" height="250px" />
-           </div>
 
-        
+      - <div float="left">
+         <img src="assets/images/readme/testing/user-stories/enquire-link.png" alt="Image enquire now link" width="260px" height="100px" />
+        </div>
+
+    - The user can then fill out the form and click submit.
+    - Once submitted successfully the user will get a message telling them a customer representative will contact them soon regarding their booking.
+    - If there is an issue the user will be alerted of the error and asked to try again.
+
+      - <div float="left">
+           <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="400px" height="250px" />
+         </div>
 
   - **As a repeat user I would like to be able to contact the company.**
 
     - The landing page contains a contact section.
     - This section is linked to from the navigation menu of all pages.
     - The contact contains the companies email, general phone number and bookings number.
-      
+
       - <div float="left">
              <img src="assets/images/readme/testing/user-stories/contact-info.png" alt="Image of contact information" width="290px" height="180px" />
         </div>
@@ -214,49 +217,51 @@
     - The links are marked with the social media logos.
     - They have a hover effect to show they are clickable.
     - Upon clicking they will open the relevant social media site on a new page or tab.
-      
-       - <div float="left">
+
+      - <div float="left">
              <img src="assets/images/readme/testing/user-stories/social.png" alt="Image of social media links" width="850px" height="80px" />
         </div>
 
-  - As a repeat user I would like to be able to search for local attractions for each destination.
+  - **As a repeat user I would like to be able to search for local attractions for each destination.**
+
     - Each destination contains a map section clearly titled "Map of local attractions.
     - The section includes a list of buttons titled "choose an attraction".
     - When the user clicks on one of these buttons the map will fill with markers of different attractions.
-    - if the user then clicks on a marker the result section will fill with details of the attraction.
+    - If the user then clicks on a marker the result section will fill with details of the attraction.
     - The map has been programmed to empty if there are markers on it to keep it all clean.
 
       - Map Section
 
-         - <div float="left">
-              <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="400px" height="210px" />
-           </div>
+        - <div float="left">
+             <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="400px" height="210px" />
+          </div>
 
       - Map section When button Presses
 
-         - <div float="left">
-              <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="400px" height="210px" />
-           </div>
+        - <div float="left">
+             <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="400px" height="210px" />
+          </div>
+
       - Map section result when marker pressed
 
-         - <div float="left">
-             <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="400px" height="210px" />
-           </div>
+        - <div float="left">
+            <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="400px" height="210px" />
+          </div>
 
 - Regular Visitor
 
-  - As a regular user I would like to see if there are any offers.
+  - **As a regular user I would like to see if there are any offers.**
 
     - The landing page contains a Packages section clearly labelled "Our package offers"
     - The user can get to this from scrolling or from the navigation menu on each page.
     - These offers then contain details of the offer.
     - Once clicked the user will be taken to the booking enquiry form.
-      
-       -  <div float="left">
-            <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="380px" height="160px" />
-          </div>
 
-  - As a regular visitor I would like to be able to see what the travel packages the company does.
+      - <div float="left">
+          <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="380px" height="160px" />
+        </div>
+
+  - **As a regular visitor I would like to be able to see what the travel packages the company does.**
 
     - Each destination page contains a packages section contain 3 different packages.
     - The user can get to this from scrolling or from the destination navigation menu.
@@ -264,21 +269,21 @@
     - Each package contains a link "Enquire now" which leads to the booking enquiry form.
     - If the user clicks the "Enquire Now" button to get to the booking form the booking navigation menu will then include a link linking back to the specific destinations packages section.
 
-       - <div float="left">
-             <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="590px" height="205px" />
-           </div>
+      - <div float="left">
+            <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="590px" height="205px" />
+          </div>
 
-  - As a regular user, I would like to see reviews before I decide to book.
+  - **As a regular user, I would like to see reviews before I decide to book.**
 
     - If the user scrolls down on the landing page there is the reviews section containing 3 customer reviews.
     - The user can also access this from the navigation menu.
     - One customer review is shown with the customer's name highlighted.
     - The other customer's names can then be clicked to show their reviews.
     - I have used a hover effect and used arrows to encourage the user to click on the customer's names.
-      
-      -  <div float="left">
-            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="540px" height="200px" />
-          </div>
+
+      - <div float="left">
+           <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="540px" height="200px" />
+         </div>
 
       - Second customer clicked
       - <div float="left">
@@ -287,39 +292,86 @@
 
 - Website owner
 
- - **As the owner I want my customers to be able to find information easily.**
+- **As the owner I want my customers to be able to find information easily.**
 
-    - The site has been laid out with all information clear and concise.
-    - All elements of interest have been linked to in the navigation menu.
-    - Upon scrolling sections have very clear headings.
-      
-      - 
-    - All links have been highlighted and given hover effects to show the user they are clickable.
-       
+  - The site has been laid out with all information clear and concise.
+  - All elements of interest have been linked to in the navigation menu.
+  - Upon scrolling sections have very clear headings.
 
-  - As the owner I want my customers to be able to enquire about holiday packages.
+    - <div float="left">
+          <img src="assets/images/readme/testing/user-stories/section-heading-one.png" alt="Image of map heading" width="650px" height="120px" />
+      </div>
 
-    - I have created the booking enquiry form for the users to fill in and enquire about bookings.
-    - This can be accessed from the navigation menu of both the landing page and the destination page.
-    - All packages contain a link to this page.
-    - Upon completion of the form the user can then submit and emailjs will send the enquiry to the website owner.
+    - <div float="left">
+        <img src="assets/images/readme/testing/user-stories/section-heading-two.png" alt="Image of destination heading" width="650px" height="120px" />
+      </div>
 
-  - As the owner I want my customers to be able to contact me easily by whichever means they choose.
+  - All links have been highlighted and given hover effects to show the user they are clickable.
+    - <div float="left">
+        <h3>Link</h3>
+         <img src="assets/images/readme/testing/user-stories/link.png" alt="image of link" width="350px" height="150px" />
+        <h3>Link Hover</h3>
+         <img src="assets/images/readme/testing/user-stories/link-hover.png" alt="image of link hover" width="350px" height="150px" />
+      </div>
 
-    - The landing page contains a contact section at the bottom.
-    - This can be reached by scrolling or from all the navigation menus.
-    - This section contains the company phone number, a booking phone number, the company email, and a contact form the user can complete with their details so the company can then email them.
+- **As the owner I want my customers to be able to enquire about holiday packages.**
 
-  - As a site owner I want my customers to be able to navigate back to all destinations from the destination page.
-  
-    - The heading section contains a link entitled "All destinations".
-    - This link contains an arrow pointing back to show the user it links back to all the destinations.
-    - There is also a link in the navigation menus.
+  - I have created the booking enquiry form for the users to fill in and enquire about bookings.
+  - This can be accessed from the navigation menu of both the landing page and the destination page.
+  - All packages contain a link to this page.
+  - Upon completion of the form the user can then submit and emailjs will send the enquiry to the website owner.
 
-  - As a site owner I want my customers to be able to navigate back to their chosen destination from the booking enquiry form.
+    - Booking Enquiry Form
 
-    - The booking navigation menu will change depending on what destination the user has navigated here from.
-    - It will then contain a link to link back to the particular destination page and also a link to this destinations packages.
+    - <div float="left">
+         <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="600px" height="400px" />
+       </div>
+
+    - Modal on form submit
+
+    - <div float="left">
+        <img src="assets/images/readme/features/booking-modal.png" alt="Image of booking modal" width="450px" height="300px" />
+      </div>
+
+    - Booking Enquiry Error.
+
+    - <div float="left">
+        <img src="assets/images/readme/features/booking-error.png" alt="Image of booking error" width="550px" height="200px" />
+      </div>
+
+- **As the owner I want my customers to be able to contact me easily by whichever means they choose.**
+
+  - The landing page contains a contact section at the bottom.
+  - This can be reached by scrolling or from all the navigation menus.
+  - This section contains the company phone number, a booking phone number, the company email, and a contact form the user can complete with their details so the company can then email them.
+
+    - <div float="left">
+          <img src="assets/images/readme/testing/user-stories/contact-section.png" alt="Image of contact section" width="650px" height="120px" />
+      </div>
+
+- **As a site owner I want my customers to be able to navigate back to all destinations from the destination page.**
+
+  - The heading section contains a link entitled "All destinations".
+  - This link contains an arrow pointing back to show the user it links back to all the destinations.
+
+    - - <div float="left">
+           <img src="assets/images/readme/testing/user-stories/other-link.png" alt="Image other destinations link" width="270px" height="110px" />
+        </div>
+
+  - There is also a link in the navigation menus.
+
+   - <div float="left">
+          <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="340px" height="220px" />
+        </div>
+
+- **As a site owner I want my customers to be able to navigate back to their chosen destination from the booking enquiry form.**
+
+  - The booking navigation menu will change depending on what destination the user has navigated here from.
+  - It will then contain a link to link back to the particular destination page and also a link to this destinations packages.
+
+    - <div float="left">
+        <img src="assets/images/readme/features/destination-specific-nav.png" alt="Image of destination-specific navigation" width="350px" height="290px" />
+    </div>
 
 ## Test and bugs during development.
 
@@ -331,7 +383,7 @@
 
 - ### Navigation menu.
 
-  - I followed the Code and Create a youtube tutorial to create my navbar (details in the credit section).
+  - I followed the Code and Create a youtube tutorial to create my navigation menu (details in the credit section).
   - Once I had the initial code completed I noticed the navigation menu would move the page to the particular area but not disappear.
   - To fix the issue I used the `document.querySelectorAll()` to add a click event listener to each item within the navigation list to toggle the change class.
   - I then noticed this only worked for the first element so I used the `.forEach()` function on the list and this then placed the event listener for each element on the navigation list.
@@ -559,6 +611,7 @@
   I have written tests for each page and each section, and they have all passed. Here I will document each test and their pass messages.
 
 - The test can be found In a seperate repository here.
+
   - [Cypress tests for Milestone 2](https://github.com/BrianWhelanDublin/milestone2-cypress-test)
 
 - ### Homepage
@@ -820,25 +873,27 @@
         </div>
 
 - ### Footer Tests
-  - To test the footer section I've checked that each link contains both the correct href and the target is set to _blank.
-   I've also clicked each link to see if it opens a new tab. I've then run each test across each page.
-     - Visit page.
-     - Scroll to the footer section.
-     - Check each link for the correct href and target.
-     - Then click on each item.
-     - Repeat for each page.
 
-       - <div float="left">
+  - To test the footer section I've checked that each link contains both the correct href and the target is set to \_blank.
+    I've also clicked each link to see if it opens a new tab. I've then run each test across each page.
+
+    - Visit page.
+    - Scroll to the footer section.
+    - Check each link for the correct href and target.
+    - Then click on each item.
+    - Repeat for each page.
+
+      - <div float="left">
           <img src="assets/images/readme/testing/cy-footer/footer-open-test.png" alt="image of footer open test" width="300px" height="200px" />
           <img src="assets/images/readme/testing/cy-footer/footer-href-test.png" alt="image of footer attribute tests" width="300px" height="550px" />
           <img src="assets/images/readme/testing/cy-footer/footer-open-links.png" alt="image of footer link test" width="300px" height="250px" />
           <img src="assets/images/readme/testing/cy-footer/footer-links-test.png" alt="image of all links opening test" width="900px" height="350px" />
         </div>
 
-      - <div float="left">
-           <h4>All pages Fotter test</h4>
-            <img src="assets/images/readme/testing/cy-footer/footer-all-pages.png" alt="image of visit booking page test" width="325px" height="250px" />
-        </div>
+    - <div float="left">
+         <h4>All pages Fotter test</h4>
+          <img src="assets/images/readme/testing/cy-footer/footer-all-pages.png" alt="image of visit booking page test" width="325px" height="250px" />
+      </div>
 
 ## Manual Testing.
 
@@ -846,124 +901,125 @@
      - The destinations links were all tested manually to confirm the link to the correct destination page on numerous occasions.
      - The same was done for each package link.
 
-   - ### Destination map. 
-     - Each destination page was checked to confirm the map was showing the correct location.
-     - Each button was the click to check each search was completed correctly.
-     - Then the markers were also checked to confirm they contained the correct type of information.
-     - This process was completed constantly during development and several times during the testing phase.
+- ### Destination map.
 
-  - ### Links.
-    - All links throughout the website have been tested on several occasions to confirm they all lead to the correct link.
+  - Each destination page was checked to confirm the map was showing the correct location.
+  - Each button was the click to check each search was completed correctly.
+  - Then the markers were also checked to confirm they contained the correct type of information.
+  - This process was completed constantly during development and several times during the testing phase.
 
-  - ### Errors .
-    - Each email.js form has been tested by deliberately causing an error to confirm the error function is working.
-    - The destination page has been tested with both an empty code and a wrong code in the URL to confirm the error messages are rendered to the page.
-    - Google maps and places API have also been tested by deliberately causing an error to confirm the error message will appear.
-    - Images of the error codes can be found in the features section of the README.
+- ### Links.
+
+  - All links throughout the website have been tested on several occasions to confirm they all lead to the correct link.
+
+- ### Errors .
+  - Each email.js form has been tested by deliberately causing an error to confirm the error function is working.
+  - The destination page has been tested with both an empty code and a wrong code in the URL to confirm the error messages are rendered to the page.
+  - Google maps and places API have also been tested by deliberately causing an error to confirm the error message will appear.
+  - Images of the error codes can be found in the features section of the README.
 
 ## Contact Form Testing.
 
-  - Each form throughout the site was tested to confirm their functionality.
-  - Firstly I tried to submit an empty form to test the required function.
-  - I then tried to enter the wrong input into the email inputs to confirm it would request that the user input an email.
-  - I then completed each from to confirm the successful modal appeared.
-  - I also then deliberately caused an error to confirm the error alert had popped up.
-  - Images of the error messages and the successful messages can be found in the features section of the README.
+- Each form throughout the site was tested to confirm their functionality.
+- Firstly I tried to submit an empty form to test the required function.
+- I then tried to enter the wrong input into the email inputs to confirm it would request that the user input an email.
+- I then completed each from to confirm the successful modal appeared.
+- I also then deliberately caused an error to confirm the error alert had popped up.
+- Images of the error messages and the successful messages can be found in the features section of the README.
 
-    - <div float="left">
+  - <div float="left">
        <img src="assets/images/readme/testing/fill-email.png" alt="image email input error" width="400px" height="125px" />
        <img src="assets/images/readme/testing/fill-in-field.png" alt="image of empty input" width="400px" height="115px" />
     </div>
-  
+
 ## Code validators
 
-  - I've passed all code through the relevant code validators and seen the following results.
+- I've passed all code through the relevant code validators and seen the following results.
 
-    - HTML Validator.
-      - index.html pass the validator without any warnings or errors.
+  - HTML Validator.
 
-        - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/index.html-validator.png" alt="image of index.html code validator result" width="400px" height="200px" />
-          </div>
+    - index.html pass the validator without any warnings or errors.
 
-      - destination.html had one warning for an empty heading but this heading will be filled when the javascript is loaded.
-       
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/index.html-validator.png" alt="image of index.html code validator result" width="400px" height="200px" />
+        </div>
 
-        - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/destination-validator.png" alt="image of destination.html code validator result" width="350px" height="200px" />
-          </div>
+    - destination.html had one warning for an empty heading but this heading will be filled when the javascript is loaded.
 
-      - booking.html passed the validator with no issues.
-        
-        -  <div float="left">
-            <img src="assets/images/readme/testing/code-validators/booking.html-validator.png" alt="image of booking.html code validator result" width="450px" height="200px" />
-          </div>
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/destination-validator.png" alt="image of destination.html code validator result" width="350px" height="200px" />
+        </div>
 
-  - CSS
-    
-    - My CSS was passed through with no errors. It received one warning.
+    - booking.html passed the validator with no issues.
 
-      -  <div float="left">
-            <img src="assets/images/readme/testing/code-validators/css-warning.png" alt="image of css warning result" width="500px" height="180px" />
-          </div>
-    
-    - I researched it and it seems that the validator will always warn for this as these are browser-specific rules. See known bugs for further explanation.
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/booking.html-validator.png" alt="image of booking.html code validator result" width="450px" height="200px" />
+        </div>
 
-    - CSS no errors
-     
-       -<div float="left">
-            <img src="assets/images/readme/testing/code-validators/css-validator.png" alt="image of css no errors" width="500px" height="250px" />
-          </div>
+- CSS
 
-  - Javascript
-  
-    - EmailJS
-      - My email js has passed the validator. 
-      The undefined variables are $ from jquery bootstrap modal selector,
+  - My CSS was passed through with no errors. It received one warning.
+
+    - <div float="left">
+         <img src="assets/images/readme/testing/code-validators/css-warning.png" alt="image of css warning result" width="500px" height="180px" />
+       </div>
+
+  - I researched it and it seems that the validator will always warn for this as these are browser-specific rules. See known bugs for further explanation.
+
+  - CSS no errors
+
+    -<div float="left">
+    <img src="assets/images/readme/testing/code-validators/css-validator.png" alt="image of css no errors" width="500px" height="250px" />
+    </div>
+
+- Javascript
+
+  - EmailJS
+
+    - My email js has passed the validator.
+      The undefined variables are \$ from jquery bootstrap modal selector,
       and emailjs from the script tag in the HTML.
-        
-        -  <div float="left">
-            <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of emailjs code validator" width="500px" height="400px" />
-          </div>
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of emailjs code validator" width="500px" height="400px" />
+        </div>
 
-    - Maps javascript.
-      - My maps javascript has passed the validator.
-       The undefined variables are from the google script that is in the HTML page, 
-       and my renderMap function that is called in the main javascript file.
-        
-        - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of maps javascript code validator" width="500px" height="450px" />
-          </div>
+  - Maps javascript.
 
-    - Rest Countries javascript
-      - My rest countries javascript passed the validator. 
-      The unused selector is the $ from jquery and my getCountryData function which is called in my main javascript file.
-       
-        - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/rest-countries-validator.png" alt="image of rest countries javascript code validator" width="500px" height="500px" />
-          </div>
+    - My maps javascript has passed the validator.
+      The undefined variables are from the google script that is in the HTML page,
+      and my renderMap function that is called in the main javascript file.
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/emailjs-validator.png" alt="image of maps javascript code validator" width="500px" height="450px" />
+        </div>
 
-    - Main javascript file.
-      - My main javascript file has passed the validator. Again the undefined variables are the $ from jQuery and my two functions that are from other files.
+  - Rest Countries javascript
 
-        - <div float="left">
-            <img src="assets/images/readme/testing/code-validators/main-js-validator.png" alt="image of main javascript code validator" width="500px" height="500px" />
-          </div>
+    - My rest countries javascript passed the validator.
+      The unused selector is the \$ from jquery and my getCountryData function which is called in my main javascript file.
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/rest-countries-validator.png" alt="image of rest countries javascript code validator" width="500px" height="500px" />
+        </div>
+
+  - Main javascript file.
+
+    - My main javascript file has passed the validator. Again the undefined variables are the \$ from jQuery and my two functions that are from other files.
+
+      - <div float="left">
+          <img src="assets/images/readme/testing/code-validators/main-js-validator.png" alt="image of main javascript code validator" width="500px" height="500px" />
+        </div>
 
 ## Accessibility
 
-  -  Google lighthouse was used to confirm the site accessibility was correct. When first tested, lighthouse suggested adding aria labels to my navigation button and the form elements on the landing page. 
+- Google lighthouse was used to confirm the site accessibility was correct. When first tested, lighthouse suggested adding aria labels to my navigation button and the form elements on the landing page.
   Lighthouse also suggested adding rel="noreferrer" to the links in my nav to improve security. I have made these changes and the site has passed with 100% in accessibility throughout each page.
 
-     - <div float="left">
-         <img src="assets/images/readme/testing/accessibility.png" alt="image of accessibility score" width="400px" height="250px" />
-       </div>
-
+  - <div float="left">
+      <img src="assets/images/readme/testing/accessibility.png" alt="image of accessibility score" width="400px" height="250px" />
+    </div>
 
 ## Known bugs.
 
-  - CSS transitions. 
-    - My CSS transitions were running on page load. I've found several solutions to fix it and have explained the one I used earlier in the bugs during the development section. 
-    This code seems to have caused a warning than with my CSS validation. I have researched it and tried to remove the browser-specific selectors but I noticed the bug seemed to return on some occasions when I refreshed the page. 
+- CSS transitions.
+  - My CSS transitions were running on page load. I've found several solutions to fix it and have explained the one I used earlier in the bugs during the development section.
+    This code seems to have caused a warning than with my CSS validation. I have researched it and tried to remove the browser-specific selectors but I noticed the bug seemed to return on some occasions when I refreshed the page.
     It could be the browser issue as some suggested it only happens on google chrome. I have put the browser-specific selectors back and it seems to have fixed the situation from my testing.
-
