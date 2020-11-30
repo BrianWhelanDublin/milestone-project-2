@@ -9,7 +9,6 @@
   - Each destination then fills out the destination page with a title section, information about the destination, a map with search capabilities for local attractions and destination packages section.
   - The packages then lead to a booking enquiry form which can be filled out and sent to make a booking enquiry.
 
-
 ## Live project
 
 - [View the live project here.](https://brianwhelandublin.github.io/milestone-project-2/)
@@ -28,63 +27,64 @@
 
 <div align="center"><img src="assets/images/readme/responsive/responsive-booking-page.png"></div>
 
-
 - All screenshots created using [Am I responsive](http://ami.responsivedesign.is/)
-
 
 ## Table of Contents.
 
-  * [User experience](#user-experience)
-    + [User Stories](#user-stories)
-    + [WireFrames](#wireframes)
-  * [Design](#design)
-      - [Colour Scheme](#colour-scheme)
-      - [Typography](#typography)
-      - [Imagery](#imagery)
-      - [Icons](#icons)
-  * [Features](#features)
-    + [Landing Page Features.](#landing-page-features)
-      - [navbar](#navbar)
-      - [Destination Sliders](#destination-sliders)
-      - [Reviews](#reviews)
-      - [Special packages](#special-packages)
-      - [Newsletter](#newsletter)
-      - [Contact Form](#contact-form)
-    + [Destination Page Features](#destination-page-features)
-      - [Destination page](#destination-page)
-      - [Heading section](#heading-section)
-      - [Destination Navbar](#destination-navbar)
-      - [Destination details.](#destination-details)
-      - [Destination Map.](#destination-map)
-      - [Destination packages](#destination-packages)
-      - [Destination Error](#destination-error)
-    + [Booking Enquiry Form](#booking-enquiry-form)
-      - [The booking enquiry form](#the-booking-enquiry-form)
-      - [Booking Enquiry Navigation.](#booking-enquiry-navigation)
-      - [Booking modal](#booking-modal)
-      - [Booking Enquiry Error](#booking-enquiry-error)
-      - [404 error page.](#404-error-page)
-  * [Technologies used](#technologies-used)
-    + [Languages Used.](#languages-used)
-    + [Frameworks Libraries and Programs.](#frameworks-libraries-and-programs)
-    + [Application Programming Interface (Api's)](#application-programming-interface--api-s-)
-  * [Testing](#testing)
-  * [Deployment](#deployment)
-    + [Github, Gitpod, Git and Gitub pages](#github--gitpod--git-and-gitub-pages)
-      - [To start the project I used Github and Gitpod.](#to-start-the-project-i-used-github-and-gitpod)
-      - [Git](#git)
-      - [To make my project live I then used Github pages.](#to-make-my-project-live-i-then-used-github-pages)
-  * [Credits](#credits)
-    + [Code](#code)
-      - [Stack Overflow.](#stack-overflow)
-      - [You tube Tutorials.](#you-tube-tutorials)
-        * [Code and Create youtube tutorial.](#code-and-create-youtube-tutorial)
-        * [Dev Ed Visual effects in javascript tutorial.](#dev-ed-visual-effects-in-javascript-tutorial)
-      - [Code Institute.](#code-institute)
-      - [Google Maps Documentation.](#google-maps-documentation)
-    + [Content](#content)
-    + [Media](#media)
-    + [Acknowledgements](#acknowledgements)
+- [User experience](#user-experience)
+  * [User Stories](#user-stories)
+  * [WireFrames](#wireframes)
+- [Design](#design)
+    + [Colour Scheme](#colour-scheme)
+    + [Typography](#typography)
+    + [Imagery](#imagery)
+    + [Icons](#icons)
+- [Features](#features)
+  * [Landing Page Features.](#landing-page-features)
+    + [Navigation Menu.](#navigation-menu)
+    + [Destination Sliders.](#destination-sliders)
+    + [Reviews](#reviews)
+    + [Special packages.](#special-packages)
+    + [Newsletter](#newsletter)
+    + [Contact Form.](#contact-form)
+  * [Destination Page Features](#destination-page-features)
+    + [Destination page .](#destination-page-)
+    + [Heading section](#heading-section)
+    + [Destination Navigation Menu.](#destination-navigation-menu)
+    + [Destination details.](#destination-details)
+    + [Destination Map.](#destination-map)
+    + [Destination packages.](#destination-packages)
+    + [Destination Error.](#destination-error)
+  * [Booking Enquiry Form](#booking-enquiry-form)
+    + [The booking enquiry form.](#the-booking-enquiry-form)
+    + [Booking Enquiry Navigation Menu.](#booking-enquiry-navigation-menu)
+    + [Booking modal.](#booking-modal)
+    + [Booking Enquiry Error.](#booking-enquiry-error)
+  * [404 Error Page](#404-error-page)
+    + [404 error page.](#404-error-page)
+  * [Features left to Implement.](#features-left-to-implement)
+- [Technologies used.](#technologies-used)
+  * [Languages Used.](#languages-used)
+  * [Frameworks Libraries and Programs.](#frameworks-libraries-and-programs)
+  * [Application Programming Interface (API's)](#application-programming-interface--api-s-)
+- [Testing](#testing)
+    + [Testing.](#testing)
+- [Deployment](#deployment)
+  * [Github, Gitpod, Git and Github pages](#github--gitpod--git-and-github-pages)
+    + [To start the project I used Github and Gitpod.](#to-start-the-project-i-used-github-and-gitpod)
+    + [Git](#git)
+    + [To make my project live I then used Github pages.](#to-make-my-project-live-i-then-used-github-pages)
+- [Credits](#credits)
+  * [Code](#code)
+    + [Stack Overflow.](#stack-overflow)
+    + [Youtube Tutorials.](#youtube-tutorials)
+      - [Code and Create youtube tutorial.](#code-and-create-youtube-tutorial)
+      - [Dev Ed Visual effects in javascript tutorial.](#dev-ed-visual-effects-in-javascript-tutorial)
+    + [Code Institute.](#code-institute)
+    + [Google Maps Documentation.](#google-maps-documentation)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgements](#acknowledgements)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -95,39 +95,40 @@
 ### User Stories
 
 - New Visitor
-  - As a new user I would like to know what the company does upon opening the site.
-  - As a new user I would like to get information about the company.
-  - As a new user I would like to see what destinations the company travel too.
-  - As a new user I would like to see information about each destination.
-  - As a new user I would like to sign up to a newsletter.
-  - As a new user I would like to easily get around the website.
+
+  - As a new user, I would like to know what the company does upon opening the site.
+  - As a new user,I would like to get information about the company.
+  - As a new user, I would like to see what destinations the company travel too.
+  - As a new user, I would like to see information about each destination.
+  - As a new user, I would like to sign up to a newsletter.
+  - As a new user, I would like to easily get around the website.
 
 - Repeat users
 
-  - As a repeat user I would like to make a booking enquiry.
-  - As a repeat user I would like to be able to contact the company.
-  - As a repeat user I would like to send a contact message.
-  - As a repeat user I would like to be able to see the companies social media.
-  - As a repeat user I would like to be able to search for local attractions for each destination.
+  - As a repeat user, I would like to make a booking enquiry.
+  - As a repeat user, I would like to be able to contact the company.
+  - As a repeat user, I would like to send a contact message.
+  - As a repeat user, I would like to be able to see the companies social media.
+  - As a repeat user, I would like to be able to search for local attractions for each destination.
 
-- Regular Visitor
+- Regular user
 
-  - As a regular user I would like to see if there are any new offers.
-  - As a regular visitor I would like to be able to see what the travel packages the company does.
-  - As a regular user I would like to see reviews before I decide to book.
-  
+  - As a regular user, I would like to see if there are any new offers.
+  - As a regular user, I would like to be able to see what the travel packages the company does.
+  - As a regular user, I would like to see reviews before I decide to book.
+
 - Website owner
 
-  - As the owner I want my customers to be able to find information easily.
-  - As the owner I want my customers to be able to enquire about holiday packages.
-  - As the owner I want my customers to be able to contact me easily by whichever means they choose.
-  - As a site owner I want my customers to be able to navigate back to all destinations from the destination page.
-  - As a site owner I want my customers to be able to navigate back to their chosen destination from the booking enquiry form.
+  - As the owner, I want my customers to be able to find information easily.
+  - As the owner, I want my customers to be able to enquire about holiday packages.
+  - As the owner, I want my customers to be able to contact me easily by whichever means they choose.
+  - As a site owner, I want my customers to be able to navigate back to all destinations from the destination page.
+  - As a site owner, I want my customers to be able to navigate back to their chosen destination from the booking enquiry form.
 
 ### WireFrames
 
 - I've created WireFrames using Balsamiq and have included the links to access them in pdf form.
-  
+
   - Landing page
     - [Desktop](assets/wireframes/landingpage-desktop-wireframe.pdf)
     - [Tablet](assets/wireframes/landingpage-tablet-wireframe.pdf)
@@ -141,8 +142,6 @@
     - [Tablet](assets/wireframes/bookingpage-tablet.pdf)
     - [Phone](assets/wireframes/bookingpage-phone.pdf)
 
-
-
 ## Design
 
 #### Colour Scheme
@@ -150,7 +149,6 @@
 - I've created a dark theme for this website using a dark Russian black #181822 as my main background colour. My text is an off white #fafafb to contrast against the dark background.
   I have alternated the colours on hover effects too to show the user what elements are clickable.
   - <p align="center"><img src="assets/images/readme/design/colour-scheme.png" alt="Image of colour scheme" height="200px" width="350px"/></p>
-  
 
 #### Typography
 
@@ -158,7 +156,7 @@
   I've imported the Mulish font to my CSS stylesheet from Google Fonts.
   I used sans-serif as a fall-back font in the case for any reason my fonts were not imported.
 - <p align="center"><img src="assets/images/readme/design/font.png" alt="Image of google font" height="200px" width="300px"/></p>
-   
+
 
 #### Imagery
 
@@ -170,294 +168,307 @@
 
 - I used line awesome for icons for social media links which I've included in the footer. I've also used arrows on some links to help draw attention to them and to show the user they are clickable.
 
-
 ## Features
 
 ### Landing Page Features.
 
- -  #### navbar
+- #### Navigation Menu.
 
-   - With the help of Code and Create youtube tutorial (details in the credit section) I have created a hamburger menu. The navbar appears on click of the hamburger and then disappears on a click of the x. The navbar also disappears when you click an option in the list. The list items background colour and text colour also change on hover.
+- With the help of Code and Create youtube tutorial (details in the credit section) I have created a hamburger menu. The navbar appears on click of the hamburger and then disappears on a click of the x. The navbar also disappears when you click an option in the list. The list items background colour and text colour also change on hover.
 
-     - To Open navbar 
+  - To Open Navigation Menu.
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="420px" height="200px" />
-          </div>
-     - Opened navbar 
+    - <div float="left">
+        <img src="assets/images/readme/features/navbar-hamburger.png" alt="Image of navbar hamburger" width="420px" height="200px" />
+      </div>
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="500px" height="260px" />
-          </div>
+  - Opened Navigation Menu.
 
-     - Nav item hover
+    - <div float="left">
+        <img src="assets/images/readme/features/navbar-open.png" alt="Image of navbar opened" width="500px" height="260px" />
+      </div>
 
-       -  <div float="left">
-            <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="500px" height="300px" />
-          </div>
+  - Navigation item hover.
 
-  - #### Destination Sliders
+    - <div float="left">
+        <img src="assets/images/readme/features/navbar-hover.png" alt="Image of navbar hover" width="500px" height="300px" />
+      </div>
 
-    - Using lightslider (details in technologies used section) I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the particular object in the array.
-      - City Destinations
+- #### Destination Sliders.
 
-        -  <div float="left">
-            <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="600px" height="200px" />
-          </div>
+  - Using lightslider (details in technologies used section) I have created two lists of destinations. One city destinations and two beach destinations. The destination details are pulled from a javascript array od destination objects I have created. To add new destinations in the future or to change destination details you simply have to edit the particular object in the array.
 
-      - Beach Destinations
+    - City Destinations
 
-        - <div float="left">
-            <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="700px" height="200px" />
-          </div>
-          
+      - <div float="left">
+          <img src="assets/images/readme/features/citydestinations.png" alt="Image of city destination slider" width="600px" height="200px" />
+        </div>
 
-  - #### Reviews 
+    - Beach Destinations
 
-    - The reviews section features 3 reviews by different customers. On page opening, one review is shown with the customer's name who wrote the review highlighted with a box shadow to show the user the review was written by them. On click of the next person, their review will then be shown and their name highlighted. I have also added directional arrows to encourage users to click.
-      - Review on open 
+      - <div float="left">
+          <img src="assets/images/readme/features/beachdestinations.png" alt="Image of beach destination slider" width="700px" height="200px" />
+        </div>
 
-        - <div float="left">
-            <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="650px" height="250px" />
-          </div>
+- #### Reviews
 
-      - Second customer clicked
-        - <div float="left">
-            <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="650px" height="250px" />
-          </div>
-        
+  - The reviews section features 3 reviews by different customers. On page opening, one review is shown with the customer's name who wrote the review highlighted with a box shadow to show the user the review was written by them. On click of the next person, their review will then be shown and their name highlighted. I have also added directional arrows to encourage users to click.
 
- - #### Special packages
-   - This feature can be used by the site owner to showcase packages to the user that are on special offer.
-     - Special packages section
-       - <div float="left">
-            <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="580px" height="240px" />
-          </div>
+    - Review on open.
 
- - #### Newsletter 
-   - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a successful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
-     - Newsletter section. 
-       - <div float="left">
-            <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="650px" height="300px" />
-          </div>
+      - <div float="left">
+          <img src="assets/images/readme/features/review1.png" alt="Image of review on page open" width="650px" height="250px" />
+        </div>
 
-     - Successfully submitted.
+    - Second customer clicked.
+      - <div float="left">
+          <img src="assets/images/readme/features/review2.png" alt="Image of the second reviewer clicked" width="650px" height="250px" />
+        </div>
 
-       - <div float="left">
-            <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="650px" height="300px" />
-          </div>
+- #### Special packages.
 
-     - Error message
-     
-       - <div float="left">
-          <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="540px" height="220px" />
+  - This feature can be used by the site owner to showcase packages to the user that are on special offer.
+    - Special packages section.
+      - <div float="left">
+           <img src="assets/images/readme/features/packages-offer.png" alt="Image of packages on offer section" width="580px" height="240px" />
          </div>
 
- - #### Contact Form 
-    - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
-      -  Contact Form.
+- #### Newsletter
 
-         - <div float="left">
-             <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="350px" height="270px" />
-           </div>
-       
-      -  Sucessfully submited.
+  - This feature allows the user to sign up for a company newsletter. I have used emailJS here to send an email to the site owner and a reply to the user. I have also used bootstrap to show a modal on a successful submit to thank the user for signing up. If there was an error the site will alert the user that something has gone wrong and to please try again.
 
-         - <div float="left">
-             <img src="assets/images/readme/features/contact-success.png" alt="Image of modal" width="400px" height="260px" />
-           </div>
+    - Newsletter section.
 
-     - Error message
+      - <div float="left">
+           <img src="assets/images/readme/features/newsletter.png" alt="Image of newsletter section" width="650px" height="300px" />
+         </div>
 
-       - <div float="left">
-             <img src="assets/images/readme/features/contact-error.png" alt="Image of error message" width="420px" height="150px" />
-           </div>
-        
-### Destination Page Features 
-  
-  - #### Destination page 
-    - When a user clicks on a destination on the landing page it brings you to the destination page. All destinations have a unique code and by grabbing that code from the pages URL I have written code to fill the page differently for every destination. 
+    - Successfully submitted.
+
+      - <div float="left">
+           <img src="assets/images/readme/features/newsletter-success.png" alt="Image of successful modal" width="650px" height="300px" />
+         </div>
+
+    - Error message.
+
+      - <div float="left">
+         <img src="assets/images/readme/features/newsletter-error.png" alt="Image of error message" width="540px" height="220px" />
+        </div>
+
+- #### Contact Form.
+
+  - The contact section contains a small contact form for the user to contact the company. It is also connected to emailJs sending a message to the site owner. It waill also show a modal on successful completion and an error if something goes wrong.
+
+    - Contact Form.
+
+      - <div float="left">
+          <img src="assets/images/readme/features/contact.png" alt="Image of contact form" width="350px" height="270px" />
+        </div>
+
+    - Sucessfully submited.
+
+      - <div float="left">
+          <img src="assets/images/readme/features/contact-success.png" alt="Image of modal" width="400px" height="260px" />
+        </div>
+
+  - Error message.
+
+    - <div float="left">
+          <img src="assets/images/readme/features/contact-error.png" alt="Image of error message" width="420px" height="150px" />
+        </div>
+
+### Destination Page Features
+
+- #### Destination page .
+
+  - When a user clicks on a destination on the landing page it brings you to the destination page. All destinations have a unique code and by grabbing that code from the pages URL I have written code to fill the page differently for every destination.
 
 - #### Heading section
+
   - Each page has a unique image and title for each destination. I've included images from one city destination and one beach destination there are 10 in cities and 10 beaches in total.
-     - Kyoto Page
+  - Kyoto Page
 
-       - <div float="left">
-             <img src="assets/images/readme/features/kyoto-page.png" alt="Image of Kyoto page" width="400px" height="250px" />
-           </div>
-     - Fiji Page
+    - <div float="left">
+          <img src="assets/images/readme/features/kyoto-page.png" alt="Image of Kyoto page" width="400px" height="250px" />
+        </div>
 
-       - <div float="left">
-             <img src="assets/images/readme/features/fiji-page.png" alt="Image of Fiji page" width="400px" height="250px" />
-           </div>
-  
-- #### Destination Navbar
-  - The destination navbar has been coded to change for each destination. 
+  - Fiji Page
 
-    - Kyoto Navbar
+    - <div float="left">
+          <img src="assets/images/readme/features/fiji-page.png" alt="Image of Fiji page" width="400px" height="250px" />
+        </div>
 
-       - <div float="left">
-             <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="400px" height="260px" />
-           </div>
+- #### Destination Navigation Menu.
 
-     - Fiji Navbar
+  - The destination navigation menu has been coded to change for each destination.
 
-       -  <div float="left">
-             <img src="assets/images/readme/features/fiji-nav.png" alt="Image of fiji nav" width="400px" height="260px" />
-           </div>
-     
+    - Kyoto Navigation Menu.
+
+    - <div float="left">
+          <img src="assets/images/readme/features/kyoto-nav.png" alt="Image of kyoto nav" width="400px" height="260px" />
+        </div>
+
+  - Fiji Navigation Menu.
+
+    - <div float="left">
+         <img src="assets/images/readme/features/fiji-nav.png" alt="Image of fiji nav" width="400px" height="260px" />
+       </div>
 
 - #### Destination details.
-   - The destination details section take data from the rest countries Api and fills the details depending on the destination. I've included the country flag, it's capital and region, and it's language and currency. There is also a short description for each destination taking from the array i have created.
-     - Kyoto Details Section
 
-       - <div float="left">
-              <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="700px" height="200px" />
-           </div>
+  - The destination details section take data from the rest countries Api and fills the details depending on the destination. I've included the country flag, it's capital and region, and it's language and currency. There is also a short description for each destination taking from the array i have created.
 
-     - Fiji Details Section
+    - Kyoto Details Section.
 
-       - <div float="left">
-             <img src="assets/images/readme/features/fiji-details.png" alt="Image of Fiji details" width="700px" height="200px" />
-           </div>
-       
+      - <div float="left">
+             <img src="assets/images/readme/features/kyoto-details.png" alt="Image of Kyoto details" width="700px" height="200px" />
+          </div>
+
+    - Fiji Details Section.
+
+      - <div float="left">
+            <img src="assets/images/readme/features/fiji-details.png" alt="Image of Fiji details" width="700px" height="200px" />
+          </div>
+
 - #### Destination Map.
 
   - The destination Map section uses the Google maps API with the Google Places Library and the Marker Clusterer library. The map changes for each destination. The user is then provided with 5 buttons with different types of attractions to click. The buttons change colour on hover to encourage clicking. Once clicked the map will show the top 20 attractions with a marker. You can click on each marker to show the result.
-  - Map Section
+  - Map Section.
 
-       - <div float="left">
-              <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="550px" height="310px" />
-           </div>
-  - Map section When button Presses
+    - <div float="left">
+           <img src="assets/images/readme/features/map-section.png" alt="Image of of map section" width="550px" height="310px" />
+        </div>
 
-       - <div float="left">
-              <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="550px" height="310px" />
-           </div>
-  - Map section result when marker pressed
+  - Map section When button Presses.
 
-       - <div float="left">
-             <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="550px" height="310px" />
-           </div>
+    - <div float="left">
+           <img src="assets/images/readme/features/map-section-btn.png" alt="Image of map section with the button pressed" width="550px" height="310px" />
+        </div>
 
-- #### Destination packages
+  - Map section result when marker pressed.
+
+    - <div float="left">
+          <img src="assets/images/readme/features/map-section-results.png" alt="Image of map section with marker clicked" width="550px" height="310px" />
+        </div>
+
+- #### Destination packages.
 
   - Each destination has 3 different packages a 3 star, 4 star and 5 star and each link to the booking enquiry form.
-    - Destination Packages Section
 
-       - <div float="left">
-             <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="750px" height="240px" />
-           </div>
-       
+    - Destination Packages Section.
 
-- #### Destination Error 
+      - <div float="left">
+            <img src="assets/images/readme/features/destination-packages.png" alt="Image of destination packages section" width="750px" height="240px" />
+          </div>
+
+- #### Destination Error.
 
   - If for some reason a user gets to the destination page without a destination code in the URL or a wrong destination code the page will fill with an error to tell the user there has been no destination found. It also contains a link to the homepage where the user can pick a destination.
-    - Destination error 
+
+    - Destination error.
 
       - <div float="left">
              <img src="assets/images/readme/features/destination-error.png" alt="Image of destination error" width="600px" height="320px" />
            </div>
 
+### Booking Enquiry Form
 
-### Booking Enquiry Form 
+- #### The booking enquiry form.
 
-  - #### The booking enquiry form 
-    - This page allows the user to fill out and submit an enquiry to book a package. The main page links to an empty form. The destination page links to the form with the destination prefilled out. If the user clicks on a destination packed the forms destination and package input will be pre-filled out also. The package input is not required to allow the user that the user might only want to enquire about a destination only.
-      -  Empty Form
+  - This page allows the user to fill out and submit an enquiry to book a package. The main page links to an empty form. The destination page links to the form with the destination prefilled out. If the user clicks on a destination packed the forms destination and package input will be pre-filled out also. The package input is not required to allow the user that the user might only want to enquire about a destination only.
 
-        - <div float="left">
-             <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="600px" height="400px" />
-           </div>
+    - Empty Form.
 
-      - Destination prefilled
+    - <div float="left">
+         <img src="assets/images/readme/features/empty-booking.png" alt="Image of empty form" width="600px" height="400px" />
+       </div>
 
-        - <div float="left">
-             <img src="assets/images/readme/features/destination-booking.png" alt="Image of destination prefilled" width="800px" height="240px" />
-           </div>
-        
-      -  Destination and Package prefilled
+    - Destination prefilled.
 
-         - <div float="left">
-             <img src="assets/images/readme/features/package-booking.png" alt="Image of destination and packages prefilled" width="800px" height="240px" />
-           </div>
-       
+      - <div float="left">
+           <img src="assets/images/readme/features/destination-booking.png" alt="Image of destination prefilled" width="800px" height="240px" />
+         </div>
 
-  - #### Booking Enquiry Navigation.
-    - The navigation on the booking enquiry page will change depending on two factors. If you come to this page from the home page it will have a general navigation menu that links back to the home page. If you come to it from a destination it will link back to that destinations page and its packages.
-     
-      - General Navbar
+    - Destination and Package prefilled.
 
-        - <div float="left">
-             <img src="assets/images/readme/features/general-nav.png" alt="Image of general navihation" width="350px" height="290px" />
-           </div>
-           
-      - Navbar with a destination
+      - <div float="left">
+          <img src="assets/images/readme/features/package-booking.png" alt="Image of destination and packages prefilled" width="800px" height="240px" />
+        </div>
 
-        - <div float="left">
-             <img src="assets/images/readme/features/destination-specific-nav.png" alt="Image of destination-specific navigation" width="350px" height="290px" />
-           </div>
-     
-  - #### Booking modal
+- #### Booking Enquiry Navigation Menu.
 
-    - The booking enquiry form uses emailjs to send the details to the business owner. Upon completion of the form, a modal pops up to let the user know someone will be in touch with them soon.
-     
-      - Modal on form submit
+  - The navigation menu on the booking enquiry page will change depending on two factors. If you come to this page from the home page it will have a general navigation menu that links back to the home page. If you come to it from a destination it will link back to that destinations page and its packages.
 
-        -  <div float="left">
-             <img src="assets/images/readme/features/booking-modal.png" alt="Image of booking modal" width="450px" height="300px" />
-           </div>
-      
+    - General Navigation Menu.
 
-  - #### Booking Enquiry Error
+      - <div float="left">
+           <img src="assets/images/readme/features/general-nav.png" alt="Image of general navihation" width="350px" height="290px" />
+         </div>
 
-    - If for whatever reason an error occurs the booking for will alert the user.
-      -  Booking Enquiry Error.
 
-        -  <div float="left">
-             <img src="assets/images/readme/features/booking-error.png" alt="Image of booking error" width="550px" height="200px" />
-           </div>
-    
+    - Navigation Menu with a destination.
+
+      - <div float="left">
+           <img src="assets/images/readme/features/destination-specific-nav.png" alt="Image of destination-specific navigation" width="350px" height="290px" />
+         </div>
+
+- #### Booking modal.
+
+  - The booking enquiry form uses emailjs to send the details to the business owner. Upon completion of the form, a modal pops up to let the user know someone will be in touch with them soon.
+
+    - Modal on form submit.
+
+      - <div float="left">
+          <img src="assets/images/readme/features/booking-modal.png" alt="Image of booking modal" width="450px" height="300px" />
+        </div>
+
+- #### Booking Enquiry Error.
+
+  - If for whatever reason an error occurs the booking for will alert the user.
+
+    - Booking Enquiry Error.
+
+    - <div float="left">
+        <img src="assets/images/readme/features/booking-error.png" alt="Image of booking error" width="550px" height="200px" />
+      </div>
 
 ### 404 Error Page
 
- - #### 404 error page. 
-   - I've also included a 404 error page with GitHub pages if the user navigates to a wrong URL for whatever reason. To do this I did the following:
-     1. I first located and clicked the add file button in Github.
+- #### 404 error page.
+
+  - I've also included a 404 error page with GitHub pages if the user navigates to a wrong URL for whatever reason. To do this I did the following:
+
+    1.  I first located and clicked the add file button in Github.
 
         - <div float="left">
              <img src="assets/images/readme/features/new-file.png" alt="Image of add file button" width="520px" height="200px" />
            </div>
-       
-     2. Git hub then asks you to name your file.
+
+    2.  Git hub then asks you to name your file.
 
         - <div float="left">
              <img src="assets/images/readme/features/name-file.png" alt="Image of name your file input" width="650px" height="200px" />
            </div>
-    
-     3.  I then named my file 404.html.
 
-         - <div float="left">
-             <img src="assets/images/readme/features/file-404.png" alt="Image of the file named 404.html" width="500px" height="140px" />
-           </div>
-       
-     4. Once these steps were complete then commit the file to your master branch in the project repository with a commit message.
-       
+    3.  I then named my file 404.html.
+
+        - <div float="left">
+            <img src="assets/images/readme/features/file-404.png" alt="Image of the file named 404.html" width="500px" height="140px" />
+          </div>
+
+    4.  Once these steps were complete then commit the file to your master branch in the project repository with a commit message.
+
         - <div float="left">
              <img src="assets/images/readme/features/commit-404.png" alt="Image of message commit" width="560px" height="300px" />
            </div>
-       
-
 
 ### Features left to Implement.
 
-  - In the future, I could expand on the website adding a booking feature to book packages directly from the website instead of just enquiring about them.
-  - The feature to book flights could also be added.
-  - The feature to book different hotels at each destination could be added too.
+- In the future, I could expand on the website adding a booking feature to book packages directly from the website instead of just enquiring about them.
+- The feature to book flights could also be added.
+- The feature to book different hotels at each destination could be added too.
 
-
-
-## Technologies used
+## Technologies used.
 
 ### Languages Used.
 
@@ -475,6 +486,7 @@
 ### Frameworks Libraries and Programs.
 
 - [Bootstrap 4](https://getbootstrap.com/)
+
   - I used bootstrap throughout the site to make it responsive. I also used bootstrap to create the booking forms, and the modals pop up when the forms have been submitted.
 
 - [Google Fonts](https://fonts.google.com/)
@@ -510,9 +522,11 @@
   - Am I responsive was used to taking screenshots of the page at different screen sizes.
 
 - [jQuery](https://jquery.com/)
+
   - jQuery was used for the Rest Countries Api call and for the Lightslider.
 
 - [Cypress](https://www.cypress.io/)
+
   - Cypress was used to writing and execute automated tests for the page.
 
 - [Markdown toc](http://ecotrust-canada.github.io/markdown-toc/)
@@ -539,13 +553,11 @@
 - [EmailJS](https://www.emailjs.com/)
   - EmailJS was used for all forms including the contact form and the booking enquiry form. The newsletter form will also send an automatic reply to thank the user for signing up.
 
-
-
 ## Testing
 
- - #### Testing.
-   - The testing section for this site is located at the following link.
-     - [Testing file](testing.md)
+- #### Testing.
+  - The testing section for this site is located at the following link.
+    - [Testing file](testing.md)
 
 ## Deployment
 
@@ -555,17 +567,15 @@
 
   1. I first signed into Github and located the Code Institute Gitpod template.
 
-     -  <div float="left">
-           <img src="assets/images/readme/deployment/code-institute-template.png" alt="Image of Code Institute Template" width="840px" height="420px" />
-         </div>
-       
+     - <div float="left">
+          <img src="assets/images/readme/deployment/code-institute-template.png" alt="Image of Code Institute Template" width="840px" height="420px" />
+        </div>
 
   2. I then clicked the use this template button.
 
      - <div float="left">
            <img src="assets/images/readme/deployment/use-this-template.png" alt="Image of use template button" width="400px" height="200px" />
          </div>
-
 
   3. I then named the repository and created it.
 
@@ -629,16 +639,15 @@
 
   3. I then scrolled down the page until I reached the Github pages section.
 
-     -  <div float="left">
-           <img src="assets/images/readme/deployment/gitpages-source.png" alt="Image of gitpages source" width="700px" height="270px" />
-         </div>
+     - <div float="left">
+          <img src="assets/images/readme/deployment/gitpages-source.png" alt="Image of gitpages source" width="700px" height="270px" />
+        </div>
 
   4. Under sources I then selected the Master Branch.
 
      - <div float="left">
            <img src="assets/images/readme/deployment/select-master.png" alt="Image of select master" width="700px" height="240px" />
          </div>
-   
 
   5. The page then refreshed itself.
 
@@ -647,7 +656,6 @@
      - <div float="left">
            <img src="assets/images/readme/deployment/site-live.png" alt="Image of live page link" width="680px" height="240px" />
          </div>
-    
 
 ## Credits
 
@@ -671,7 +679,6 @@
 
     - I used the above code to fix an issue I had with the light slider functions running on all html pages. I used the answer that suggest checking if the element.length . More details in the testing section.
 
-
 - #### Youtube Tutorials.
 
   - I used two main tutorials on youtube to learn to have an interactive navbar and also how to fade elements in upon scrolling. I have used some elements of the code but have edited it to fit this website.
@@ -680,7 +687,7 @@
 
       - [Navigation bar](https://www.youtube.com/watch?v=9Q7wy8r3i8w&list=WL&index=2)
 
-        - I used the above tutorial on youtube to inspire my navbar. I have edited the code to adapt to my website design. I also have edited the javascript to fix an issue with the nav background not disappearing when a link is clicked. I have discussed this in more detail in the testing section.
+        - I used the above tutorial on youtube to inspire my navigation menu. I have edited the code to adapt to my website design. I also have edited the javascript to fix an issue with the nav background not disappearing when a link is clicked. I have discussed this in more detail in the testing section.
 
     - ##### Dev Ed Visual effects in javascript tutorial.
 
@@ -718,18 +725,17 @@
     - I rewrote the showPanel function to work with this website and to render the results of the search to the website when a marker is clicked.
     - I've also edited the showDetails function to use Template literals and to add classes for font-size and colour.
 
+### Content
 
-### Content 
+- All Text for the website was written by myself.
 
-  - All Text for the website was written by myself.
+### Media
 
-### Media 
-
-  - [Unsplash](https://unsplash.com/)
-    - All images for the website were obtained from Unsplash.
+- [Unsplash](https://unsplash.com/)
+  - All images for the website were obtained from Unsplash.
 
 ### Acknowledgements
 
-   - Code Institute for getting me to this point
+- Code Institute for getting me to this point
 
-   - My Mentor for his help with this project.
+- My Mentor for his help with this project.
