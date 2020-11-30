@@ -935,6 +935,7 @@
 ## Code validators
 
 - I've passed all code through the relevant code validators and seen the following results.
+- All code was repassed through the validators just before submitting.
 
   - HTML Validator.
 
@@ -1023,3 +1024,7 @@
   - My CSS transitions were running on page load. I've found several solutions to fix it and have explained the one I used earlier in the bugs during the development section.
     This code seems to have caused a warning than with my CSS validation. I have researched it and tried to remove the browser-specific selectors but I noticed the bug seemed to return on some occasions when I refreshed the page.
     It could be the browser issue as some suggested it only happens on google chrome. I have put the browser-specific selectors back and it seems to have fixed the situation from my testing.
+
+- Testing on Firefox. 
+  - My cypress test for the newsletter section and the contact section has failed on the firefox browser but passed on all other browsers. 
+  It has failed the test to show if the modal appears upon submitting. I have then manually checked this function on firefox and all other browsers by filling and submitting the form and, the function has worked as expected.
