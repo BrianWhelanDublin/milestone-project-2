@@ -50,7 +50,6 @@ const getCountryData = (destination) => {
 	let country = destination.country;
 	$.when($.getJSON(`https://restcountries.com/v2/name/${country}`)).then(
 		(response) => {
-			console.log(response);
 			let countryData = response[0];
 			renderDestinationInfoList(countryData);
 			renderFlag(countryData);
