@@ -48,10 +48,7 @@ const renderDestinationInfoListError = () => {
 // Api call to rest countries api using jQuery
 const getCountryData = (destination) => {
 	let country = destination.country;
-	$.when(
-		$.getJSON(`https://restcountries.com/v2/name/${country}?fullText=true
-  `)
-	).then(
+	$.when($.getJSON(`https://restcountries.com/v2/name/${country}`)).then(
 		(response) => {
 			console.log(response);
 			let countryData = response[0];
